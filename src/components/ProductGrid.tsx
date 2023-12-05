@@ -59,6 +59,7 @@ const ProductGrid = () => {
                 <p className="text-gray-900 font-bold mt-2">{products[0].price}</p>
                 <button className="bg-blue-500 text-white py-2 px-4 mt-4">{products[0].button.text}</button>
             </div>
+
             <div className="bg-white shadow-md rounded-lg p-4 col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3">
                 <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
                     <img src="image2.jpg" className="w-full object-cover rounded-lg min-h-[500px]" alt="Product 2"/>
@@ -68,6 +69,7 @@ const ProductGrid = () => {
                 <p className="text-gray-900 font-bold mt-2">{products[1].price}</p>
                 <button className="bg-blue-500 text-white py-2 px-4 mt-4">{products[1].button.text}</button>
             </div>
+            
             <div className="bg-white shadow-md rounded-lg p-4 col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3">
                 <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
                     <img src="image3.jpg" className="w-full object-cover rounded-lg min-h-[500px]" alt="Product 3"/>
@@ -77,6 +79,7 @@ const ProductGrid = () => {
                 <p className="text-gray-900 font-bold mt-2">{products[2].price}</p>
                 <button className="bg-blue-500 text-white py-2 px-4 mt-4">{products[2].button.text}</button>
             </div>
+            
             <div className="bg-white shadow-md rounded-lg p-4 col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3">
                 <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
                     <img src="image4.jpg" className="w-full object-cover rounded-lg min-h-[500px]" alt="Product 4"/>

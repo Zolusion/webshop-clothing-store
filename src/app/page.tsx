@@ -6,6 +6,7 @@ import Navbar from '@/components/Navbar';
 import ProductGrid from '@/components/ProductGrid';
 import Contact from '@/components/Contact';
 import DiscountSection from '@/components/Sale';
+import Newsletter from '@/components/Newsletter';
 
 const title = "Home";
 
@@ -22,6 +23,7 @@ export default function Home() {
       <ProductGrid />
       <Contact />
       <DiscountSection />
+      <Newsletter />
       <Footer />
     </div>
   )
