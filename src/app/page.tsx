@@ -4,6 +4,8 @@ import Image from 'next/image'
 import type { Metadata } from "next";
 import Navbar from '@/components/Navbar';
 import ProductGrid from '@/components/ProductGrid';
+import Contact from '@/components/Contact';
+import DiscountSection from '@/components/Sale';
 
 const title = "Home";
 
@@ -18,6 +20,8 @@ export default function Home() {
       <HeroSection />
       <Navbar />
       <ProductGrid />
+      <Contact />
+      <DiscountSection />
       <Footer />
     </div>
   )
