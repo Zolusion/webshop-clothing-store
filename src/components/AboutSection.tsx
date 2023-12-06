@@ -9,7 +9,7 @@ const AboutSection = () => {
                     <div className="mx-auto max-w-3xl">
                         <div className="text-center bg-black bg-opacity-40 rounded-md p-4">
                             <h1 className="font-bold tracking-tight text-white shadow-sm text-[30px] 2xl:text-6xl">
-                                "We believe that <span className='text-indigo-500'>Fashion</span> should be accessible to everyone. <span className='text-indigo-500'> Online shopping</span> should be easy, convenient, and accessible."
+                                &quot;We believe that <span className='text-indigo-500'>Fashion</span> should be accessible to everyone. <span className='text-indigo-500'> Online shopping</span> should be easy, convenient, and accessible.&quot;
                             </h1>
                         </div>
                     </div>
