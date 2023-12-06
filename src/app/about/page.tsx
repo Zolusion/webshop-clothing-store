@@ -4,6 +4,7 @@ import AboutSection from '@/components/AboutSection';
 import AboutInfo from '@/components/AboutInfo';
 import AboutContact from '@/components/AboutContact';
 import Footer from '@/components/Footer';
+import Questions from '@/components/Questions';
 
 const title = "About";
 
@@ -17,6 +18,7 @@ const page = () => {
             <AboutSection />
             <AboutInfo />
             <AboutContact />
+            <Questions />
             <Footer />
         </div>
     )
