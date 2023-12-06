@@ -1,10 +1,11 @@
 // DiscountSection.js
 
+import Image from "next/image";
 import React from "react";
 
 const specialOffers = [
     {
-        imageUrl: "image6.jpg",
+        imageUrl: "/image6.jpg",
         name: "Product Name",
         description: "Product description goes here.",
         discount: "20%",
@@ -12,7 +13,7 @@ const specialOffers = [
         newPrice: "€39.99",
     },
     {
-        imageUrl: "image7.jpg",
+        imageUrl: "/image7.jpg",
         name: "Product Name",
         description: "Product description goes here.",
         discount: "31%",
@@ -20,7 +21,7 @@ const specialOffers = [
         newPrice: "€47.99",
     },
     {
-        imageUrl: "image22.jpg",
+        imageUrl: "/image22.jpg",
         name: "Product Name",
         description: "Product description goes here.",
         discount: "36%",
@@ -28,7 +29,7 @@ const specialOffers = [
         newPrice: "€18.99",
     },
     {
-        imageUrl: "image8.jpg",
+        imageUrl: "/image8.jpg",
         name: "Product Name",
         description: "Product description goes here.",
         discount: "25%",
@@ -36,7 +37,7 @@ const specialOffers = [
         newPrice: "€29.99",
     },
     {
-        imageUrl: "image9.jpg",
+        imageUrl: "/image9.jpg",
         name: "Product Name",
         description: "Product description goes here.",
         discount: "28%",
@@ -44,7 +45,7 @@ const specialOffers = [
         newPrice: "€12.99",
     },
     {
-        imageUrl: "image10.jpg",
+        imageUrl: "/image10.jpg",
         name: "Product Name",
         description: "Product description goes here.",
         discount: "40%",
@@ -52,7 +53,7 @@ const specialOffers = [
         newPrice: "€35.99",
     }, 
     {
-        imageUrl: "image11.jpg",
+        imageUrl: "/image11.jpg",
         name: "Product Name",
         description: "Product description goes here.",
         discount: "25%",
@@ -60,7 +61,7 @@ const specialOffers = [
         newPrice: "€29.99",
     },
     {
-        imageUrl: "image12.jpg",
+        imageUrl: "/image12.jpg",
         name: "Product Name",
         description: "Product description goes here.",
         discount: "17%",
@@ -68,7 +69,7 @@ const specialOffers = [
         newPrice: "€99.99",
     },
     {
-        imageUrl: "image13.jpg",
+        imageUrl: "/image13.jpg",
         name: "Product Name",
         description: "Product description goes here.",
         discount: "36%",
@@ -76,7 +77,7 @@ const specialOffers = [
         newPrice: "€17.99",
     },
     {
-        imageUrl: "image14.jpg",
+        imageUrl: "/image14.jpg",
         name: "Product Name",
         description: "Product description goes here.",
         discount: "22%",
@@ -84,7 +85,7 @@ const specialOffers = [
         newPrice: "€69.99",
     },
     {
-        imageUrl: "image15.jpg",
+        imageUrl: "/image15.jpg",
         name: "Product Name",
         description: "Product description goes here.",
         discount: "17%",
@@ -92,7 +93,7 @@ const specialOffers = [
         newPrice: "€39.99",
     },
     {
-        imageUrl: "image16.jpg",
+        imageUrl: "/image16.jpg",
         name: "Product Name",
         description: "Product description goes here.",
         discount: "47%",
@@ -100,7 +101,7 @@ const specialOffers = [
         newPrice: "€14.99",
     },
     {
-        imageUrl: "image17.jpg",
+        imageUrl: "/image17.jpg",
         name: "Product Name",
         description: "Product description goes here.",
         discount: "50%",
@@ -108,7 +109,7 @@ const specialOffers = [
         newPrice: "€9.99",
     },
     {
-        imageUrl: "image18.jpg",
+        imageUrl: "/image18.jpg",
         name: "Product Name",
         description: "Product description goes here.",
         discount: "23%",
@@ -116,7 +117,7 @@ const specialOffers = [
         newPrice: "€19.99",
     },
     {
-        imageUrl: "image19.jpg",
+        imageUrl: "/image19.jpg",
         name: "Product Name",
         description: "Product description goes here.",
         discount: "22%",
@@ -124,7 +125,7 @@ const specialOffers = [
         newPrice: "€24.95",
     },
     {
-        imageUrl: "image20.jpg",
+        imageUrl: "/image20.jpg",
         name: "Product Name",
         description: "Product description goes here.",
         discount: "28%",
@@ -145,10 +146,12 @@ const DiscountSection = () => {
 
             <div className="bg-white p-4 rounded shadow-md">
               <div className="relative">
-                <img
+                <Image
                   src={specialOffers[0].imageUrl}
                   alt="Product Image"
                   className="w-full h-48 object-cover rounded min-h-[600px]"
+                  width={600}
+                  height={600}
                 />
                 <span className="absolute top-0 right-0 bg-red-500 text-white p-2 rounded-tr">
                   {specialOffers[0].discount}
@@ -168,10 +171,12 @@ const DiscountSection = () => {
 
             <div className="bg-white p-4 rounded shadow-md">
               <div className="relative">
-                <img
+                <Image
                   src={specialOffers[1].imageUrl}
                   alt="Product Image"
                   className="w-full h-48 object-cover rounded min-h-[600px]"
+                  width={600}
+                  height={600}
                 />
                 <span className="absolute top-0 right-0 bg-red-500 text-white p-2 rounded-tr">
                   {specialOffers[1].discount}
@@ -191,10 +196,12 @@ const DiscountSection = () => {
 
             <div className="bg-white p-4 rounded shadow-md">
               <div className="relative">
-                <img
+                <Image
                   src={specialOffers[2].imageUrl}
                   alt="Product Image"
                   className="w-full h-48 object-cover rounded min-h-[600px]"
+                  width={600}
+                  height={600}
                 />
                 <span className="absolute top-0 right-0 bg-red-500 text-white p-2 rounded-tr">
                   {specialOffers[2].discount}
@@ -214,10 +221,12 @@ const DiscountSection = () => {
 
             <div className="bg-white p-4 rounded shadow-md">
               <div className="relative">
-                <img
+                <Image
                   src={specialOffers[3].imageUrl}
                   alt="Product Image"
                   className="w-full h-48 object-cover rounded min-h-[600px]"
+                  width={600}
+                  height={600}
                 />
                 <span className="absolute top-0 right-0 bg-red-500 text-white p-2 rounded-tr">
                   {specialOffers[3].discount}
@@ -237,10 +246,12 @@ const DiscountSection = () => {
 
             <div className="bg-white p-4 rounded shadow-md">
               <div className="relative">
-                <img
+                <Image
                   src={specialOffers[4].imageUrl}
                   alt="Product Image"
                   className="w-full h-48 object-cover rounded min-h-[600px]"
+                  width={600}
+                  height={600}
                 />
                 <span className="absolute top-0 right-0 bg-red-500 text-white p-2 rounded-tr">
                   {specialOffers[4].discount}
@@ -260,10 +271,12 @@ const DiscountSection = () => {
 
             <div className="bg-white p-4 rounded shadow-md">
               <div className="relative">
-                <img
+                <Image
                   src={specialOffers[5].imageUrl}
                   alt="Product Image"
                   className="w-full h-48 object-cover rounded min-h-[600px]"
+                  width={600}
+                  height={600}
                 />
                 <span className="absolute top-0 right-0 bg-red-500 text-white p-2 rounded-tr">
                   {specialOffers[5].discount}
@@ -283,10 +296,12 @@ const DiscountSection = () => {
 
             <div className="bg-white p-4 rounded shadow-md">
               <div className="relative">
-                <img
+                <Image
                   src={specialOffers[6].imageUrl}
                   alt="Product Image"
                   className="w-full h-48 object-cover rounded min-h-[600px]"
+                  width={600}
+                  height={600}
                 />
                 <span className="absolute top-0 right-0 bg-red-500 text-white p-2 rounded-tr">
                   {specialOffers[6].discount}
@@ -306,10 +321,12 @@ const DiscountSection = () => {
 
             <div className="bg-white p-4 rounded shadow-md">
               <div className="relative">
-                <img
+                <Image
                   src={specialOffers[7].imageUrl}
                   alt="Product Image"
                   className="w-full h-48 object-cover rounded min-h-[600px]"
+                  width={600}
+                  height={600}
                 />
                 <span className="absolute top-0 right-0 bg-red-500 text-white p-2 rounded-tr">
                   {specialOffers[7].discount}
@@ -329,10 +346,12 @@ const DiscountSection = () => {
 
             <div className="bg-white p-4 rounded shadow-md">
               <div className="relative">
-                <img
+                <Image
                   src={specialOffers[8].imageUrl}
                   alt="Product Image"
                   className="w-full h-48 object-cover rounded min-h-[600px]"
+                  width={600}
+                  height={600}
                 />
                 <span className="absolute top-0 right-0 bg-red-500 text-white p-2 rounded-tr">
                   {specialOffers[8].discount}
@@ -352,10 +371,12 @@ const DiscountSection = () => {
 
             <div className="bg-white p-4 rounded shadow-md">
               <div className="relative">
-                <img
+                <Image
                   src={specialOffers[9].imageUrl}
                   alt="Product Image"
                   className="w-full h-48 object-cover rounded min-h-[600px]"
+                  width={600}
+                  height={600}
                 />
                 <span className="absolute top-0 right-0 bg-red-500 text-white p-2 rounded-tr">
                   {specialOffers[9].discount}
@@ -375,10 +396,12 @@ const DiscountSection = () => {
 
             <div className="bg-white p-4 rounded shadow-md">
               <div className="relative">
-                <img
+                <Image
                   src={specialOffers[10].imageUrl}
                   alt="Product Image"
                   className="w-full h-48 object-cover rounded min-h-[600px]"
+                  width={600}
+                  height={600}
                 />
                 <span className="absolute top-0 right-0 bg-red-500 text-white p-2 rounded-tr">
                   {specialOffers[10].discount}
@@ -398,10 +421,12 @@ const DiscountSection = () => {
 
             <div className="bg-white p-4 rounded shadow-md">
               <div className="relative">
-                <img
+                <Image
                   src={specialOffers[11].imageUrl}
                   alt="Product Image"
                   className="w-full h-48 object-cover rounded min-h-[600px]"
+                  width={600}
+                  height={600}
                 />
                 <span className="absolute top-0 right-0 bg-red-500 text-white p-2 rounded-tr">
                   {specialOffers[11].discount}
@@ -421,10 +446,12 @@ const DiscountSection = () => {
 
             <div className="bg-white p-4 rounded shadow-md">
               <div className="relative">
-                <img
+                <Image
                   src={specialOffers[12].imageUrl}
                   alt="Product Image"
                   className="w-full h-48 object-cover rounded min-h-[600px]"
+                  width={600}
+                  height={600}
                 />
                 <span className="absolute top-0 right-0 bg-red-500 text-white p-2 rounded-tr">
                   {specialOffers[12].discount}
@@ -444,10 +471,12 @@ const DiscountSection = () => {
 
             <div className="bg-white p-4 rounded shadow-md">
               <div className="relative">
-                <img
+                <Image
                   src={specialOffers[13].imageUrl}
                   alt="Product Image"
                   className="w-full h-48 object-cover rounded min-h-[600px]"
+                  width={600}
+                  height={600}
                 />
                 <span className="absolute top-0 right-0 bg-red-500 text-white p-2 rounded-tr">
                   {specialOffers[13].discount}
@@ -467,10 +496,12 @@ const DiscountSection = () => {
 
             <div className="bg-white p-4 rounded shadow-md">
               <div className="relative">
-                <img
+                <Image
                   src={specialOffers[14].imageUrl}
                   alt="Product Image"
                   className="w-full h-48 object-cover rounded min-h-[600px]"
+                  width={600}
+                  height={600}
                 />
                 <span className="absolute top-0 right-0 bg-red-500 text-white p-2 rounded-tr">
                   {specialOffers[14].discount}
@@ -490,10 +521,12 @@ const DiscountSection = () => {
 
             <div className="bg-white p-4 rounded shadow-md">
               <div className="relative">
-                <img
+                <Image
                   src={specialOffers[15].imageUrl}
                   alt="Product Image"
                   className="w-full h-48 object-cover rounded min-h-[600px]"
+                  width={600}
+                  height={600}
                 />
                 <span className="absolute top-0 right-0 bg-red-500 text-white p-2 rounded-tr">
                   {specialOffers[15].discount}
