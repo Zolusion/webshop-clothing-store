@@ -5,7 +5,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <footer className="bg-white dark:bg-gray-900">
-      <div className="container px-6 py-12 mx-auto grid grid-cols-4 justify-center flex-col">
+      <div className="container mx-auto max-w-7xl flex justify-between px-6 py-12">
         <div>
           <img src="https://flowbite.com/docs/images/logo.svg" className="h-10" alt="Flowbite Logo"/>
         </div>

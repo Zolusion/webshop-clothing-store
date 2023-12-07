@@ -1,3 +1,7 @@
+"use client"
+import { useState } from 'react'
+import React from 'react'
+
 const mostAskedQuestions = [
     {
         question: "What payment methods do you accept?",
@@ -41,26 +45,41 @@ const mostAskedQuestions = [
     }
 ]
 
-import React from 'react'
-
 const Questions = () => {
-  return (
-    <div className='bg-white'>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-2xl mx-auto py-16 sm:py-24 lg:py-32 lg:max-w-none">
-                <h2 className="text-2xl font-extrabold tracking-tight text-gray-900">Frequently asked questions</h2>
-                <div className="mt-8 space-y-8">
-                    {mostAskedQuestions.map((question, index) => (
-                        <div key={index}>
-                            <h3 className="text-lg font-medium text-gray-900">{question.question}</h3>
-                            <p className="mt-4 text-sm text-gray-500">{question.answer}</p>
-                        </div>
-                    ))}
+    const [openIndex, setOpenIndex] = useState(null);
+
+    const handleToggle = (index : any) => {
+        setOpenIndex((prevIndex) => (prevIndex === index ? null : index));
+    };
+
+    return (
+        <div className="bg-white shadow-md rounded-lg overflow-hidden">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="max-w-2xl mx-auto py-12 sm:py-16 lg:py-20 lg:max-w-none">
+                    <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 mb-8">Frequently Asked Questions</h2>
+                    <div className="space-y-4">
+                        {mostAskedQuestions.map((question, index) => (
+                            <div key={index} className="border-b border-gray-200 pb-4">
+                                <div
+                                    className="flex justify-between items-center cursor-pointer"
+                                    onClick={() => handleToggle(index)}
+                                >
+                                    <h3 className="text-xl font-semibold text-gray-900 mb-2">{question.question}</h3>
+                                    <span className={`transition-transform transform ${openIndex === index ? 'rotate-180' : 'rotate-0'} text-gray-600`}>
+                                        &#9662;
+                                    </span>
+                                </div>
+                                {openIndex === index && (
+                                    <p className="text-gray-600 mt-2">{question.answer}</p>
+                                )}
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-  )
+
+    )
 }
 
 export default Questions
