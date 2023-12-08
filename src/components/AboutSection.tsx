@@ -9,7 +9,7 @@ const AboutSection = () => {
                     <div className="text-white font-bold text-xl">
                         SolmazFashion
                     </div>
-                    <div className="space-x-4">
+                    <div className="space-x-10">
                         <Link href="/" className="text-white hover:text-gray-300">Home</Link>
                         <Link href="/about" className="text-white hover:text-gray-300">About</Link>
                         <Link href="/contact" className="text-white hover:text-gray-300">Contact</Link>

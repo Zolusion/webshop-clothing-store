@@ -31,7 +31,8 @@ const Footer = () => {
             <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Service</h2>
             <ul className="text-gray-500 dark:text-gray-400 font-medium">
               <Link href="/terms"><li className="mb-4"><a href="#" className="hover:underline">Shipping info</a></li></Link>
-              <Link href="/privacy"><li className="mb-4"><a href="#" className="hover:underline">Contact</a></li></Link>
+              <Link href="/terms"><li className="mb-4"><a href="#" className="hover:underline">Refunds</a></li></Link>
+              <Link href="/privacy"><li className="mb-4"><a href="#" className="hover:underline">Track & Trace</a></li></Link>
               <Link href="/cookies"><li className="mb-4"><a href="#" className="hover:underline">Cookies</a></li></Link>
             </ul>
         </div>

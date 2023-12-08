@@ -1,6 +1,15 @@
 import Image from 'next/image'
 import React from 'react'
 
+const about = [
+    {
+        title: "About Us",
+        descriptionOne: "SolmazFashion is a team of passionate fashionistas who believe in the power of community. We believe that fashion should be accessible to everyone, and we are committed to making that a reality.",
+        descriptionTwo: "We believe that fashion should be accessible to everyone. Online shopping should be easy, convenient, and accessible.",
+        descriptionThree: "Every day, we are inspired by the power of community. Our customers  are our inspiration."
+    }
+]
+
 const AboutInfo = () => {
   return (
     <div className='bg-white'>
@@ -16,23 +25,10 @@ const AboutInfo = () => {
                 </div>
 
                 <div className="lg:py-6">
-                    <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">About Us</h2>
-
-                    <p className="mt-4 text-gray-500">
-                        SolmazFashion is a team of passionate fashionistas who believe in the
-                        power of community. We believe that fashion should be accessible to
-                        everyone, and we are committed to making that a reality.
-                    </p>
-
-                    <p className="mt-4 text-gray-500">
-                        We believe that fashion should be accessible to everyone. Online shopping
-                        should be easy, convenient, and accessible. 
-                    </p>
-
-                    <p className="mt-4 text-gray-500">
-                        Every day, we are inspired by the power of community. Our customers 
-                        are our inspiration. 
-                    </p>
+                    <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">{about[0].title}</h2>
+                    <p className="mt-4 text-gray-500">{about[0].descriptionOne}</p>
+                    <p className="mt-4 text-gray-500">{about[0].descriptionTwo}</p>
+                    <p className="mt-4 text-gray-500">{about[0].descriptionThree}</p>
                 </div>
             </div>
         </div>

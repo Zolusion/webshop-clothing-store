@@ -1,16 +1,28 @@
 import React from 'react'
 
+const aboutContactForm = [
+    {
+        title: "Contact Us",
+        name: "Full name",
+        email: "Email", 
+        phone: "Phone",
+        Optional: "Optional",
+        message: "Message",
+        submit: "Submit",
+    }
+]
+
 const AboutContact = () => {
     return (
         <div className='bg-white'>
             <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
                 <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
-                    Contact Us
+                    {aboutContactForm[0].title}
                 </h2>
                 <form className="mt-8 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
                     <div>
                         <label htmlFor="full-name" className="block text-sm font-medium text-gray-700">
-                            Full name
+                            {aboutContactForm[0].name}
                         </label>
                         <div className="mt-1">
                             <input
@@ -25,7 +37,7 @@ const AboutContact = () => {
                     </div>
                     <div>
                         <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-                            Email
+                            {aboutContactForm[0].email}
                         </label>
                         <div className="mt-1">
                             <input
@@ -41,10 +53,10 @@ const AboutContact = () => {
                     <div>
                         <div className="flex justify-between">
                             <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
-                                Phone
+                                {aboutContactForm[0].phone}
                             </label>
                             <span id="phone-optional" className="text-sm text-gray-500">
-                                Optional
+                                {aboutContactForm[0].Optional}
                             </span>
                         </div>
                         <div className="mt-1">
@@ -60,7 +72,7 @@ const AboutContact = () => {
                     </div>
                     <div className="sm:col-span-2">
                         <label htmlFor="message" className="block text-sm font-medium text-gray-700">
-                            Message
+                            {aboutContactForm[0].message}
                         </label>
                         <div className="mt-1">
                             <textarea
@@ -97,7 +109,7 @@ const AboutContact = () => {
                             type="submit"
                             className="w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
                         >
-                            Submit
+                            {aboutContactForm[0].submit}
                         </button>
                     </div>
                 </form>

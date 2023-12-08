@@ -1,10 +1,9 @@
 import React from 'react'
-import type { Metadata } from "next";
 import AboutSection from '@/components/AboutSection';
 import AboutInfo from '@/components/AboutInfo';
 import AboutContact from '@/components/AboutContact';
 import Footer from '@/components/Footer';
-import Questions from '@/components/Questions';
+import type { Metadata } from "next";
 
 const title = "About";
 
@@ -18,7 +17,6 @@ const page = () => {
             <AboutSection />
             <AboutInfo />
             <AboutContact />
-            <Questions />
             <Footer />
         </div>
     )
