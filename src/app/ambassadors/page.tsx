@@ -6,6 +6,7 @@ import Navbar from '@/components/Navbar';
 import Image from 'next/image';
 import AmbassadorInfo from '@/components/AmbassadorInfo';
 import Posts from '@/components/Posts';
+import Influencers from '@/components/Influencers';
 
 const title = "Ambassadors";
 
@@ -18,6 +19,7 @@ const page = () => {
         <div className='bg-white'>
             <Navbar />
             <AmbassadorInfo />
+            <Influencers />
             <Posts posts={[
                 {
                     id: 1,
@@ -39,6 +41,27 @@ const page = () => {
                     title: "Tiktok Ambassador",
                     href: "#",
                     description: "Tiktok is lately the fastest growing social media platform. Like, Comment, and Share.",
+                },
+                {
+                    id: 4,
+                    imageUrl: "https://images.unsplash.com/photo-1524678516592-b3fbf8938717?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE4fHx8ZW58MHx8fHx8",
+                    title: "Fashion Trends",
+                    href: "#",
+                    description: "The fashion industry is one of the most exciting and exciting industries. We are committed to making fashion accessible to everyone.",
+                },
+                {
+                    id: 5,
+                    imageUrl: "https://plus.unsplash.com/premium_photo-1663957899135-c47df5dcd836?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aGlqYWIlMjBnaXJsfGVufDB8fDB8fHww",
+                    title: "Hijab Community",
+                    href: "#",
+                    description: "Nothing is more beautiful then a women who wears hijab.",
+                },
+                {
+                    id: 6,
+                    imageUrl: "https://plus.unsplash.com/premium_photo-1684017834519-4402ea1c5a8f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aW5mbHVlbmNlcnN8ZW58MHx8MHx8fDA%3D",
+                    title: "Influencers",
+                    href: "#",
+                    description: "We always love to collaborate with influencers that are passionate about fashion.",
                 }
             ]}/>
             <Footer />
