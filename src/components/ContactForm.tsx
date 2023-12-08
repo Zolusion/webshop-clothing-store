@@ -1,4 +1,5 @@
 "use client";
+import Image from 'next/image';
 import React, { useState } from 'react';
 
 
@@ -22,7 +23,13 @@ const ContactForm = () => {
     return (
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', padding: '1rem' }}>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1rem', maxWidth: '900px', width: '100%', backgroundColor: '#f0f0f0', borderRadius: '8px', padding: '1rem' }}>
-                <img src="https://images.unsplash.com/photo-1664574654700-75f1c1fad74e?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Contact" style={{ width: '100%', borderRadius: '8px 8px 0 0' }} />
+                <Image 
+                    src="https://images.unsplash.com/photo-1664574654700-75f1c1fad74e?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Contact" 
+                    width={600}
+                    height={600}
+                    style={{ borderRadius: '8px 8px 0 0' }}
+                />
                 <form onSubmit={handleSubmit} style={{ width: '100%', padding: '1rem', backgroundColor: '#fff', borderRadius: '0 0 8px 8px', display: 'flex', flexDirection: 'column', gap: '1rem', justifyContent: 'center' }}>
                     <h1 style={{ marginBottom: '1rem', textAlign: 'center', color: 'black' }}>Contact Us</h1>
                     <div style={{ marginBottom: '1rem' }}>

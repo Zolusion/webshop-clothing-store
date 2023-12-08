@@ -85,7 +85,7 @@ const Questions = () => {
                                 className="flex justify-between items-center cursor-pointer"
                                 onClick={() => handleToggle(null)}
                             >
-                                <h3 className="text-xl font-semibold text-gray-900 mb-2">I don't see the answer to my question. Can you help me?</h3>
+                                <h3 className="text-xl font-semibold text-gray-900 mb-2">I don&quot;t want see the answer to my question. Can you help me?</h3>
                                 <span className={`transition-transform transform ${openIndex === null ? 'rotate-180' : 'rotate-0'} text-gray-600`}>
                                     &#9662;
                                 </span>

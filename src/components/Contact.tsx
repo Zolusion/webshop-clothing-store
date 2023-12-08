@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Contact = () => {
@@ -63,10 +64,13 @@ const Contact = () => {
           </form>
         </div>
         <div className="flex flex-col justify-center h-[500px] relative">
-          <img
+          <Image
             src="https://images.unsplash.com/photo-1614177919002-8b868f0ac5bb?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="Image Description"
-            className="w-full h-full object-cover rounded-lg"
+            layout="fill"
+            objectFit="cover"
+            objectPosition="center"
+
           />
           <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
             <div className="text-white text-3xl font-bold px-4 ">

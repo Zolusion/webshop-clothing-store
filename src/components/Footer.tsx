@@ -7,7 +7,13 @@ const Footer = () => {
     <footer className="bg-white dark:bg-gray-900">
       <div className="container mx-auto max-w-7xl flex justify-between px-6 py-12">
         <div>
-          <img src="https://flowbite.com/docs/images/logo.svg" className="h-10" alt="Flowbite Logo"/>
+          <Image 
+            src="https://flowbite.com/docs/images/logo.svg" 
+            className="h-10" 
+            alt="Flowbite Logo"
+            width={100}
+            height={100}
+          />
         </div>
         <div>
             <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Company</h2>
