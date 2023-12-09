@@ -107,6 +107,7 @@ const AboutContact = () => {
                     <div className="sm:col-span-2">
                         <button
                             type="submit"
+                            name='submit'
                             className="w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
                         >
                             {aboutContactForm[0].submit}

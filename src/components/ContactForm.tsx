@@ -91,7 +91,7 @@ const ContactForm = () => {
                             required
                         />
                     </div>
-                    <button type="submit" style={{ backgroundColor: '#0070f3', color: 'white', padding: '0.5rem 1rem', borderRadius: '4px', border: 'none', cursor: 'pointer' }}>Submit</button>
+                    <button name='submit' type="submit" style={{ backgroundColor: '#0070f3', color: 'white', padding: '0.5rem 1rem', borderRadius: '4px', border: 'none', cursor: 'pointer' }}>Submit</button>
                 </form>
             </div>
         </div>

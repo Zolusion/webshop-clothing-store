@@ -164,7 +164,7 @@ const DiscountSection = () => {
                 </h3>
                 <p className="text-gray-600">{specialOffers[0].description}</p>
                 <div className="flex items-center justify-between mt-4">
-                  <button className="bg-blue-500 text-white py-2 px-4">Add To Cart</button>
+                  <button name="add-to-cart" className="bg-blue-500 text-white py-2 px-4">Add To Cart</button>
                   <span className="text-green-500 font-semibold">{specialOffers[0].newPrice}</span>
                 </div>
               </div>
@@ -190,7 +190,7 @@ const DiscountSection = () => {
                 </h3>
                 <p className="text-gray-600">{specialOffers[1].description}</p>
                 <div className="flex items-center justify-between mt-4">
-                  <button className="bg-blue-500 text-white py-2 px-4">Add To Cart</button>
+                  <button name="add-to-cart" className="bg-blue-500 text-white py-2 px-4">Add To Cart</button>
                   <span className="text-green-500 font-semibold">{specialOffers[1].newPrice}</span>
                 </div>
               </div>
@@ -217,7 +217,7 @@ const DiscountSection = () => {
                 <p className="text-gray-600">{specialOffers[2].description}</p>
                 <div className="flex items-center justify-between mt-4">
                   <span className="text-gray-800 font-semibold">
-                    <button className="bg-blue-500 text-white py-2 px-4">Add To Cart</button>
+                    <button name="add-to-cart" className="bg-blue-500 text-white py-2 px-4">Add To Cart</button>
                   </span>
                   <span className="text-green-500 font-semibold">
                     {specialOffers[2].newPrice}
@@ -247,7 +247,7 @@ const DiscountSection = () => {
                 </h3>
                 <p className="text-gray-600">{specialOffers[3].description}</p>
                 <div className="flex items-center justify-between mt-4">
-                  <button className="bg-blue-500 text-white py-2 px-4">Add To Cart</button>
+                  <button name="add-to-cart" className="bg-blue-500 text-white py-2 px-4">Add To Cart</button>
                   <span className="text-green-500 font-semibold">{specialOffers[3].newPrice}</span>
                 </div>
               </div>
@@ -273,7 +273,7 @@ const DiscountSection = () => {
                 </h3>
                 <p className="text-gray-600">{specialOffers[4].description}</p>
                 <div className="flex items-center justify-between mt-4">
-                  <button className="bg-blue-500 text-white py-2 px-4">Add To Cart</button>
+                  <button name="add-to-cart" className="bg-blue-500 text-white py-2 px-4">Add To Cart</button>
                   <span className="text-green-500 font-semibold">{specialOffers[4].newPrice}</span>
                 </div>
               </div>
@@ -299,7 +299,7 @@ const DiscountSection = () => {
                 </h3>
                 <p className="text-gray-600">{specialOffers[5].description}</p>
                 <div className="flex items-center justify-between mt-4">
-                  <button className="bg-blue-500 text-white py-2 px-4">Add To Cart</button>
+                  <button name="add-to-cart" className="bg-blue-500 text-white py-2 px-4">Add To Cart</button>
                   <span className="text-green-500 font-semibold">{specialOffers[5].newPrice}</span>
                 </div>
               </div>
@@ -325,7 +325,7 @@ const DiscountSection = () => {
                 </h3>
                 <p className="text-gray-600">{specialOffers[6].description}</p>
                 <div className="flex items-center justify-between mt-4">
-                  <button className="bg-blue-500 text-white py-2 px-4">Add To Cart</button>
+                  <button name="add-to-cart" className="bg-blue-500 text-white py-2 px-4">Add To Cart</button>
                   <span className="text-green-500 font-semibold">{specialOffers[6].newPrice}</span>
                 </div>
               </div>
@@ -351,7 +351,7 @@ const DiscountSection = () => {
                 </h3>
                 <p className="text-gray-600">{specialOffers[7].description}</p>
                 <div className="flex items-center justify-between mt-4">
-                  <button className="bg-blue-500 text-white py-2 px-4">Add To Cart</button>
+                  <button name="add-to-cart" className="bg-blue-500 text-white py-2 px-4">Add To Cart</button>
                   <span className="text-green-500 font-semibold">{specialOffers[7].newPrice}</span>
                 </div>
               </div>
@@ -377,7 +377,7 @@ const DiscountSection = () => {
                 </h3>
                 <p className="text-gray-600">{specialOffers[8].description}</p>
                 <div className="flex items-center justify-between mt-4">
-                  <button className="bg-blue-500 text-white py-2 px-4">Add To Cart</button>
+                  <button name="add-to-cart" className="bg-blue-500 text-white py-2 px-4">Add To Cart</button>
                   <span className="text-green-500 font-semibold">{specialOffers[8].newPrice}</span>
                 </div>
               </div>
@@ -403,7 +403,7 @@ const DiscountSection = () => {
                 </h3>
                 <p className="text-gray-600">{specialOffers[9].description}</p>
                 <div className="flex items-center justify-between mt-4">
-                  <button className="bg-blue-500 text-white py-2 px-4">Add To Cart</button>
+                  <button name="add-to-cart" className="bg-blue-500 text-white py-2 px-4">Add To Cart</button>
                   <span className="text-green-500 font-semibold">{specialOffers[9].newPrice}</span>
                 </div>
               </div>
@@ -429,7 +429,7 @@ const DiscountSection = () => {
                 </h3>
                 <p className="text-gray-600">{specialOffers[10].description}</p>
                 <div className="flex items-center justify-between mt-4">
-                  <button className="bg-blue-500 text-white py-2 px-4">Add To Cart</button>
+                  <button name="add-to-cart" className="bg-blue-500 text-white py-2 px-4">Add To Cart</button>
                   <span className="text-green-500 font-semibold">{specialOffers[10].newPrice}</span>
                 </div>
               </div>
@@ -455,7 +455,7 @@ const DiscountSection = () => {
                 </h3>
                 <p className="text-gray-600">{specialOffers[11].description}</p>
                 <div className="flex items-center justify-between mt-4">
-                  <button className="bg-blue-500 text-white py-2 px-4">Add To Cart</button>
+                  <button name="add-to-cart" className="bg-blue-500 text-white py-2 px-4">Add To Cart</button>
                   <span className="text-green-500 font-semibold">{specialOffers[11].newPrice}</span>
                 </div>
               </div>
@@ -481,7 +481,7 @@ const DiscountSection = () => {
                 </h3>
                 <p className="text-gray-600">{specialOffers[12].description}</p>
                 <div className="flex items-center justify-between mt-4">
-                  <button className="bg-blue-500 text-white py-2 px-4">Add To Cart</button>
+                  <button name="Add To Cart" className="bg-blue-500 text-white py-2 px-4">Add To Cart</button>
                   <span className="text-green-500 font-semibold">{specialOffers[12].newPrice}</span>
                 </div>
               </div>
@@ -507,7 +507,7 @@ const DiscountSection = () => {
                 </h3>
                 <p className="text-gray-600">{specialOffers[13].description}</p>
                 <div className="flex items-center justify-between mt-4">
-                  <button className="bg-blue-500 text-white py-2 px-4">Add To Cart</button>
+                  <button name="cart" className="bg-blue-500 text-white py-2 px-4">Add To Cart</button>
                   <span className="text-green-500 font-semibold">{specialOffers[13].newPrice}</span>
                 </div>
               </div>
@@ -533,7 +533,7 @@ const DiscountSection = () => {
                 </h3>
                 <p className="text-gray-600">{specialOffers[14].description}</p>
                 <div className="flex items-center justify-between mt-4">
-                  <button className="bg-blue-500 text-white py-2 px-4">Add To Cart</button>
+                  <button name="cart" className="bg-blue-500 text-white py-2 px-4">Add To Cart</button>
                   <span className="text-green-500 font-semibold">{specialOffers[14].newPrice}</span>
                 </div>
               </div>
@@ -559,7 +559,7 @@ const DiscountSection = () => {
                 </h3>
                 <p className="text-gray-600">{specialOffers[15].description}</p>
                 <div className="flex items-center justify-between mt-4">
-                  <button className="bg-blue-500 text-white py-2 px-4">Add To Cart</button>
+                  <button name="button" className="bg-blue-500 text-white py-2 px-4">Add To Cart</button>
                   <span className="text-green-500 font-semibold">{specialOffers[15].newPrice}</span>
                 </div>
               </div>

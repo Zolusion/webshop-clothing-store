@@ -18,7 +18,7 @@ const HeroSection = () => {
             </p>
             <div className="mx-auto mt-10 max-w-sm sm:flex sm:max-w-none sm:justify-center">
               <div className="space-y-4 sm:mx-auto mx-auto inline-grid grid-cols-2 gap-5 space-y-0 sm:inline-grid sm:grid-cols-2 sm:gap-5 sm:space-y-0">
-                <button type="button" className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-indigo-700 shadow-sm hover:bg-indigo-50 sm:px-8">
+                <button name="shoppingbutton" type="button" className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-indigo-700 shadow-sm hover:bg-indigo-50 sm:px-8">
                   Go Shopping
                 </button>
                 <a href="#" className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-indigo-700 shadow-sm hover:bg-indigo-50 sm:px-8">
