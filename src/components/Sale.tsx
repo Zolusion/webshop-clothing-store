@@ -4,134 +4,134 @@ import Image from "next/image";
 import React from "react";
 
 const specialOffers = [
-    {
-        imageUrl: "/image6.jpg",
-        name: "Product Name",
-        description: "Product description goes here.",
-        discount: "20%",
-        oldPrice: "€49.99",
-        newPrice: "€39.99",
-    },
-    {
-        imageUrl: "/image7.jpg",
-        name: "Product Name",
-        description: "Product description goes here.",
-        discount: "31%",
-        oldPrice: "€69.95",
-        newPrice: "€47.99",
-    },
-    {
-        imageUrl: "/image22.jpg",
-        name: "Product Name",
-        description: "Product description goes here.",
-        discount: "36%",
-        oldPrice: "€29.95",
-        newPrice: "€18.99",
-    },
-    {
-        imageUrl: "/image8.jpg",
-        name: "Product Name",
-        description: "Product description goes here.",
-        discount: "25%",
-        oldPrice: "€39.95",
-        newPrice: "€29.99",
-    },
-    {
-        imageUrl: "/image9.jpg",
-        name: "Product Name",
-        description: "Product description goes here.",
-        discount: "28%",
-        oldPrice: "€17.95",
-        newPrice: "€12.99",
-    },
-    {
-        imageUrl: "/image10.jpg",
-        name: "Product Name",
-        description: "Product description goes here.",
-        discount: "40%",
-        oldPrice: "€59.95",
-        newPrice: "€35.99",
-    }, 
-    {
-        imageUrl: "/image11.jpg",
-        name: "Product Name",
-        description: "Product description goes here.",
-        discount: "25%",
-        oldPrice: "€39.95",
-        newPrice: "€29.99",
-    },
-    {
-        imageUrl: "/image12.jpg",
-        name: "Product Name",
-        description: "Product description goes here.",
-        discount: "17%",
-        oldPrice: "€119.95",
-        newPrice: "€99.99",
-    },
-    {
-        imageUrl: "/image13.jpg",
-        name: "Product Name",
-        description: "Product description goes here.",
-        discount: "36%",
-        oldPrice: "€27.95",
-        newPrice: "€17.99",
-    },
-    {
-        imageUrl: "/image14.jpg",
-        name: "Product Name",
-        description: "Product description goes here.",
-        discount: "22%",
-        oldPrice: "€89.95",
-        newPrice: "€69.99",
-    },
-    {
-        imageUrl: "/image15.jpg",
-        name: "Product Name",
-        description: "Product description goes here.",
-        discount: "17%",
-        oldPrice: "€47.95",
-        newPrice: "€39.99",
-    },
-    {
-        imageUrl: "/image16.jpg",
-        name: "Product Name",
-        description: "Product description goes here.",
-        discount: "47%",
-        oldPrice: "€27.95",
-        newPrice: "€14.99",
-    },
-    {
-        imageUrl: "/image17.jpg",
-        name: "Product Name",
-        description: "Product description goes here.",
-        discount: "50%",
-        oldPrice: "€19.95",
-        newPrice: "€9.99",
-    },
-    {
-        imageUrl: "/image18.jpg",
-        name: "Product Name",
-        description: "Product description goes here.",
-        discount: "23%",
-        oldPrice: "€25.95",
-        newPrice: "€19.99",
-    },
-    {
-        imageUrl: "/image19.jpg",
-        name: "Product Name",
-        description: "Product description goes here.",
-        discount: "22%",
-        oldPrice: "€31.99",
-        newPrice: "€24.95",
-    },
-    {
-        imageUrl: "/image20.jpg",
-        name: "Product Name",
-        description: "Product description goes here.",
-        discount: "28%",
-        oldPrice: "€27.95",
-        newPrice: "€19.99",
-    }
+  {
+    imageUrl: "/image6.jpg",
+    name: "Product Name",
+    description: "Product description goes here.",
+    discount: "20%",
+    oldPrice: "€49.99",
+    newPrice: "€39.99",
+  },
+  {
+    imageUrl: "/image7.jpg",
+    name: "Product Name",
+    description: "Product description goes here.",
+    discount: "31%",
+    oldPrice: "€69.95",
+    newPrice: "€47.99",
+  },
+  {
+    imageUrl: "/image22.jpg",
+    name: "Product Name",
+    description: "Product description goes here.",
+    discount: "36%",
+    oldPrice: "€29.95",
+    newPrice: "€18.99",
+  },
+  {
+    imageUrl: "/image8.jpg",
+    name: "Product Name",
+    description: "Product description goes here.",
+    discount: "25%",
+    oldPrice: "€39.95",
+    newPrice: "€29.99",
+  },
+  {
+    imageUrl: "/image9.jpg",
+    name: "Product Name",
+    description: "Product description goes here.",
+    discount: "28%",
+    oldPrice: "€17.95",
+    newPrice: "€12.99",
+  },
+  {
+    imageUrl: "/image10.jpg",
+    name: "Product Name",
+    description: "Product description goes here.",
+    discount: "40%",
+    oldPrice: "€59.95",
+    newPrice: "€35.99",
+  },
+  {
+    imageUrl: "/image11.jpg",
+    name: "Product Name",
+    description: "Product description goes here.",
+    discount: "25%",
+    oldPrice: "€39.95",
+    newPrice: "€29.99",
+  },
+  {
+    imageUrl: "/image12.jpg",
+    name: "Product Name",
+    description: "Product description goes here.",
+    discount: "17%",
+    oldPrice: "€119.95",
+    newPrice: "€99.99",
+  },
+  {
+    imageUrl: "/image13.jpg",
+    name: "Product Name",
+    description: "Product description goes here.",
+    discount: "36%",
+    oldPrice: "€27.95",
+    newPrice: "€17.99",
+  },
+  {
+    imageUrl: "/image14.jpg",
+    name: "Product Name",
+    description: "Product description goes here.",
+    discount: "22%",
+    oldPrice: "€89.95",
+    newPrice: "€69.99",
+  },
+  {
+    imageUrl: "/image15.jpg",
+    name: "Product Name",
+    description: "Product description goes here.",
+    discount: "17%",
+    oldPrice: "€47.95",
+    newPrice: "€39.99",
+  },
+  {
+    imageUrl: "/image16.jpg",
+    name: "Product Name",
+    description: "Product description goes here.",
+    discount: "47%",
+    oldPrice: "€27.95",
+    newPrice: "€14.99",
+  },
+  {
+    imageUrl: "/image17.jpg",
+    name: "Product Name",
+    description: "Product description goes here.",
+    discount: "50%",
+    oldPrice: "€19.95",
+    newPrice: "€9.99",
+  },
+  {
+    imageUrl: "/image18.jpg",
+    name: "Product Name",
+    description: "Product description goes here.",
+    discount: "23%",
+    oldPrice: "€25.95",
+    newPrice: "€19.99",
+  },
+  {
+    imageUrl: "/image19.jpg",
+    name: "Product Name",
+    description: "Product description goes here.",
+    discount: "22%",
+    oldPrice: "€31.99",
+    newPrice: "€24.95",
+  },
+  {
+    imageUrl: "/image20.jpg",
+    name: "Product Name",
+    description: "Product description goes here.",
+    discount: "28%",
+    oldPrice: "€27.95",
+    newPrice: "€19.99",
+  }
 ]
 
 const DiscountSection = () => {
@@ -141,10 +141,10 @@ const DiscountSection = () => {
         <h2 className="text-3xl font-semibold text-black text-center mb-8">
           Special Offers
         </h2>
-        <div className="flex space-x-4 p-4 md:p-0 md:overflow-hidden">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <div className="flex space-x-4 md:p-0 md:overflow-hidden">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
 
-            <div className="bg-white p-4 rounded shadow-md">
+            <div className="bg-white p-4 rounded-lg shadow-md">
               <div className="relative">
                 <Image
                   src={specialOffers[0].imageUrl}
@@ -152,6 +152,7 @@ const DiscountSection = () => {
                   className="w-full h-48 object-cover rounded min-h-[600px]"
                   width={600}
                   height={600}
+                  sizes="(max-width: 640px) 100vw, (max-width: 750px) 50vw, 33.3vw"
                 />
                 <span className="absolute top-0 right-0 bg-red-500 text-white p-2 rounded-tr">
                   {specialOffers[0].discount}
@@ -163,7 +164,7 @@ const DiscountSection = () => {
                 </h3>
                 <p className="text-gray-600">{specialOffers[0].description}</p>
                 <div className="flex items-center justify-between mt-4">
-                  <span className="text-gray-800 font-semibold">{specialOffers[0].oldPrice}</span>
+                  <button className="bg-blue-500 text-white py-2 px-4">Add To Cart</button>
                   <span className="text-green-500 font-semibold">{specialOffers[0].newPrice}</span>
                 </div>
               </div>
@@ -177,6 +178,7 @@ const DiscountSection = () => {
                   className="w-full h-48 object-cover rounded min-h-[600px]"
                   width={600}
                   height={600}
+                  sizes="(max-width: 640px) 100vw, (max-width: 750px) 50vw, 33.3vw"
                 />
                 <span className="absolute top-0 right-0 bg-red-500 text-white p-2 rounded-tr">
                   {specialOffers[1].discount}
@@ -188,7 +190,7 @@ const DiscountSection = () => {
                 </h3>
                 <p className="text-gray-600">{specialOffers[1].description}</p>
                 <div className="flex items-center justify-between mt-4">
-                  <span className="text-gray-800 font-semibold">{specialOffers[1].oldPrice}</span>
+                  <button className="bg-blue-500 text-white py-2 px-4">Add To Cart</button>
                   <span className="text-green-500 font-semibold">{specialOffers[1].newPrice}</span>
                 </div>
               </div>
@@ -202,6 +204,7 @@ const DiscountSection = () => {
                   className="w-full h-48 object-cover rounded min-h-[600px]"
                   width={600}
                   height={600}
+                  sizes="(max-width: 640px) 100vw, (max-width: 750px) 50vw, 33.3vw"
                 />
                 <span className="absolute top-0 right-0 bg-red-500 text-white p-2 rounded-tr">
                   {specialOffers[2].discount}
@@ -213,11 +216,16 @@ const DiscountSection = () => {
                 </h3>
                 <p className="text-gray-600">{specialOffers[2].description}</p>
                 <div className="flex items-center justify-between mt-4">
-                  <span className="text-gray-800 font-semibold">{specialOffers[2].oldPrice}</span>
-                  <span className="text-green-500 font-semibold">{specialOffers[2].newPrice}</span>
+                  <span className="text-gray-800 font-semibold">
+                    <button className="bg-blue-500 text-white py-2 px-4">Add To Cart</button>
+                  </span>
+                  <span className="text-green-500 font-semibold">
+                    {specialOffers[2].newPrice}
+                  </span>
                 </div>
               </div>
             </div>
+
 
             <div className="bg-white p-4 rounded shadow-md">
               <div className="relative">
@@ -227,6 +235,7 @@ const DiscountSection = () => {
                   className="w-full h-48 object-cover rounded min-h-[600px]"
                   width={600}
                   height={600}
+                  sizes="(max-width: 640px) 100vw, (max-width: 750px) 50vw, 33.3vw"
                 />
                 <span className="absolute top-0 right-0 bg-red-500 text-white p-2 rounded-tr">
                   {specialOffers[3].discount}
@@ -238,7 +247,7 @@ const DiscountSection = () => {
                 </h3>
                 <p className="text-gray-600">{specialOffers[3].description}</p>
                 <div className="flex items-center justify-between mt-4">
-                  <span className="text-gray-800 font-semibold">{specialOffers[3].oldPrice}</span>
+                  <button className="bg-blue-500 text-white py-2 px-4">Add To Cart</button>
                   <span className="text-green-500 font-semibold">{specialOffers[3].newPrice}</span>
                 </div>
               </div>
@@ -252,6 +261,7 @@ const DiscountSection = () => {
                   className="w-full h-48 object-cover rounded min-h-[600px]"
                   width={600}
                   height={600}
+                  sizes="(max-width: 640px) 100vw, (max-width: 750px) 50vw, 33.3vw"
                 />
                 <span className="absolute top-0 right-0 bg-red-500 text-white p-2 rounded-tr">
                   {specialOffers[4].discount}
@@ -263,7 +273,7 @@ const DiscountSection = () => {
                 </h3>
                 <p className="text-gray-600">{specialOffers[4].description}</p>
                 <div className="flex items-center justify-between mt-4">
-                  <span className="text-gray-800 font-semibold">{specialOffers[4].oldPrice}</span>
+                  <button className="bg-blue-500 text-white py-2 px-4">Add To Cart</button>
                   <span className="text-green-500 font-semibold">{specialOffers[4].newPrice}</span>
                 </div>
               </div>
@@ -277,6 +287,7 @@ const DiscountSection = () => {
                   className="w-full h-48 object-cover rounded min-h-[600px]"
                   width={600}
                   height={600}
+                  sizes="(max-width: 640px) 100vw, (max-width: 750px) 50vw, 33.3vw"
                 />
                 <span className="absolute top-0 right-0 bg-red-500 text-white p-2 rounded-tr">
                   {specialOffers[5].discount}
@@ -288,7 +299,7 @@ const DiscountSection = () => {
                 </h3>
                 <p className="text-gray-600">{specialOffers[5].description}</p>
                 <div className="flex items-center justify-between mt-4">
-                  <span className="text-gray-800 font-semibold">{specialOffers[5].oldPrice}</span>
+                  <button className="bg-blue-500 text-white py-2 px-4">Add To Cart</button>
                   <span className="text-green-500 font-semibold">{specialOffers[5].newPrice}</span>
                 </div>
               </div>
@@ -302,6 +313,7 @@ const DiscountSection = () => {
                   className="w-full h-48 object-cover rounded min-h-[600px]"
                   width={600}
                   height={600}
+                  sizes="(max-width: 640px) 100vw, (max-width: 750px) 50vw, 33.3vw"
                 />
                 <span className="absolute top-0 right-0 bg-red-500 text-white p-2 rounded-tr">
                   {specialOffers[6].discount}
@@ -313,7 +325,7 @@ const DiscountSection = () => {
                 </h3>
                 <p className="text-gray-600">{specialOffers[6].description}</p>
                 <div className="flex items-center justify-between mt-4">
-                  <span className="text-gray-800 font-semibold">{specialOffers[6].oldPrice}</span>
+                  <button className="bg-blue-500 text-white py-2 px-4">Add To Cart</button>
                   <span className="text-green-500 font-semibold">{specialOffers[6].newPrice}</span>
                 </div>
               </div>
@@ -327,6 +339,7 @@ const DiscountSection = () => {
                   className="w-full h-48 object-cover rounded min-h-[600px]"
                   width={600}
                   height={600}
+                  sizes="(max-width: 640px) 100vw, (max-width: 750px) 50vw, 33.3vw"
                 />
                 <span className="absolute top-0 right-0 bg-red-500 text-white p-2 rounded-tr">
                   {specialOffers[7].discount}
@@ -338,7 +351,7 @@ const DiscountSection = () => {
                 </h3>
                 <p className="text-gray-600">{specialOffers[7].description}</p>
                 <div className="flex items-center justify-between mt-4">
-                  <span className="text-gray-800 font-semibold">{specialOffers[7].oldPrice}</span>
+                  <button className="bg-blue-500 text-white py-2 px-4">Add To Cart</button>
                   <span className="text-green-500 font-semibold">{specialOffers[7].newPrice}</span>
                 </div>
               </div>
@@ -352,6 +365,7 @@ const DiscountSection = () => {
                   className="w-full h-48 object-cover rounded min-h-[600px]"
                   width={600}
                   height={600}
+                  sizes="(max-width: 640px) 100vw, (max-width: 750px) 50vw, 33.3vw"
                 />
                 <span className="absolute top-0 right-0 bg-red-500 text-white p-2 rounded-tr">
                   {specialOffers[8].discount}
@@ -363,7 +377,7 @@ const DiscountSection = () => {
                 </h3>
                 <p className="text-gray-600">{specialOffers[8].description}</p>
                 <div className="flex items-center justify-between mt-4">
-                  <span className="text-gray-800 font-semibold">{specialOffers[8].oldPrice}</span>
+                  <button className="bg-blue-500 text-white py-2 px-4">Add To Cart</button>
                   <span className="text-green-500 font-semibold">{specialOffers[8].newPrice}</span>
                 </div>
               </div>
@@ -377,6 +391,7 @@ const DiscountSection = () => {
                   className="w-full h-48 object-cover rounded min-h-[600px]"
                   width={600}
                   height={600}
+                  sizes="(max-width: 640px) 100vw, (max-width: 750px) 50vw, 33.3vw"
                 />
                 <span className="absolute top-0 right-0 bg-red-500 text-white p-2 rounded-tr">
                   {specialOffers[9].discount}
@@ -388,7 +403,7 @@ const DiscountSection = () => {
                 </h3>
                 <p className="text-gray-600">{specialOffers[9].description}</p>
                 <div className="flex items-center justify-between mt-4">
-                  <span className="text-gray-800 font-semibold">{specialOffers[9].oldPrice}</span>
+                  <button className="bg-blue-500 text-white py-2 px-4">Add To Cart</button>
                   <span className="text-green-500 font-semibold">{specialOffers[9].newPrice}</span>
                 </div>
               </div>
@@ -402,6 +417,7 @@ const DiscountSection = () => {
                   className="w-full h-48 object-cover rounded min-h-[600px]"
                   width={600}
                   height={600}
+                  sizes="(max-width: 640px) 100vw, (max-width: 750px) 50vw, 33.3vw"
                 />
                 <span className="absolute top-0 right-0 bg-red-500 text-white p-2 rounded-tr">
                   {specialOffers[10].discount}
@@ -413,7 +429,7 @@ const DiscountSection = () => {
                 </h3>
                 <p className="text-gray-600">{specialOffers[10].description}</p>
                 <div className="flex items-center justify-between mt-4">
-                  <span className="text-gray-800 font-semibold">{specialOffers[10].oldPrice}</span>
+                  <button className="bg-blue-500 text-white py-2 px-4">Add To Cart</button>
                   <span className="text-green-500 font-semibold">{specialOffers[10].newPrice}</span>
                 </div>
               </div>
@@ -427,6 +443,7 @@ const DiscountSection = () => {
                   className="w-full h-48 object-cover rounded min-h-[600px]"
                   width={600}
                   height={600}
+                  sizes="(max-width: 640px) 100vw, (max-width: 750px) 50vw, 33.3vw"
                 />
                 <span className="absolute top-0 right-0 bg-red-500 text-white p-2 rounded-tr">
                   {specialOffers[11].discount}
@@ -438,7 +455,7 @@ const DiscountSection = () => {
                 </h3>
                 <p className="text-gray-600">{specialOffers[11].description}</p>
                 <div className="flex items-center justify-between mt-4">
-                  <span className="text-gray-800 font-semibold">{specialOffers[11].oldPrice}</span>
+                  <button className="bg-blue-500 text-white py-2 px-4">Add To Cart</button>
                   <span className="text-green-500 font-semibold">{specialOffers[11].newPrice}</span>
                 </div>
               </div>
@@ -452,6 +469,7 @@ const DiscountSection = () => {
                   className="w-full h-48 object-cover rounded min-h-[600px]"
                   width={600}
                   height={600}
+                  sizes="(max-width: 640px) 100vw, (max-width: 750px) 50vw, 33.3vw"
                 />
                 <span className="absolute top-0 right-0 bg-red-500 text-white p-2 rounded-tr">
                   {specialOffers[12].discount}
@@ -463,7 +481,7 @@ const DiscountSection = () => {
                 </h3>
                 <p className="text-gray-600">{specialOffers[12].description}</p>
                 <div className="flex items-center justify-between mt-4">
-                  <span className="text-gray-800 font-semibold">{specialOffers[12].oldPrice}</span>
+                  <button className="bg-blue-500 text-white py-2 px-4">Add To Cart</button>
                   <span className="text-green-500 font-semibold">{specialOffers[12].newPrice}</span>
                 </div>
               </div>
@@ -477,6 +495,7 @@ const DiscountSection = () => {
                   className="w-full h-48 object-cover rounded min-h-[600px]"
                   width={600}
                   height={600}
+                  sizes="(max-width: 640px) 100vw, (max-width: 750px) 50vw, 33.3vw"
                 />
                 <span className="absolute top-0 right-0 bg-red-500 text-white p-2 rounded-tr">
                   {specialOffers[13].discount}
@@ -488,7 +507,7 @@ const DiscountSection = () => {
                 </h3>
                 <p className="text-gray-600">{specialOffers[13].description}</p>
                 <div className="flex items-center justify-between mt-4">
-                  <span className="text-gray-800 font-semibold">{specialOffers[13].oldPrice}</span>
+                  <button className="bg-blue-500 text-white py-2 px-4">Add To Cart</button>
                   <span className="text-green-500 font-semibold">{specialOffers[13].newPrice}</span>
                 </div>
               </div>
@@ -502,6 +521,7 @@ const DiscountSection = () => {
                   className="w-full h-48 object-cover rounded min-h-[600px]"
                   width={600}
                   height={600}
+                  sizes="(max-width: 640px) 100vw, (max-width: 750px) 50vw, 33.3vw"
                 />
                 <span className="absolute top-0 right-0 bg-red-500 text-white p-2 rounded-tr">
                   {specialOffers[14].discount}
@@ -513,7 +533,7 @@ const DiscountSection = () => {
                 </h3>
                 <p className="text-gray-600">{specialOffers[14].description}</p>
                 <div className="flex items-center justify-between mt-4">
-                  <span className="text-gray-800 font-semibold">{specialOffers[14].oldPrice}</span>
+                  <button className="bg-blue-500 text-white py-2 px-4">Add To Cart</button>
                   <span className="text-green-500 font-semibold">{specialOffers[14].newPrice}</span>
                 </div>
               </div>
@@ -527,6 +547,7 @@ const DiscountSection = () => {
                   className="w-full h-48 object-cover rounded min-h-[600px]"
                   width={600}
                   height={600}
+                  sizes="(max-width: 640px) 100vw, (max-width: 750px) 50vw, 33.3vw"
                 />
                 <span className="absolute top-0 right-0 bg-red-500 text-white p-2 rounded-tr">
                   {specialOffers[15].discount}
@@ -538,12 +559,11 @@ const DiscountSection = () => {
                 </h3>
                 <p className="text-gray-600">{specialOffers[15].description}</p>
                 <div className="flex items-center justify-between mt-4">
-                  <span className="text-gray-800 font-semibold">{specialOffers[15].oldPrice}</span>
+                  <button className="bg-blue-500 text-white py-2 px-4">Add To Cart</button>
                   <span className="text-green-500 font-semibold">{specialOffers[15].newPrice}</span>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>

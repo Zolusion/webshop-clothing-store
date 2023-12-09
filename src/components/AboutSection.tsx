@@ -1,24 +1,66 @@
-import Link from 'next/link'
-import React from 'react'
+"use client";
+import Link from 'next/link';
+import React, { useState } from 'react';
 
 const AboutSection = () => {
+    const [isMobileMenuVisible, setMobileMenuVisibility] = useState(false);
+
+    const toggleMobileMenu = () => {
+        setMobileMenuVisibility(!isMobileMenuVisible);
+    };
+
     return (
         <div className='bg-white'>
-            <nav className="bg-gray-800 p-4">
-                <div className="container mx-auto max-w-7xl flex justify-between px-4">
+            {/* Laptop Navbar */}
+            <nav className="bg-gray-800 p-4 hidden lg:block">
+                <div className="container mx-auto max-w-7xl flex justify-between items-center">
                     <div className="text-white font-bold text-xl">
                         SolmazFashion
                     </div>
-                    <div className="space-x-10">
+                    <div className="flex space-x-10">
                         <Link href="/" className="text-white hover:text-gray-300">Home</Link>
                         <Link href="/about" className="text-white hover:text-gray-300">About</Link>
                         <Link href="/contact" className="text-white hover:text-gray-300">Contact</Link>
                         <Link href="/ambassadors" className="text-white hover:text-gray-300">Ambassadors</Link>
-                        <Link href="/new" className="text-white hover:text-gray-300">New</Link>
                     </div>
                 </div>
             </nav>
 
+            {/* Mobile Navbar */}
+            <div className="lg:hidden">
+                <nav className="bg-gray-800 p-4">
+                    <div className="container mx-auto flex justify-between items-center">
+                        <div className="text-white font-bold text-xl">
+                            SolmazFashion
+                        </div>
+                        <button className="text-white hover:text-gray-300 focus:outline-none" onClick={toggleMobileMenu}>
+                            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </nav>
+
+                {/* Mobile Sidebar */}
+                <div className={`fixed inset-0 z-50 transition-transform transform ${isMobileMenuVisible ? 'translate-x-0' : '-translate-x-full'}`}>
+                    <div className="bg-gray-800 text-white p-4">
+                        <button className="text-white hover:text-gray-300 focus:outline-none" onClick={toggleMobileMenu}>
+                            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                        <div>
+                            <Link href="/" className="block py-2 px-4 text-white hover:bg-gray-600">Home</Link>
+                            <Link href="/about" className="block py-2 px-4 text-white hover:bg-gray-600">About</Link>
+                            <Link href="/contact" className="block py-2 px-4 text-white hover:bg-gray-600">Contact</Link>
+                            <Link href="/ambassadors" className="block py-2 px-4 text-white hover:bg-gray-600">Ambassadors</Link>
+                            <Link href="/new" className="block py-2 px-4 text-white hover:bg-gray-600">New</Link>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* Main Content */}
             <div className="relative isolate px-6 lg:px-8 min-h-screen">
                 <video className="absolute inset-0 object-cover w-full h-4/5 pointer-events-none mix-blend-multiply bg-opacity-50" src="hijabfashion.mp4" autoPlay muted loop style={{ clipPath: 'polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%)' }}></video>
                 <div className="absolute inset-x-0 z-10 transform-gpu overflow-hidden h-full flex flex-col justify-center" aria-hidden="true">
@@ -32,8 +74,7 @@ const AboutSection = () => {
                 </div>
             </div>
         </div>
+    );
+};
 
-    )
-}
-
-export default AboutSection
+export default AboutSection;

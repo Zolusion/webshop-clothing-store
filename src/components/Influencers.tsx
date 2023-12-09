@@ -5,7 +5,7 @@ const Influencers = () => {
     return (
         <div className="bg-white">
             <div className="max-w-7xl mx-auto grid grid-cols-1 gap-8 py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-                <div className="lg:col-span-6">
+                <div className="lg:col-span-6 sm:w-full w-[450px]">
                     <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
                         Want to become the face of SolmazFashion?
                     </h2>

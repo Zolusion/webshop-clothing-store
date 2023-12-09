@@ -4,7 +4,7 @@ import React from "react";
 const Contact = () => {
   return (
     <section className="container mx-auto my-8 max-w-7xl">
-      <div className="grid grid-cols-2 gap-8 container mx-auto px-6 py-12">
+      <div className="grid sm:grid-cols-2 grid-cols-1 gap-8 container mx-auto px-6 py-12">
         <div>
           <h1 className="text-3xl font-bold mb-4">Contact Us</h1>
           <p className="text-white mb-4">
@@ -70,10 +70,11 @@ const Contact = () => {
             layout="fill"
             objectFit="cover"
             objectPosition="center"
-
+            sizes="(max-width: 640px) 100vw, (max-width: 750px) 50vw, 33.3vw"
           />
+
           <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
-            <div className="text-white text-3xl font-bold px-4 ">
+            <div className="text-white text-3xl font-bold px-4 text-center">
               Our customers are our top priority
               if you have any advices or questions
               feel free to contact us

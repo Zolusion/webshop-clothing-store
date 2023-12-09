@@ -6,7 +6,7 @@ const AmbassadorInfo = () => {
         <div className='bg-white'>
             <div className="bg-gray-900 text-white">
                 <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-                    <h2 className="text-4xl font-extrabold tracking-tight mb-8">
+                    <h2 className="text-4xl font-extrabold tracking-tight mb-8 text-[30px]">
                         Become an Ambassador
                     </h2>
                     <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
