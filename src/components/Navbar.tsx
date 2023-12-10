@@ -78,7 +78,7 @@ const Navbar = () => {
             <div className={`md:hidden fixed inset-0 z-50 transition-transform transform ${isMobileMenuVisible ? 'translate-x-0' : '-translate-x-full'}`}>
                 <div className="bg-gray-800 text-white p-4">
                     <button className="text-white hover:text-gray-300 focus:outline-none" onClick={toggleMobileMenu}>
-                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
                         </svg>
                     </button>
@@ -87,6 +87,10 @@ const Navbar = () => {
                         <Link href="/about" className="block py-2 px-4 text-white hover:bg-gray-600">About</Link>
                         <Link href="/contact" className="block py-2 px-4 text-white hover:bg-gray-600">Contact</Link>
                         <Link href="/ambassadors" className="block py-2 px-4 text-white hover:bg-gray-600">Ambassadors</Link>
+                        <Link href="/faq" className="block py-2 px-4 text-white hover:bg-gray-600">FAQ</Link>
+                        <hr className="my-2" />
+                        <Link href="/login" className="block py-2 px-4 text-white hover:bg-gray-600">Login</Link>
+                        <Link href="/register" className="block py-2 px-4 text-white hover:bg-gray-600">Register</Link>
                     </div>
                 </div>
             </div>

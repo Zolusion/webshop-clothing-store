@@ -1,12 +1,12 @@
 import React from 'react'
 // import metadata 
-import type { Metadata } from "next";
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import Image from 'next/image';
 import AmbassadorInfo from '@/components/AmbassadorInfo';
 import Posts from '@/components/Posts';
 import Influencers from '@/components/Influencers';
+import type { Metadata } from "next";
 
 const title = "Ambassadors";
 

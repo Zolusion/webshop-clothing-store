@@ -18,8 +18,8 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <div>
-      <HeroSection />
       <Navbar />
+      <HeroSection />
       <ProductGrid />
       <Contact />
       <DiscountSection />

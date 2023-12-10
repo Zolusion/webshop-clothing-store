@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <section className="container mx-auto my-8 max-w-7xl">
       <div className="grid sm:grid-cols-2 grid-cols-1 gap-8 container mx-auto px-6 py-12">
-        <div>
+        <div className="flex flex-col justify-center">
           <h1 className="text-3xl font-bold mb-4">Contact Us</h1>
           <p className="text-white mb-4">
             We love to hear from you. Please fill out the form below and we get
