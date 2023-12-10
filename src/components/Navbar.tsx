@@ -1,7 +1,6 @@
 "use client";
 import Link from 'next/link';
 import React, { useState } from 'react';
-import CartSidebar from "@/app/cartsidebar/page";
 import Image from "next/image";
 
 const Navbar = () => {
@@ -95,7 +94,7 @@ const Navbar = () => {
                 </div>
             </div>
 
-            {isCartOpen && (
+            {/* {isCartOpen && (
                 <CartSidebar
                     isOpen={isCartOpen}
                     onClose={() => setCartOpen(false)}
@@ -103,7 +102,7 @@ const Navbar = () => {
                         console.log('Added to cart');
                     }}
                 />
-            )}
+            )} */}
         </nav>
     );
 };
