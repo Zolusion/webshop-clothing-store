@@ -34,8 +34,8 @@ const Influencers = () => {
                     <div className="col-span-2 sm:col-span-1">
                         <div className="relative">
                             <Image
-                                className="object-cover rounded-md"
-                                src="https://plus.unsplash.com/premium_photo-1681489862645-23f54588e54a?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8aGlqYWIlMjBmYXNoaW9ufGVufDB8fDB8fHww"
+                                className="object-cover w-full rounded-md"
+                                src="https://plus.unsplash.com/premium_photo-1683134271694-61df670ca1be?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjV8fGhpamFiJTIwZmFzaGlvbnxlbnwwfHwwfHx8MA%3D%3D"
                                 alt="Fashion Image 2"
                                 width={600}
                                 height={600}

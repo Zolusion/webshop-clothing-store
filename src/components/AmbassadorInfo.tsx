@@ -16,7 +16,7 @@ const AmbassadorInfo = () => {
                                 src="https://plus.unsplash.com/premium_photo-1680012591126-13bd72f465b3?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHdvbWVufGVufDB8fDB8fHww"
                                 alt="Become an Ambassador"
                                 width={600}
-                                height={600}
+                                height={300}
                             />
                             <div className="p-6">
                                 <h3 className="text-xl font-semibold mb-2">Join Our Team</h3>
@@ -38,7 +38,7 @@ const AmbassadorInfo = () => {
                                 src="https://images.unsplash.com/photo-1664575599618-8f6bd76fc670?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                                 alt="Become an Ambassador"
                                 width={600}
-                                height={600}
+                                height={300}
                             />
                             <div className="p-6">
                                 <h3 className="text-xl font-semibold mb-2">How to become an Ambassador</h3>
@@ -60,7 +60,7 @@ const AmbassadorInfo = () => {
                                 src="https://images.unsplash.com/photo-1664575599730-0814817939de?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D"
                                 alt="Become an Ambassador"
                                 width={600}
-                                height={600}
+                                height={300}
                             />
                             <div className="p-6">
                                 <h3 className="text-xl font-semibold mb-2">What to do as an Ambassador</h3>

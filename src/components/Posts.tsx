@@ -26,8 +26,7 @@ const Posts = ({ posts }: { posts?: Post[] }) => {
                                     src={post.imageUrl}
                                     alt={post.title}
                                     className="h-full w-full object-cover object-center"
-                                    width={600}
-                                    height={600}
+                                    layout="fill" // Use layout="fill" to fill the container
                                 />
                             </div>
                             <h3 className="mt-6 text-sm text-gray-500">
