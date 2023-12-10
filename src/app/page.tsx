@@ -1,6 +1,6 @@
 import Footer from '@/components/Footer'
 import HeroSection from '@/components/HeroSection'
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import Navbar from '@/components/Navbar';
 import ProductGrid from '@/components/ProductGrid';
 import Contact from '@/components/Contact';

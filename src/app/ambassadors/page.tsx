@@ -2,7 +2,7 @@ import React from 'react'
 // import metadata 
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import AmbassadorInfo from '@/components/AmbassadorInfo';
 import Posts from '@/components/Posts';
 import Influencers from '@/components/Influencers';
