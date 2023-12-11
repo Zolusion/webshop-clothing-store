@@ -28,7 +28,7 @@ const ContactForm = () => {
                     alt="Contact" 
                     width={600}
                     height={600}
-                    style={{ borderRadius: '8px 8px 0 0' }}
+                    style={{ borderRadius: '8px 8px 8px 8px' }}
                 />
                 <form onSubmit={handleSubmit} style={{ width: '100%', padding: '1rem', backgroundColor: '#fff', borderRadius: '0 0 8px 8px', display: 'flex', flexDirection: 'column', gap: '1rem', justifyContent: 'center' }}>
                     <h1 style={{ marginBottom: '1rem', textAlign: 'center', color: 'black' }}>Contact Us</h1>
