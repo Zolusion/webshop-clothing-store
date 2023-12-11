@@ -164,10 +164,10 @@ const DiscountSection = () => {
                   </h3>
                   <p className="text-gray-600 2xl:text-lg">{offer.description}</p>
                   <div className="flex items-center justify-between mt-4">
-                    <button name="add-to-cart" className="bg-blue-500 text-white py-2 px-4 2xl:text-lg">
+                    <button name="add-to-cart" className="bg-black text-white py-2 px-4 2xl:text-lg">
                       Add To Cart
                     </button>
-                    <span className="text-green-500 font-semibold 2xl:text-2xl">
+                    <span className="text-black font-semibold 2xl:text-2xl">
                       {offer.newPrice}
                     </span>
                   </div>
