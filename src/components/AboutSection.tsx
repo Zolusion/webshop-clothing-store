@@ -13,15 +13,15 @@ const AboutSection = () => {
         <div className='bg-white'>
             {/* Laptop Navbar */}
             <nav className="bg-gray-800 p-4 hidden lg:block">
-                <div className="container mx-auto max-w-7xl flex justify-between items-center">
-                    <div className="text-white font-bold text-xl">
+                <div className="container mx-auto max-w-7xl 2xl:max-w-[2200px] flex justify-between items-center">
+                    <div className="text-white font-bold text-xl 2xl:text-[21px]">
                         SolmazFashion
                     </div>
                     <div className="flex space-x-10">
-                        <Link href="/" className="text-white hover:text-gray-300">Home</Link>
-                        <Link href="/about" className="text-white hover:text-gray-300">About</Link>
-                        <Link href="/contact" className="text-white hover:text-gray-300">Contact</Link>
-                        <Link href="/ambassadors" className="text-white hover:text-gray-300">Ambassadors</Link>
+                        <Link href="/" className="2xl:text-[21px] text-white hover:text-gray-300">Home</Link>
+                        <Link href="/about" className="2xl:text-[21px] text-white hover:text-gray-300">About</Link>
+                        <Link href="/contact" className="2xl:text-[21px] text-white hover:text-gray-300">Contact</Link>
+                        <Link href="/ambassadors" className="2xl:text-[21px] text-white hover:text-gray-300">Ambassadors</Link>
                     </div>
                 </div>
             </nav>
@@ -64,9 +64,9 @@ const AboutSection = () => {
             <div className="relative isolate px-6 lg:px-8 min-h-screen">
                 <video className="absolute inset-0 object-cover w-full h-4/5 pointer-events-none mix-blend-multiply bg-opacity-50" src="hijabfashion.mp4" autoPlay muted loop style={{ clipPath: 'polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%)' }}></video>
                 <div className="absolute inset-x-0 z-10 transform-gpu overflow-hidden h-full flex flex-col justify-center" aria-hidden="true">
-                    <div className="mx-auto max-w-3xl text-center lg:max-w-4xl">
+                    <div className="mx-auto max-w-3xl text-center lg:max-w-4xl 2xl:max-w-[1200px]">
                         <div className="text-center p-6">
-                            <h1 className="font-bold tracking-tight text-white shadow-sm text-5xl">
+                            <h1 className="font-bold tracking-tight text-white shadow-sm text-5xl 2xl:text-7xl">
                                 &quot;We believe that <span className='text-indigo-500'>Fashion</span> should be accessible to everyone.&quot;
                             </h1>
                         </div>
