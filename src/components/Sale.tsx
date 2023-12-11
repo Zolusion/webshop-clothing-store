@@ -137,8 +137,8 @@ const specialOffers = [
 const DiscountSection = () => {
   return (
     <section className="bg-gray-100 py-12 px-6">
-      <div className="container mx-auto max-w-7xl">
-        <h2 className="text-3xl font-semibold text-black text-center mb-8">
+      <div className="container mx-auto max-w-7xl lg:max-w-[2200px]">
+        <h2 className="text-3xl font-bold text-black mb-8 2xl:text-5xl">
           Special Offers
         </h2>
         <div className="flex space-x-4 md:p-0 md:overflow-hidden">
@@ -154,20 +154,20 @@ const DiscountSection = () => {
                     width={500}
                     height={700}
                   />
-                  <span className="absolute top-0 right-0 bg-red-500 text-white p-2 rounded-tr">
+                  <span className="absolute top-0 right-0 bg-red-500 text-white p-2 rounded-tr 2xl:text-2xl">
                     {offer.discount}
                   </span>
                 </div>
                 <div className="mt-4">
-                  <h3 className="text-xl font-semibold text-black">
+                  <h3 className="text-xl font-semibold text-black 2xl:text-2xl">
                     {offer.name}
                   </h3>
-                  <p className="text-gray-600">{offer.description}</p>
+                  <p className="text-gray-600 2xl:text-lg">{offer.description}</p>
                   <div className="flex items-center justify-between mt-4">
-                    <button name="add-to-cart" className="bg-blue-500 text-white py-2 px-4">
+                    <button name="add-to-cart" className="bg-blue-500 text-white py-2 px-4 2xl:text-lg">
                       Add To Cart
                     </button>
-                    <span className="text-green-500 font-semibold">
+                    <span className="text-green-500 font-semibold 2xl:text-2xl">
                       {offer.newPrice}
                     </span>
                   </div>

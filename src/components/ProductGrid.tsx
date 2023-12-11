@@ -48,8 +48,8 @@ const products = [
 
 const ProductGrid = () => {
     return (
-        <section className="container mx-auto my-8 max-w-7xl">
-            <h1 className="sm:text-3xl text-[26px] font-bold mb-4 px-6">{title}</h1>
+        <section className="container mx-auto my-8 max-w-7xl lg:max-w-[2200px]">
+            <h1 className="2xl:text-5xl text-[26px] font-bold mb-4 px-6">{title}</h1>
             <div className="grid grid-cols-12 gap-4 px-6">
                 {products.map((product, index) => (
                     <div key={index} className="col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3">
@@ -63,10 +63,10 @@ const ProductGrid = () => {
                                     height={700}
                                 />
                             </a>
-                            <h2 className="text-lg text-black mt-2 font-bold">{product.productName}</h2>
-                            <p className="text-gray-700">{product.description}</p>
-                            <p className="text-gray-900 font-bold mt-2">{product.price}</p>
-                            <button name="button" className="bg-blue-500 text-white py-2 px-4 mt-4">
+                            <h2 className="text-lg 2xl:text-2xl text-black mt-2 font-bold">{product.productName}</h2>
+                            <p className="text-gray-700 2xl:text-lg">{product.description}</p>
+                            <p className="text-gray-900 font-bold mt-2 2xl:text-2xl">{product.price}</p>
+                            <button name="button" className="bg-blue-500 text-white py-2 px-4 mt-4 2xl:text-lg">
                                 {product.button.text}
                             </button>
                         </div>
