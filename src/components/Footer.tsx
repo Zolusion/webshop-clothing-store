@@ -1,6 +1,36 @@
-import Image from "next/legacy/image"
-import Link from 'next/link'
-import React from 'react'
+import Image from "next/legacy/image";
+import Link from 'next/link';
+import React from 'react';
+
+const footerSections = [
+  {
+    title: 'Company',
+    links: [
+      { href: "/", text: "Home" },
+      { href: "/about", text: "About" },
+      { href: "/contact", text: "Contact" },
+      { href: "/ambassadors", text: "Ambassadors" },
+    ],
+  },
+  {
+    title: 'Help center',
+    links: [
+      { href: "/faq", text: "FAQ" },
+      { href: "/help", text: "Help" },
+      { href: "/contact", text: "Support" },
+      { href: "/contact", text: "Privacy" },
+    ],
+  },
+  {
+    title: 'Service',
+    links: [
+      { href: "/terms", text: "Shipping info" },
+      { href: "/terms", text: "Refunds" },
+      { href: "/privacy", text: "Track & Trace" },
+      { href: "/cookies", text: "Cookies" },
+    ],
+  },
+];
 
 const Footer = () => {
   return (
@@ -21,38 +51,25 @@ const Footer = () => {
               loading="lazy"
             />
           </a>
+        </div>
 
-        </div>
-        <div>
-          <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white 2xl:text-xl">Company</h2>
-          <ul className="text-gray-500 dark:text-gray-400 font-medium">
-            <Link href="/"><li className="mb-4 lg:mb-2"><a href="#" className="hover:underline 2xl:text-[21px]">Home</a></li></Link>
-            <Link href="/about"><li className="mb-4 lg:mb-2"><a href="#" className="hover:underline 2xl:text-[21px]">About</a></li></Link>
-            <Link href="/contact"><li className="mb-4 lg:mb-2"><a href="#" className="hover:underline 2xl:text-[21px]">Contact</a></li></Link>
-            <Link href="/ambassadors"><li className="mb-4 lg:mb-2"><a href="#" className="hover:underline 2xl:text-[21px]">Ambassadors</a></li></Link>
-          </ul>
-        </div>
-        <div>
-          <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white 2xl:text-xl">Help center</h2>
-          <ul className="text-gray-500 dark:text-gray-400 font-medium">
-            <Link href="/faq"><li className="mb-4 lg:mb-2"><a href="#" className="hover:underline 2xl:text-[21px]">FAQ</a></li></Link>
-            <Link href="/help"><li className="mb-4 lg:mb-2"><a href="#" className="hover:underline 2xl:text-[21px]">Help</a></li></Link>
-            <Link href="/contact"><li className="mb-4 lg:mb-2"><a href="#" className="hover:underline 2xl:text-[21px]">Support</a></li></Link>
-            <Link href="/contact"><li className="mb-4 lg:mb-2"><a href="#" className="hover:underline 2xl:text-[21px]">Privacy</a></li></Link>
-          </ul>
-        </div>
-        <div>
-          <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white 2xl:text-xl">Service</h2>
-          <ul className="text-gray-500 dark:text-gray-400 font-medium">
-            <Link href="/terms"><li className="mb-4 lg:mb-2"><a href="#" className="hover:underline 2xl:text-[21px]">Shipping info</a></li></Link>
-            <Link href="/terms"><li className="mb-4 lg:mb-2"><a href="#" className="hover:underline 2xl:text-[21px]">Refunds</a></li></Link>
-            <Link href="/privacy"><li className="mb-4 lg:mb-2"><a href="#" className="hover:underline 2xl:text-[21px]">Track & Trace</a></li></Link>
-            <Link href="/cookies"><li className="mb-4 lg:mb-2"><a href="#" className="hover:underline 2xl:text-[21px]">Cookies</a></li></Link>
-          </ul>
-        </div>
+        {footerSections.map((section) => (
+          <div key={section.title}>
+            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white 2xl:text-xl">{section.title}</h2>
+            <ul className="text-gray-500 dark:text-gray-400 font-medium">
+              {section.links.map((link, index) => (
+                <Link href={link.href} key={index}>
+                  <li className="mb-4 lg:mb-2">
+                    <a href="#" className="hover:underline 2xl:text-[21px]">{link.text}</a>
+                  </li>
+                </Link>
+              ))}
+            </ul>
+          </div>
+        ))}
       </div>
     </footer>
-  )
+  );
 }
 
-export default Footer
+export default Footer;
