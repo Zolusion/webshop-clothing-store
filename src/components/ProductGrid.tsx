@@ -5,7 +5,7 @@ const title = "Our most popular products"
 
 const products = [
     {
-        imageUrl: "/image1.jpg",
+        imageUrl: "/solmaznur-images/solmaznur1.jpg",
         productName: "Product 1",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         price: "€69.99",
@@ -15,7 +15,7 @@ const products = [
         }
     },
     {
-        imageUrl: "/image2.jpg",
+        imageUrl: "/solmaznur-images/solmaznur2.jpg",
         productName: "Product 2",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         price: "€99.99",
@@ -25,7 +25,7 @@ const products = [
         }
     },
     {
-        imageUrl: "/image3.jpg",
+        imageUrl: "/solmaznur-images/solmaznur3.jpg",
         productName: "Product 3",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         price: "€49.99",
@@ -35,7 +35,7 @@ const products = [
         }
     },
     {
-        imageUrl: "/image4.jpg",
+        imageUrl: "/solmaznur-images/solmaznur4.jpg",
         productName: "Product 4",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         price: "€79.99",

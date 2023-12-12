@@ -5,7 +5,7 @@ import React from "react";
 
 const specialOffers = [
   {
-    imageUrl: "/image6.jpg",
+    imageUrl: "/solmaznur-images/solmaznur6.jpg",
     name: "Product Name",
     description: "Product description goes here.",
     discount: "20%",
@@ -13,7 +13,7 @@ const specialOffers = [
     newPrice: "€39.99",
   },
   {
-    imageUrl: "/image7.jpg",
+    imageUrl: "/solmaznur-images/solmaznur7.jpg",
     name: "Product Name",
     description: "Product description goes here.",
     discount: "31%",
@@ -21,7 +21,7 @@ const specialOffers = [
     newPrice: "€47.99",
   },
   {
-    imageUrl: "/image22.jpg",
+    imageUrl: "/solmaznur-images/solmaznur22.jpg",
     name: "Product Name",
     description: "Product description goes here.",
     discount: "36%",
@@ -29,7 +29,7 @@ const specialOffers = [
     newPrice: "€18.99",
   },
   {
-    imageUrl: "/image8.jpg",
+    imageUrl: "/solmaznur-images/solmaznur8.jpg",
     name: "Product Name",
     description: "Product description goes here.",
     discount: "25%",
@@ -37,7 +37,7 @@ const specialOffers = [
     newPrice: "€29.99",
   },
   {
-    imageUrl: "/image9.jpg",
+    imageUrl: "/solmaznur-images/solmaznur9.jpg",
     name: "Product Name",
     description: "Product description goes here.",
     discount: "28%",
@@ -45,7 +45,7 @@ const specialOffers = [
     newPrice: "€12.99",
   },
   {
-    imageUrl: "/image10.jpg",
+    imageUrl: "/solmaznur-images/solmaznur10.jpg",
     name: "Product Name",
     description: "Product description goes here.",
     discount: "40%",
@@ -53,7 +53,7 @@ const specialOffers = [
     newPrice: "€35.99",
   },
   {
-    imageUrl: "/image11.jpg",
+    imageUrl: "/solmaznur-images/solmaznur11.jpg",
     name: "Product Name",
     description: "Product description goes here.",
     discount: "25%",
@@ -61,7 +61,7 @@ const specialOffers = [
     newPrice: "€29.99",
   },
   {
-    imageUrl: "/image12.jpg",
+    imageUrl: "/solmaznur-images/solmaznur12.jpg",
     name: "Product Name",
     description: "Product description goes here.",
     discount: "17%",
@@ -69,7 +69,7 @@ const specialOffers = [
     newPrice: "€99.99",
   },
   {
-    imageUrl: "/image13.jpg",
+    imageUrl: "/solmaznur-images/solmaznur13.jpg",
     name: "Product Name",
     description: "Product description goes here.",
     discount: "36%",
@@ -77,7 +77,7 @@ const specialOffers = [
     newPrice: "€17.99",
   },
   {
-    imageUrl: "/image14.jpg",
+    imageUrl: "/solmaznur-images/solmaznur14.jpg",
     name: "Product Name",
     description: "Product description goes here.",
     discount: "22%",
@@ -85,7 +85,7 @@ const specialOffers = [
     newPrice: "€69.99",
   },
   {
-    imageUrl: "/image15.jpg",
+    imageUrl: "/solmaznur-images/solmaznur15.jpg",
     name: "Product Name",
     description: "Product description goes here.",
     discount: "17%",
@@ -93,7 +93,7 @@ const specialOffers = [
     newPrice: "€39.99",
   },
   {
-    imageUrl: "/image16.jpg",
+    imageUrl: "/solmaznur-images/solmaznur16.jpg",
     name: "Product Name",
     description: "Product description goes here.",
     discount: "47%",
@@ -101,7 +101,7 @@ const specialOffers = [
     newPrice: "€14.99",
   },
   {
-    imageUrl: "/image17.jpg",
+    imageUrl: "/solmaznur-images/solmaznur17.jpg",
     name: "Product Name",
     description: "Product description goes here.",
     discount: "50%",
@@ -109,7 +109,7 @@ const specialOffers = [
     newPrice: "€9.99",
   },
   {
-    imageUrl: "/image18.jpg",
+    imageUrl: "/solmaznur-images/solmaznur18.jpg",
     name: "Product Name",
     description: "Product description goes here.",
     discount: "23%",
@@ -117,7 +117,7 @@ const specialOffers = [
     newPrice: "€19.99",
   },
   {
-    imageUrl: "/image19.jpg",
+    imageUrl: "/solmaznur-images/solmaznur19.jpg",
     name: "Product Name",
     description: "Product description goes here.",
     discount: "22%",
@@ -125,7 +125,7 @@ const specialOffers = [
     newPrice: "€24.95",
   },
   {
-    imageUrl: "/image20.jpg",
+    imageUrl: "/solmaznur-images/solmaznur20.jpg",
     name: "Product Name",
     description: "Product description goes here.",
     discount: "28%",

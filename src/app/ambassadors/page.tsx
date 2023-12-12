@@ -26,7 +26,7 @@ const page = () => {
                     id: 4,
                     imageUrl: "/fashiontrends.jpeg",
                     title: "Fashion Trends",
-                    href: "#",
+                    href: "/fashiontrends",
                     description: "The fashion industry is one of the most exciting and exciting industries. We are committed to making fashion accessible to everyone.",
                 },
                 {
