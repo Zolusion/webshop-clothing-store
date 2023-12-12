@@ -5,7 +5,7 @@ const ambassadorData = [
     {
         id: 1,
         title: 'Join Our Team',
-        imageSrc: '/women-on-laptop.jpeg',
+        imageSrc: '/ambassadors-image/women-on-laptop.jpeg',
         description: 'Are you passionate about our mission? Become an ambassador and make a difference in your community.',
         buttonText: 'Apply Now',
         href: '/applyform',
@@ -13,7 +13,7 @@ const ambassadorData = [
     {
         id: 2,
         title: 'Our Achievements',
-        imageSrc: '/hijab-model.jpeg',
+        imageSrc: '/ambassadors-image/hijab-model.jpeg',
         description: 'We have achieved so many milestones in our journey. Here are some of our most important ones.',
         buttonText: 'More info',
         href: '/achievements',
@@ -21,7 +21,7 @@ const ambassadorData = [
     {
         id: 3,
         title: 'Our Goal: Worldwide Outreach',
-        imageSrc: '/hijab-model-purple.jpeg',
+        imageSrc: '/ambassadors-image/hijab-model-purple.jpeg',
         description: 'Connecting Globally, Impacting Locally. We are on a mission to make fashion accessible to all.',
         buttonText: 'More info',
         href: '/worldwide-outreach',

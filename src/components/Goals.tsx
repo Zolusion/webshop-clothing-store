@@ -23,7 +23,7 @@ const Goals = () => {
                     <div className="group relative">
                         <div className="relative h-80 2xl:h-96 w-full overflow-hidden rounded-lg bg-white group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1">
                             <Image
-                                src="/goal1.jpeg"
+                                src="/worldwide-outreach-image/worldwidebrand.jpeg"
                                 alt="Our Goals"
                                 className="h-full w-full object-cover object-center"
                                 fill={true}
@@ -42,7 +42,7 @@ const Goals = () => {
                     <div className="group relative">
                         <div className="relative h-80 2xl:h-96 w-full overflow-hidden rounded-lg bg-white group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1">
                             <Image
-                                src="/goal2.jpeg"
+                                src="/worldwide-outreach-image/collabs-and-creativity.jpeg"
                                 alt="Our Goals"
                                 className="h-full w-full object-cover object-center"
                                 fill={true}
@@ -61,7 +61,7 @@ const Goals = () => {
                     <div className="group relative">
                         <div className="relative h-80 2xl:h-96 w-full overflow-hidden rounded-lg bg-white group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1">
                             <Image
-                                src="/goal3.jpeg"
+                                src="/worldwide-outreach-image/innovation.jpeg"
                                 alt="Our Goals"
                                 className="h-full w-full object-cover object-center"
                                 fill={true}
@@ -94,7 +94,7 @@ const Goals = () => {
                         </div>
                         <div className="flex flex-col justify-center h-[500px] relative">
                             <Image
-                                src="/goal4.jpeg"
+                                src="/worldwide-outreach-image/results.jpeg"
                                 alt="Image Description"
                                 layout="fill"
                                 sizes="(max-width: 640px) 100vw, (max-width: 750px) 50vw, 33.3vw"

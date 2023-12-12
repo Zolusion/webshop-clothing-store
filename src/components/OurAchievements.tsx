@@ -6,19 +6,19 @@ const achievementsData = [
         id: 1,
         title: "60000+",
         description: "Active Members",
-        imageSrc: "/active-member.jpeg"
+        imageSrc: "/achievements-image/active-member.jpeg"
     },
     {
         id: 2,
         title: "100+",
         description: "Influencers",
-        imageSrc: "/influencer-model.jpeg"
+        imageSrc: "/achievements-image/influencer-model.jpeg"
     },
     {
         id: 3,
         title: "10+",
         description: "Countries",
-        imageSrc: "/country.jpeg"
+        imageSrc: "/achievements-image/country.jpeg"
     },
 ]
 
@@ -71,7 +71,7 @@ const OurAchievements = () => {
                         </div>
                         <div className="flex flex-col justify-center h-[500px] relative">
                             <Image
-                                src="/achievement-pic.jpeg"
+                                src="/achievements-image/achievement-pic.jpeg"
                                 alt="Image Description"
                                 layout="fill"
                                 sizes="(max-width: 640px) 100vw, (max-width: 750px) 50vw, 33.3vw"

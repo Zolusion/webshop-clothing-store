@@ -3,7 +3,7 @@ import React from 'react'
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import Image from "next/legacy/image";
-import AmbassadorInfo from '@/components/AmbassadorInfo';
+import AmbassadorInfo from '../../components/AmbassadorInfo';
 import Posts from '@/components/Posts';
 import Influencers from '@/components/Influencers';
 import type { Metadata } from "next";
@@ -24,21 +24,21 @@ const page = () => {
 
                 {
                     id: 4,
-                    imageUrl: "/fashiontrends.jpeg",
+                    imageUrl: "/ambassadors-image/fashiontrends.jpeg",
                     title: "Fashion Trends",
                     href: "/fashiontrends",
                     description: "The fashion industry is one of the most exciting and exciting industries. We are committed to making fashion accessible to everyone.",
                 },
                 {
                     id: 5,
-                    imageUrl: "/hijabcommunity.jpeg",
+                    imageUrl: "/ambassadors-image/hijabcommunity.jpeg",
                     title: "Hijab Community",
                     href: "#",
                     description: "Nothing is more beautiful then a women who wears hijab.",
                 },
                 {
                     id: 6,
-                    imageUrl: "/influencer.jpeg",
+                    imageUrl: "/ambassadors-image/influencer.jpeg",
                     title: "Influencers",
                     href: "#",
                     description: "We always love to collaborate with influencers that are passionate about fashion.",
