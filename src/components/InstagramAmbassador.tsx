@@ -1,146 +1,84 @@
-// apply.js
-
 import React from 'react';
 
+const formFields = [
+  { id: 'name', label: 'Full Name', type: 'text', placeholder: 'John Doe', required: true },
+  { id: 'instagram', label: 'Instagram Handle', type: 'text', placeholder: '@example', required: true },
+  { id: 'email', label: 'Email Address', type: 'email', placeholder: 'w9Ezy@example.com', required: true },
+  { id: 'location', label: 'Location', type: 'text', placeholder: 'City, State', required: true },
+  { id: 'why-ambassador', label: 'Why do you want to be an ambassador?', type: 'textarea', rows: 4, placeholder: 'Why do you want to be an ambassador?', required: true },
+  { id: 'experience', label: 'Relevant Experience or Skills', type: 'textarea', rows: 4, placeholder: 'Relevant Experience or Skills', required: true },
+  { id: 'promotion-plan', label: 'How do you plan to promote our brand?', type: 'textarea', rows: 4, placeholder: 'How do you plan to promote our brand?', required: true },
+  { id: 'comments-questions', label: 'Any Additional Comments or Questions', type: 'textarea', rows: 4, placeholder: 'Do you have any Comments or Questions', required: true }
+];
+
+const jobDetails = [
+  'Create engaging content showcasing our products/services.',
+  'Regularly post on Instagram and use relevant hashtags.',
+  'Engage with your followers and respond to comments/questions.',
+  'Provide feedback and ideas to improve our brand presence.'
+];
+
+const perksAndBenefits = [
+  'Exclusive discounts on our products/services.',
+  'Opportunity to be featured on our official social media channels.',
+  'Access to new product launches before the public.'
+];
+
 const AmbassadorPage = () => {
+
   return (
     <div className="min-h-screen flex items-center justify-center px-6">
       <div className="container mx-auto p-8 max-w-7xl 2xl:max-w-[2200px] w-full mt-8 mb-8">
-        <h1 className="text-3xl font-semibold mb-4 text-black">Instagram Ambassador Program</h1>
+        <h1 className="text-3xl font-semibold mb-4 text-black 2xl:text-5xl">Instagram Ambassador Program</h1>
         <div className="mb-6">
-          <h2 className="text-xl font-semibold mb-2 text-black">Job Details:</h2>
-          <p className="text-black">
+          <h2 className="text-xl font-semibold mb-2 text-black 2xl:text-2xl">Job Details:</h2>
+          <p className="text-black 2xl:text-lg">
             Join our Instagram Ambassador program to represent our brand and enjoy exclusive perks.
           </p>
-          <ul className="list-disc ml-6 mt-2">
-            <li className='text-black'>Create engaging content showcasing our products/services.</li>
-            <li className='text-black'>Regularly post on Instagram and use relevant hashtags.</li>
-            <li className='text-black'>Engage with your followers and respond to comments/questions.</li>
-            <li className='text-black'>Provide feedback and ideas to improve our brand presence.</li>
+          <ul className="list-disc ml-6 mt-2 2xl:text-lg">
+            {jobDetails.map((detail, index) => (
+              <li key={index} className="text-black">
+                {detail}
+              </li>
+            ))}
           </ul>
-          <p className="mt-4 text-black">
+          <p className="mt-4 text-black 2xl:text-lg">
             Perks and Benefits:
-            <ul className="list-disc ml-6 mt-2">
-              <li>Exclusive discounts on our products/services.</li>
-              <li>Opportunity to be featured on our official social media channels.</li>
-              <li>Access to new product launches before the public.</li>
+            <ul className="list-disc ml-6 mt-2 2xl:text-lg">
+              {perksAndBenefits.map((perk, index) => (
+                <li key={index}>{perk}</li>
+              ))}
             </ul>
           </p>
         </div>
 
         <form>
-          <div className="mb-4">
-            <label htmlFor="name" className="block text-sm font-medium text-gray-600">
-              Full Name
-            </label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              className="mt-1 p-2 border border-gray-300 rounded-md w-full"
-              placeholder='John Doe'
-              required
-            />
-          </div>
-
-          <div className="mb-4">
-            <label htmlFor="instagram" className="block text-sm font-medium text-gray-600">
-              Instagram Handle
-            </label>
-            <input
-              type="text"
-              id="instagram"
-              name="instagram"
-              className="mt-1 p-2 border border-gray-300 rounded-md w-full"
-              placeholder='@example'
-              required
-            />
-          </div>
-
-          <div className="mb-4">
-            <label htmlFor="email" className="block text-sm font-medium text-gray-600">
-              Email Address
-            </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              className="mt-1 p-2 border border-gray-300 rounded-md w-full"
-              placeholder='w9Ezy@example.com'
-              required
-            />
-          </div>
-
-          <div className="mb-4">
-            <label htmlFor="location" className="block text-sm font-medium text-gray-600">
-              Location
-            </label>
-            <input
-              type="text"
-              id="location"
-              name="location"
-              className="mt-1 p-2 border border-gray-300 rounded-md w-full"
-              placeholder='City, State'
-              required
-            />
-          </div>
-
-          <div className="mb-4">
-            <label htmlFor="why-ambassador" className="block text-sm font-medium text-gray-600">
-              Why do you want to be an ambassador?
-            </label>
-            <textarea
-              id="why-ambassador"
-              name="why-ambassador"
-              rows={4}
-              className="mt-1 p-2 border border-gray-300 rounded-md w-full"
-              placeholder='Why do you want to be an ambassador?'
-              required
-            ></textarea>
-          </div>
-
-          <div className="mb-4">
-            <label htmlFor="experience" className="block text-sm font-medium text-gray-600">
-              Relevant Experience or Skills
-            </label>
-            <textarea
-              id="experience"
-              name="experience"
-              rows={4}
-              className="mt-1 p-2 border border-gray-300 rounded-md w-full"
-              placeholder='Relevant Experience or Skills'
-              required
-            ></textarea>
-          </div>
-
-          <div className="mb-4">
-            <label htmlFor="promotion-plan" className="block text-sm font-medium text-gray-600">
-              How do you plan to promote our brand?
-            </label>
-            <textarea
-              id="promotion-plan"
-              name="promotion-plan"
-              rows={4}
-              className="mt-1 p-2 border border-gray-300 rounded-md w-full"
-              placeholder='How do you plan to promote our brand?'
-              required
-            ></textarea>
-          </div>
-
-          <div className="mb-4">
-            <label htmlFor="comments-questions" className="block text-sm font-medium text-gray-600">
-              Any Additional Comments or Questions
-            </label>
-            <textarea
-              id="comments-questions"
-              name="comments-questions"
-              rows={4}
-              className="mt-1 p-2 border border-gray-300 rounded-md w-full"
-              placeholder='Do you have any Comments or Questions'
-              required
-            ></textarea>
-          </div>
-
+          {formFields.map((field) => (
+            <div key={field.id} className="mb-4">
+              <label htmlFor={field.id} className="block text-sm font-medium text-gray-600 2xl:text-[20px]">
+                {field.label}
+              </label>
+              {field.type === 'textarea' ? (
+                <textarea
+                  id={field.id}
+                  name={field.id}
+                  rows={field.rows}
+                  className="mt-1 p-2 border border-gray-300 rounded-md w-full"
+                  placeholder={field.placeholder}
+                  required={field.required}
+                ></textarea>
+              ) : (
+                <input
+                  type={field.type}
+                  id={field.id}
+                  name={field.id}
+                  className="mt-1 p-2 border border-gray-300 rounded-md w-full text-black"
+                  placeholder={field.placeholder}
+                  required={field.required}
+                />
+              )}
+            </div>
+          ))}
           <button
             type="submit"
             className="w-full bg-blue-500 text-white p-3 rounded-md hover:bg-blue-600 focus:outline-none"

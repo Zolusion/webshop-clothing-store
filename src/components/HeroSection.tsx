@@ -18,14 +18,14 @@ const HeroSection = () => {
             </p>
             <div className="mx-auto mt-10 max-w-sm sm:flex sm:max-w-none sm:justify-center">
               <div className="sm:mx-auto mx-auto inline-grid sm:inline-grid grid-cols-2 sm:grid-cols-2 gap-5 sm:gap-5 space-y-0 sm:space-y-0">
-                <a href="#">
+                <a href="/ambassadors">
                   <button name="shoppingbutton" type="button" className="2xl:text-[20px] flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-indigo-700 shadow-sm hover:bg-indigo-50 sm:px-8">
-                    Go Shopping
+                    Ambassadors
                   </button>
                 </a>
-                <a href="#">
+                <a href="/contact">
                   <button name="shoppingbutton" type="button" className="2xl:text-[20px] flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-indigo-700 shadow-sm hover:bg-indigo-50 sm:px-8">
-                    Go Shopping
+                    Contact
                   </button>
                 </a>
               </div>

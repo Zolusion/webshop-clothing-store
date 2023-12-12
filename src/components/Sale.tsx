@@ -168,6 +168,9 @@ const DiscountSection = () => {
                       Add To Cart
                     </button>
                     <span className="text-black font-semibold 2xl:text-2xl">
+                      <div className="line-through text-red-500">
+                        {offer.oldPrice}
+                      </div>
                       {offer.newPrice}
                     </span>
                   </div>

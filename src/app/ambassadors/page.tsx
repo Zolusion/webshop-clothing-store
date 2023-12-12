@@ -25,7 +25,7 @@ const page = () => {
                     id: 1,
                     imageUrl: "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aW5zdGFncmFtfGVufDB8fDB8fHww",
                     title: "Instagram Ambassador",
-                    href: "/instagram",
+                    href: "#",
                     description: "Instagram is a great social media platform for fashion enthusiasts. We believe that fashion should be accessible to everyone, and we are committed to making that a reality.",
                 },
                 {

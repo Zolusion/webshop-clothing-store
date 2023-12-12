@@ -1,24 +1,23 @@
 import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
+import OurAchievements from '@/components/OurAchievements'
 import React from 'react'
-import InstagramAmbassador from '@/components/InstagramAmbassador'
 import type { Metadata } from "next";
 
-const title = "Instagram ambassadors";
+const title = "Achievements";
 
 export const metadata: Metadata = {
     title: `${title} | Solmaz Fashion`,
 }
 
-const page = () => {
+const achievements = () => {
   return (
-    // Instagram page
     <div className='bg-white'>
         <Navbar />
-        <InstagramAmbassador />
+        <OurAchievements />
         <Footer />
     </div>
   )
 }
 
-export default page
+export default achievements

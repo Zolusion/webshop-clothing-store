@@ -8,20 +8,23 @@ const ambassadorData = [
         imageSrc: '/women-on-laptop.jpeg',
         description: 'Are you passionate about our mission? Become an ambassador and make a difference in your community.',
         buttonText: 'Apply Now',
+        href: '/applyform',
     },
     {
         id: 2,
-        title: 'How to become an Ambassador',
+        title: 'Our Achievements',
         imageSrc: '/hijab-model.jpeg',
-        description: 'Become an ambassador and join our team. Did you know that you can earn a commission?',
+        description: 'We have achieved so many milestones in our journey. Here are some of our most important ones.',
         buttonText: 'More info',
+        href: '/achievements',
     },
     {
         id: 3,
-        title: 'What to do as an Ambassador',
+        title: 'Our Goal: Worldwide Outreach',
         imageSrc: '/hijab-model-purple.jpeg',
         description: 'Achieving our goals is not easy. As an ambassador, you will be responsible for making a difference in the lives of others.',
         buttonText: 'More info',
+        href: '/goals',
     },
 ];
 
@@ -48,7 +51,7 @@ const AmbassadorInfo = () => {
                                     <h3 className="text-xl font-semibold mb-2 2xl:text-2xl">{item.title}</h3>
                                     <p className="text-gray-400 2xl:text-lg">{item.description}</p>
                                     <a
-                                        href="#"
+                                        href={item.href}
                                         className="2xl:text-lg mt-4 inline-block px-6 py-3 text-sm font-semibold leading-none bg-white text-gray-900 rounded-full hover:bg-gray-100"
                                     >
                                         {item.buttonText}
