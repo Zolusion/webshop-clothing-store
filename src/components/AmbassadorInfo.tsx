@@ -22,9 +22,9 @@ const ambassadorData = [
         id: 3,
         title: 'Our Goal: Worldwide Outreach',
         imageSrc: '/hijab-model-purple.jpeg',
-        description: 'Achieving our goals is not easy. As an ambassador, you will be responsible for making a difference in the lives of others.',
+        description: 'Connecting Globally, Impacting Locally. We are on a mission to make fashion accessible to all.',
         buttonText: 'More info',
-        href: '/goals',
+        href: '/worldwide-outreach',
     },
 ];
 
