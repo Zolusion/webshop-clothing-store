@@ -61,7 +61,7 @@ const OurAchievements = () => {
                             <h1 className="text-3xl font-bold mb-4 2xl:text-5xl text-gray-800">Results</h1>
                             <hr className="mb-4" />
                             <ul className="text-gray-800 mb-4 2xl:text-2xl">
-                            {achievementsList.map((achievement, index) => (
+                                {achievementsList.map((achievement, index) => (
                                     <React.Fragment key={index}>
                                         <li className="mb-4 text-gray-800">{achievement}</li>
                                         <hr className="mb-4" />
