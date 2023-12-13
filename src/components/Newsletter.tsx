@@ -15,7 +15,7 @@ const Newsletter = () => {
                     </div>
                 </div>
                 <div>
-                    <video src="discount.mp4" autoPlay muted loop className="w-full h-auto rounded-md"></video>
+                    <video src="/videos/newsletter.mp4" autoPlay muted loop className="w-full h-auto rounded-md"></video>
                 </div>
             </div>
         </div>

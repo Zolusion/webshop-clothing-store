@@ -9,11 +9,11 @@ const FashionTrendsPage = () => {
         },
         {
             title: 'Casual Everyday Hijab',
-            image: '/testimage2.jpeg',
+            image: '/fashiontrends-image/fashiontrend-image2.jpeg',
         },
         {
             title: 'Bold Color Block Hijab',
-            image: '/bold-color-block-hijab.jpg',
+            image: '/fashiontrends-image/fashiontrend-image3.jpeg',
         },
     ];
 

@@ -6,7 +6,7 @@ const HeroSection = () => {
       <div className="mx-auto min-h-screen">
         <div className="relative sm:overflow-hidden">
           <div className="absolute inset-0">
-            <video className="h-full w-full object-cover" src="clothing.mp4" autoPlay muted loop/>
+            <video className="h-full w-full object-cover" src="/videos/home.mp4" autoPlay muted loop/>
             <div className="absolute inset-00 mix-blend-multiply"/>
           </div>
           <div className="relative min-h-screen flex flex-col items-center justify-center px-4 py-16">
