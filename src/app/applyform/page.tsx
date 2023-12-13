@@ -1,8 +1,10 @@
-import Footer from '@/components/Footer'
-import JoinTeamForm from '@/components/JoinTeamForm'
-import Navbar from '@/components/Navbar'
+import dynamic from 'next/dynamic';
 import React from 'react'
 import type { Metadata } from "next";
+
+const Footer = dynamic(() => import('@/components/Footer'));
+const JoinTeamForm = dynamic(() => import('@/components/JoinTeamForm'));
+const Navbar = dynamic(() => import('@/components/Navbar'));
 
 const title = "Join us";
 

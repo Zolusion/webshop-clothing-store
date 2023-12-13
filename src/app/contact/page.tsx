@@ -1,6 +1,8 @@
-import ContactForm from '@/components/ContactForm'
+import dynamic from 'next/dynamic';
 import React from 'react'
 import type { Metadata } from "next";
+
+const ContactForm = dynamic(() => import('@/components/ContactForm'));
 
 const title = "Contact";
 

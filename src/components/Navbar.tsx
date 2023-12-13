@@ -28,20 +28,16 @@ const Navbar = () => {
                         quality={100}
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         unoptimized
-                        blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-                        placeholder="blur"
                         loading="lazy"
                     />
                     <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">SolmazFashion</span>
                 </a>
-
                 <button className="md:hidden inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" onClick={toggleMobileMenu} aria-expanded={isMobileMenuVisible}>
                     <span className="sr-only">Open main menu</span>
                     <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
                         <path stroke="currentColor" strokeLinecap='round' strokeLinejoin='round' strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
                     </svg>
                 </button>
-
                 <div className="hidden md:flex flex-grow items-center justify-center space-x-8 font-medium">
                     <ul className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-8">
                         <li><Link href="/" className="2xl:text-[21px] block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700" aria-current="page">Home</Link></li>
@@ -50,7 +46,6 @@ const Navbar = () => {
                         <li><Link href="/ambassadors" className="2xl:text-[21px] block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent dark:border-gray-700">Ambassadors</Link></li>
                     </ul>
                 </div>
-
                 <div className="flex items-center space-x-4">
                     <button
                         className="text-gray-500 hover:text-blue-700 dark:text-gray-400 dark:hover:text-blue-500"
@@ -72,8 +67,6 @@ const Navbar = () => {
                     </button>
                 </div>
             </div>
-
-            {/* Mobile Sidebar */}
             <div className={`md:hidden fixed inset-0 z-50 transition-transform transform ${isMobileMenuVisible ? 'translate-x-0' : '-translate-x-full'}`}>
                 <div className="bg-gray-800 text-white p-4">
                     <button className="text-white hover:text-gray-300 focus:outline-none" onClick={toggleMobileMenu}>
@@ -93,16 +86,6 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-
-            {/* {isCartOpen && (
-                <CartSidebar
-                    isOpen={isCartOpen}
-                    onClose={() => setCartOpen(false)}
-                    onAddToCart={() => {
-                        console.log('Added to cart');
-                    }}
-                />
-            )} */}
         </nav>
     );
 };

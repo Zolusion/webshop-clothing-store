@@ -1,8 +1,10 @@
-import Footer from '@/components/Footer'
-import HelpCenter from '@/components/HelpCenter'
-import Navbar from '@/components/Navbar'
+import dynamic from 'next/dynamic';
 import React from 'react'
 import type { Metadata } from "next";
+
+const Footer = dynamic(() => import('@/components/Footer'));
+const HelpCenter = dynamic(() => import('@/components/HelpCenter'));
+const Navbar = dynamic(() => import('@/components/Navbar'));
 
 const title = "HelpCenter";
 

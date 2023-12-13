@@ -1,4 +1,4 @@
-import Image from "next/legacy/image"
+import Image from "next/image"
 import React from 'react'
 
 const title = "Our most popular products"
@@ -61,6 +61,9 @@ const ProductGrid = () => {
                                     alt={`Product ${index + 1}`}
                                     width={500}
                                     height={700}
+                                    loading="lazy"
+                                    quality={100}
+                                    unoptimized
                                 />
                             </a>
                             <h2 className="text-lg 2xl:text-2xl text-black mt-2 font-bold">{product.productName}</h2>

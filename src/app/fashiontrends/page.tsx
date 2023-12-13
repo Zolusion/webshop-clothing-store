@@ -1,8 +1,10 @@
+import dynamic from 'next/dynamic';
 import React from 'react'
 import type { Metadata } from "next";
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
-import FashionTrendsPage from '@/components/FashionTrendsPage';
+
+const Navbar = dynamic(() => import('@/components/Navbar'));
+const Footer = dynamic(() => import('@/components/Footer'));
+const FashionTrendsPage = dynamic(() => import('@/components/FashionTrendsPage'));
 
 const title = "Fashion Trends";
 

@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import React from "react";
 
 const Contact = () => {
@@ -70,7 +70,10 @@ const Contact = () => {
             alt="Image Description"
             layout="fill"
             sizes="(max-width: 640px) 100vw, (max-width: 750px) 50vw, 33.3vw"
-            className="object-cover object-center" 
+            className="object-cover object-center"
+            loading="lazy"
+            quality={100}
+            unoptimized
           />
 
           <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">

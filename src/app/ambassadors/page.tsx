@@ -1,12 +1,11 @@
-import React from 'react'
-// import metadata 
-import Footer from '@/components/Footer';
-import Navbar from '@/components/Navbar';
-import Image from "next/legacy/image";
-import AmbassadorInfo from '../../components/AmbassadorInfo';
-import Posts from '@/components/Posts';
-import Influencers from '@/components/Influencers';
+import dynamic from 'next/dynamic';
 import type { Metadata } from "next";
+
+const Navbar = dynamic(() => import('@/components/Navbar'));
+const AmbassadorInfo = dynamic(() => import('../../components/AmbassadorInfo'));
+const Posts = dynamic(() => import('@/components/Posts'));
+const Influencers = dynamic(() => import('@/components/Influencers'));
+const Footer = dynamic(() => import('@/components/Footer'));
 
 const title = "Ambassadors";
 
