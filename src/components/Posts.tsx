@@ -12,7 +12,7 @@ interface Post {
 const Posts = ({ posts }: { posts?: Post[] }) => {
     return (
         <div className="bg-white">
-            <div className="max-w-7xl 2xl:max-w-[2200px] mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+            <div className="max-w-7xl 2xl:max-w-[1800px] mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
                 <div className="max-w-3xl">
                     <h2 className="text-3xl 2xl:text-5xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
                         <span className="block">Latest News</span>

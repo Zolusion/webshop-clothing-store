@@ -42,12 +42,12 @@ const Influencers: React.FC = () => {
 
     return (
         <div className="bg-white">
-            <div className="max-w-7xl 2xl:max-w-[2200px] mx-auto grid grid-cols-1 gap-8 py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+            <div className="max-w-7xl 2xl:max-w-[1800px] mx-auto grid grid-cols-1 gap-8 py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
                 <div className="lg:col-span-6 sm:w-full w-[450px]">
-                    <h2 className="text-3xl 2xl:text-4xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    <h2 className="text-3xl 2xl:text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
                         Want to become the face of our Fashion brand?
                     </h2>
-                    <p className="mt-3 2xl:text-2xl text-lg text-gray-500 max-w-prose">
+                    <p className="mt-3 2xl:text-lg text-lg text-gray-500 max-w-prose">
                         Are you passionate about our mission? Become an ambassador and make a difference in your community.
                     </p>
                 </div>
