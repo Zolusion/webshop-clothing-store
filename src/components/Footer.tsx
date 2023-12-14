@@ -35,7 +35,7 @@ const footerSections = [
 const Footer = () => {
   return (
     <footer className="bg-white dark:bg-gray-900">
-      <div className="container mx-auto max-w-7xl flex justify-between px-6 py-12 2xl:max-w-[2200px]">
+      <div className="container mx-auto max-w-7xl flex justify-between px-6 py-12 2xl:max-w-[1800px]">
         <div>
           <a href="https://flowbite.com" className="flex items-center space-x-3 rtl:space-x-reverse">
             <Image
@@ -55,12 +55,12 @@ const Footer = () => {
 
         {footerSections.map((section) => (
           <div key={section.title}>
-            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white 2xl:text-xl">{section.title}</h2>
+            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white 2xl:text-md">{section.title}</h2>
             <ul className="text-gray-500 dark:text-gray-400 font-medium">
               {section.links.map((link, index) => (
                 <Link href={link.href} key={index}>
                   <li className="mb-4 lg:mb-2">
-                    <a href="#" className="hover:underline 2xl:text-[21px]">{link.text}</a>
+                    <a href="#" className="hover:underline 2xl:text-md">{link.text}</a>
                   </li>
                 </Link>
               ))}

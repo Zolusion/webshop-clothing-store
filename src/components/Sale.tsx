@@ -121,7 +121,7 @@ const specialOffers = [
 const DiscountSection = () => {
   return (
     <section className="bg-gray-100 py-12 px-6">
-      <div className="container mx-auto max-w-7xl lg:max-w-[2200px]">
+      <div className="container mx-auto max-w-7xl lg:max-w-[1800px]">
         <h2 className="text-3xl font-extrabold text-black mb-8 2xl:text-3xl">
           Special Offers
         </h2>
