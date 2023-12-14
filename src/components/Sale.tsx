@@ -1,6 +1,6 @@
 // DiscountSection.js
 
-import Image from "next/legacy/image";
+import Image from "next/image";
 import React from "react";
 
 const specialOffers = [
@@ -150,7 +150,7 @@ const DiscountSection = () => {
                   <Image
                     src={offer.imageUrl}
                     alt="Product Image"
-                    className="w-full h-full object-cover rounded"
+                    className="w-full h-[600px] object-cover rounded"
                     width={500}
                     height={700}
                   />

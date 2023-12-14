@@ -11,23 +11,23 @@ const imagesData = [
     },
     {
         src: "/ambassadors-image/model1.jpeg",
-        hoverSrc: "/model1_hover.avif",
+        hoverSrc: "/ambassadors-image/model1_hover.avif",
     },
     {
         src: "/ambassadors-image/model6.jpeg",
-        hoverSrc: "/model6_hover.avif",
+        hoverSrc: "/ambassadors-image/model6_hover.avif",
     },
     {
         src: "/ambassadors-image/model3.jpeg",
-        hoverSrc: "/model4_hover.jpeg",
+        hoverSrc: "/ambassadors-image/model4_hover.jpeg",
     },
     {
         src: "/ambassadors-image/model4.jpeg",
-        hoverSrc: "/model4_hover.avif",
+        hoverSrc: "/ambassadors-image/model4_hover.avif",
     },
     {
         src: "/ambassadors-image/model5.jpeg",
-        hoverSrc: "/model5_hover.jpeg",
+        hoverSrc: "/ambassadors-image/model5_hover.jpeg",
     }
 ];
 

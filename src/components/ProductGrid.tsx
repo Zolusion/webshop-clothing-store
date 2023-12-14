@@ -49,7 +49,7 @@ const products = [
 const ProductGrid = () => {
     return (
         <section className="container mx-auto my-8 max-w-7xl lg:max-w-[2200px]">
-            <h1 className="2xl:text-5xl text-[26px] font-bold mb-4 px-6">{title}</h1>
+            <h1 className="2xl:text-4xl text-[26px] font-bold mb-4 px-6">{title}</h1>
             <div className="grid grid-cols-12 gap-4 px-6">
                 {products.map((product, index) => (
                     <div key={index} className="col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3">
@@ -57,7 +57,7 @@ const ProductGrid = () => {
                             <a href="#" className="block aspect-w-4 aspect-h-5 rounded-lg overflow-hidden">
                                 <Image
                                     src={product.imageUrl}
-                                    className="object-cover w-full h-full rounded-lg"
+                                    className="object-cover w-full h-[600px] rounded-lg"
                                     alt={`Product ${index + 1}`}
                                     width={500}
                                     height={700}
