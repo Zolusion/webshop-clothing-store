@@ -7,7 +7,6 @@ const products = [
     {
         imageUrl: "/solmaznur-images/solmaznur1.jpg",
         productName: "Product 1",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         price: "€69.99",
         button: {
             text: "Add to cart",
@@ -17,7 +16,6 @@ const products = [
     {
         imageUrl: "/solmaznur-images/solmaznur2.jpg",
         productName: "Product 2",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         price: "€99.99",
         button: {
             text: "Add to cart",
@@ -27,7 +25,6 @@ const products = [
     {
         imageUrl: "/solmaznur-images/solmaznur3.jpg",
         productName: "Product 3",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         price: "€49.99",
         button: {
             text: "Add to cart",
@@ -37,7 +34,6 @@ const products = [
     {
         imageUrl: "/solmaznur-images/solmaznur4.jpg",
         productName: "Product 4",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         price: "€79.99",
         button: {
             text: "Add to cart",
@@ -66,10 +62,9 @@ const ProductGrid = () => {
                                     unoptimized
                                 />
                             </a>
-                            <h2 className="text-lg 2xl:text-2xl text-black mt-2 font-bold">{product.productName}</h2>
-                            <p className="text-gray-700 2xl:text-lg">{product.description}</p>
-                            <p className="text-gray-900 font-bold mt-2 2xl:text-2xl">{product.price}</p>
-                            <button name="button" className="bg-black text-white py-2 px-4 mt-4 2xl:text-lg">
+                            <h2 className="text-lg 2xl:text-[20px] text-black mt-2 font-bold">{product.productName}</h2>
+                            <p className="text-gray-900 font-bold mt-2 2xl:text-[20px]">{product.price}</p>
+                            <button name="button" className="bg-black text-white py-2 px-4 mt-4 2xl:text-md">
                                 {product.button.text}
                             </button>
                         </div>
