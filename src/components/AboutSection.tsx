@@ -18,7 +18,7 @@ const AboutSection = () => {
                 <div className="absolute inset-x-0 z-10 transform-gpu overflow-hidden h-full flex flex-col justify-center" aria-hidden="true">
                     <div className="mx-auto max-w-3xl text-center lg:max-w-4xl 2xl:max-w-[1200px]">
                         <div className="text-center p-6">
-                            <h1 className="font-bold tracking-tight text-white shadow-sm text-5xl 2xl:text-7xl">
+                            <h1 className="font-bold tracking-tight text-white shadow-sm text-5xl 2xl:text-[60px]">
                                 &quot;We believe that <span className='text-indigo-500'>Fashion</span> should be accessible to everyone.&quot;
                             </h1>
                         </div>

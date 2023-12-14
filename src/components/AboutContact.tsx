@@ -19,16 +19,16 @@ const contactForms = [
 const AboutContact = () => {
     return (
         <div className='bg-white'>
-            <div className="max-w-7xl 2xl:max-w-[2200px] mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+            <div className="max-w-7xl 2xl:max-w-[1800px] mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
                 {contactForms.map((form, index) => (
                     <React.Fragment key={index}>
-                        <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">{form.title}</h2>
+                        <h2 className="text-3xl font-bold text-gray-900 sm:text-[28px]">{form.title}</h2>
                         <form className="mt-8 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
                             {form.fields.map((field, fieldIndex) => (
                                 <div key={fieldIndex}>
                                     {field.type === 'textarea' ? (
                                         <div className="sm:col-span-2">
-                                            <label htmlFor={field.id} className="block text-sm font-medium text-gray-700 2xl:text-2xl">
+                                            <label htmlFor={field.id} className="block text-sm font-medium text-gray-700 2xl:text-md">
                                                 {field.name}
                                             </label>
                                             <div className="mt-1">
@@ -37,14 +37,14 @@ const AboutContact = () => {
                                                     name={field.id}
                                                     rows={4}
                                                     placeholder={field.placeholder}
-                                                    className="block w-full border-gray-300 p-2 text-black rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm 2xl:text-[20px]"
+                                                    className="block w-full border-gray-300 p-2 text-black rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm 2xl:text-sm"
                                                     defaultValue={''}
                                                 />
                                             </div>
                                         </div>
                                     ) : (
                                         <div>
-                                            <label htmlFor={field.id} className="block text-sm font-medium text-gray-700 2xl:text-2xl">
+                                            <label htmlFor={field.id} className="block text-sm font-medium text-gray-700 2xl:text-md">
                                                 {field.name}
                                             </label>
                                             <div className="mt-1">
@@ -87,7 +87,7 @@ const AboutContact = () => {
                                 <button
                                     type="submit"
                                     name="submit"
-                                    className="w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 2xl:text-[20px]"
+                                    className="w-[200px] 2xl:w-[200px] inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 2xl:text-sm"
                                 >
                                     {form.submitText}
                                 </button>

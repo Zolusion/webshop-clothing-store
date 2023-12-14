@@ -13,7 +13,7 @@ const about = [
 const AboutInfo = () => {
   return (
     <div className='bg-white'>
-        <div className="max-w-7xl 2xl:max-w-[2200px] mx-auto py-4 px-6 sm:px-6 lg:py-16 lg:px-8">
+        <div className="max-w-7xl 2xl:max-w-[1800px] mx-auto py-4 px-6 sm:px-6 lg:py-16 lg:px-8">
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
                 <div className="relative h-64 overflow-hidden rounded-lg sm:h-72 2xl:h-96 lg:h-full">
                     <Image
@@ -24,11 +24,11 @@ const AboutInfo = () => {
                     />
                 </div>
 
-                <div className="lg:py-6">
-                    <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl 2xl:text-5xl">{about[0].title}</h2>
-                    <p className="mt-4 text-gray-500 2xl:text-[23px]">{about[0].descriptionOne}</p>
-                    <p className="mt-4 text-gray-500 2xl:text-[23px]">{about[0].descriptionTwo}</p>
-                    <p className="mt-4 text-gray-500 2xl:text-[23px]">{about[0].descriptionThree}</p>
+                <div className="lg:py-6 flex flex-col justify-center">
+                    <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl 2xl:text-[28px]">{about[0].title}</h2>
+                    <p className="mt-4 text-gray-500 2xl:text-[18px]">{about[0].descriptionOne}</p>
+                    <p className="mt-4 text-gray-500 2xl:text-[18px]">{about[0].descriptionTwo}</p>
+                    <p className="mt-4 text-gray-500 2xl:text-[18px]">{about[0].descriptionThree}</p>
                 </div>
             </div>
         </div>
