@@ -26,7 +26,7 @@ const formFields = [
 const JoinTeamForm = () => {
     return (
         <div className="min-h-screen flex items-center justify-center px-6">
-            <div className="container mx-auto p-8 max-w-7xl 2xl:max-w-[2200px] w-full mt-8 mb-8">
+            <div className="container mx-auto p-8 max-w-7xl 2xl:max-w-[1800px] w-full mt-8 mb-8">
                 <h1 className="text-3xl font-semibold mb-4 text-black 2xl:text-5xl">Join Our Team</h1>
                 <div className="mb-6">
                     <h2 className="text-xl font-semibold mb-2 text-black 2xl:text-2xl">Job Details:</h2>

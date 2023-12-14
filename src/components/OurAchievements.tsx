@@ -33,8 +33,8 @@ const achievementsList = [
 const OurAchievements = () => {
     return (
         <div className='bg-white'>
-            <div className="max-w-7xl 2xl:max-w-[2200px] mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-                <h2 className="text-4xl font-extrabold tracking-tight mb-8 text-[30px] 2xl:text-5xl text-black">
+            <div className="max-w-7xl 2xl:max-w-[1800px] mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+                <h2 className="text-4xl font-extrabold tracking-tight mb-8 text-[30px] 2xl:text-4xl text-black">
                     Our Achievements
                 </h2>
                 <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -58,9 +58,9 @@ const OurAchievements = () => {
                 <section className="container mx-auto my-8 max-w-7xl lg:max-w-[2200px]">
                     <div className="grid sm:grid-cols-2 grid-cols-1 gap-8 py-12">
                         <div className="flex flex-col justify-center">
-                            <h1 className="text-3xl font-bold mb-4 2xl:text-5xl text-gray-800">Results</h1>
+                            <h1 className="text-3xl font-bold mb-4 2xl:text-4xl text-gray-800">Results</h1>
                             <hr className="mb-4" />
-                            <ul className="text-gray-800 mb-4 2xl:text-2xl">
+                            <ul className="text-gray-800 mb-4 2xl:text-lg">
                                 {achievementsList.map((achievement, index) => (
                                     <React.Fragment key={index}>
                                         <li className="mb-4 text-gray-800">{achievement}</li>
@@ -79,7 +79,7 @@ const OurAchievements = () => {
                             />
 
                             <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
-                                <div className="text-gray-800 text-3xl font-bold px-4 text-center 2xl:text-4xl">
+                                <div className="text-gray-800 text-3xl font-bold px-4 text-center 2xl:text-3xl">
                                     Achieving our goals is our passion and dedication to delivering exceptional results.
                                 </div>
                             </div>

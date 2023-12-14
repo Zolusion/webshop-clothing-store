@@ -13,9 +13,9 @@ const Goals = () => {
     return (
         <div className='bg-white'>
             {/* Our Goals Section */}
-            <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+            <div className="max-w-7xl 2xl:max-w-[1800px] mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
                 <div className="max-w-3xl">
-                    <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl 2xl:text-5xl">
+                    <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 2xl:text-4xl">
                         <span className="block">Our Goals</span>
                     </h2>
                 </div>
@@ -81,7 +81,7 @@ const Goals = () => {
                 <section className="container mx-auto my-8 max-w-7xl lg:max-w-[2200px]">
                     <div className="grid sm:grid-cols-2 grid-cols-1 gap-8 py-12">
                         <div className="flex flex-col justify-center">
-                            <h1 className="text-3xl font-bold mb-4 2xl:text-5xl text-gray-800">Results</h1>
+                            <h1 className="text-3xl font-bold mb-4 2xl:text-4xl text-gray-800">Results</h1>
                             <hr className="mb-4" />
                             <ul className="text-gray-800 mb-4 2xl:text-[17px]">
                                 {achievementsList.map((achievement, index) => (
@@ -102,7 +102,7 @@ const Goals = () => {
                             />
 
                             <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
-                                <div className="text-gray-800 text-3xl font-bold px-4 text-center 2xl:text-4xl">
+                                <div className="text-gray-800 text-3xl font-bold px-4 text-center 2xl:text-3xl">
                                     his overarching goal encompasses the desire to use fashion as a powerful medium for self-expression, creativity, and individuality.
                                 </div>
                             </div>
