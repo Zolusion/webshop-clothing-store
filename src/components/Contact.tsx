@@ -3,7 +3,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <section className="container mx-auto my-8 max-w-7xl lg:max-w-[1800px]">
+    <section className="container mx-auto my-8 max-w-7xl 2xl:max-w-[1800px]">
       <div className="grid sm:grid-cols-2 grid-cols-1 gap-8 container mx-auto px-6 py-12 lg:max-w-[1800px]">
         <div className="flex flex-col justify-center">
           <h1 className="text-3xl font-bold mb-4 2xl:text-4xl">Contact Us</h1>
