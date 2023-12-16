@@ -9,7 +9,6 @@ const contactForms = [
             { name: 'Phone', type: 'tel', id: 'phone', autoComplete: 'tel', placeholder: '123-456-7890' },
             { name: 'Message', type: 'textarea', id: 'message', placeholder: 'Hi there, I would like to...' },
         ],
-        optional: 'Optional',
         termsLabel: 'I accept the',
         termsLink: '#',
         submitText: 'Submit',
@@ -62,24 +61,22 @@ const AboutContact = () => {
                                 </div>
                             ))}
                             <div className="sm:col-span-2">
-                                <div className="flex justify-between">
-                                    <div className="flex items-start">
-                                        <div className="flex-shrink-0">
-                                            <input
-                                                id={`terms-${index}`}
-                                                name={`terms-${index}`}
-                                                type="checkbox"
-                                                className="w-4 h-4 border-gray-300 rounded focus:ring-indigo-500"
-                                            />
-                                        </div>
-                                        <div className="ml-3">
-                                            <label htmlFor={`terms-${index}`} className="text-sm font-medium text-gray-700">
-                                                {`${form.termsLabel} `}
-                                                <a href={form.termsLink} className="text-indigo-600 hover:text-indigo-500">
-                                                    Terms and Conditions
-                                                </a>
-                                            </label>
-                                        </div>
+                                <div className="flex items-start">
+                                    <div className="flex-shrink-0">
+                                        <input
+                                            id={`terms-${index}`}
+                                            name={`terms-${index}`}
+                                            type="checkbox"
+                                            className="w-4 h-4 border-gray-300 rounded focus:ring-indigo-500"
+                                        />
+                                    </div>
+                                    <div className="ml-3">
+                                        <label htmlFor={`terms-${index}`} className="text-sm font-medium text-gray-700">
+                                            {`${form.termsLabel} `}
+                                            <a href={form.termsLink} className="text-indigo-600 hover:text-indigo-500">
+                                                Terms and Conditions
+                                            </a>
+                                        </label>
                                     </div>
                                 </div>
                             </div>

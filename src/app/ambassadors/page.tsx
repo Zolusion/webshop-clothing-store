@@ -33,14 +33,14 @@ const page = () => {
                     imageUrl: "/ambassadors-image/hijabcommunity.jpeg",
                     title: "Hijab Community",
                     href: "#",
-                    description: "Nothing is more beautiful then a women who wears hijab.",
+                    description: "Our hijab community is a community of like-minded individuals who share their passion for fashion and share their experience.",
                 },
                 {
                     id: 6,
                     imageUrl: "/ambassadors-image/influencer.jpeg",
                     title: "Influencers",
                     href: "#",
-                    description: "We always love to collaborate with influencers that are passionate about fashion.",
+                    description: "We are always looking for new and exciting people to join our community. We are looking for people who share their love for fashion and who want to be part of our community.",
                 }
             ]}/>
             <Footer />

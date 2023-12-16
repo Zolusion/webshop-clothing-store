@@ -110,12 +110,26 @@ const specialOffers = [
     newPrice: "€24.95",
   },
   {
-    imageUrl: "/solmaznur-images/solmaznur20.jpg",
+    imageUrl: "/solmaznur-images/solmaznur25.jpeg",
     name: "Product Name",
     discount: "28%",
     oldPrice: "€27.95",
     newPrice: "€19.99",
-  }
+  },
+  {
+    imageUrl: "/solmaznur-images/solmaznur23.jpeg",
+    name: "Product Name",
+    discount: "28%",
+    oldPrice: "€49.95",
+    newPrice: "€35.99",
+  },
+  {
+    imageUrl: "/solmaznur-images/solmaznur24.jpeg",
+    name: "Product Name",
+    discount: "28%",
+    oldPrice: "€38.95",
+    newPrice: "€29.99",
+  },
 ]
 
 const DiscountSection = () => {
@@ -126,7 +140,7 @@ const DiscountSection = () => {
           Special Offers
         </h2>
         <div className="flex space-x-4 md:p-0 md:overflow-hidden">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
 
             {specialOffers.map((offer, index) => (
               <div key={index} className="bg-white p-4 rounded shadow-md">
@@ -134,7 +148,7 @@ const DiscountSection = () => {
                   <Image
                     src={offer.imageUrl}
                     alt="Product Image"
-                    className="w-full h-[600px] object-cover rounded"
+                    className="w-full h-[550px] object-cover rounded"
                     width={500}
                     height={700}
                   />
