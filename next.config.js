@@ -7,5 +7,9 @@ module.exports = {
             'images.unsplash.com',
             'plus.unsplash.com',
         ],
-    }
+    },
+    // publicRuntimeConfig: {
+    //     // Add any other configuration here
+    //     BASE_URL: 'https://solmazadmin.com/api/',
+    // },
 }

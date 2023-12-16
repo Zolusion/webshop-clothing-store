@@ -136,7 +136,7 @@ const DiscountSection = () => {
   return (
     <section className="bg-gray-100 py-12 px-6">
       <div className="container mx-auto max-w-7xl 2xl:max-w-[1800px]">
-        <h2 className="text-3xl font-extrabold text-black mb-8 2xl:text-3xl">
+        <h2 className="text-3xl font-extrabold text-black mb-8 2xl:text-3xl 2xl:px-4">
           Special Offers
         </h2>
         <div className="flex space-x-4 md:p-0 md:overflow-hidden">

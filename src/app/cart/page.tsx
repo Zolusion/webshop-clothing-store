@@ -3,6 +3,16 @@ import Image from 'next/image';
 import React, { useState } from 'react';
 
 const Cart = () => {
+    const [customerName, setCustomerName] = useState('');
+    const [customerEmail, setCustomerEmail] = useState('');
+    const [customerPhone, setCustomerPhone] = useState('');
+    const [customerAddress, setCustomerAddress] = useState('');
+    const [customerCity, setCustomerCity] = useState('');
+    const [customerCountry, setCustomerCountry] = useState('');
+    const [customerZipCode, setCustomerZipCode] = useState('');
+    const [shippingMethod, setShippingMethod] = useState('');
+    const [paymentMethod, setPaymentMethod] = useState('');
+    
     const [cartItems, setCartItems] = useState([
         {
             id: 1,
@@ -20,7 +30,6 @@ const Cart = () => {
         },
     ]);
 
-    // recommended products
     const [recommendedProducts, setRecommendedProducts] = useState([
         {
             id: 1,
@@ -87,26 +96,7 @@ const Cart = () => {
     ];
 
     return (
-        <div className='bg-white p-8 shadow-lg rounded-md max-w-7xl 2xl:max-w-[1800px] mx-auto mt-8 mb-8 px-6'>
-            <div className='flex items-center mb-4'>
-                <div className='mr-4'>
-                    <Image
-                        src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80'
-                        alt='User profile'
-                        width={50}
-                        height={50}
-                        className='rounded-full w-10 h-10'
-                        style={{ objectFit: 'cover' }}
-                        quality={100}
-                        unoptimized
-                        priority
-                    />
-                </div>
-                <div className='flex flex-col justify-between'>
-                    <h1 className='text-xl font-bold text-gray-800'>customername</h1>
-                </div>
-            </div>
-            <hr className='mb-2' />
+        <div className='bg-white p-8 max-w-7xl 2xl:max-w-[1800px] mx-auto px-6'>
             <h2 className='text-3xl font-bold mb-6 text-gray-800 mt-4'>Shopping Cart</h2>
             {cartItems.length === 0 ? (
                 <p className='text-gray-600'>Your cart is empty.</p>
@@ -114,7 +104,17 @@ const Cart = () => {
                 <div>
                     {cartItems.map((item) => (
                         <div key={item.id} className='border-b border-gray-200 py-4 flex items-center'>
-                            <img src={item.image} alt={item.name} className='w-20 h-20 object-cover rounded mr-4' />
+                            <Image 
+                                src={item.image} 
+                                alt={item.name} 
+                                className='w-20 h-20 object-cover rounded mr-4' 
+                                width={80}
+                                height={80}
+                                quality={100}
+                                unoptimized
+                                priority
+                                style={{ objectFit: 'cover' }}
+                            />
                             <div className='flex flex-col'>
                                 <span className='font-bold text-gray-800'>{item.name}</span>
                                 <span className='text-gray-500'>€{item.price.toFixed(2)}</span>
@@ -144,16 +144,55 @@ const Cart = () => {
                         </div>
                     ))}
                     <div className='mt-6'>
-                        <div className='flex justify-between'>
-                            <span className='text-lg font-bold text-gray-800'>BTW (21%):</span>
-                            <span className='text-lg font-bold text-gray-800'>
-                                €{(parseFloat(calculateTotalPrice()) - parseFloat(calculateSubtotal(cartItems[0]))).toFixed(2)}
-                            </span>
-                        </div>
-
-                        <div className='flex justify-between'>
-                            <span className='text-lg font-bold text-gray-800'>Total Price:</span>
-                            <span className='text-lg font-bold text-gray-800'>€{calculateTotalPrice()}</span>
+                        <div className='flex items-center mb-4 mt-4'>
+                            <table className='table-auto w-full'>
+                                <tbody className='grid grid-cols-2 2xl:grid-cols-4 gap-4 text-gray-800'>
+                                    <tr>
+                                        <td className='text-gray-800 font-bold'>Name:</td>
+                                        <input placeholder='Enter your name' type="text" value={customerName} onChange={(e) => setCustomerName(e.target.value)} className='text-gray-600 border border-gray-300 rounded px-2 py-1' />
+                                    </tr>
+                                    <tr>
+                                        <td className='text-gray-800 font-bold'>Email:</td>
+                                        <input placeholder='Enter your email' type="email" value={customerEmail} onChange={(e) => setCustomerEmail(e.target.value)} className='text-gray-600 border border-gray-300 rounded px-2 py-1' />
+                                    </tr>
+                                    <tr>
+                                        <td className='text-gray-800 font-bold'>Phone:</td>
+                                        <input placeholder='Enter your phone number' type="tel" value={customerPhone} onChange={(e) => setCustomerPhone(e.target.value)} className='text-gray-600 border border-gray-300 rounded px-2 py-1' />
+                                    </tr>
+                                    <tr>
+                                        <td className='text-gray-800 font-bold'>Address:</td>
+                                        <input placeholder='Enter your address' type="text" value={customerAddress} onChange={(e) => setCustomerAddress(e.target.value)} className='text-gray-600 border border-gray-300 rounded px-2 py-1' />
+                                    </tr>
+                                    <tr>
+                                        <td className='text-gray-800 font-bold'>City:</td>
+                                        <input placeholder='Enter your city' type="text" value={customerCity} onChange={(e) => setCustomerCity(e.target.value)} className='text-gray-600 border border-gray-300 rounded px-2 py-1' />
+                                    </tr>
+                                    <tr>
+                                        <td className='text-gray-800 font-bold'>Country:</td>
+                                        <input placeholder='Enter your country' type="text" value={customerCountry} onChange={(e) => setCustomerCountry(e.target.value)} className='text-gray-600 border border-gray-300 rounded px-2 py-1' />
+                                    </tr>
+                                    <tr>
+                                        <td className='text-gray-800 font-bold'>Zip Code:</td>
+                                        <input placeholder='Enter your zip code' type="text" value={customerZipCode} onChange={(e) => setCustomerZipCode(e.target.value)} className='text-gray-600 border border-gray-300 rounded px-2 py-1' />
+                                    </tr>
+                                    <tr>
+                                        <td className='text-gray-800 font-bold'>Shipping Method:</td>
+                                        <input placeholder='Enter your shipping method' type="text" value={shippingMethod} onChange={(e) => setShippingMethod(e.target.value)} className='text-gray-600 border border-gray-300 rounded px-2 py-1' />
+                                    </tr>
+                                    <tr>
+                                        <td className='text-gray-800 font-bold'>Payment Method:</td>
+                                        <input placeholder='Enter your payment method' type="text" value={paymentMethod} onChange={(e) => setPaymentMethod(e.target.value)} className='text-gray-600 border border-gray-300 rounded px-2 py-1' />
+                                    </tr>
+                                    <tr className='bg-gray-100 w-[232px] flex flex-col justify-center'>
+                                        <td className='text-gray-800 font-bold'>Shipping Cost:</td>
+                                        €{(parseFloat(calculateTotalPrice()) - parseFloat(calculateSubtotal(cartItems[0]))).toFixed(2)}
+                                    </tr>
+                                    <tr className='bg-gray-100 w-[232px] flex flex-col justify-center'>
+                                        <td className='text-gray-800 font-bold'>Total:</td>
+                                        €{calculateTotalPrice()}
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                         <button className='bg-blue-500 text-white px-4 py-2 rounded mt-4 hover:bg-blue-600'>
                             Proceed to Checkout

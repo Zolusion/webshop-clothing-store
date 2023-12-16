@@ -3,6 +3,17 @@ import React from 'react'
 
 const title = "Our most popular products"
 
+// export type Products = {
+//     id: number;
+//     imageUrl: string;
+//     productName: string;
+//     price: string;
+//     button: {
+//         cart: string;
+//         link: string;
+//     }
+// }
+
 const products = [
     {
         imageUrl: "/solmaznur-images/solmaznur1.jpg",
@@ -31,8 +42,18 @@ const products = [
             link: "#",
         },
     },
+    {
+        imageUrl: "/solmaznur-images/solmaznur4.jpg",
+        productName: "Product 4",
+        price: "€47.99",
+        button: {
+            cart: "Add to cart",
+            link: "#",
+        },
+    },
 ]
 
+// export default function ProductGrid({ Products: products }: { Products: Products[] })
 const ProductGrid = () => {
     return (
         <section className="container mx-auto my-8 max-w-7xl 2xl:max-w-[1800px]">

@@ -84,7 +84,7 @@ const Login = () => {
           Login
         </button>
       </div>
-      <p className="text-gray-800 mt-4">Don't have an account? <a className="text-blue-500 hover:text-blue-600 transition-colors duration-200" href="/signup">Register</a></p>
+      <p className="text-gray-800 mt-4">Don&quot;t have an account? <a className="text-blue-500 hover:text-blue-600 transition-colors duration-200" href="/signup">Register</a></p>
     </div>
   );
 };

@@ -15,16 +15,26 @@ export const metadata: Metadata = {
   title: `${title} | Solmaz Fashion`,
 };
 
-const Home = () => (
-  <div>
-    <Navbar />
-    <HeroSection />
-    <ProductGrid />
-    <Contact />
-    <DiscountSection />
-    <Newsletter />
-    <Footer />
-  </div>
-);
+export default async function Home() {
+  // const products = await getData();
+  return (
+    <div>
+      <Navbar />
+      <HeroSection />
+      {/* Products={products.data} */}
+      <ProductGrid  />
+      <Contact />
+      <DiscountSection />
+      <Newsletter />
+      <Footer />
+    </div>
+  );
+}
 
-export default Home;
+// async function getData() {
+//   const res = await fetch("https://solmazadmin.com/api/products");
+//   if (!res.ok) {
+//     throw new Error("Failed to fetch data");
+//   }
+//   return res.json();
+// }
