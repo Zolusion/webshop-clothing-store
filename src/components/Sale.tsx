@@ -7,126 +7,108 @@ const specialOffers = [
   {
     imageUrl: "/solmaznur-images/solmaznur6.jpg",
     name: "Product Name",
-    discount: "20%",
     oldPrice: "€49.99",
     newPrice: "€39.99",
   },
   {
     imageUrl: "/solmaznur-images/solmaznur7.jpg",
     name: "Product Name",
-    discount: "31%",
     oldPrice: "€69.95",
     newPrice: "€47.99",
   },
   {
     imageUrl: "/solmaznur-images/solmaznur22.jpg",
     name: "Product Name",
-    discount: "36%",
     oldPrice: "€29.95",
     newPrice: "€18.99",
   },
   {
     imageUrl: "/solmaznur-images/solmaznur8.jpg",
     name: "Product Name",
-    discount: "25%",
     oldPrice: "€39.95",
     newPrice: "€29.99",
   },
   {
     imageUrl: "/solmaznur-images/solmaznur9.jpg",
     name: "Product Name",
-    discount: "28%",
     oldPrice: "€17.95",
     newPrice: "€12.99",
   },
   {
     imageUrl: "/solmaznur-images/solmaznur10.jpg",
     name: "Product Name",
-    discount: "40%",
     oldPrice: "€59.95",
     newPrice: "€35.99",
   },
   {
     imageUrl: "/solmaznur-images/solmaznur11.jpg",
     name: "Product Name",
-    discount: "25%",
     oldPrice: "€39.95",
     newPrice: "€29.99",
   },
   {
     imageUrl: "/solmaznur-images/solmaznur12.jpg",
     name: "Product Name",
-    discount: "17%",
     oldPrice: "€119.95",
     newPrice: "€99.99",
   },
   {
     imageUrl: "/solmaznur-images/solmaznur13.jpg",
     name: "Product Name",
-    discount: "36%",
     oldPrice: "€27.95",
     newPrice: "€17.99",
   },
   {
     imageUrl: "/solmaznur-images/solmaznur14.jpg",
     name: "Product Name",
-    discount: "22%",
     oldPrice: "€89.95",
     newPrice: "€69.99",
   },
   {
     imageUrl: "/solmaznur-images/solmaznur15.jpg",
     name: "Product Name",
-    discount: "17%",
     oldPrice: "€47.95",
     newPrice: "€39.99",
   },
   {
     imageUrl: "/solmaznur-images/solmaznur16.jpg",
     name: "Product Name",
-    discount: "47%",
     oldPrice: "€27.95",
     newPrice: "€14.99",
   },
   {
     imageUrl: "/solmaznur-images/solmaznur17.jpg",
     name: "Product Name",
-    discount: "50%",
     oldPrice: "€19.95",
     newPrice: "€9.99",
   },
   {
     imageUrl: "/solmaznur-images/solmaznur18.jpg",
     name: "Product Name",
-    discount: "23%",
     oldPrice: "€25.95",
     newPrice: "€19.99",
   },
   {
     imageUrl: "/solmaznur-images/solmaznur19.jpg",
     name: "Product Name",
-    discount: "22%",
     oldPrice: "€31.99",
     newPrice: "€24.95",
   },
   {
     imageUrl: "/solmaznur-images/solmaznur25.jpeg",
     name: "Product Name",
-    discount: "28%",
     oldPrice: "€27.95",
     newPrice: "€19.99",
   },
   {
     imageUrl: "/solmaznur-images/solmaznur23.jpeg",
     name: "Product Name",
-    discount: "28%",
     oldPrice: "€49.95",
     newPrice: "€35.99",
   },
   {
     imageUrl: "/solmaznur-images/solmaznur24.jpeg",
     name: "Product Name",
-    discount: "28%",
     oldPrice: "€38.95",
     newPrice: "€29.99",
   },
@@ -152,9 +134,6 @@ const DiscountSection = () => {
                     width={500}
                     height={700}
                   />
-                  <span className="absolute top-0 right-0 bg-red-500 text-white p-2 rounded-tr 2xl:text-lg">
-                    {offer.discount}
-                  </span>
                 </div>
                 <div className="mt-4">
                   <h3 className="text-xl font-semibold text-black 2xl:text-[22px]">

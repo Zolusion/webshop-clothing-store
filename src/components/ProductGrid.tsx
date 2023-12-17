@@ -42,15 +42,6 @@ const products = [
             link: "#",
         },
     },
-    {
-        imageUrl: "/solmaznur-images/solmaznur4.jpg",
-        productName: "Product 4",
-        price: "€47.99",
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        },
-    },
 ]
 
 // export default function ProductGrid({ Products: products }: { Products: Products[] })
