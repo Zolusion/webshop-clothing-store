@@ -51,12 +51,12 @@ const ProductGrid = () => {
             <h1 className="2xl:text-4xl text-[26px] font-bold mb-4 px-6">{title}</h1>
             <div className="grid grid-cols-12 gap-4 px-6">
                 {products.map((product, index) => (
-                    <div key={index} className="col-span-12 md:col-span-6 lg:col-span-4 2xl:col-span-3">
+                    <div key={index} className="col-span-12 sm:col-span-6 md:col-span-4">
                         <div className="bg-white shadow-md rounded-lg p-4 h-full">
                             <a href="#" className="block aspect-w-4 aspect-h-5 rounded-lg overflow-hidden">
                                 <Image
                                     src={product.imageUrl}
-                                    className="object-cover w-full h-[510px] rounded-lg"
+                                    className="object-cover w-full h-[610px] rounded-lg"
                                     alt={`Product ${index + 1}`}
                                     width={500}
                                     height={700}
@@ -66,10 +66,12 @@ const ProductGrid = () => {
                                 />
                             </a>
                             <h2 className="text-lg 2xl:text-[20px] text-black mt-2 font-bold">{product.productName}</h2>
-                            <p className="text-gray-900 font-bold mt-2 2xl:text-[20px]">{product.price}</p>
-                            <button name="button" className="bg-black text-white py-2 px-4 mt-4 2xl:text-md justify-between items-center">
-                                {product.button.cart}
-                            </button>
+                            <div className="flex justify-between items-center">
+                                <button name="button" className="bg-black text-white py-2 px-4 mt-4 2xl:text-md justify-between items-center">
+                                    {product.button.cart}
+                                </button>
+                                <p className="text-gray-900 font-bold mt-2 2xl:text-[20px]">{product.price}</p>
+                            </div>
                         </div>
                     </div>
                 ))}
