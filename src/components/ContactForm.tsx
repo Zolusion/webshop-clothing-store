@@ -135,8 +135,8 @@ export default function ClientComponent() {
     };
 
     return (
-        <form onSubmit={handleSubmit} className="mt-16">
-            <div className="relative bg-white">
+        <form onSubmit={handleSubmit}>
+            <div className="relative bg-white min-h-screen flex flex-col justify-center">
                 <div className="lg:absolute lg:inset-0 lg:left-1/2">
                     <img
                         className="h-64 w-full bg-gray-50 object-cover sm:h-80 lg:absolute lg:h-full"
@@ -199,7 +199,7 @@ export default function ClientComponent() {
                                             onChange={handleChange}
                                             onBlur={handleBlur}
                                             autoComplete="family-name"
-                                            placeholder="Last name"
+                                            placeholder="Surname"
                                             className={`block w-full rounded-md border ${touched.lastName && errors.lastName
                                                     ? "border-red-500"
                                                     : "border-gray-300"

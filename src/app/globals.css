@@ -45,3 +45,16 @@ img:hover {
   opacity: 0.9;
   transition: 0.5s;
 }
+
+.hover-effect {
+  transition: color 0.3s ease, border 0.3s ease;
+}
+
+.hover-effect:hover {
+  color: black;
+  border: 2px solid black;
+}
+
+.hover-link {
+  text-decoration: none;
+}

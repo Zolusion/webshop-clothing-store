@@ -1,35 +1,120 @@
+"use client";
+import { useEffect, useState } from "react";
+import Image from "next/image";
 import React from "react";
 
 const HeroSection = () => {
+  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
+  const [isSecondVideoPlaying, setIsSecondVideoPlaying] = useState(false);
+
+  // Use 'useEffect' to handle the video playback
+  useEffect(() => {
+    const videoElement = document.getElementById("heroVideo") as HTMLVideoElement;
+    const secondVideoElement = document.getElementById("secondVideo") as HTMLVideoElement;
+
+    if (videoElement) {
+      if (isVideoPlaying) {
+        videoElement.play().catch((error: any) => {
+          // Autoplay was prevented, handle it here
+          console.error("Autoplay prevented:", error);
+        });
+      } else {
+        videoElement.pause();
+      }
+    }
+
+    if (secondVideoElement) {
+      if (isSecondVideoPlaying) {
+        secondVideoElement.play().catch((error: any) => {
+          // Autoplay was prevented, handle it here
+          console.error("Autoplay prevented:", error);
+        });
+      } else {
+        secondVideoElement.pause();
+      }
+    }
+  }, [isVideoPlaying, isSecondVideoPlaying]);
+
+  const handleMouseEnter = () => {
+    setIsVideoPlaying(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsVideoPlaying(false);
+  };
+
+  const handleSecondMouseEnter = () => {
+    setIsSecondVideoPlaying(true);
+  };
+
+  const handleSecondMouseLeave = () => {
+    setIsSecondVideoPlaying(false);
+  };
+
   return (
-    <div className="relative">
-      <div className="mx-auto min-h-screen">
-        <div className="relative sm:overflow-hidden">
-          <div className="absolute inset-0">
-            <video className="h-full w-full object-cover" src="/videos/home.mp4" autoPlay muted loop/>
-            <div className="absolute inset-00 mix-blend-multiply"/>
-          </div>
-          <div className="relative min-h-screen flex flex-col items-center justify-center px-4 py-16">
-            <h1 className="text-center text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-              <span className="block text-white 2xl:text-5xl">Dive into a World of Exquisite Apparel</span>
-            </h1>
-            <p className="mx-auto mt-6 max-w-lg text-center text-xl text-white sm:max-w-6xl 2xl:text-[22px]">
-                Embark on a sartorial journey and immerse yourself in a world where elegance meets innovation. Our collection invites you to dive into a realm of exquisite apparel, meticulously curated to elevate your style quotient
+    <div className="bg-white">
+      <div className="relative flex mx-auto flex-col md:flex-row">
+        <div className="flex-shrink-0 md:w-1/2">
+          <Image
+            src="/hero-section-images/background2.jpeg"
+            alt="hero"
+            width={700}
+            height={1000}
+            className="object-cover w-full h-[800px] md:h-[1200px] opacity-80"
+          />
+          <span className="absolute inset-0 bg-black bg-opacity-60">
+            <p className="2xl:text-7xl text-5xl font-bold text-white uppercase px-6 mt-8">
+              We Create
+              <br />
+              <span className="text-black">Unique</span>
+              <br />
+              <span className="text-black">Designs</span>
+              <br />
+              <span className="text-black">For You</span>
             </p>
-            <div className="mx-auto mt-10 max-w-sm sm:flex sm:max-w-none sm:justify-center">
-              <div className="sm:mx-auto mx-auto inline-grid sm:inline-grid grid-cols-2 sm:grid-cols-2 gap-5 sm:gap-5 space-y-0 sm:space-y-0">
-                <a href="/ambassadors">
-                  <button name="shoppingbutton" type="button" className="2xl:text-[16px] flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-indigo-700 shadow-sm hover:bg-indigo-50 sm:px-8">
-                    Ambassadors
-                  </button>
-                </a>
-                <a href="/contact">
-                  <button name="shoppingbutton" type="button" className="2xl:text-[16px] flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-indigo-700 shadow-sm hover:bg-indigo-50 sm:px-8">
-                    Contact
-                  </button>
-                </a>
-              </div>
-            </div>
+            <a href="#">
+              <button className="text-white uppercase mt-4 ml-8 border border-white px-4 py-2 hover:bg-white hover:text-black transition duration-300">
+                Shop Now
+              </button>
+            </a>
+          </span>
+        </div>
+        <div className="flex-shrink-0 flex flex-col md:w-1/2">
+          <div className="relative">
+            <video
+              id="heroVideo"
+              src="/hero-section-images/blazer.mp4"
+              muted
+              loop
+              width={680}
+              height={300}
+              className="object-cover w-full h-[600px] md:h-[600px] opacity-80"
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            ></video>
+            <a href="/products" className="hover-link">
+              <p className="hover-effect uppercase text-6xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center font-bold">
+                Blazers
+              </p>
+            </a>
+          </div>
+          <div className="relative">
+            <video
+              id="secondVideo"
+              src="/hero-section-images/winter.mp4" // Replace with your second video URL
+              muted
+              loop
+              width={680}
+              height={300}
+              className="object-cover w-full h-[600px] md:h-[600px] opacity-80"
+              onMouseEnter={handleSecondMouseEnter}
+              onMouseLeave={handleSecondMouseLeave}
+            ></video>
+            <a href="/products" className="hover-link">
+              <p className="hover-effect uppercase text-6xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center font-bold md:w-2/3">
+                Winter Collection
+              </p>
+            </a>
           </div>
         </div>
       </div>

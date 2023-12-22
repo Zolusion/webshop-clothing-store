@@ -5,7 +5,6 @@ const Footer = dynamic(() => import("@/components/Footer"));
 const HeroSection = dynamic(() => import("@/components/HeroSection"));
 const Navbar = dynamic(() => import("@/components/Navbar"));
 const ProductGrid = dynamic(() => import("@/components/ProductGrid"));
-const Contact = dynamic(() => import("@/components/Contact"));
 const DiscountSection = dynamic(() => import("@/components/Sale"));
 const Newsletter = dynamic(() => import("@/components/Newsletter"));
 
@@ -23,9 +22,8 @@ export default async function Home() {
       <HeroSection />
       {/* Products={products.data} */}
       <ProductGrid  />
-      <Contact />
-      <DiscountSection />
       <Newsletter />
+      <DiscountSection />
       <Footer />
     </div>
   );
