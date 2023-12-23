@@ -11,9 +11,12 @@
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
+    "@headlessui/react": "^1.7.17",
+    "@heroicons/react": "^2.1.1",
     "@material-tailwind/react": "^2.1.5",
     "@mui/material": "^5.15.1",
     "@next/codemod": "^14.0.4",
+    "@sendgrid/mail": "^8.1.0",
     "@types/next": "^9.0.0",
     "bootstrap-icons": "^1.11.2",
     "formik": "^2.4.5",

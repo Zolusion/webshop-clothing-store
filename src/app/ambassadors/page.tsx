@@ -1,11 +1,10 @@
 import dynamic from 'next/dynamic';
 import type { Metadata } from "next";
-
-const Navbar = dynamic(() => import('@/components/Navbar'));
-const AmbassadorInfo = dynamic(() => import('../../components/AmbassadorInfo'));
-const Posts = dynamic(() => import('@/components/Posts'));
-const Influencers = dynamic(() => import('@/components/Influencers'));
-const Footer = dynamic(() => import('@/components/Footer'));
+import Navbar from "@/components/Navbar";
+import AmbassadorInfo from '@/components/AmbassadorInfo';
+import Influencers from '@/components/Influencers';
+import Posts from '@/components/Posts';
+import Footer from '@/components/Footer';
 
 const title = "Ambassadors";
 

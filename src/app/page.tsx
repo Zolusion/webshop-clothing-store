@@ -1,11 +1,11 @@
 import dynamic from "next/dynamic";
 import type { Metadata } from "next";
 import SaleContainer from "@/components/SaleContainer";
+import Footer from "@/components/Footer";
+import HeroSection from "@/components/HeroSection";
+import Navbar from "@/components/Navbar";
+import ProductGrid from "@/components/ProductGrid";
 
-const Footer = dynamic(() => import("@/components/Footer"));
-const HeroSection = dynamic(() => import("@/components/HeroSection"));
-const Navbar = dynamic(() => import("@/components/Navbar"));
-const ProductGrid = dynamic(() => import("@/components/ProductGrid"));
 
 const title = "Home";
 

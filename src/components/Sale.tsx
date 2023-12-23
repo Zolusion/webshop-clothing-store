@@ -134,7 +134,7 @@ const DiscountSection = () => {
                 <div className="absolute bottom-0 left-0 right-0 text-center text-white opacity-0 transition-opacity group-hover:opacity-100">
                   <h3 className="text-lg font-semibold mb-2">{offer.name}</h3>
                   <div className="flex flex-col items-center justify-center ml-2 mb-2">
-                    <div className="line-through text-red-500 mr-2 font-bold text-2xl">
+                    <div className="line-through text-red-500 font-bold text-2xl">
                       {offer.oldPrice}
                     </div>
                     <div className="text-white font-semibold text-2xl">

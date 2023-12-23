@@ -1,21 +1,19 @@
-import { useEffect } from "react"
-import { useRouter } from "next/router"
-
-export default function Success() {
-    const router = useRouter();
-
-    useEffect(() => {
-        setTimeout(() => {
-            router.push("/")
-        }, 5000);
-    }, []);
-
-    return (
-        <div className="flex min-h-screen flex-col">
-            <div className="flex flex-col items-center justify-center flex-1">
-                <h1 className="text-4xl font-bold text-white">Thankyou for your message</h1>
-                <p className="text-white">We will get back to you shortly</p>
+import { CheckCircleIcon } from '@heroicons/react/20/solid'
+export default function Success({ message }: { message: string }) {
+    if (message == undefined || message == '') {
+        return;
+    } else {
+      return (
+        <div className="rounded-md bg-green-50 p-4 mb-4">
+          <div className="flex">
+            <div className="flex-shrink-0">
+              <CheckCircleIcon className="h-5 w-5 text-green-400" aria-hidden="true" />
             </div>
+            <div className="ml-3">
+              <h3 className="text-sm font-medium text-green-800">{message}</h3>
+            </div>
+          </div>
         </div>
-    )
+      )
+    }
 }

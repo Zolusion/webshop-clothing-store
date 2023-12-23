@@ -1,6 +1,8 @@
 import dynamic from 'next/dynamic';
 import React from 'react'
 import type { Metadata } from "next";
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 const ContactForm = dynamic(() => import('@/components/ContactForm'));
 
@@ -13,7 +15,9 @@ export const metadata: Metadata = {
 const page = () => {
   return (
     <div className='bg-black'>
+        <Navbar />
         <ContactForm />
+        <Footer />
     </div>
   )
 }
