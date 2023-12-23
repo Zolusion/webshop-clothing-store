@@ -34,8 +34,8 @@ const footerSections = [
 
 const Footer = () => {
   return (
-    <footer className="bg-white dark:bg-gray-900">
-      <div className="container mx-auto max-w-7xl flex justify-between px-6 py-12 2xl:max-w-[1800px]">
+    <footer className="bg-black">
+      <div className="container mx-auto flex justify-between px-6 py-12">
         <div>
           <a href="https://flowbite.com" className="flex items-center space-x-3 rtl:space-x-reverse">
             <Image

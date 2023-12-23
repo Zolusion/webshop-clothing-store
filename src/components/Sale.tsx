@@ -116,40 +116,34 @@ const specialOffers = [
 
 const DiscountSection = () => {
   return (
-    <section className="bg-gray-100 py-12 px-6">
-      <div className="container mx-auto max-w-7xl 2xl:max-w-[1800px]">
-        <h2 className="text-3xl font-extrabold text-black mb-8 2xl:text-3xl 2xl:px-4">
-          Special Offers
-        </h2>
+    <section className="bg-black">
+      <div>
         <div className="flex space-x-4 md:p-0 md:overflow-hidden">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
-
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
             {specialOffers.map((offer, index) => (
-              <div key={index} className="bg-white p-4 rounded shadow-md">
-                <div className="relative">
+              <div key={index} className="relative group">
+                <div className="overflow-hidden group-hover:opacity-75">
                   <Image
                     src={offer.imageUrl}
                     alt="Product Image"
-                    className="w-full h-[550px] object-cover rounded"
+                    className="w-full h-[550px] object-cover"
                     width={500}
                     height={700}
                   />
                 </div>
-                <div className="mt-4">
-                  <h3 className="text-xl font-semibold text-black 2xl:text-[22px]">
-                    {offer.name}
-                  </h3>
-                  <div className="flex items-center justify-between mt-4">
-                    <button name="add-to-cart" className="bg-black text-white py-2 px-4 2xl:text-md">
-                      Add To Cart
-                    </button>
-                    <span className="text-black font-semibold 2xl:text-lg">
-                      <div className="line-through text-red-500">
-                        {offer.oldPrice}
-                      </div>
+                <div className="absolute bottom-0 left-0 right-0 text-center text-white opacity-0 transition-opacity group-hover:opacity-100">
+                  <h3 className="text-lg font-semibold mb-2">{offer.name}</h3>
+                  <div className="flex flex-col items-center justify-center ml-2 mb-2">
+                    <div className="line-through text-red-500 mr-2 font-bold text-2xl">
+                      {offer.oldPrice}
+                    </div>
+                    <div className="text-white font-semibold text-2xl">
                       {offer.newPrice}
-                    </span>
+                    </div>
                   </div>
+                  <button name="add-to-cart" className="text-white bg-black px-4 py-2 w-full">
+                    Add To Cart
+                  </button>
                 </div>
               </div>
             ))}
