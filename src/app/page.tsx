@@ -1,12 +1,11 @@
 import dynamic from "next/dynamic";
 import type { Metadata } from "next";
+import SaleContainer from "@/components/SaleContainer";
 
 const Footer = dynamic(() => import("@/components/Footer"));
 const HeroSection = dynamic(() => import("@/components/HeroSection"));
 const Navbar = dynamic(() => import("@/components/Navbar"));
 const ProductGrid = dynamic(() => import("@/components/ProductGrid"));
-const DiscountSection = dynamic(() => import("@/components/Sale"));
-const Newsletter = dynamic(() => import("@/components/Newsletter"));
 
 const title = "Home";
 
@@ -22,8 +21,7 @@ export default async function Home() {
       <HeroSection />
       {/* Products={products.data} */}
       <ProductGrid  />
-      <Newsletter />
-      <DiscountSection />
+      <SaleContainer />
       <Footer />
     </div>
   );

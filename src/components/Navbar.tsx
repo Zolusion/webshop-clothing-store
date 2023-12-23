@@ -16,7 +16,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="bg-black text-white border-b border-gray-200 dark:border-gray-600 dark:bg-gray-900">
+        <nav className="bg-black text-white">
             <div className="flex p-4 px-6 justify-between">
                 <a href="https://flowbite.com" className="flex items-center space-x-3 rtl:space-x-reverse">
                     <span className="self-center text-lg font-semibold whitespace-nowrap">SolmazFashion</span>
@@ -29,14 +29,14 @@ const Navbar = () => {
                 </button>
                 <div className="hidden md:flex flex-grow items-center justify-center space-x-8 font-medium">
                     <ul className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-8">
-                        <li><Link href="/" className="block py-2 px-3 text-gray-300 hover:text-white">Clothing</Link></li>
-                        <li><Link href="/about" className="block py-2 px-3 text-gray-300 hover:text-white">Beauty</Link></li>
-                        <li><Link href="/contact" className="block py-2 px-3 text-gray-300 hover:text-white">Accessoires</Link></li>
-                        <li><Link href="/ambassadors" className="block py-2 px-3 text-gray-300 hover:text-white">Jackets</Link></li>
-                        <li><Link href="/" className="block py-2 px-3 text-gray-300 hover:text-white">Heels</Link></li>
-                        <li><Link href="/about" className="block py-2 px-3 text-gray-300 hover:text-white">Dresses</Link></li>
-                        <li><Link href="/contact" className="block py-2 px-3 text-gray-300 hover:text-white">Handbags</Link></li>
-                        <li><Link href="/ambassadors" className="block py-2 px-3 text-gray-300 hover:text-white font-bold">SALE</Link></li>
+                        <ol><Link href="/" className="block py-2 px-3 text-gray-300 hover:text-white">Clothing</Link></ol>
+                        <ol><Link href="/about" className="block py-2 px-3 text-gray-300 hover:text-white">Beauty</Link></ol>
+                        <ol><Link href="/contact" className="block py-2 px-3 text-gray-300 hover:text-white">Accessoires</Link></ol>
+                        <ol><Link href="/ambassadors" className="block py-2 px-3 text-gray-300 hover:text-white">Jackets</Link></ol>
+                        <ol><Link href="/" className="block py-2 px-3 text-gray-300 hover:text-white">Heels</Link></ol>
+                        <ol><Link href="/about" className="block py-2 px-3 text-gray-300 hover:text-white">Dresses</Link></ol>
+                        <ol><Link href="/contact" className="block py-2 px-3 text-gray-300 hover:text-white">Handbags</Link></ol>
+                        <ol><Link href="/ambassadors" className="block py-2 px-3 text-gray-300 hover:text-white font-bold">SALE</Link></ol>
                     </ul>
                 </div>
                 <div className="flex items-center space-x-2">
