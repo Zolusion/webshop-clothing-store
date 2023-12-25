@@ -18,7 +18,7 @@ const Navbar = () => {
     return (
         <nav className="bg-black text-white">
             <div className="flex p-4 px-6 justify-between">
-                <a href="https://flowbite.com" className="flex items-center space-x-3 rtl:space-x-reverse">
+                <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
                     <span className="self-center text-lg font-semibold whitespace-nowrap">SolmazFashion</span>
                 </a>
                 <button className="md:hidden inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" onClick={toggleMobileMenu} aria-expanded={isMobileMenuVisible}>
@@ -36,7 +36,7 @@ const Navbar = () => {
                         <ol><Link href="/" className="block py-2 px-3 text-gray-300 hover:text-white">Heels</Link></ol>
                         <ol><Link href="/about" className="block py-2 px-3 text-gray-300 hover:text-white">Dresses</Link></ol>
                         <ol><Link href="/contact" className="block py-2 px-3 text-gray-300 hover:text-white">Handbags</Link></ol>
-                        <ol><Link href="/ambassadors" className="block py-2 px-3 text-gray-300 hover:text-white font-bold">SALE</Link></ol>
+                        <ol><Link href="/sale" className="block py-2 px-3 text-gray-300 hover:text-white font-bold">SALE</Link></ol>
                     </ul>
                 </div>
                 <div className="flex items-center space-x-2">
@@ -58,6 +58,18 @@ const Navbar = () => {
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-suit-heart-fill w-6 h-5" viewBox="0 0 16 16">
                             <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1" />
+                        </svg>
+                    </button>
+                    <button
+                        className="text-gray-300 hover:text-white"
+                        onClick={() => {
+                            console.log('Wishlist clicked');
+                        }}
+                    >
+                        {/* profile */}
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-person-circle w-6 h-5" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                            <path fillRule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
                         </svg>
                     </button>
                 </div>

@@ -1,9 +1,16 @@
-// DiscountSection.js
-
+"use client";
 import Image from "next/image";
 import React from "react";
+import { useState } from "react";
 
-const specialOffers = [
+interface Product {
+  imageUrl: string;
+  name: string;
+  oldPrice: string;
+  newPrice: string;
+}
+
+const specialOffers: Product[] = [
   {
     imageUrl: "/solmaznur-images/solmaznur6.jpg",
     name: "Product Name",
@@ -115,6 +122,12 @@ const specialOffers = [
 ]
 
 const DiscountSection = () => {
+  const [shoppingCart, setShoppingCart] = useState<Product[]>([]);
+
+  const addToCart = (product: any) => {
+    setShoppingCart([...shoppingCart, product]);
+  };
+
   return (
     <section className="bg-black">
       <div>
@@ -141,7 +154,11 @@ const DiscountSection = () => {
                       {offer.newPrice}
                     </div>
                   </div>
-                  <button name="add-to-cart" className="text-white bg-black px-4 py-2 w-full">
+                  <button
+                    name="add-to-cart"
+                    className="text-white bg-black px-4 py-2 w-full"
+                    onClick={() => addToCart(offer)}
+                  >
                     Add To Cart
                   </button>
                 </div>

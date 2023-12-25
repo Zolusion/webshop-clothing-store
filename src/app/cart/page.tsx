@@ -1,27 +1,40 @@
-import ShoppingCartItems from '@/components/ShoppingcartItems';
+import CartComponent from '@/components/CartComponent';
+import Footer from '@/components/Footer';
+import Navbar from '@/components/Navbar';
 import React from 'react';
-import type { Metadata } from "next";
 
-const title = "Shopping Cart";
-
-export const metadata: Metadata = {
-    title: `${title} | Solmaz Fashion`,
+interface ProductCart {
+  image: string;
+  productname: string;
+  price: number;
+  quantity: number;
+  totalprice: number;
 }
 
-export default async function Cart() {
-    // const carts = await getData();
-    return (
-        <div className='bg-white'>
-            {/* CartItems={carts.data} */}
-            <ShoppingCartItems />
-        </div>
-    );
+interface Customer {
+  name: string;
+  surname: string;
+  email: string;
+  phone: string;
+  address: string;
+  city: string;
+  state: string;
+  zip: string;
+  country: string;
+  paymentmethod: string;
+  orderstatus: string;
+  products: ProductCart[];
+  totalprice: number;
+}
+
+const Cart = ({ customer }: { customer: Customer }) => {
+  return (
+    <div className='bg-white'>
+      <Navbar />
+      <CartComponent customer={customer} />
+      <Footer />
+    </div>
+  );
 };
 
-// async function getData() {
-//   const res = await fetch("https://solmazadmin.com/api/cart");
-//   if (!res.ok) {
-//     throw new Error("Failed to fetch data");
-//   }
-//   return res.json();
-// }
+export default Cart;
