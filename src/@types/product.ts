@@ -6,5 +6,4 @@ export default interface Product {
     quantity: number;
     oldPrice?: string;
     newPrice?: string;
-
 }

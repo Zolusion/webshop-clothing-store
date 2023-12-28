@@ -26,7 +26,7 @@ const cartSlice = createSlice({
                 imageUrl: cartnewItem.imageUrl,
                 quantity: 25,
                 oldPrice: cartnewItem.oldPrice,
-                newPrice: cartnewItem.newPrice
+                newPrice: cartnewItem.newPrice,
             }
         }
         state.items.push(cartnewItem);

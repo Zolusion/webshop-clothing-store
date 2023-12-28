@@ -4,11 +4,14 @@ import Image from 'next/image';
 import { useState } from 'react';
 
 interface ProductCart {
-    image: string;
-    productname: string;
-    price: number;
+    id?: string;
+    productName: string;
+    description: string;
+    imageUrl: string;
     quantity: number;
-    totalprice: number;
+    oldPrice?: string;
+    newPrice?: string;
+    totalPrice: number;
 }
 
 interface Customer {
@@ -24,11 +27,10 @@ interface Customer {
     paymentmethod: string;
     orderstatus: string;
     products: ProductCart[];
-    totalprice: number;
 }
 
 const calculateTotalPrice = (products: ProductCart[], vatRate: number) => {
-    const totalPriceWithoutVat = products.reduce((total, product) => total + product.totalprice, 0);
+    const totalPriceWithoutVat = products.reduce((total, product) => total + product.quantity * product.totalPrice, 0);
     const vatAmount = totalPriceWithoutVat * (vatRate / 100);
     const totalPriceWithVat = totalPriceWithoutVat + vatAmount;
 
@@ -127,7 +129,6 @@ const CartComponent: React.FC<{ customer?: Customer }> = ({ customer }) => {
         paymentmethod: 'IDEAL',
         orderstatus: customer?.orderstatus || '',
         products: customer?.products || [],
-        totalprice: customer?.totalprice || 0,
     });
 
     const [formErrors, setFormErrors] = useState<Record<string, string>>({
@@ -320,10 +321,10 @@ const CartComponent: React.FC<{ customer?: Customer }> = ({ customer }) => {
                         </thead>
                         <tbody>
                             {customer.products.map((product) => (
-                                <tr key={product.productname}>
-                                    <td className='border border-gray-300 px-4 py-2'>{product.productname}</td>
+                                <tr key={product.productName}>
+                                    <td className='border border-gray-300 px-4 py-2'>{product.productName}</td>
                                     <td className='border border-gray-300 px-4 py-2'>{product.quantity}</td>
-                                    <td className='border border-gray-300 px-4 py-2'>{product.price}</td>
+                                    <td className='border border-gray-300 px-4 py-2'>{product.totalPrice}</td>
                                 </tr>
                             ))}
                         </tbody>
