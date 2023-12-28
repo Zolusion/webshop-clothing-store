@@ -6,7 +6,6 @@ import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
 import ProductGrid from "@/components/ProductGrid";
 
-
 const title = "Home";
 
 export const metadata: Metadata = {
