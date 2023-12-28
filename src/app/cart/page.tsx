@@ -30,7 +30,12 @@ interface Customer {
   totalprice: number;
 }
 
-const Cart = ({ customer }: { customer: Customer }) => {
+interface PageProps {
+  params: { slug: string };
+  searchParams: { [key: string]: string | string[] | undefined };
+}
+
+const Cart = ({ params, searchParams, customer }: PageProps & { customer: Customer }) => {
   return (
     <Router>
       <div className='bg-white'>

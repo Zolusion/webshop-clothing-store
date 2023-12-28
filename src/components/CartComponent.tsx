@@ -38,6 +38,7 @@ const calculateTotalPrice = (products: ProductCart[], vatRate: number) => {
         totalPriceWithVat: totalPriceWithVat.toFixed(2),
     };
 };
+
 const CartComponent: React.FC<{ customer?: Customer }> = ({ customer }) => {
     if (!customer) {
         return (
@@ -114,20 +115,19 @@ const CartComponent: React.FC<{ customer?: Customer }> = ({ customer }) => {
     }
 
     const [formData, setFormData] = useState<Customer>({
-        // Initialize with customer data
-        name: customer.name,
-        surname: customer.surname,
-        email: customer.email,
-        phone: customer.phone,
-        address: customer.address,
-        city: customer.city,
-        state: customer.state,
-        zip: customer.zip,
-        country: customer.country,
-        paymentmethod: 'IDEAL', // or initialize with the default payment method
-        orderstatus: customer.orderstatus,
-        products: customer.products,
-        totalprice: customer.totalprice,
+        name: customer?.name || '',
+        surname: customer?.surname || '',
+        email: customer?.email || '',
+        phone: customer?.phone || '',
+        address: customer?.address || '',
+        city: customer?.city || '',
+        state: customer?.state || '',
+        zip: customer?.zip || '',
+        country: customer?.country || '',
+        paymentmethod: 'IDEAL',
+        orderstatus: customer?.orderstatus || '',
+        products: customer?.products || [],
+        totalprice: customer?.totalprice || 0,
     });
 
     const [formErrors, setFormErrors] = useState<Record<string, string>>({
