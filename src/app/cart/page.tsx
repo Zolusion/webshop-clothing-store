@@ -1,7 +1,10 @@
+"use client"
 import CartComponent from '@/components/CartComponent';
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
-import React from 'react';
+import DiscountSection from '@/components/Sale';
+import * as React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 interface ProductCart {
   image: string;
@@ -29,11 +32,16 @@ interface Customer {
 
 const Cart = ({ customer }: { customer: Customer }) => {
   return (
-    <div className='bg-white'>
-      <Navbar />
-      <CartComponent customer={customer} />
-      <Footer />
-    </div>
+    <Router>
+      <div className='bg-white'>
+        <Navbar />
+        <Routes>
+          <Route path="/cart" element={<CartComponent customer={customer} />} />
+          <Route path="/discount" element={<DiscountSection />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 };
 

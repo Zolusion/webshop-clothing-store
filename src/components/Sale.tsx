@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React from "react";
 import { useState } from "react";
+import { BrowserRouter as Router, useNavigate } from 'react-router-dom';
 
 interface Product {
   imageUrl: string;
@@ -123,11 +124,13 @@ const specialOffers: Product[] = [
 
 const DiscountSection = () => {
   const [shoppingCart, setShoppingCart] = useState<Product[]>([]);
+  const navigate = useNavigate();
 
-  const addToCart = (product: any) => {
+  const addToCart = (product: Product) => {
     setShoppingCart([...shoppingCart, product]);
+    navigate("/cart");
   };
-
+  
   return (
     <section className="bg-black">
       <div>
@@ -141,7 +144,8 @@ const DiscountSection = () => {
                     alt="Product Image"
                     className="w-full h-[550px] object-cover"
                     width={500}
-                    height={700}
+                    height={500}
+                    loading="lazy"
                   />
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 text-center text-white opacity-0 transition-opacity group-hover:opacity-100">
@@ -171,4 +175,10 @@ const DiscountSection = () => {
   );
 };
 
-export default DiscountSection;
+const DiscountSectionWithRouter = () => (
+  <Router>
+    <DiscountSection />
+  </Router>
+);
+
+export default DiscountSectionWithRouter;

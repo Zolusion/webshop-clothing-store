@@ -1,3 +1,4 @@
+// Import statements remain unchanged
 "use client";
 import { useEffect, useState } from "react";
 import Image from "next/image";
@@ -7,17 +8,26 @@ const HeroSection = () => {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
   const [isSecondVideoPlaying, setIsSecondVideoPlaying] = useState(false);
 
-  // Use 'useEffect' to handle the video playback
   useEffect(() => {
     const videoElement = document.getElementById("heroVideo") as HTMLVideoElement;
     const secondVideoElement = document.getElementById("secondVideo") as HTMLVideoElement;
 
+    const playVideo = (element: HTMLVideoElement) => {
+      if (element) {
+        const promise = element.play();
+        if (promise) {
+          promise.catch((error) => {
+            // Autoplay was prevented, handle it here
+            console.error("Autoplay prevented:", error);
+            // You can show a play button or handle user interaction here
+          });
+        }
+      }
+    };
+
     if (videoElement) {
       if (isVideoPlaying) {
-        videoElement.play().catch((error: any) => {
-          // Autoplay was prevented, handle it here
-          console.error("Autoplay prevented:", error);
-        });
+        playVideo(videoElement);
       } else {
         videoElement.pause();
       }
@@ -25,30 +35,19 @@ const HeroSection = () => {
 
     if (secondVideoElement) {
       if (isSecondVideoPlaying) {
-        secondVideoElement.play().catch((error: any) => {
-          // Autoplay was prevented, handle it here
-          console.error("Autoplay prevented:", error);
-        });
+        playVideo(secondVideoElement);
       } else {
         secondVideoElement.pause();
       }
     }
   }, [isVideoPlaying, isSecondVideoPlaying]);
 
-  const handleMouseEnter = () => {
-    setIsVideoPlaying(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsVideoPlaying(false);
-  };
-
-  const handleSecondMouseEnter = () => {
-    setIsSecondVideoPlaying(true);
-  };
-
-  const handleSecondMouseLeave = () => {
-    setIsSecondVideoPlaying(false);
+  const handleInteraction = (
+    playFunction: () => void,
+    playStateFunction: React.Dispatch<React.SetStateAction<boolean>>
+  ) => {
+    playStateFunction(true);
+    playFunction();
   };
 
   return (
@@ -94,8 +93,9 @@ const HeroSection = () => {
               width={680}
               height={300}
               className="object-cover w-full h-[600px] md:h-[600px] opacity-80"
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
+              onMouseEnter={() => handleInteraction(() => {}, setIsVideoPlaying)}
+              onMouseLeave={() => setIsVideoPlaying(false)}
+              onClick={() => handleInteraction(() => {}, setIsVideoPlaying)} // Add click event for mobile devices
             ></video>
             <a href="/products" className="hover-link">
               <p className="hover-effect uppercase text-6xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center font-bold">
@@ -106,14 +106,15 @@ const HeroSection = () => {
           <div className="relative">
             <video
               id="secondVideo"
-              src="/hero-section-images/winter.mp4" // Replace with your second video URL
+              src="/hero-section-images/winter.mp4"
               muted
               loop
               width={680}
               height={300}
               className="object-cover w-full h-[600px] md:h-[600px] opacity-80"
-              onMouseEnter={handleSecondMouseEnter}
-              onMouseLeave={handleSecondMouseLeave}
+              onMouseEnter={() => handleInteraction(() => {}, setIsSecondVideoPlaying)}
+              onMouseLeave={() => setIsSecondVideoPlaying(false)}
+              onClick={() => handleInteraction(() => {}, setIsSecondVideoPlaying)} // Add click event for mobile devices
             ></video>
             <a href="/products" className="hover-link">
               <p className="hover-effect uppercase text-6xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center font-bold md:w-2/3">

@@ -1,6 +1,7 @@
 "use client";
-import React, { useState } from 'react';
+import React from 'react';
 import Image from 'next/image';
+import { useState } from 'react';
 
 interface ProductCart {
     image: string;
@@ -37,7 +38,6 @@ const calculateTotalPrice = (products: ProductCart[], vatRate: number) => {
         totalPriceWithVat: totalPriceWithVat.toFixed(2),
     };
 };
-
 const CartComponent: React.FC<{ customer?: Customer }> = ({ customer }) => {
     if (!customer) {
         return (
@@ -113,7 +113,8 @@ const CartComponent: React.FC<{ customer?: Customer }> = ({ customer }) => {
         )
     }
 
-    const [formData, setFormData] = useState({
+    const [formData, setFormData] = useState<Customer>({
+        // Initialize with customer data
         name: customer.name,
         surname: customer.surname,
         email: customer.email,
@@ -123,10 +124,13 @@ const CartComponent: React.FC<{ customer?: Customer }> = ({ customer }) => {
         state: customer.state,
         zip: customer.zip,
         country: customer.country,
-        paymentmethod: 'IDEAL',
+        paymentmethod: 'IDEAL', // or initialize with the default payment method
+        orderstatus: customer.orderstatus,
+        products: customer.products,
+        totalprice: customer.totalprice,
     });
 
-    const [formErrors, setFormErrors] = useState({
+    const [formErrors, setFormErrors] = useState<Record<string, string>>({
         name: '',
         surname: '',
         email: '',
@@ -142,7 +146,9 @@ const CartComponent: React.FC<{ customer?: Customer }> = ({ customer }) => {
     const vatRate = 21;
     const total = calculateTotalPrice(customer.products, vatRate);
 
-    const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+    const handleInputChange = (
+        e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
+    ) => {
         const { name, value } = e.target;
         setFormData((prevData) => ({ ...prevData, [name]: value }));
         setFormErrors((prevErrors) => ({ ...prevErrors, [name]: '' }));
