@@ -16,10 +16,10 @@ const Beauty = () => {
     const [searchQuery, setSearchQuery] = useState<string>('');
     const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
     const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+    const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     const handleCategoryClick = (category: string) => {
         setSelectedCategory(category);
-        // Filter products based on the selected category
         const filtered = products.filter((product) => product.category === category);
         setFilteredProducts(filtered);
     };
@@ -239,7 +239,7 @@ const Beauty = () => {
             brand: 'La Reveuse',
             price: 6.99,
             imageSrc: 'https://i.pinimg.com/564x/48/92/9c/48929cd866a48db79d92c8112c285c63.jpg',
-            category: 'Skincare',
+            category: 'Body Care',
         }
     ];
 
@@ -257,8 +257,8 @@ const Beauty = () => {
 
     return (
         <div className='px-6 p-4 bg-gray-100 shadow-md'>
-            <div className='flex justify-between items-center mb-4'>
-                <div>
+            <div className='flex flex-col md:flex-row justify-between items-center mb-4'>
+                <div className='mb-4 md:mb-0'>
                     <input
                         type='text'
                         placeholder='Search products'
@@ -268,22 +268,44 @@ const Beauty = () => {
                         onKeyDown={(e) => e.key === 'Enter' && handleSearch()}
                     />
                     <button
-                        className='ml-2 px-4 py-2 bg-blue-500 text-white rounded-md'
+                        className='mt-2 md:ml-2 px-4 py-2 bg-blue-500 text-white rounded-md w-full md:w-auto'
                         onClick={handleSearch}
                     >
                         Search
                     </button>
                 </div>
 
-                <div className='flex font-bold'>
-                    <a href='#' onClick={() => handleCategoryClick('Skincare')} className={`mr-6 text-black hover:underline text-[14px] ${selectedCategory === 'Skincare' ? 'font-bold' : ''}`}>Skincare</a>
-                    <a href='#' onClick={() => handleCategoryClick('Makeup')} className={`mr-6 text-black hover:underline text-[14px] ${selectedCategory === 'Makeup' ? 'font-bold' : ''}`}>Makeup</a>
-                    <a href='#' onClick={() => handleCategoryClick('Haircare')} className={`mr-6 text-black hover:underline text-[14px] ${selectedCategory === 'Haircare' ? 'font-bold' : ''}`}>Haircare</a>
-                    <a href='#' onClick={() => handleCategoryClick('Fragrances')} className={`mr-6 text-black hover:underline text-[14px] ${selectedCategory === 'Fragrances' ? 'font-bold' : ''}`}>Fragrances</a>
-                    <a href='#' onClick={() => handleCategoryClick('Personal Care')} className={`mr-6 text-black hover:underline text-[14px] ${selectedCategory === 'Personal Care' ? 'font-bold' : ''}`}>Personal Care</a>
-                    <a href='#' onClick={() => handleCategoryClick('Body Care')} className={`mr-6 text-black hover:underline text-[14px] ${selectedCategory === 'Body Care' ? 'font-bold' : ''}`}>Body Care</a>
-                    <a href='#' onClick={() => handleCategoryClick('Gifts')} className={`mr-6 text-black hover:underline text-[14px] ${selectedCategory === 'Gifts' ? 'font-bold' : ''}`}>Gifts</a>
-                    <a href='#' onClick={() => handleCategoryClick('Home Care')} className={`mr-6 text-black hover:underline text-[14px] ${selectedCategory === 'Home Care' ? 'font-bold' : ''}`}>Home Care</a>
+                <div className='flex flex-col md:flex-row font-bold'>
+                    <div className='md:hidden mb-2'>
+                        <button
+                            className='text-black hover:underline text-[14px] focus:outline-none'
+                            onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
+                        >
+                            Categories
+                        </button>
+                        {isMobileMenuOpen && (
+                            <div className='flex flex-col mt-2'>
+                                <a href='#' onClick={() => handleCategoryClick('Skincare')} className={`mr-6 text-black hover:underline text-[14px] ${selectedCategory === 'Skincare' ? 'font-bold' : ''}`}>Skincare</a>
+                                <a href='#' onClick={() => handleCategoryClick('Makeup')} className={`mr-6 text-black hover:underline text-[14px] ${selectedCategory === 'Makeup' ? 'font-bold' : ''}`}>Makeup</a>
+                                <a href='#' onClick={() => handleCategoryClick('Haircare')} className={`mr-6 text-black hover:underline text-[14px] ${selectedCategory === 'Haircare' ? 'font-bold' : ''}`}>Haircare</a>
+                                <a href='#' onClick={() => handleCategoryClick('Fragrances')} className={`mr-6 text-black hover:underline text-[14px] ${selectedCategory === 'Fragrances' ? 'font-bold' : ''}`}>Fragrances</a>
+                                <a href='#' onClick={() => handleCategoryClick('Personal Care')} className={`mr-6 text-black hover:underline text-[14px] ${selectedCategory === 'Personal Care' ? 'font-bold' : ''}`}>Personal Care</a>
+                                <a href='#' onClick={() => handleCategoryClick('Body Care')} className={`mr-6 text-black hover:underline text-[14px] ${selectedCategory === 'Body Care' ? 'font-bold' : ''}`}>Body Care</a>
+                                <a href='#' onClick={() => handleCategoryClick('Gifts')} className={`mr-6 text-black hover:underline text-[14px] ${selectedCategory === 'Gifts' ? 'font-bold' : ''}`}>Gifts</a>
+                                <a href='#' onClick={() => handleCategoryClick('Home Care')} className={`mr-6 text-black hover:underline text-[14px] ${selectedCategory === 'Home Care' ? 'font-bold' : ''}`}>Home Care</a>
+                            </div>
+                        )}
+                    </div>
+                    <div className='hidden md:flex space-x-6'>
+                        <a href='#' onClick={() => handleCategoryClick('Skincare')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Skincare' ? 'font-bold' : ''}`}>Skincare</a>
+                        <a href='#' onClick={() => handleCategoryClick('Makeup')} className={`mr-6 text-black hover:underline text-[14px] ${selectedCategory === 'Makeup' ? 'font-bold' : ''}`}>Makeup</a>
+                        <a href='#' onClick={() => handleCategoryClick('Haircare')} className={`mr-6 text-black hover:underline text-[14px] ${selectedCategory === 'Haircare' ? 'font-bold' : ''}`}>Haircare</a>
+                        <a href='#' onClick={() => handleCategoryClick('Fragrances')} className={`mr-6 text-black hover:underline text-[14px] ${selectedCategory === 'Fragrances' ? 'font-bold' : ''}`}>Fragrances</a>
+                        <a href='#' onClick={() => handleCategoryClick('Personal Care')} className={`mr-6 text-black hover:underline text-[14px] ${selectedCategory === 'Personal Care' ? 'font-bold' : ''}`}>Personal Care</a>
+                        <a href='#' onClick={() => handleCategoryClick('Body Care')} className={`mr-6 text-black hover:underline text-[14px] ${selectedCategory === 'Body Care' ? 'font-bold' : ''}`}>Body Care</a>
+                        <a href='#' onClick={() => handleCategoryClick('Gifts')} className={`mr-6 text-black hover:underline text-[14px] ${selectedCategory === 'Gifts' ? 'font-bold' : ''}`}>Gifts</a>
+                        <a href='#' onClick={() => handleCategoryClick('Home Care')} className={`mr-6 text-black hover:underline text-[14px] ${selectedCategory === 'Home Care' ? 'font-bold' : ''}`}>Home Care</a>
+                    </div>
                 </div>
             </div>
 
