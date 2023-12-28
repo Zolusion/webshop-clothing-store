@@ -1,8 +1,22 @@
-import React from 'react';
+"use client";
+import React, { useState } from 'react';
+
+interface Product {
+    id: number;
+    name: string;
+    description: string;
+    brand: string;
+    price: number;
+    imageSrc: string;
+}
 
 const Beauty = () => {
+
+    const [searchQuery, setSearchQuery] = useState<string>('');
+    const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
+
     // Dummy product data array for demonstration
-    const products = [
+    const products: Product[] = [
         {
             id: 1,
             name: 'MAC Brush',
@@ -99,7 +113,47 @@ const Beauty = () => {
             price: 10.59,
             imageSrc: 'https://i.pinimg.com/474x/53/fb/b3/53fbb3c9ceaf6bd3856cfd4d6c9fe3db.jpg',
         },
+        {
+            id: 13,
+            name: 'Lash Sensational',
+            description: 'Lashes sensational with our luxury lash mascara.',
+            brand: 'Maybellin',
+            price: 9.99,
+            imageSrc: 'https://i.pinimg.com/474x/b1/61/e0/b161e01be1ab392e5d6f9295c5e49e82.jpg',
+        },
+        {
+            id: 14,
+            name: 'Rare Beauty',
+            description: 'Mascara for a dry and refreshed look with our luxury mascara.',
+            brand: 'The Every Girl',
+            price: 14.99,
+            imageSrc: 'https://i.pinimg.com/474x/2b/89/41/2b89417ec6b317202604f1f74947d1b3.jpg',
+        },
+        {
+            id: 15,
+            name: 'Sheglam Color Bloom',
+            description: 'Blush make up for cheers with our luxury sheglam color bloom.',
+            brand: 'Sheglam',
+            price: 10.59,
+            imageSrc: 'https://i.pinimg.com/564x/e5/1c/6f/e51c6f3933be8e6d784f1cd405c8331d.jpg',
+        },
+        {
+            id: 16,
+            name: 'Maybelline Lash Sensational',
+            description: 'Sky high with our luxury lash mascara with Maybelline. ',
+            brand: 'Maybelline',
+            price: 18.99,
+            imageSrc: 'https://i.pinimg.com/564x/36/e2/ac/36e2aca5b212db51a1fd97b3ae4f97d7.jpg',
+        },
     ];
+
+    const handleSearch = () => {
+        const lowerCaseQuery = searchQuery.toLowerCase();
+        const filtered = products.filter((product) =>
+            product.name.toLowerCase().includes(lowerCaseQuery)
+        );
+        setFilteredProducts(filtered);
+    };
 
     const imagesMatchingNames = products.map(product => product.imageSrc);
 
@@ -112,26 +166,35 @@ const Beauty = () => {
                     <input
                         type='text'
                         placeholder='Search products'
-                        className='p-2 border border-gray-300 rounded w-[500px] text-black'
+                        className='p-2 border border-gray-300 w-[500px] text-black border-none bg-none rounded-md'
+                        value={searchQuery}
+                        onChange={(e) => setSearchQuery(e.target.value)}
+                        onKeyDown={(e) => e.key === 'Enter' && handleSearch()}
                     />
+                    <button
+                        className='ml-2 px-4 py-2 bg-blue-500 text-white rounded-md'
+                        onClick={handleSearch}
+                    >
+                        Search
+                    </button>
                 </div>
 
                 <div className='flex font-bold'>
-                    <a href='#' className='mr-6 text-black hover:underline'>Skincare</a>
-                    <a href='#' className='mr-6 text-black hover:underline'>Makeup</a>
-                    <a href='#' className='mr-6 text-black hover:underline'>Haircare</a>
-                    <a href='#' className='mr-6 text-black hover:underline'>Fragrances</a>
-                    <a href='#' className='mr-6 text-black hover:underline'>Personal Care</a>
-                    <a href='#' className='mr-6 text-black hover:underline'>Body Care</a>
-                    <a href='#' className='mr-6 text-black hover:underline'>Gifts</a>
-                    <a href='#' className='mr-6 text-black hover:underline'>Home Care</a>
+                    <a href='#' className='mr-6 text-black hover:underline text-[14px]'>Skincare</a>
+                    <a href='#' className='mr-6 text-black hover:underline text-[14px]'>Makeup</a>
+                    <a href='#' className='mr-6 text-black hover:underline text-[14px]'>Haircare</a>
+                    <a href='#' className='mr-6 text-black hover:underline text-[14px]'>Fragrances</a>
+                    <a href='#' className='mr-6 text-black hover:underline text-[14px]'>Personal Care</a>
+                    <a href='#' className='mr-6 text-black hover:underline text-[14px]'>Body Care</a>
+                    <a href='#' className='mr-6 text-black hover:underline text-[14px]'>Gifts</a>
+                    <a href='#' className='mr-6 text-black hover:underline text-[14px]'>Home Care</a>
                 </div>
             </div>
 
             <hr className='mb-4' />
 
             <div className='grid grid-cols-1 md:grid-cols-4 gap-8'>
-                {products.map((product) => (
+                {(searchQuery ? filteredProducts : products).map((product) => (
                     <div key={product.id} className='mb-8'>
                         <img
                             src={product.imageSrc}
@@ -141,6 +204,7 @@ const Beauty = () => {
                             width={500}
                             height={500}
                         />
+
                         <div>
                             <h3 className='text-[20px] text-black font-thin'>{product.name}</h3>
                             <p className='text-black font-bold mb-4'>{product.description}</p>
