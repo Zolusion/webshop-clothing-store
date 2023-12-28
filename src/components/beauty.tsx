@@ -145,6 +145,41 @@ const Beauty = () => {
             price: 18.99,
             imageSrc: 'https://i.pinimg.com/564x/36/e2/ac/36e2aca5b212db51a1fd97b3ae4f97d7.jpg',
         },
+        {
+            id: 17,
+            name: 'Elf Power Grip Primer',
+            description: 'Power up your makeup with our exclusive Elf Power Grip Primer.',
+            brand: 'Elf',
+            price: 14.99,
+            imageSrc: 'https://i.pinimg.com/564x/3a/58/b5/3a58b5ba74a150824211fc4329767b70.jpg',
+        },
+        // Glowgasm
+        {
+            id: 18,
+            name: 'Glowgasm Calm Glow',
+            description: 'Calm and invigorating with our exclusive Calm Glow.',
+            brand: 'Glowgasm',
+            price: 9.99,
+            imageSrc: 'https://i.pinimg.com/564x/90/4e/df/904edf2bf33b7fda6e03391da9e5ec90.jpg',
+        },
+        // Fenty beauty liquid liner 
+        {
+            id: 19,
+            name: 'Fenty Beauty Liquid Liner',
+            description: 'Liquid liner for all your makeup needs with our exclusive Fenty Beauty Liquid Liner. ',
+            brand: 'Fenty',
+            price: 18.99,
+            imageSrc: 'https://i.pinimg.com/564x/69/7b/d0/697bd004cf4fcc183edf0e1dda9ce2d2.jpg',
+        },
+        // Lancome teint vissionaire 
+        {
+            id: 20,
+            name: 'Lancome Teint Vissionaire',
+            description: 'Teint vissionaire for all your makeup needs with our exclusive Lancome Teint Vissionaire. ',
+            brand: 'Lancome',
+            price: 14.99,
+            imageSrc: 'https://i.pinimg.com/564x/39/c9/88/39c988b020d03d317730c8feaa5ed633.jpg',
+        }
     ];
 
     const handleSearch = () => {
