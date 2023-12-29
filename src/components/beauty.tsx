@@ -11,7 +11,7 @@ interface Product {
     category: string;
 }
 
-const Beauty = () => {
+const BeautyComponent = () => {
 
     const [searchQuery, setSearchQuery] = useState<string>('');
     const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
@@ -241,24 +241,6 @@ const Beauty = () => {
             imageSrc: 'https://i.pinimg.com/564x/48/92/9c/48929cd866a48db79d92c8112c285c63.jpg',
             category: 'Body Care',
         },
-        // {
-        //     id: 25,
-        //     name: 'Panda Coffee Cup',
-        //     description: 'Experience the ultimate comfort and convenience with our exclusive Panda Coffee Cup, providing a smooth and delicious coffee experience.',
-        //     brand: 'Panda',
-        //     price: 4.99,
-        //     imageSrc: 'https://i.pinimg.com/564x/21/ce/05/21ce05d425b72f52a6d666bb84ddbf4e.jpg',
-        //     category: 'Gifts',
-        // },
-        // {
-        //     id: 26,
-        //     name: 'My Girlfriend Coffe Cup',
-        //     description: 'Hot and ready-to-drink, our My Girlfriend Coffe Cup is the perfect companion for your girlfriend',
-        //     brand: 'Mugs',
-        //     price: 6.99,
-        //     imageSrc: 'https://i.pinimg.com/564x/5d/f7/17/5df717302d1e12447ad64c875ff9cebf.jpg',
-        //     category: 'Gifts',
-        // }
     ];
 
     const handleSearch = () => {
@@ -275,25 +257,25 @@ const Beauty = () => {
 
     return (
         <div className='px-6 p-4 bg-gray-100 shadow-md'>
-            <div className='flex flex-col md:flex-row justify-between items-center mb-4'>
+            <div className='flex flex-col md:flex-row w-full mb-4 justify-between'>
                 <div className='mb-4 md:mb-0'>
                     <input
                         type='text'
                         placeholder='Search products'
-                        className='p-2 border border-gray-300 w-[500px] text-black border-none bg-none rounded-md'
+                        className='p-2 border border-gray-300 text-black border-none bg-none rounded-md'
                         value={searchQuery}
                         onChange={(e) => setSearchQuery(e.target.value)}
                         onKeyDown={(e) => e.key === 'Enter' && handleSearch()}
                     />
                     <button
-                        className='mt-2 md:ml-2 px-4 py-2 bg-blue-500 text-white rounded-md w-full md:w-auto'
+                        className='text-white hover:underline text-[14px] focus:outline-none ml-2 bg-blue-500 px-4 py-2 rounded-md'
                         onClick={handleSearch}
                     >
                         Search
                     </button>
                 </div>
 
-                <div className='flex flex-col md:flex-row font-bold'>
+                <div className='flex flex-col md:flex-row font-bold md:justify-center md:items-center'>
                     <div className='md:hidden mb-2'>
                         <button
                             className='text-black hover:underline text-[14px] focus:outline-none'
@@ -363,4 +345,4 @@ const Beauty = () => {
     );
 };
 
-export default Beauty;
+export default BeautyComponent;

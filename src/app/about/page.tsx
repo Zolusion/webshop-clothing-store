@@ -1,4 +1,3 @@
-import dynamic from 'next/dynamic';
 import React from 'react'
 import type { Metadata } from "next";
 import Footer from '@/components/Footer';
