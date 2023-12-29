@@ -1,4 +1,5 @@
 "use client";
+import Image from 'next/image';
 import React, { useState } from 'react';
 
 interface Product {
@@ -133,7 +134,6 @@ const JacketsComponent = () => {
             imageSrc: 'https://i.pinimg.com/474x/8f/8e/16/8f8e165151dded0fd7b9e7587dd9878a.jpg',
             category: 'Office Jackets',
         },
-        // Trench coats
         {
             id: 13,
             name: 'Trench Coat',
@@ -142,6 +142,72 @@ const JacketsComponent = () => {
             price: 59.95,
             imageSrc: 'https://i.pinimg.com/474x/49/e1/90/49e190abd03c03c9b8891dd0fae3e75d.jpg',
             category: 'Trench Coats',
+        },
+        {
+            id: 14,
+            name: 'Barouque Blazer',
+            description: 'Stay stylish and comfortable in the Barouque Blazer. Designed for both comfort and fashion, this jacket is a must-have for any wardrobe.',
+            brand: 'CasualComfort',
+            price: 38.95,
+            imageSrc: 'https://i.pinimg.com/564x/2e/cd/30/2ecd309714ce45688c2e3d4b602dc685.jpg',
+            category: 'Blazers',
+        },
+        {
+            id: 15,
+            name: 'Christian Siriano',
+            description: 'Stay stylish and comfortable in the Christian Siriano Blazer. Designed for both comfort and fashion, this jacket is a must-have for any wardrobe.',
+            brand: 'CasualComfort',
+            price: 29.95,
+            imageSrc: 'https://i.pinimg.com/564x/a0/9e/6c/a09e6c9ebc28349299ec4796b91362c4.jpg',
+            category: 'Blazers',
+        },
+        {
+            id: 16,
+            name: 'CropPuffer Jacket',
+            description: 'Stay stylish and comfortable in the CropPuffer Jacket. Designed for both comfort and fashion, this jacket is a must-have for any wardrobe.',
+            brand: 'CasualComfort',
+            price: 39.95,
+            imageSrc: 'https://i.pinimg.com/564x/ae/50/8c/ae508c026b8b7e401695e4e49c551a51.jpg',
+            category: 'Puffer Jacket',
+        },
+        {
+            id: 17,
+            name: 'Cord Puffer Jacket',
+            description: 'Stay stylish and comfortable in the CordPuffer Jacket. Designed for both comfort and fashion, this jacket is a must-have for any wardrobe.',
+            brand: 'CasualComfort',
+            price: 34.95,
+            imageSrc: 'https://i.pinimg.com/564x/85/7d/7d/857d7d0b3f5234d99eda6de11daf4d31.jpg',
+            category: 'Puffer Jacket',
+        },
+        // Rhinestone blazer
+        {
+            id: 18,
+            name: 'Rhinestone Blazer',
+            description: 'Stay stylish and comfortable in the Rhinestone Blazer. Designed for both comfort and fashion, this jacket is a must-have for any wardrobe.',
+            brand: 'CasualComfort',
+            price: 59.95,
+            imageSrc: 'https://i.pinimg.com/564x/73/99/82/739982e3a04cdd85141a9d6b0fa0590e.jpg',
+            category: 'Blazers',
+        },
+        // Flap pocket crop denim jacket
+        {
+            id: 19,
+            name: 'Flap Pocket Crop Denim Jacket',
+            description: 'Stay stylish and comfortable in the Flap Pocket Crop Denim Jacket. Designed for both comfort and fashion, this jacket is a must-have for any wardrobe.',
+            brand: 'CasualComfort',
+            price: 39.95,
+            imageSrc: 'https://i.pinimg.com/564x/a7/b4/7f/a7b47fa8ed60186ade85ab5e21efa5cd.jpg',
+            category: 'Denim',
+        },
+        // Jules belt denim jacket
+        {
+            id: 20,
+            name: 'Jules Belt',
+            description: 'Stay stylish and comfortable in the Jules Belt Denim Jacket. Designed for both comfort and fashion, this jacket is a must-have for any wardrobe.',
+            brand: 'CasualComfort',
+            price: 29.95,
+            imageSrc: 'https://i.pinimg.com/564x/f3/c6/3d/f3c63d4135ee3e4f48ef4e99ab052e22.jpg',
+            category: 'Denim',
         }
     ];    
 
@@ -216,7 +282,7 @@ const JacketsComponent = () => {
             <div className='grid grid-cols-1 md:grid-cols-4 gap-8'>
                 {(searchQuery ? filteredProducts : products).map((product) => (
                     <div key={product.id} className={`mb-8 ${selectedCategory && product.category !== selectedCategory ? 'hidden' : ''}`}>
-                        <img
+                        <Image
                             src={product.imageSrc}
                             alt={product.name}
                             className='w-[500px] h-[500px] object-cover rounded-md mb-4'

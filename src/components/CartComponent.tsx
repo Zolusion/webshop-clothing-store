@@ -42,6 +42,40 @@ const calculateTotalPrice = (products: ProductCart[], vatRate: number) => {
 };
 
 const CartComponent: React.FC<{ customer?: Customer }> = ({ customer }) => {
+
+    const defaultCustomer: Customer = {
+        name: '',
+        surname: '',
+        email: '',
+        phone: '',
+        address: '',
+        city: '',
+        state: '',
+        zip: '',
+        country: '',
+        paymentmethod: 'IDEAL',
+        orderstatus: '',
+        products: [],
+    };
+    
+    const initialFormData = {
+        ...defaultCustomer,
+        ...(customer ?? {}),
+    };
+
+    const [formData, setFormData] = useState<Customer>(initialFormData);
+    const [formErrors, setFormErrors] = useState<Record<string, string>>({
+        name: '',
+        surname: '',
+        email: '',
+        phone: '',
+        address: '',
+        city: '',
+        state: '',
+        zip: '',
+        country: '',
+    });
+
     if (!customer) {
         return (
             <div className='p-8'>
@@ -114,34 +148,7 @@ const CartComponent: React.FC<{ customer?: Customer }> = ({ customer }) => {
                 </div>
             </div>
         )
-    }
-
-    const [formData, setFormData] = useState<Customer>({
-        name: customer?.name || '',
-        surname: customer?.surname || '',
-        email: customer?.email || '',
-        phone: customer?.phone || '',
-        address: customer?.address || '',
-        city: customer?.city || '',
-        state: customer?.state || '',
-        zip: customer?.zip || '',
-        country: customer?.country || '',
-        paymentmethod: 'IDEAL',
-        orderstatus: customer?.orderstatus || '',
-        products: customer?.products || [],
-    });
-
-    const [formErrors, setFormErrors] = useState<Record<string, string>>({
-        name: '',
-        surname: '',
-        email: '',
-        phone: '',
-        address: '',
-        city: '',
-        state: '',
-        zip: '',
-        country: '',
-    });
+    } 
 
     const paymentMethods = ['IDEAL', 'Credit Card', 'PayPal', 'Bank Transfer', 'BanContact'];
     const vatRate = 21;
@@ -203,7 +210,8 @@ const CartComponent: React.FC<{ customer?: Customer }> = ({ customer }) => {
                             name='name'
                             value={formData.name}
                             onChange={handleInputChange}
-                            className='border border-gray-300 p-2 rounded-md'
+                            className='border border-gray-300 p-2 rounded-md text-black'
+                            placeholder='John'
                         />
                         {formErrors.name && <p className='text-red-500'>{formErrors.name}</p>}
                     </div>
@@ -217,7 +225,8 @@ const CartComponent: React.FC<{ customer?: Customer }> = ({ customer }) => {
                             name='surname'
                             value={formData.surname}
                             onChange={handleInputChange}
-                            className='border border-gray-300 p-2 rounded-md'
+                            className='border border-gray-300 p-2 rounded-md text-black'
+                            placeholder='Doe'
                         />
                         {formErrors.surname && <p className='text-red-500'>{formErrors.surname}</p>}
                     </div>
@@ -231,7 +240,8 @@ const CartComponent: React.FC<{ customer?: Customer }> = ({ customer }) => {
                             name='email'
                             value={formData.email}
                             onChange={handleInputChange}
-                            className='border border-gray-300 p-2 rounded-md'
+                            className='border border-gray-300 p-2 rounded-md text-black'
+                            placeholder='4hKJt@example.com'
                         />
                         {formErrors.email && <p className='text-red-500'>{formErrors.email}</p>}
                     </div>
@@ -245,7 +255,8 @@ const CartComponent: React.FC<{ customer?: Customer }> = ({ customer }) => {
                             name='phone'
                             value={formData.phone}
                             onChange={handleInputChange}
-                            className='border border-gray-300 p-2 rounded-md'
+                            className='border border-gray-300 p-2 rounded-md text-black'
+                            placeholder='123-456-789'
                         />
                         {formErrors.phone && <p className='text-red-500'>{formErrors.phone}</p>}
                     </div>
@@ -259,7 +270,8 @@ const CartComponent: React.FC<{ customer?: Customer }> = ({ customer }) => {
                             name='address'
                             value={formData.address}
                             onChange={handleInputChange}
-                            className='border border-gray-300 p-2 rounded-md'
+                            className='border border-gray-300 p-2 rounded-md text-black'
+                            placeholder='123 Main St'
                         />
                         {formErrors.address && <p className='text-red-500'>{formErrors.address}</p>}
                     </div>
@@ -273,21 +285,23 @@ const CartComponent: React.FC<{ customer?: Customer }> = ({ customer }) => {
                             name='city'
                             value={formData.city}
                             onChange={handleInputChange}
-                            className='border border-gray-300 p-2 rounded-md'
+                            className='border border-gray-300 p-2 rounded-md text-black'
+                            placeholder='New York'
                         />
                         {formErrors.city && <p className='text-red-500'>{formErrors.city}</p>}
                     </div>
                     <div className='flex flex-col'>
-                        <label htmlFor='zipCode' className='text-black'>
+                        <label htmlFor='zip' className='text-black'>
                             Zip Code
                         </label>
                         <input
                             type='text'
-                            id='zipCode'
-                            name='zipCode'
+                            id='zip'
+                            name='zip'
                             value={formData.zip}
                             onChange={handleInputChange}
-                            className='border border-gray-300 p-2 rounded-md'
+                            className='border border-gray-300 p-2 rounded-md text-black'
+                            placeholder='1234AB'
                         />
                         {formErrors.zip && <p className='text-red-500'>{formErrors.zip}</p>}
                     </div>
@@ -301,7 +315,8 @@ const CartComponent: React.FC<{ customer?: Customer }> = ({ customer }) => {
                             name='country'
                             value={formData.country}
                             onChange={handleInputChange}
-                            className='border border-gray-300 p-2 rounded-md'
+                            className='border border-gray-300 p-2 rounded-md text-black'
+                            placeholder='USA'
                         />
                         {formErrors.country && <p className='text-red-500'>{formErrors.country}</p>}
                     </div>
@@ -311,12 +326,12 @@ const CartComponent: React.FC<{ customer?: Customer }> = ({ customer }) => {
                 <h3 className='text-lg font-semibold mb-2 text-black'>Order Details</h3>
                 <p className='font-semibold mb-2 text-black'>Order Status: {customer.orderstatus}</p>
                 <div className='overflow-x-auto'>
-                    <table className='min-w-full'>
+                    <table className=''>
                         <thead>
                             <tr>
-                                <th className='border border-gray-300 px-4 py-2'>Product</th>
-                                <th className='border border-gray-300 px-4 py-2'>Quantity</th>
-                                <th className='border border-gray-300 px-4 py-2'>Price</th>
+                                <th className='border border-gray-300 px-4 py-2 text-black'>Product</th>
+                                <th className='border border-gray-300 px-4 py-2 text-black'>Price</th>
+                                <th className='border border-gray-300 px-4 py-2 text-black'>Quantity</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -333,6 +348,14 @@ const CartComponent: React.FC<{ customer?: Customer }> = ({ customer }) => {
                 <p className='font-semibold mt-4 text-black'>Total Price (Excluding VAT): ${totalPriceWithoutVat}</p>
                 <p className='font-semibold text-black'>VAT (21%): ${vatAmount}</p>
                 <p className='font-semibold mb-4 text-black'>Total Price (Including VAT): ${totalPriceWithVat}</p>
+                <div className='flex'>
+                    <button
+                        type='submit'
+                        className='bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800'
+                    >
+                        Proceed to Checkout
+                    </button>
+                </div>
             </div>
         </div>
     );

@@ -6,6 +6,7 @@ module.exports = {
         domains: [
             'images.unsplash.com',
             'plus.unsplash.com',
+            'i.pinimg.com',
         ],
     },
     // publicRuntimeConfig: {

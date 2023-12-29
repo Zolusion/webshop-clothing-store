@@ -1,4 +1,5 @@
 "use client";
+import Image from 'next/image';
 import React, { useState } from 'react';
 
 interface Product {
@@ -197,7 +198,7 @@ const Accessoires = () => {
             <div className='grid grid-cols-1 md:grid-cols-4 gap-8'>
                 {(searchQuery ? filteredProducts : products).map((product) => (
                     <div key={product.id} className={`mb-8 ${selectedCategory && product.category !== selectedCategory ? 'hidden' : ''}`}>
-                        <img
+                        <Image
                             src={product.imageSrc}
                             alt={product.name}
                             className='w-[500px] h-[500px] object-cover rounded-md mb-4'
