@@ -240,7 +240,25 @@ const Beauty = () => {
             price: 6.99,
             imageSrc: 'https://i.pinimg.com/564x/48/92/9c/48929cd866a48db79d92c8112c285c63.jpg',
             category: 'Body Care',
-        }
+        },
+        // {
+        //     id: 25,
+        //     name: 'Panda Coffee Cup',
+        //     description: 'Experience the ultimate comfort and convenience with our exclusive Panda Coffee Cup, providing a smooth and delicious coffee experience.',
+        //     brand: 'Panda',
+        //     price: 4.99,
+        //     imageSrc: 'https://i.pinimg.com/564x/21/ce/05/21ce05d425b72f52a6d666bb84ddbf4e.jpg',
+        //     category: 'Gifts',
+        // },
+        // {
+        //     id: 26,
+        //     name: 'My Girlfriend Coffe Cup',
+        //     description: 'Hot and ready-to-drink, our My Girlfriend Coffe Cup is the perfect companion for your girlfriend',
+        //     brand: 'Mugs',
+        //     price: 6.99,
+        //     imageSrc: 'https://i.pinimg.com/564x/5d/f7/17/5df717302d1e12447ad64c875ff9cebf.jpg',
+        //     category: 'Gifts',
+        // }
     ];
 
     const handleSearch = () => {

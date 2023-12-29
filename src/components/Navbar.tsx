@@ -31,11 +31,10 @@ const Navbar = () => {
                     <ul className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-8">
                         <ol><Link href="/" className="block py-2 px-3 text-gray-300 hover:text-white">Clothing</Link></ol>
                         <ol><Link href="/beauty" className="block py-2 px-3 text-gray-300 hover:text-white">Beauty</Link></ol>
-                        <ol><Link href="/contact" className="block py-2 px-3 text-gray-300 hover:text-white">Accessoires</Link></ol>
+                        <ol><Link href="/accessoires" className="block py-2 px-3 text-gray-300 hover:text-white">Accessoires</Link></ol>
                         <ol><Link href="/ambassadors" className="block py-2 px-3 text-gray-300 hover:text-white">Jackets</Link></ol>
                         <ol><Link href="/" className="block py-2 px-3 text-gray-300 hover:text-white">Heels</Link></ol>
                         <ol><Link href="/about" className="block py-2 px-3 text-gray-300 hover:text-white">Dresses</Link></ol>
-                        <ol><Link href="/contact" className="block py-2 px-3 text-gray-300 hover:text-white">Handbags</Link></ol>
                         <ol><Link href="/sale" className="block py-2 px-3 text-gray-300 hover:text-white font-bold">SALE</Link></ol>
                     </ul>
                 </div>

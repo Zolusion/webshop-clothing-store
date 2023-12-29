@@ -1,23 +1,23 @@
 import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
-import Beauty from '@/components/beauty'
+import Accessoires from '@/components/Accessoires'
 import React from 'react'
 import type { Metadata } from "next";
 
-const title = "Beauty";
+const title = "Accessoires";
 
 export const metadata: Metadata = {
   title: `${title} | Solmaz Fashion`,
 };
 
-const beauty = () => {
+const accessoires = () => {
   return (
     <div className='bg-white'>
         <Navbar />
-        <Beauty />
+        <Accessoires />
         <Footer />
     </div>
   )
 }
 
-export default beauty
+export default accessoires
