@@ -179,7 +179,6 @@ const JacketsComponent = () => {
             imageSrc: 'https://i.pinimg.com/564x/85/7d/7d/857d7d0b3f5234d99eda6de11daf4d31.jpg',
             category: 'Puffer Jacket',
         },
-        // Rhinestone blazer
         {
             id: 18,
             name: 'Rhinestone Blazer',
@@ -189,7 +188,6 @@ const JacketsComponent = () => {
             imageSrc: 'https://i.pinimg.com/564x/73/99/82/739982e3a04cdd85141a9d6b0fa0590e.jpg',
             category: 'Blazers',
         },
-        // Flap pocket crop denim jacket
         {
             id: 19,
             name: 'Flap Pocket Crop Denim Jacket',
@@ -199,7 +197,6 @@ const JacketsComponent = () => {
             imageSrc: 'https://i.pinimg.com/564x/a7/b4/7f/a7b47fa8ed60186ade85ab5e21efa5cd.jpg',
             category: 'Denim',
         },
-        // Jules belt denim jacket
         {
             id: 20,
             name: 'Jules Belt',

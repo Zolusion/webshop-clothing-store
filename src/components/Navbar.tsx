@@ -29,12 +29,12 @@ const Navbar = () => {
                 </button>
                 <div className="hidden md:flex flex-grow items-center justify-center space-x-8 font-medium">
                     <ul className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-8">
-                        <ol><Link href="/" className="block py-2 px-3 text-gray-300 hover:text-white">Clothing</Link></ol>
+                        <ol><Link href="/sale" className="block py-2 px-3 text-gray-300 hover:text-white">Clothing</Link></ol>
                         <ol><Link href="/beauty" className="block py-2 px-3 text-gray-300 hover:text-white">Beauty</Link></ol>
                         <ol><Link href="/accessoires" className="block py-2 px-3 text-gray-300 hover:text-white">Accessoires</Link></ol>
                         <ol><Link href="/jackets" className="block py-2 px-3 text-gray-300 hover:text-white">Jackets</Link></ol>
-                        <ol><Link href="/" className="block py-2 px-3 text-gray-300 hover:text-white">Heels</Link></ol>
-                        <ol><Link href="/about" className="block py-2 px-3 text-gray-300 hover:text-white">Dresses</Link></ol>
+                        <ol><Link href="/heels" className="block py-2 px-3 text-gray-300 hover:text-white">Shoes</Link></ol>
+                        <ol><Link href="/dresses" className="block py-2 px-3 text-gray-300 hover:text-white">Dresses</Link></ol>
                         <ol><Link href="/sale" className="block py-2 px-3 text-gray-300 hover:text-white font-bold">SALE</Link></ol>
                     </ul>
                 </div>
@@ -65,7 +65,6 @@ const Navbar = () => {
                             console.log('Wishlist clicked');
                         }}
                     >
-                        {/* profile */}
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-person-circle w-6 h-5" viewBox="0 0 16 16">
                             <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
                             <path fillRule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />

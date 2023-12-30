@@ -7,6 +7,8 @@ module.exports = {
             'images.unsplash.com',
             'plus.unsplash.com',
             'i.pinimg.com',
+            'img.freepik.com',
+            'media.istockphoto.com',
         ],
     },
     // publicRuntimeConfig: {

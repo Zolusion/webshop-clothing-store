@@ -18,6 +18,18 @@ const BeautyComponent = () => {
     const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
     const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+    
+    const [cart, setCart] = useState<Product[]>([]);
+
+    const addToCart = (product: Product) => {
+        setCart([...cart, product]);
+    };
+
+    const calculateTotalPrice = (): { totalPrice: number; vat: string } => {
+        const totalPrice = cart.reduce((acc, product) => acc + product.price, 0);
+        const vat = (totalPrice * 0.21).toFixed(2);
+        return { totalPrice, vat };
+    };
 
     const handleCategoryClick = (category: string) => {
         setSelectedCategory(category);
@@ -213,7 +225,7 @@ const BeautyComponent = () => {
             brand: 'Scalp Massager',
             price: 5.99,
             imageSrc: 'https://i.pinimg.com/564x/0d/47/ee/0d47eeca8d3e49d2640dfd3fd282ce3c.jpg',
-            category: 'Skincare',
+            category: 'Personal Care',
         },
         {
             id: 22,
@@ -242,6 +254,24 @@ const BeautyComponent = () => {
             imageSrc: 'https://i.pinimg.com/564x/48/92/9c/48929cd866a48db79d92c8112c285c63.jpg',
             category: 'Body Care',
         },
+        {
+            id: 25,
+            name: 'Ice Roller',
+            description: 'Experience the perfect combination of beauty and functionality with our exclusive Ice Roller, delivering a smooth and natural massage.',
+            brand: 'La Reveuse',
+            price: 9.99,
+            imageSrc: 'https://i.pinimg.com/564x/73/54/d1/7354d165949a669e23d8eee8c62b4cd5.jpg',
+            category: 'Personal Care',
+        },
+        {
+            id: 26,
+            name: 'Sweet Like Candy',
+            description: 'Experience the perfect combination of beauty and functionality with our exclusive Sweet like candy parfume',
+            brand: 'La Reveuse',
+            price: 9.99,
+            imageSrc: 'https://i.pinimg.com/564x/fe/8f/8e/fe8f8eabc47059f136878c8d24ad3bad.jpg',
+            category: 'Fragrances',
+        }
     ];
 
     const handleSearch = () => {
@@ -251,6 +281,8 @@ const BeautyComponent = () => {
         );
         setFilteredProducts(filtered);
     };
+
+    
 
     const imagesMatchingNames = products.map(product => product.imageSrc);
 
@@ -330,7 +362,10 @@ const BeautyComponent = () => {
                             <div className='flex items-center'>
                                 <p className='text-[18px] font-semibold text-black'>€{product.price}</p>
                                 <div className='ml-4'>
-                                    <button className='text-black hover:underline transition duration-300 mr-4'>
+                                    <button
+                                        className='text-black hover:underline transition duration-300 mr-4'
+                                        onClick={() => addToCart(product)}
+                                    >
                                         Add to Cart
                                     </button>
                                     <button className='bg-black text-white px-8 py-2 rounded-md hover:bg-gray-800 transition duration-300'>
