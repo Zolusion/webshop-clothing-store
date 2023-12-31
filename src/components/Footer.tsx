@@ -16,17 +16,15 @@ const footerSections = [
     title: 'Help center',
     links: [
       { href: "/faq", text: "FAQ" },
-      { href: "/help", text: "Help" },
-      { href: "/contact", text: "Support" },
-      { href: "/contact", text: "Privacy" },
+      { href: "/privacy", text: "Privacy" },
     ],
   },
   {
     title: 'Service',
     links: [
-      { href: "/terms", text: "Shipping info" },
-      { href: "/terms", text: "Refunds" },
-      { href: "/privacy", text: "Track & Trace" },
+      { href: "/shipping", text: "Shipping info" },
+      { href: "/refunds", text: "Refunds" },
+      { href: "/ttrace", text: "Track & Trace" },
       { href: "/cookies", text: "Cookies" },
     ],
   },

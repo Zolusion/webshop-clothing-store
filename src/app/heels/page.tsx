@@ -1,8 +1,8 @@
-import Footer from '@/components/Footer'
-import Navbar from '@/components/Navbar'
 import React from 'react'
 import type { Metadata } from "next";
-import HeelsComponent from '@/components/HeelsComponent';
+import Navbar from 'components/Navbar';
+import HeelsComponent from 'components/HeelsComponent';
+import Footer from 'components/Footer';
 
 const title = "Heels";
 

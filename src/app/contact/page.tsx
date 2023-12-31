@@ -1,10 +1,10 @@
 import dynamic from 'next/dynamic';
 import React from 'react'
 import type { Metadata } from "next";
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
+import Navbar from 'components/Navbar';
+import Footer from 'components/Footer';
+import ContactForm from 'components/ContactForm';
 
-const ContactForm = dynamic(() => import('@/components/ContactForm'));
 
 const title = "Contact";
 

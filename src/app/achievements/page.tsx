@@ -1,9 +1,9 @@
 import dynamic from "next/dynamic";
 import React from "react";
 import type { Metadata } from "next";
-import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
-import OurAchievements from "@/components/OurAchievements";
+import Navbar from "components/Navbar";
+import OurAchievements from "components/OurAchievements";
+import Footer from "components/Footer";
 
 const title = "Achievements";
 

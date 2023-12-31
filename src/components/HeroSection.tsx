@@ -1,4 +1,3 @@
-// Import statements remain unchanged
 "use client";
 import { useEffect, useState } from "react";
 import Image from "next/image";
@@ -17,9 +16,7 @@ const HeroSection = () => {
         const promise = element.play();
         if (promise) {
           promise.catch((error) => {
-            // Autoplay was prevented, handle it here
             console.error("Autoplay prevented:", error);
-            // You can show a play button or handle user interaction here
           });
         }
       }

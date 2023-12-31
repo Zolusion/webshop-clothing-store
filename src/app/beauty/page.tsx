@@ -1,8 +1,8 @@
-import Footer from '@/components/Footer'
-import Navbar from '@/components/Navbar'
-import Beauty from '@/components/Beauty'
 import React from 'react'
 import type { Metadata } from "next";
+import Navbar from 'components/Navbar';
+import Footer from 'components/Footer';
+import Beauty from 'components/Beauty';
 
 const title = "Beauty";
 

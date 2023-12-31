@@ -1,19 +1,10 @@
 "use client"
-import CartComponent from '@/components/CartComponent';
-import Footer from '@/components/Footer';
-import Navbar from '@/components/Navbar';
-import DiscountSection from '@/components/Sale';
+import Navbar from 'components/Navbar';
+import CartComponent from 'components/CartComponent';
+import Footer from 'components/Footer';
+import DiscountSection from 'components/Sale';
 import * as React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-// import type { Metadata } from "next";
-
-// const title = "Shopping Cart";
-
-// export const metadata: Metadata = {
-//     title: `${title} | Solmaz Fashion`,
-// }
-
-// Update the definitions in your Cart component file
 interface ProductCart {
   image: string;
   productname: string;

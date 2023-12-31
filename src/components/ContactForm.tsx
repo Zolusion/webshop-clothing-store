@@ -3,8 +3,8 @@
 import { useState } from "react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { Switch } from "@headlessui/react";
-import Error from '@/components/Error'
-import Success from '@/components/Success'
+import Error from "./Error";
+import Success from "./Success";
 
 function classNames(...classes: any[]) {
     return classes.filter(Boolean).join(" ");
