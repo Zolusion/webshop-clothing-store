@@ -9,6 +9,7 @@ module.exports = {
             'i.pinimg.com',
             'img.freepik.com',
             'media.istockphoto.com',
+            'www.vecteezy.com',
         ],
     },
     // publicRuntimeConfig: {

@@ -16,7 +16,7 @@ const footerSections = [
     title: 'Help center',
     links: [
       { href: "/faq", text: "FAQ" },
-      { href: "/privacy", text: "Privacy" },
+      { href: "/privacy", text: "Privacy Policy" },
     ],
   },
   {

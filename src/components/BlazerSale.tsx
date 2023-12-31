@@ -13,37 +13,37 @@ interface Product {
 
 const specialOffers: Product[] = [
   {
-    imageUrl: "https://img.freepik.com/free-photo/elderly-business-woman-grey-suit-outdoors_1303-29564.jpg?size=626&ext=jpg&uid=R58238079&ga=GA1.1.608720427.1702289590&semt=ais",
+    imageUrl: "https://media.istockphoto.com/id/1359562499/nl/foto/outdoor-fashion-portrait-of-elegant-woman-wearing-lilac-suit-yellow-sunglasses-holding-trendy.jpg?s=612x612&w=0&k=20&c=iiMjxlBUOg808woC-WieBkoWn6-JISRz3ctznrJHLXs=",
     name: "Product Name",
     oldPrice: "€49.99",
     newPrice: "€39.99",
   },
   {
-    imageUrl: "https://img.freepik.com/free-photo/young-beautiful-woman-sitting-grey-wall_176420-11149.jpg?size=626&ext=jpg&uid=R58238079&ga=GA1.1.608720427.1702289590&semt=ais",
+    imageUrl: "https://images.unsplash.com/photo-1623197436184-afa57dfa9bf4?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fGJsYXplciUyMHdvbWFufGVufDB8fDB8fHww",
     name: "Product Name",
     oldPrice: "€69.95",
     newPrice: "€47.99",
   },
   {
-    imageUrl: "https://img.freepik.com/free-photo/young-woman-with-chain-necklace-posing_23-2149403063.jpg?size=626&ext=jpg&uid=R58238079&ga=GA1.1.608720427.1702289590&semt=ais",
+    imageUrl: "https://plus.unsplash.com/premium_photo-1671826911765-6386652c2e27?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTg1fHxibGF6ZXIlMjB3b21hbnxlbnwwfHwwfHx8MA%3D%3D",
     name: "Product Name",
     oldPrice: "€29.95",
     newPrice: "€18.99",
   },
   {
-    imageUrl: "https://img.freepik.com/free-photo/mirthful-beautiful-long-haired-woman-elegant-jacket-looking-away-smiling_132075-8036.jpg?size=626&ext=jpg&uid=R58238079&ga=GA1.1.608720427.1702289590&semt=ais",
+    imageUrl: "https://images.unsplash.com/photo-1700560970703-82fd3150d5ac?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjE0fHxibGF6ZXIlMjB3b21hbnxlbnwwfHwwfHx8MA%3D%3D",
     name: "Product Name",
     oldPrice: "€39.95",
     newPrice: "€29.99",
   },
   {
-    imageUrl: "https://img.freepik.com/free-photo/elegant-businesswoman-walking-city-with-clipboard_23-2147989684.jpg?size=626&ext=jpg&uid=R58238079&ga=GA1.1.608720427.1702289590&semt=ais",
+    imageUrl: "https://images.unsplash.com/photo-1697095098675-1d02496ef86a?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjQyfHxibGF6ZXIlMjB3b21hbnxlbnwwfHwwfHx8MA%3D%3D",
     name: "Product Name",
     oldPrice: "€17.95",
     newPrice: "€12.99",
   },
   {
-    imageUrl: "https://img.freepik.com/free-photo/beautiful-woman-portrait-garden_1328-1840.jpg?size=626&ext=jpg&uid=R58238079&ga=GA1.1.608720427.1702289590&semt=ais",
+    imageUrl: "https://images.unsplash.com/photo-1684262855347-56505dfb3037?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjU4fHxibGF6ZXIlMjB3b21hbnxlbnwwfHwwfHx8MA%3D%3D",
     name: "Product Name",
     oldPrice: "€59.95",
     newPrice: "€35.99",
@@ -121,7 +121,7 @@ const specialOffers: Product[] = [
     newPrice: "€29.99",
   },
   {
-    imageUrl: "https://img.freepik.com/free-photo/blonde-stunning-woman-walking-alone-city-center-wearing-casual-elegant-coat-dress-making-shopping-alone-street-style-fashion_291049-1337.jpg?size=626&ext=jpg&uid=R58238079&ga=GA1.1.608720427.1702289590&semt=ais",
+    imageUrl: "https://images.unsplash.com/photo-1676379885127-9689d630355b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzYzfHxibGF6ZXIlMjB3b21hbnxlbnwwfHwwfHx8MA%3D%3D",
     name: "Product Name",
     oldPrice: "€47.95",
     newPrice: "€39.99",
