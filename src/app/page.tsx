@@ -1,10 +1,10 @@
-import dynamic from "next/dynamic";
 import type { Metadata } from "next";
 import Navbar from "components/Navbar";
 import HeroSection from "components/HeroSection";
 import ProductGrid from "components/ProductGrid";
 import SaleContainer from "components/SaleContainer";
 import Footer from "components/Footer";
+import React from 'react';
 
 const title = "Home";
 
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 export default async function Home() {
   return (
-    <div>
+    <div className="bg-white">
       <Navbar />
       <HeroSection />
       <ProductGrid  />

@@ -130,19 +130,19 @@ const DiscountSection = () => {
     setShoppingCart([...shoppingCart, product]);
     navigate("/cart");
   };
-  
+
   return (
     <section className="bg-black">
       <div>
         <div className="flex space-x-4 md:p-0 md:overflow-hidden">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-3">
             {specialOffers.map((offer, index) => (
               <div key={index} className="relative group">
                 <div className="overflow-hidden group-hover:opacity-75">
                   <Image
                     src={offer.imageUrl}
                     alt="Product Image"
-                    className="w-full h-[550px] object-cover"
+                    className="w-full h-[550px] object-cover 2xl:h-[900px]"
                     width={500}
                     height={500}
                     loading="lazy"
@@ -172,6 +172,7 @@ const DiscountSection = () => {
         </div>
       </div>
     </section>
+
   );
 };
 

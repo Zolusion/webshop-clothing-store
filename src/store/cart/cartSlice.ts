@@ -1,45 +1,50 @@
-'use client';
-import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import Product from '@/@types/product';
+"use client";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import Product from "@/@types/product";
 
-const persistedCartItems = localStorage.getItem('cartItems');
+const persistedCartItems = localStorage.getItem("cartItems");
 const initialState: any = {
   items: persistedCartItems ? JSON.parse(persistedCartItems) : [],
+  cart: "cart",
 };
 
 const cartSlice = createSlice({
-  name: 'cart',
+  name: "cart",
   initialState,
   reducers: {
     addItem: (state, action: PayloadAction<Product>) => {
       const { id } = action.payload;
       const existingItem = state.items.find((item: any) => item.id === id);
       if (existingItem) {
-        existingItem.quantity++;
+        console.log("newItem quantity", action.payload);
+
+        existingItem.quantity = action.payload.quantity;
       } else {
         let cartnewItem = { ...action.payload, quantity: 1 };
-        if(action.payload.newPrice){
-            cartnewItem = {
-                id: cartnewItem.id,
-                productName: cartnewItem.productName,
-                description: cartnewItem.description,
-                imageUrl: cartnewItem.imageUrl,
-                quantity: 25,
-                oldPrice: cartnewItem.oldPrice,
-                newPrice: cartnewItem.newPrice,
-            }
+        if (action.payload.newPrice) {
+          cartnewItem = {
+            id: cartnewItem.id,
+            productName: cartnewItem.productName,
+            description: cartnewItem.description,
+            imageUrl: cartnewItem.imageUrl,
+            quantity: 25,
+            oldPrice: cartnewItem.oldPrice,
+            newPrice: cartnewItem.newPrice,
+          };
         }
         state.items.push(cartnewItem);
       }
-      localStorage.setItem('cartItems', JSON.stringify(state.items));
+      localStorage.setItem("cartItems", JSON.stringify(state.items));
     },
     removeItem: (state, action: PayloadAction<string>) => {
-      state.items = state.items.filter((item: any) => item.id !== action.payload);
-      localStorage.setItem('cartItems', JSON.stringify(state.items));
+      state.items = state.items.filter(
+        (item: any) => item.id !== action.payload
+      );
+      localStorage.setItem("cartItems", JSON.stringify(state.items));
     },
-    clearCart: state => {
+    clearCart: (state) => {
       state.items = [];
-      localStorage.removeItem('cartItems');
+      localStorage.removeItem("cartItems");
     },
   },
 });

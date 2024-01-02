@@ -33,7 +33,7 @@ const footerSections = [
 const Footer = () => {
   return (
     <footer className="bg-black">
-      <div className="container mx-auto flex justify-between px-6 py-12">
+      <div className="flex justify-between px-6 py-12">
         <div>
           <a href="https://flowbite.com" className="flex items-center space-x-3 rtl:space-x-reverse">
             <Image

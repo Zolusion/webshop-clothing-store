@@ -1,10 +1,7 @@
-"use client"
-import Navbar from 'components/Navbar';
-import CartComponent from 'components/CartComponent';
-import Footer from 'components/Footer';
-import DiscountSection from 'components/Sale';
-import * as React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import * as React from "react";
+import CartComponent from "@/components/CartComponent";
+import ReduxProvider from "@/components/ReduxProvider";
+
 interface ProductCart {
   image: string;
   productname: string;
@@ -26,43 +23,22 @@ interface Customer {
   paymentmethod: string;
   orderstatus: string;
   products: ProductCart[];
-  totalprice: number;
 }
 
 interface PageProps {
   params: { slug: string };
   searchParams: { [key: string]: string | string[] | undefined };
-  customer?: Customer;
 }
 
-const Cart = ({ params, searchParams, customer }: PageProps) => {
-  const defaultCustomer: Customer = {
-    name: '',
-    surname: '',
-    email: '',
-    phone: '',
-    address: '',
-    city: '',
-    state: '',
-    zip: '',
-    country: '',
-    paymentmethod: '',
-    orderstatus: '',
-    products: [],
-    totalprice: 0,
-  };
-
+const Cart = ({
+  params,
+  searchParams,
+  customer,
+}: PageProps & { customer: Customer }) => {
   return (
-    <Router>
-      <div className='bg-white'>
-        <Navbar />
-        <Routes>
-          <Route path="/cart" element={<CartComponent customer={customer || defaultCustomer} />} />
-          <Route path="/cart/sale" element={<DiscountSection />} />
-        </Routes>
-        <Footer />
-      </div>
-    </Router>
+    <ReduxProvider>
+      <CartComponent customer={customer} />
+    </ReduxProvider>
   );
 };
 

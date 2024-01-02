@@ -82,8 +82,8 @@ const HeelsComponent = () => {
             category: 'Heels',
         }
     ];
-    
-    
+
+
 
     const handleSearch = () => {
         const lowerCaseQuery = searchQuery.toLowerCase();
@@ -149,13 +149,13 @@ const HeelsComponent = () => {
 
             <hr className='mb-4' />
 
-            <div className='grid grid-cols-1 md:grid-cols-4 gap-8'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-4 gap-8'>
                 {(searchQuery ? filteredProducts : products).map((product) => (
-                    <div key={product.id} className={`mb-8 ${selectedCategory && product.category !== selectedCategory ? 'hidden' : ''}`}>
+                    <div key={product.id} className={`mb-8 ${selectedCategory && product.category !== selectedCategory ? 'hidden' : ''} `}>
                         <Image
                             src={product.imageSrc}
                             alt={product.name}
-                            className='w-[500px] h-[500px] object-cover rounded-md mb-4'
+                            className='w-full h-[500px] object-cover rounded-md mb-4 2xl:h-[900px]'
                             loading='lazy'
                             width={500}
                             height={500}
@@ -167,7 +167,10 @@ const HeelsComponent = () => {
                             <div className='flex items-center'>
                                 <p className='text-[18px] font-semibold text-black'>€{product.price}</p>
                                 <div className='ml-4'>
-                                    <button className='text-black hover:underline transition duration-300 mr-4'>
+                                    <button
+                                        className='text-black hover:underline transition duration-300 mr-4'
+                                        onClick={() => addToCart(product)}
+                                    >
                                         Add to Cart
                                     </button>
                                     <button className='bg-black text-white px-8 py-2 rounded-md hover:bg-gray-800 transition duration-300'>

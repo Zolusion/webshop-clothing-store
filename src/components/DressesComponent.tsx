@@ -203,13 +203,13 @@ const DressesComponent = () => {
 
             <hr className='mb-4' />
 
-            <div className='grid grid-cols-1 md:grid-cols-4 gap-8'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-4 gap-8'>
                 {(searchQuery ? filteredProducts : products).map((product) => (
-                    <div key={product.id} className={`mb-8 ${selectedCategory && product.category !== selectedCategory ? 'hidden' : ''}`}>
+                    <div key={product.id} className={`mb-8 ${selectedCategory && product.category !== selectedCategory ? 'hidden' : ''} `}>
                         <Image
                             src={product.imageSrc}
                             alt={product.name}
-                            className='w-[500px] h-[500px] object-cover rounded-md mb-4'
+                            className='w-full h-[500px] object-cover rounded-md mb-4 2xl:h-[900px]'
                             loading='lazy'
                             width={500}
                             height={500}
@@ -236,6 +236,7 @@ const DressesComponent = () => {
                     </div>
                 ))}
             </div>
+
         </div>
     );
 };
