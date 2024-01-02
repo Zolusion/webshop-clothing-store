@@ -1,10 +1,9 @@
-import dynamic from 'next/dynamic';
+import AmbassadorInfo from "@/components/AmbassadorInfo";
+import Footer from "@/components/Footer";
+import Influencers from "@/components/Influencers";
+import Navbar from "@/components/Navbar";
+import Posts from "@/components/Posts";
 import type { Metadata } from "next";
-import Navbar from 'components/Navbar';
-import AmbassadorInfo from 'components/AmbassadorInfo';
-import Influencers from 'components/Influencers';
-import Posts from 'components/Posts';
-import Footer from 'components/Footer';
 
 const title = "Ambassadors";
 

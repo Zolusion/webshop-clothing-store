@@ -1,6 +1,6 @@
-import DressesComponent from "components/DressesComponent";
-import Footer from "components/Footer";
-import Navbar from "components/Navbar";
+import DressesComponent from "@/components/DressesComponent";
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 import type { Metadata } from "next";
 
 const title = "Dresses";
@@ -14,7 +14,7 @@ import React from 'react'
 const dresses = () => {
   return (
     <div className="bg-white">
-        <Navbar/>
+        <Navbar />
         <DressesComponent />
         <Footer />
     </div>

@@ -1,6 +1,6 @@
-import Footer from 'components/Footer'
-import Navbar from 'components/Navbar'
-import ShippingInfo from 'components/ShippingInfo'
+import Footer from '@/components/Footer'
+import Navbar from '@/components/Navbar'
+import ShippingInfo from '@/components/ShippingInfo'
 import React from 'react'
 
 const shippinginfo = () => {

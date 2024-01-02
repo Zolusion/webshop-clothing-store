@@ -1,17 +1,8 @@
-"use client";
 import Image from "next/image";
 import React from "react";
-import { useState } from "react";
-import { BrowserRouter as Router, useNavigate } from 'react-router-dom';
 
-interface Product {
-  imageUrl: string;
-  name: string;
-  oldPrice: string;
-  newPrice: string;
-}
 
-const specialOffers: Product[] = [
+const specialOffers = [
   {
     imageUrl: "https://media.istockphoto.com/id/1359562499/nl/foto/outdoor-fashion-portrait-of-elegant-woman-wearing-lilac-suit-yellow-sunglasses-holding-trendy.jpg?s=612x612&w=0&k=20&c=iiMjxlBUOg808woC-WieBkoWn6-JISRz3ctznrJHLXs=",
     name: "Product Name",
@@ -135,18 +126,9 @@ const specialOffers: Product[] = [
 ]
 
 const BlazerSale = () => {
-  const [shoppingCart, setShoppingCart] = useState<Product[]>([]);
-  const navigate = useNavigate();
-
-  const addToCart = (product: Product) => {
-    setShoppingCart([...shoppingCart, product]);
-    navigate("/cart");
-  };
-
   return (
     <section className="bg-black">
       <div>
-        <div className="flex space-x-4 md:p-0 md:overflow-hidden">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             {specialOffers.map((offer, index) => (
               <div key={index} className="relative group">
@@ -154,7 +136,7 @@ const BlazerSale = () => {
                   <Image
                     src={offer.imageUrl}
                     alt="Product Image"
-                    className="w-full h-[550px] object-cover"
+                    className="w-full h-[550px] object-cover 2xl:h-[900px]"
                     width={500}
                     height={500}
                     loading="lazy"
@@ -173,7 +155,6 @@ const BlazerSale = () => {
                   <button
                     name="add-to-cart"
                     className="text-white bg-black px-4 py-2 w-full"
-                    onClick={() => addToCart(offer)}
                   >
                     Add To Cart
                   </button>
@@ -181,16 +162,9 @@ const BlazerSale = () => {
               </div>
             ))}
           </div>
-        </div>
       </div>
     </section>
   )
 }
 
-const DiscountSectionWithRouter = () => (
-  <Router>
-    <BlazerSale />
-  </Router>
-);
-
-export default DiscountSectionWithRouter;
+export default BlazerSale

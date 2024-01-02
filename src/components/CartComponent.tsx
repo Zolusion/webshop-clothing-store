@@ -68,8 +68,8 @@ const CartComponent: React.FC<{ customer?: Customer }> = ({ customer }) => {
         <h2 className="text-2xl font-semibold mb-4 text-white">
           Shopping Cart
         </h2>
-        <div className="bg-gray-100 p-4 rounded-md mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-          <div className="text-black mt-8 mx-auto max-w-7xl 2xl:max-w-[1800px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4">
+        <div className="bg-gray-100 p-4 rounded-md mx-auto px-4">
+          <div className="text-black grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4">
             {items?.length === 0 ? (
               <p className="text-gray-600">Your cart is empty.</p>
             ) : (
@@ -83,7 +83,7 @@ const CartComponent: React.FC<{ customer?: Customer }> = ({ customer }) => {
                       <Image
                         src={item.image || item.imageUrl}
                         alt={item.productName}
-                        className="w-20 h-20 object-cover rounded mr-4"
+                        className="w-20 h-20 object-cover rounded mr-4 2xl:w-[300px] 2xl:h-[300px]"
                         width={80}
                         height={80}
                         quality={100}
@@ -92,10 +92,10 @@ const CartComponent: React.FC<{ customer?: Customer }> = ({ customer }) => {
                         style={{ objectFit: "cover" }}
                       />
                       <div className="flex flex-col">
-                        <span className="font-bold text-gray-800">
+                        <span className="font-bold text-gray-800 2xl:text-2xl">
                           {item.productName}
                         </span>
-                        <span className="text-gray-500">
+                        <span className="text-gray-500 2xl:text-[18px]">
                           €{parseFloat(item.price).toFixed(2)}
                         </span>
                       </div>
@@ -122,124 +122,155 @@ const CartComponent: React.FC<{ customer?: Customer }> = ({ customer }) => {
                   </div>
                 ))}
                 <div className="mt-6">
-                  <div className="flex items-center mb-4 mt-4">
-                    <table className="table-auto w-full">
-                      <tbody className="grid grid-cols-3 2xl:grid-cols-4 gap-4 text-gray-800">
+                  <div className="flex flex-col md:flex-row items-center mb-4 mt-4">
+                    <div className="md:w-1/2 pr-4">
+                      <table className="min-w-full border border-gray-300 divide-y divide-gray-300">
+                        <tbody className="divide-y divide-gray-300">
+                          <tr>
+                            <td className="text-gray-800 font-bold p-3">Name:</td>
+                            <td className="p-3">
+                              <input
+                                placeholder="Enter your name"
+                                type="text"
+                                value={customerName}
+                                onChange={(e) => setCustomerName(e.target.value)}
+                                className="text-gray-600 border border-gray-300 rounded px-2 py-1 w-full"
+                              />
+                            </td>
+                          </tr>
+                          <tr>
+                            <td className="text-gray-800 font-bold p-3">Email:</td>
+                            <td className="p-3">
+                              <input
+                                placeholder="Enter your email"
+                                type="email"
+                                value={customerEmail}
+                                onChange={(e) => setCustomerEmail(e.target.value)}
+                                className="text-gray-600 border border-gray-300 rounded px-2 py-1 w-full"
+                              />
+                            </td>
+                          </tr>
+                          <tr>
+                            <td className="text-gray-800 font-bold p-3">Phone:</td>
+                            <td className="p-3">
+                              <input
+                                placeholder="Enter your phone number"
+                                type="text"
+                                value={customerPhone}
+                                onChange={(e) => setCustomerPhone(e.target.value)}
+                                className="text-gray-600 border border-gray-300 rounded px-2 py-1 w-full"
+                              />
+                            </td>
+                          </tr>
+                          <tr>
+                            <td className="text-gray-800 font-bold p-3">Address:</td>
+                            <td className="p-3">
+                              <input
+                                placeholder="Enter your address"
+                                type="text"
+                                value={customerAddress}
+                                onChange={(e) => setCustomerAddress(e.target.value)}
+                                className="text-gray-600 border border-gray-300 rounded px-2 py-1 w-full"
+                              />
+                            </td>
+                          </tr>
+                          <tr>
+                            <td className="text-gray-800 font-bold p-3">City:</td>
+                            <td className="p-3">
+                              <input
+                                placeholder="Enter your city"
+                                type="text"
+                                value={customerCity}
+                                onChange={(e) => setCustomerCity(e.target.value)}
+                                className="text-gray-600 border border-gray-300 rounded px-2 py-1 w-full"
+                              />
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <div className="md:w-1/2 pl-4">
+                      <table className="min-w-full border border-gray-300 divide-y divide-gray-300">
+                        <tbody className="divide-y divide-gray-300">
                         <tr>
-                          <td className="text-gray-800 font-bold">Name:</td>
-                          <input
-                            placeholder="Enter your name"
-                            type="text"
-                            value={customerName}
-                            onChange={(e) => setCustomerName(e.target.value)}
-                            className="text-gray-600 border border-gray-300 rounded px-2 py-1"
-                          />
-                        </tr>
-                        <tr>
-                          <td className="text-gray-800 font-bold">Email:</td>
-                          <input
-                            placeholder="Enter your email"
-                            type="email"
-                            value={customerEmail}
-                            onChange={(e) => setCustomerEmail(e.target.value)}
-                            className="text-gray-600 border border-gray-300 rounded px-2 py-1"
-                          />
-                        </tr>
-                        <tr>
-                          <td className="text-gray-800 font-bold">Phone:</td>
-                          <input
-                            placeholder="Enter your phone number"
-                            type="tel"
-                            value={customerPhone}
-                            onChange={(e) => setCustomerPhone(e.target.value)}
-                            className="text-gray-600 border border-gray-300 rounded px-2 py-1"
-                          />
-                        </tr>
-                        <tr>
-                          <td className="text-gray-800 font-bold">Address:</td>
-                          <input
-                            placeholder="Enter your address"
-                            type="text"
-                            value={customerAddress}
-                            onChange={(e) => setCustomerAddress(e.target.value)}
-                            className="text-gray-600 border border-gray-300 rounded px-2 py-1"
-                          />
-                        </tr>
-                        <tr>
-                          <td className="text-gray-800 font-bold">City:</td>
-                          <input
-                            placeholder="Enter your city"
-                            type="text"
-                            value={customerCity}
-                            onChange={(e) => setCustomerCity(e.target.value)}
-                            className="text-gray-600 border border-gray-300 rounded px-2 py-1"
-                          />
-                        </tr>
-                        <tr>
-                          <td className="text-gray-800 font-bold">Country:</td>
-                          <input
-                            placeholder="Enter your country"
-                            type="text"
-                            value={customerCountry}
-                            onChange={(e) => setCustomerCountry(e.target.value)}
-                            className="text-gray-600 border border-gray-300 rounded px-2 py-1"
-                          />
-                        </tr>
-                        <tr>
-                          <td className="text-gray-800 font-bold">Zip Code:</td>
-                          <input
-                            placeholder="Enter your zip code"
-                            type="text"
-                            value={customerZipCode}
-                            onChange={(e) => setCustomerZipCode(e.target.value)}
-                            className="text-gray-600 border border-gray-300 rounded px-2 py-1"
-                          />
-                        </tr>
-                        <tr>
-                          <td className="text-gray-800 font-bold">
-                            Shipping Method:
-                          </td>
-                          <input
-                            placeholder="Enter your shipping method"
-                            type="text"
-                            value={shippingMethod}
-                            onChange={(e) => setShippingMethod(e.target.value)}
-                            className="text-gray-600 border border-gray-300 rounded px-2 py-1"
-                          />
-                        </tr>
-                        <tr>
-                          <td className="text-gray-800 font-bold">
-                            Payment Method:
-                          </td>
-                          <input
-                            placeholder="Enter your payment method"
-                            type="text"
-                            value={paymentMethod}
-                            onChange={(e) => setPaymentMethod(e.target.value)}
-                            className="text-gray-600 border border-gray-300 rounded px-2 py-1"
-                          />
-                        </tr>
-                        <tr className="flex flex-col justify-center">
-                          <td className="text-gray-800 font-bold">
-                            Shipping Cost:
-                          </td>
-                          €
-                          {parseFloat(
-                            calculateTotalPrice(items, 21).vatAmount
-                          ) +
-                            parseFloat(calculateSubtotal(items[0])).toFixed(2)}
-                        </tr>
-                        <tr className="flex flex-col justify-center">
-                          <td className="text-gray-800 font-bold">Total:</td>€
-                          {calculateTotalPrice(items, 21).totalPriceWithVat}
-                        </tr>
-                      </tbody>
-                    </table>
+                            <td className="text-gray-800 font-bold p-3">Country:</td>
+                            <td className="p-3">
+                              <input
+                                placeholder="Enter your country"
+                                type="text"
+                                value={customerCountry}
+                                onChange={(e) => setCustomerCountry(e.target.value)}
+                                className="text-gray-600 border border-gray-300 rounded px-2 py-1 w-full"
+                              />
+                            </td>
+                          </tr>
+                          <tr>
+                            <td className="text-gray-800 font-bold p-3">Zip Code:</td>
+                            <td className="p-3">
+                              <input
+                                placeholder="Enter your zip code"
+                                type="text"
+                                value={customerZipCode}
+                                onChange={(e) => setCustomerZipCode(e.target.value)}
+                                className="text-gray-600 border border-gray-300 rounded px-2 py-1 w-full"
+                              />
+                            </td>
+                          </tr>
+                          <tr>
+                            <td className="text-gray-800 font-bold p-3">Shipping Method:</td>
+                            <td className="p-3">
+                              <select
+                                value={shippingMethod}
+                                onChange={(e) => setShippingMethod(e.target.value)}
+                                className="text-gray-600 border border-gray-300 rounded px-2 py-1 w-full"
+                              >
+                                <option value="">Select a shipping method</option>
+                                <option value="standard">Standard</option>
+                                <option value="express">Express</option>
+                              </select>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td className="text-gray-800 font-bold p-3">Payment Method:</td>
+                            <td className="p-3">
+                              <select
+                                value={paymentMethod}
+                                onChange={(e) => setPaymentMethod(e.target.value)}
+                                className="text-gray-600 border border-gray-300 rounded px-2 py-1 w-full"
+                              >
+                                <option value="">Select a payment method</option>
+                                <option value="creditCard">Credit Card</option>
+                                <option value="paypal">PayPal</option>
+                                <option value="bitcoin">iDEAL</option>
+                                <option value="other">BanContact</option>
+                              </select> 
+                            </td>
+                          </tr>
+                          <tr className="flex">
+                            <td className="text-gray-800 font-bold p-3">Shipping Cost:</td>
+                            <td className="p-3">
+                              €{parseFloat(calculateTotalPrice(items, 21).vatAmount)}
+                            </td>
+                          </tr>
+                          <tr className="flex">
+                            <td className="text-gray-800 font-bold p-3">Total:</td>
+                            <td className="p-3">
+                              €{calculateTotalPrice(items, 21).totalPriceWithVat}
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
                   </div>
+
+                  {/* Checkout button */}
                   <button className="bg-blue-500 text-white px-4 py-2 rounded mt-4 hover:bg-blue-600">
                     Proceed to Checkout
                   </button>
                 </div>
+
+
               </div>
             )}
           </div>
@@ -251,7 +282,7 @@ const CartComponent: React.FC<{ customer?: Customer }> = ({ customer }) => {
           <div className="rounded-md mx-auto">
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
               <div>
-                <div className="relative h-64">
+                <div className="relative h-64 2xl:h-[600px]">
                   <Image
                     className="w-full h-full object-cover"
                     src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
@@ -267,7 +298,7 @@ const CartComponent: React.FC<{ customer?: Customer }> = ({ customer }) => {
                 </div>
               </div>
               <div>
-                <div className="relative h-64">
+                <div className="relative h-64 2xl:h-[600px]">
                   <Image
                     className="w-full h-full object-cover"
                     src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
@@ -283,7 +314,7 @@ const CartComponent: React.FC<{ customer?: Customer }> = ({ customer }) => {
                 </div>
               </div>
               <div>
-                <div className="relative h-64">
+                <div className="relative h-64 2xl:h-[600px]">
                   <Image
                     className="w-full h-full object-cover"
                     src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
@@ -299,7 +330,7 @@ const CartComponent: React.FC<{ customer?: Customer }> = ({ customer }) => {
                 </div>
               </div>
               <div>
-                <div className="relative h-64">
+                <div className="relative h-64 2xl:h-[600px]">
                   <Image
                     className="w-full h-full object-cover"
                     src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"

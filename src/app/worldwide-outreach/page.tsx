@@ -1,9 +1,8 @@
 import React from 'react'
 import type { Metadata } from "next";
-import dynamic from 'next/dynamic';
-import Navbar from 'components/Navbar';
-import Goals from 'components/Goals';
-import Footer from 'components/Footer';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
+import Goals from '@/components/Goals';
 
 const title = "Our Goal";
 

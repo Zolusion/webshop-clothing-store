@@ -1,8 +1,8 @@
-import Footer from 'components/Footer'
-import Navbar from 'components/Navbar'
 import React from 'react'
 import type { Metadata } from "next";
-import BlazerSale from 'components/BlazerSale';
+import Navbar from '@/components/Navbar';
+import BlazerSale from '@/components/BlazerSale';
+import Footer from '@/components/Footer';
 
 const title = "Blazers";
 

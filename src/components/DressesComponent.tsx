@@ -1,6 +1,9 @@
 "use client";
 import Image from 'next/image';
 import React, { useState } from 'react';
+import { useRouter } from "next/navigation";
+import { addItem } from "@/store/cart/cartSlice";
+import { useDispatch } from 'react-redux';
 
 interface Product {
     id: number;
@@ -18,17 +21,13 @@ const DressesComponent = () => {
     const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
     const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const dispatch = useDispatch();
+    const router = useRouter();
 
-    const [cart, setCart] = useState<Product[]>([]);
-
-    const addToCart = (product: Product) => {
-        setCart([...cart, product]);
-    };
-
-    const calculateTotalPrice = (): { totalPrice: number; vat: string } => {
-        const totalPrice = cart.reduce((acc, product) => acc + product.price, 0);
-        const vat = (totalPrice * 0.21).toFixed(2);
-        return { totalPrice, vat };
+    const handleAddToCart = (e: any, product: any) => {
+        dispatch(addItem(product));
+        e.preventDefault();
+        router.push("/cart");
     };
 
     const handleCategoryClick = (category: string) => {
@@ -37,7 +36,7 @@ const DressesComponent = () => {
         setFilteredProducts(filtered);
     };
 
-    const products: Product[] = [
+    const products = [
         {
             id: 1,
             name: 'Elegant Evening Gown',
@@ -46,6 +45,10 @@ const DressesComponent = () => {
             price: 149.99,
             imageSrc: 'https://i.pinimg.com/474x/d3/09/1b/d3091becbf106560f934268b8883b854.jpg',
             category: 'Evening Dresses',
+            button: {
+                cart: "Add to cart",
+                link: "#",
+            },
         },
         {
             id: 2,
@@ -55,6 +58,10 @@ const DressesComponent = () => {
             price: 89.95,
             imageSrc: 'https://i.pinimg.com/474x/7a/a4/b1/7aa4b1cc25285e54cf6be59296f9368e.jpg',
             category: 'Cocktail Dresses',
+            button: {
+                cart: "Add to cart",
+                link: "#",
+            },
         },
         {
             id: 3,
@@ -64,6 +71,10 @@ const DressesComponent = () => {
             price: 68.99,
             imageSrc: 'https://i.pinimg.com/474x/a1/14/0b/a1140bccc28e0df130170aef9703d417.jpg',
             category: 'Maxi',
+            button: {
+                cart: "Add to cart",
+                link: "#",
+            },
         },
         {
             id: 4,
@@ -73,6 +84,10 @@ const DressesComponent = () => {
             price: 54.99,
             imageSrc: 'https://i.pinimg.com/474x/e6/a7/91/e6a7912231fbbb4bcd152a96b743df20.jpg',
             category: 'Summer Dresses',
+            button: {
+                cart: "Add to cart",
+                link: "#",
+            },
         },
         {
             id: 5,
@@ -82,6 +97,10 @@ const DressesComponent = () => {
             price: 79.95,
             imageSrc: 'https://i.pinimg.com/474x/65/97/e0/6597e04f1a6ddfa90f6e68981536279d.jpg',
             category: 'Classic',
+            button: {
+                cart: "Add to cart",
+                link: "#",
+            },
         },
         {
             id: 6,
@@ -91,6 +110,10 @@ const DressesComponent = () => {
             price: 42.99,
             imageSrc: 'https://i.pinimg.com/474x/eb/ed/f4/ebedf485acaa9bee893b92a4f08c7d17.jpg',
             category: 'Midi',
+            button: {
+                cart: "Add to cart",
+                link: "#",
+            },
         },
         {
             id: 7,
@@ -100,6 +123,10 @@ const DressesComponent = () => {
             price: 199.99,
             imageSrc: 'https://i.pinimg.com/474x/f5/b2/f3/f5b2f3a84f9ec05ff1562fc1dcde2b27.jpg',
             category: 'Ball Gowns',
+            button: {
+                cart: "Add to cart",
+                link: "#",
+            },
         },
         {
             id: 8,
@@ -109,6 +136,10 @@ const DressesComponent = () => {
             price: 45.99,
             imageSrc: 'https://i.pinimg.com/474x/e4/7f/bd/e47fbd851fda39903d034ffb6fe620da.jpg',
             category: 'Denim',
+            button: {
+                cart: "Add to cart",
+                link: "#",
+            },
         },
         {
             id: 9,
@@ -118,6 +149,10 @@ const DressesComponent = () => {
             price: 59.99,
             imageSrc: 'https://i.pinimg.com/474x/c7/e2/e0/c7e2e0dd124d9c198ca1b08145a5f619.jpg',
             category: 'Wrap Dresses',
+            button: {
+                cart: "Add to cart",
+                link: "#",
+            },
         },
         {
             id: 10,
@@ -127,6 +162,10 @@ const DressesComponent = () => {
             price: 78.99,
             imageSrc: 'https://i.pinimg.com/474x/9d/78/4b/9d784b2f7d1f42138240cc9e86019c56.jpg',
             category: 'Vintage',
+            button: {
+                cart: "Add to cart",
+                link: "#",
+            },
         },
     ];
 
@@ -137,8 +176,6 @@ const DressesComponent = () => {
         );
         setFilteredProducts(filtered);
     };
-
-
 
     const imagesMatchingNames = products.map(product => product.imageSrc);
 
@@ -221,12 +258,13 @@ const DressesComponent = () => {
                             <div className='flex items-center'>
                                 <p className='text-[18px] font-semibold text-black'>€{product.price}</p>
                                 <div className='ml-4'>
-                                    <button
-                                        className='text-black hover:underline transition duration-300 mr-4'
-                                        onClick={() => addToCart(product)}
+                                    <a
+                                        href={"/cart"}
+                                        onClick={(e) => handleAddToCart(e, product)}
+                                        className="text-black hover:underline transition duration-300 mr-4"
                                     >
-                                        Add to Cart
-                                    </button>
+                                        {}
+                                    </a>
                                     <button className='bg-black text-white px-8 py-2 rounded-md hover:bg-gray-800 transition duration-300'>
                                         Wishlist
                                     </button>

@@ -1,8 +1,8 @@
 import React from 'react'
 import type { Metadata } from "next";
-import Navbar from 'components/Navbar';
-import DiscountSectionWithRouter from 'components/Sale';
-import Footer from 'components/Footer';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
+import DiscountSection from '@/components/Sale';
 
 const title = "Sale";
 
@@ -14,7 +14,7 @@ const sale = () => {
   return (
     <div className='bg-white'>
         <Navbar />
-        <DiscountSectionWithRouter />
+        <DiscountSection />
         <Footer />
     </div>
   )

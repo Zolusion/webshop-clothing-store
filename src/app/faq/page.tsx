@@ -1,9 +1,9 @@
 import dynamic from 'next/dynamic';
 import React from 'react'
 import type { Metadata } from "next";
-import Navbar from 'components/Navbar';
-import Questions from 'components/Questions';
-import Footer from 'components/Footer';
+import Navbar from '@/components/Navbar';
+import Questions from '@/components/Questions';
+import Footer from '@/components/Footer';
 
 const title = "FAQ";
 

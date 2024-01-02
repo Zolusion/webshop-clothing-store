@@ -23,9 +23,6 @@ const footerSections = [
     title: 'Service',
     links: [
       { href: "/shipping", text: "Shipping info" },
-      { href: "/refunds", text: "Refunds" },
-      { href: "/ttrace", text: "Track & Trace" },
-      { href: "/cookies", text: "Cookies" },
     ],
   },
 ];

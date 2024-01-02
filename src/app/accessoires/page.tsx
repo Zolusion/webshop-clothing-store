@@ -1,8 +1,8 @@
 import React from 'react'
 import type { Metadata } from "next";
-import Navbar from 'components/Navbar';
-import Accessoires from 'components/Accessoires';
-import Footer from 'components/Footer';
+import Navbar from '@/components/Navbar';
+import Accessoires from '@/components/Accessoires';
+import Footer from '@/components/Footer';
 
 const title = "Accessoires";
 

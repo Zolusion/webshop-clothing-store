@@ -1,185 +1,246 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import { useState } from "react";
-import { BrowserRouter as Router, useNavigate } from 'react-router-dom';
+import { useRouter } from "next/navigation";
+import { addItem } from "@/store/cart/cartSlice";
+import { useDispatch } from 'react-redux';
 
-interface Product {
-  imageUrl: string;
-  name: string;
-  oldPrice: string;
-  newPrice: string;
-}
-
-const specialOffers: Product[] = [
+const products = [
   {
+    id: "1",
     imageUrl: "/solmaznur-images/solmaznur6.jpg",
-    name: "Product Name",
-    oldPrice: "€49.99",
-    newPrice: "€39.99",
+    productName: "Product 1",
+    price: 39.99,
+    button: {
+      cart: "Add to cart",
+      link: "#",
+    },
   },
   {
+    id: "2",
     imageUrl: "/solmaznur-images/solmaznur7.jpg",
-    name: "Product Name",
-    oldPrice: "€69.95",
-    newPrice: "€47.99",
+    productName: "Product 2",
+    price: 47.99,
+    button: {
+      cart: "Add to cart",
+      link: "#",
+    }
   },
   {
+    id: "3",
     imageUrl: "/solmaznur-images/solmaznur22.jpg",
-    name: "Product Name",
-    oldPrice: "€29.95",
-    newPrice: "€18.99",
+    productName: "Product 3",
+    price: 18.99,
+    button: {
+      cart: "Add to cart",
+      link: "#",
+    }
   },
   {
+    id: "4",
     imageUrl: "/solmaznur-images/solmaznur8.jpg",
-    name: "Product Name",
-    oldPrice: "€39.95",
-    newPrice: "€29.99",
+    productName: "Product 4",
+    price: 29.99,
+    button: {
+      cart: "Add to cart",
+      link: "#",
+    }
   },
   {
+    id: "5",
     imageUrl: "/solmaznur-images/solmaznur9.jpg",
-    name: "Product Name",
-    oldPrice: "€17.95",
-    newPrice: "€12.99",
+    productName: "Product 5",
+    price: 12.99,
+    button: {
+      cart: "Add to cart",
+      link: "#",
+    }
   },
   {
+    id: "6",
     imageUrl: "/solmaznur-images/solmaznur10.jpg",
-    name: "Product Name",
-    oldPrice: "€59.95",
-    newPrice: "€35.99",
+    productName: "Product 6",
+    price: 35.99,
+    button: {
+      cart: "Add to cart",
+      link: "#",
+    }
   },
   {
+    id: "7",
     imageUrl: "/solmaznur-images/solmaznur11.jpg",
-    name: "Product Name",
-    oldPrice: "€39.95",
-    newPrice: "€29.99",
+    productName: "Product 7",
+    price: 29.99,
+    button: {
+      cart: "Add to cart",
+      link: "#",
+    }
   },
   {
+    id: "8",
     imageUrl: "/solmaznur-images/solmaznur12.jpg",
-    name: "Product Name",
-    oldPrice: "€119.95",
-    newPrice: "€99.99",
+    productName: "Product 8",
+    price: 99.99,
+    button: {
+      cart: "Add to cart",
+      link: "#",
+    }
   },
   {
+    id: "9",
     imageUrl: "/solmaznur-images/solmaznur13.jpg",
-    name: "Product Name",
-    oldPrice: "€27.95",
-    newPrice: "€17.99",
+    productName: "Product 9",
+    price: 17.99,
+    button: {
+      cart: "Add to cart",
+      link: "#",
+    }
   },
   {
+    id: "10",
     imageUrl: "/solmaznur-images/solmaznur14.jpg",
-    name: "Product Name",
-    oldPrice: "€89.95",
-    newPrice: "€69.99",
+    productName: "Product 10",
+    price: 69.99,
+    button: {
+      cart: "Add to cart",
+      link: "#",
+    }
   },
   {
+    id: "11",
     imageUrl: "/solmaznur-images/solmaznur15.jpg",
-    name: "Product Name",
-    oldPrice: "€47.95",
-    newPrice: "€39.99",
+    productName: "Product 11",
+    price: 39.99,
+    button: {
+      cart: "Add to cart",
+      link: "#",
+    }
   },
   {
+    id: "12",
     imageUrl: "/solmaznur-images/solmaznur16.jpg",
-    name: "Product Name",
-    oldPrice: "€27.95",
-    newPrice: "€14.99",
+    productName: "Product 12",
+    price: 14.99,
+    button: {
+      cart: "Add to cart",
+      link: "#",
+    }
   },
   {
+    id: "13",
     imageUrl: "/solmaznur-images/solmaznur17.jpg",
-    name: "Product Name",
-    oldPrice: "€19.95",
-    newPrice: "€9.99",
+    productName: "Product 13",
+    price: 9.99,
+    button: {
+      cart: "Add to cart",
+      link: "#",
+    }
   },
   {
+    id: "14",
     imageUrl: "/solmaznur-images/solmaznur18.jpg",
-    name: "Product Name",
-    oldPrice: "€25.95",
-    newPrice: "€19.99",
+    productName: "Product 14",
+    price: 19.99,
+    button: {
+      cart: "Add to cart",
+      link: "#",
+    }
   },
   {
+    id: "15",
     imageUrl: "/solmaznur-images/solmaznur19.jpg",
-    name: "Product Name",
-    oldPrice: "€31.99",
-    newPrice: "€24.95",
+    productName: "Product 15",
+    price: 24.95,
+    button: {
+      cart: "Add to cart",
+      link: "#",
+    }
   },
   {
+    id: "16",
     imageUrl: "/solmaznur-images/solmaznur25.jpeg",
-    name: "Product Name",
-    oldPrice: "€27.95",
-    newPrice: "€19.99",
+    productName: "Product 16",
+    price: 19.99,
+    button: {
+      cart: "Add to cart",
+      link: "#",
+    }
   },
   {
+    id: "17",
     imageUrl: "/solmaznur-images/solmaznur23.jpeg",
-    name: "Product Name",
-    oldPrice: "€49.95",
-    newPrice: "€35.99",
+    productName: "Product 17",
+    price: 35.99,
+    button: {
+      cart: "Add to cart",
+      link: "#",
+    }
   },
   {
+    id: "18",
     imageUrl: "/solmaznur-images/solmaznur24.jpeg",
-    name: "Product Name",
-    oldPrice: "€38.95",
-    newPrice: "€29.99",
+    productName: "Product 18",
+    price: 29.99,
+    button: {
+      cart: "Add to cart",
+      link: "#",
+    }
   },
 ]
 
 const DiscountSection = () => {
-  const [shoppingCart, setShoppingCart] = useState<Product[]>([]);
-  const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const router = useRouter();
 
-  const addToCart = (product: Product) => {
-    setShoppingCart([...shoppingCart, product]);
-    navigate("/cart");
+  const handleAddToCart = (e: any, product: any) => {
+    dispatch(addItem(product));
+    e.preventDefault();
+    router.push("/cart");
   };
 
   return (
-    <section className="bg-black">
-      <div>
-        <div className="flex space-x-4 md:p-0 md:overflow-hidden">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-3">
-            {specialOffers.map((offer, index) => (
-              <div key={index} className="relative group">
-                <div className="overflow-hidden group-hover:opacity-75">
+    <section className="bg-white">
+      <div className="grid grid-cols-12">
+        {products.map((product, index) => {
+          return (
+            <div
+              key={index}
+              className="col-span-12 md:col-span-6 lg:col-span-3 xl:col-span-3 2xl:col-span-2 relative"
+            >
+              <div className="group">
+                <button className="block aspect-w-4 aspect-h-5 overflow-hidden">
                   <Image
-                    src={offer.imageUrl}
-                    alt="Product Image"
-                    className="w-full h-[550px] object-cover 2xl:h-[900px]"
+                    src={product.imageUrl}
+                    className="object-cover w-[500px] h-[700px] 2xl:h-[900px] 2xl:w-[1200px] object-center opacity-100 transition-opacity group-hover:opacity-75"
+                    alt={`Product ${index + 1}`}
                     width={500}
-                    height={500}
+                    height={700}
                     loading="lazy"
+                    quality={100}
+                    unoptimized
                   />
-                </div>
-                <div className="absolute bottom-0 left-0 right-0 text-center text-white opacity-0 transition-opacity group-hover:opacity-100">
-                  <h3 className="text-lg font-semibold mb-2">{offer.name}</h3>
-                  <div className="flex flex-col items-center justify-center ml-2 mb-2">
-                    <div className="line-through text-red-500 font-bold text-2xl">
-                      {offer.oldPrice}
-                    </div>
-                    <div className="text-white font-semibold text-2xl">
-                      {offer.newPrice}
-                    </div>
+                  <div className="absolute inset-0 flex flex-col items-start justify-end opacity-0 transition-opacity group-hover:opacity-100 bg-black bg-opacity-50">
+                    <p className="text-white text-lg font-bold mb-2 px-4">
+                      {product.productName}
+                    </p>
+                    <p className="text-white text-right mb-4 px-4">€{product.price}</p>
+                    <a
+                      href={"/cart"}
+                      onClick={(e) => handleAddToCart(e, product)}
+                      className="text-white bg-black px-4 py-2 w-full"
+                    >
+                      {product.button.cart}
+                    </a>
                   </div>
-                  <button
-                    name="add-to-cart"
-                    className="text-white bg-black px-4 py-2 w-full"
-                    onClick={() => addToCart(offer)}
-                  >
-                    Add To Cart
-                  </button>
-                </div>
+                </button>
               </div>
-            ))}
-          </div>
-        </div>
+            </div>
+          );
+        })}
       </div>
     </section>
 
   );
 };
 
-const DiscountSectionWithRouter = () => (
-  <Router>
-    <DiscountSection />
-  </Router>
-);
-
-export default DiscountSectionWithRouter;
+export default DiscountSection

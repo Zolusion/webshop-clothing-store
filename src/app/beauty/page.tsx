@@ -1,8 +1,8 @@
 import React from 'react'
-import Navbar from 'components/Navbar';
-import Footer from 'components/Footer';
-import Beauty from 'components/Beauty';
 import type { Metadata } from "next";
+import Navbar from '@/components/Navbar';
+import BeautyComponent from '@/components/Beauty';
+import Footer from '@/components/Footer';
 
 const title = "Beauty";
 
@@ -14,7 +14,7 @@ const beauty = () => {
   return (
     <div className='bg-white'>
         <Navbar />
-        <Beauty />
+        <BeautyComponent />
         <Footer />
     </div>
   )
