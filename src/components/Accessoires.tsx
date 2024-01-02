@@ -1,21 +1,169 @@
 "use client";
 import Image from 'next/image';
 import React, { useState } from 'react';
+import { useRouter } from "next/navigation";
+import { addItem } from "@/store/cart/cartSlice";
+import { useDispatch } from 'react-redux';
 
-interface Product {
-    id: number;
-    name: string;
-    description: string;
-    brand: string;
-    price: number;
-    imageSrc: string;
-    category: string;
-}
+const products = [
+    {
+        id: 1,
+        productName: 'Elegant Pearl Necklace',
+        description: 'Adorn yourself with the timeless elegance of the Elegant Pearl Necklace. A perfect accessory for any occasion.',
+        brand: 'Luxury Pearls',
+        price: 49.99,
+        imageUrl: 'https://i.pinimg.com/474x/6f/be/5f/6fbe5fee7b3bbee6f481407e99423b8e.jpg',
+        category: 'Necklaces',
+        button: {
+            cart: "Add to cart",
+            link: "#",
+        },
+    },
+    {
+        id: 2,
+        productName: 'Leather Wallet',
+        description: 'Keep your essentials secure and stylish with the Leather Wallet featuring RFID protection. A must-have accessory.',
+        brand: 'SecureStyle',
+        price: 5.95,
+        imageUrl: 'https://i.pinimg.com/474x/e5/da/69/e5da6995f8d9c2d10da1d15a447618f2.jpg',
+        category: 'Wallets',
+        button: {
+            cart: "Add to cart",
+            link: "#",
+        },
+    },
+    {
+        id: 3,
+        productName: 'Classic Aviator Sunglasses',
+        description: 'Complete your look with the Classic Aviator Sunglasses. A timeless accessory that adds a touch of sophistication.',
+        brand: 'SunStyle',
+        price: 7.99,
+        imageUrl: 'https://i.pinimg.com/474x/82/4c/27/824c27b6f08d52354b6a47c66ed1d97c.jpg',
+        category: 'Sunglasses',
+        button: {
+            cart: "Add to cart",
+            link: "#",
+        },
+    },
+    {
+        id: 4,
+        productName: 'Silk Scarf with Floral Print',
+        description: 'Elevate your style with the Silk Scarf featuring a beautiful floral print. A versatile accessory for any season.',
+        brand: 'SilkStyle',
+        price: 9.99,
+        imageUrl: 'https://i.pinimg.com/474x/e0/30/e1/e030e11addc75a665fc99462f26584ee.jpg',
+        category: 'Scarf',
+        button: {
+            cart: "Add to cart",
+            link: "#",
+        },
+    },
+    {
+        id: 5,
+        productName: 'Stainless Steel Watch',
+        description: 'Accessorize with the timeless appeal of the Stainless Steel Watch. A blend of style and functionality.',
+        brand: 'Timeless Elegance',
+        price: 39.95,
+        imageUrl: 'https://i.pinimg.com/474x/35/d2/b9/35d2b9010058b399489c22d5ede39651.jpg',
+        category: 'Watches',
+        button: {
+            cart: "Add to cart",
+            link: "#",
+        },
+    },
+    {
+        id: 6,
+        productName: 'Chic Leather Handbag',
+        description: 'Carry your essentials in style with the Chic Leather Handbag. A fashionable accessory that complements any outfit.',
+        brand: 'Fashion Forward',
+        price: 9.99,
+        imageUrl: 'https://i.pinimg.com/474x/9c/30/b7/9c30b7359e9d28d368d33bf143888120.jpg',
+        category: 'Handbags',
+        button: {
+            cart: "Add to cart",
+            link: "#",
+        },
+    },
+    {
+        id: 7,
+        productName: 'Trendy Smartwatch',
+        description: 'Stay connected and in vogue with the Trendy Smartwatch. An essential accessory for the tech-savvy.',
+        brand: 'TechStyle',
+        price: 29.99,
+        imageUrl: 'https://i.pinimg.com/474x/6f/c8/21/6fc8215e6e3a3c9f832b97286adf3435.jpg',
+        category: 'Watches',
+        button: {
+            cart: "Add to cart",
+            link: "#",
+        },
+    },
+    {
+        id: 8,
+        productName: 'Designer Cufflinks Set',
+        description: 'Add a touch of sophistication to your attire with the Designer Cufflinks Set. A refined accessory for formal occasions.',
+        brand: 'Dapper Designs',
+        price: 18.99,
+        imageUrl: 'https://i.pinimg.com/474x/46/3c/9b/463c9b72d09d2cbdd0e475aa37708fb1.jpg',
+        category: 'Accessories',
+        button: {
+            cart: "Add to cart",
+            link: "#",
+        },
+    },
+    {
+        id: 9,
+        productName: 'Fashionable Hat with Bow',
+        description: 'Top off your look with the Fashionable Hat featuring a stylish bow. An accessory that exudes charm and flair.',
+        brand: 'Chic Headwear',
+        price: 8.95,
+        imageUrl: 'https://i.pinimg.com/474x/01/a9/d8/01a9d88319fea8d2f40e799d896f0753.jpg',
+        category: 'Hats',
+        button: {
+            cart: "Add to cart",
+            link: "#",
+        },
+    },
+    {
+        id: 10,
+        productName: 'Leather Phone Wallet',
+        description: 'Combine convenience and style with the Leather Phone Wallet. A practical accessory for the modern lifestyle.',
+        brand: 'TechLux',
+        price: 4.99,
+        imageUrl: 'https://i.pinimg.com/474x/23/b9/2a/23b92ab3d6ee497ae058122ad3206663.jpg',
+        category: 'Wallets',
+        button: {
+            cart: "Add to cart",
+            link: "#",
+        },
+    },
+    {
+        id: 11,
+        productName: '3pcs Star Charm Neclace',
+        description: 'Elevate your look with the 3pcs Star Charm Neclace. A stunning accessory that adds a touch of glamour.',
+        brand: 'SunStyle',
+        price: 12.99,
+        imageUrl: 'https://i.pinimg.com/474x/7d/7b/9e/7d7b9e52fad2a3f7926c04268d9b2307.jpg',
+        category: 'Necklaces',
+        button: {
+            cart: "Add to cart",
+            link: "#",
+        },
+    }
+];
 
 const Accessoires = () => {
 
+    const dispatch = useDispatch();
+    const router = useRouter();
+
+    const handleAddToCart = (e: any, product: any) => {
+        dispatch(addItem(product));
+        e.preventDefault();
+        router.push("/cart");
+    };
+
     const [searchQuery, setSearchQuery] = useState<string>('');
-    const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
+    const [filteredProducts, setFilteredProducts] = useState(products);
     const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -25,118 +173,15 @@ const Accessoires = () => {
         setFilteredProducts(filtered);
     };
 
-    const products: Product[] = [
-        {
-            id: 1,
-            name: 'Elegant Pearl Necklace',
-            description: 'Adorn yourself with the timeless elegance of the Elegant Pearl Necklace. A perfect accessory for any occasion.',
-            brand: 'Luxury Pearls',
-            price: 49.99,
-            imageSrc: 'https://i.pinimg.com/474x/6f/be/5f/6fbe5fee7b3bbee6f481407e99423b8e.jpg',
-            category: 'Necklaces',
-        },
-        {
-            id: 2,
-            name: 'Leather Wallet',
-            description: 'Keep your essentials secure and stylish with the Leather Wallet featuring RFID protection. A must-have accessory.',
-            brand: 'SecureStyle',
-            price: 5.95,
-            imageSrc: 'https://i.pinimg.com/474x/e5/da/69/e5da6995f8d9c2d10da1d15a447618f2.jpg',
-            category: 'Wallets',
-        },
-        {
-            id: 3,
-            name: 'Classic Aviator Sunglasses',
-            description: 'Complete your look with the Classic Aviator Sunglasses. A timeless accessory that adds a touch of sophistication.',
-            brand: 'SunStyle',
-            price: 7.99,
-            imageSrc: 'https://i.pinimg.com/474x/82/4c/27/824c27b6f08d52354b6a47c66ed1d97c.jpg',
-            category: 'Sunglasses',
-        },
-        {
-            id: 4,
-            name: 'Silk Scarf with Floral Print',
-            description: 'Elevate your style with the Silk Scarf featuring a beautiful floral print. A versatile accessory for any season.',
-            brand: 'SilkStyle',
-            price: 9.99,
-            imageSrc: 'https://i.pinimg.com/474x/e0/30/e1/e030e11addc75a665fc99462f26584ee.jpg',
-            category: 'Scarf',
-        },
-        {
-            id: 5,
-            name: 'Stainless Steel Watch',
-            description: 'Accessorize with the timeless appeal of the Stainless Steel Watch. A blend of style and functionality.',
-            brand: 'Timeless Elegance',
-            price: 39.95,
-            imageSrc: 'https://i.pinimg.com/474x/35/d2/b9/35d2b9010058b399489c22d5ede39651.jpg',
-            category: 'Watches',
-        },
-        {
-            id: 6,
-            name: 'Chic Leather Handbag',
-            description: 'Carry your essentials in style with the Chic Leather Handbag. A fashionable accessory that complements any outfit.',
-            brand: 'Fashion Forward',
-            price: 9.99,
-            imageSrc: 'https://i.pinimg.com/474x/9c/30/b7/9c30b7359e9d28d368d33bf143888120.jpg',
-            category: 'Handbags',
-        },
-        {
-            id: 7,
-            name: 'Trendy Smartwatch',
-            description: 'Stay connected and in vogue with the Trendy Smartwatch. An essential accessory for the tech-savvy.',
-            brand: 'TechStyle',
-            price: 29.99,
-            imageSrc: 'https://i.pinimg.com/474x/6f/c8/21/6fc8215e6e3a3c9f832b97286adf3435.jpg',
-            category: 'Watches',
-        },
-        {
-            id: 8,
-            name: 'Designer Cufflinks Set',
-            description: 'Add a touch of sophistication to your attire with the Designer Cufflinks Set. A refined accessory for formal occasions.',
-            brand: 'Dapper Designs',
-            price: 18.99,
-            imageSrc: 'https://i.pinimg.com/474x/46/3c/9b/463c9b72d09d2cbdd0e475aa37708fb1.jpg',
-            category: 'Accessories',
-        },
-        {
-            id: 9,
-            name: 'Fashionable Hat with Bow',
-            description: 'Top off your look with the Fashionable Hat featuring a stylish bow. An accessory that exudes charm and flair.',
-            brand: 'Chic Headwear',
-            price: 8.95,
-            imageSrc: 'https://i.pinimg.com/474x/01/a9/d8/01a9d88319fea8d2f40e799d896f0753.jpg',
-            category: 'Hats',
-        },
-        {
-            id: 10,
-            name: 'Leather Phone Wallet',
-            description: 'Combine convenience and style with the Leather Phone Wallet. A practical accessory for the modern lifestyle.',
-            brand: 'TechLux',
-            price: 4.99,
-            imageSrc: 'https://i.pinimg.com/474x/23/b9/2a/23b92ab3d6ee497ae058122ad3206663.jpg',
-            category: 'Wallets',
-        },
-        {
-            id: 11,
-            name: '3pcs Star Charm Neclace',
-            description: 'Elevate your look with the 3pcs Star Charm Neclace. A stunning accessory that adds a touch of glamour.',
-            brand: 'SunStyle',
-            price: 12.99,
-            imageSrc: 'https://i.pinimg.com/474x/7d/7b/9e/7d7b9e52fad2a3f7926c04268d9b2307.jpg',
-            category: 'Necklaces',
-        }
-    ];
-
     const handleSearch = () => {
         const lowerCaseQuery = searchQuery.toLowerCase();
         const filtered = products.filter((product) =>
-            product.name.toLowerCase().includes(lowerCaseQuery)
+            product.productName.toLowerCase().includes(lowerCaseQuery)
         );
         setFilteredProducts(filtered);
     };
 
-    const imagesMatchingNames = products.map(product => product.imageSrc);
-
+    const imagesMatchingNames = products.map(product => product.imageUrl);
     console.log(imagesMatchingNames);
 
     return (
@@ -196,29 +241,32 @@ const Accessoires = () => {
             <hr className='mb-4' />
 
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-4 gap-8'>
-                {(searchQuery ? filteredProducts : products).map((product) => (
-                    <div key={product.id} className={`mb-8 ${selectedCategory && product.category !== selectedCategory ? 'hidden' : ''} `}>
+                {(searchQuery ? filteredProducts : products).map((product, index) => (
+                    <div key={index} className={`mb-8 ${selectedCategory && product.category !== selectedCategory ? 'hidden' : ''} `}>
                         <Image
-                            src={product.imageSrc}
-                            alt={product.name}
+                            src={product.imageUrl}
+                            alt={`Product ${index + 1}`}
                             className='w-full h-[500px] object-cover rounded-md mb-4 2xl:h-[900px]'
                             loading='lazy'
                             width={500}
                             height={500}
+                            quality={100}
+                            unoptimized
                         />
 
                         <div className='flex flex-col justify-between h-[200px]'>
-                            <h3 className='text-[20px] text-black font-thin'>{product.name}</h3>
+                            <h3 className='text-[20px] text-black font-thin'>{product.productName}</h3>
                             <p className='text-black font-bold mb-4'>{product.description}</p>
                             <div className='flex items-center'>
                                 <p className='text-[18px] font-semibold text-black'>€{product.price}</p>
                                 <div className='ml-4'>
-                                    <button
-                                        className='text-black hover:underline transition duration-300 mr-4'
-                                        onClick={() => addToCart(product)}
+                                    <a
+                                        href={"/cart"}
+                                        onClick={(e) => handleAddToCart(e, product)}
+                                        className="text-black hover:underline transition duration-300 mr-4"
                                     >
-                                        Add to Cart
-                                    </button>
+                                        {product.button.cart}
+                                    </a>
                                     <button className='bg-black text-white px-8 py-2 rounded-md hover:bg-gray-800 transition duration-300'>
                                         Wishlist
                                     </button>

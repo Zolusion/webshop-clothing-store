@@ -21,15 +21,14 @@ const cartSlice = createSlice({
         existingItem.quantity = action.payload.quantity;
       } else {
         let cartnewItem = { ...action.payload, quantity: 1 };
-        if (action.payload.newPrice) {
+        if (action.payload.price) {
           cartnewItem = {
             id: cartnewItem.id,
             productName: cartnewItem.productName,
             description: cartnewItem.description,
             imageUrl: cartnewItem.imageUrl,
-            quantity: 25,
-            oldPrice: cartnewItem.oldPrice,
-            newPrice: cartnewItem.newPrice,
+            quantity: 1,
+            price: cartnewItem.price,
           };
         }
         state.items.push(cartnewItem);

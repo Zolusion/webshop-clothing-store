@@ -1,21 +1,104 @@
 "use client";
 import Image from 'next/image';
 import React, { useState } from 'react';
+import { useRouter } from "next/navigation";
+import { addItem } from "@/store/cart/cartSlice";
+import { useDispatch } from 'react-redux';
 
-interface Product {
-    id: number;
-    name: string;
-    description: string;
-    brand: string;
-    price: number;
-    imageSrc: string;
-    category: string;
-}
+const products = [
+    {
+        id: 1,
+        productName: 'Sleek Ankle Boots',
+        description: 'Make a statement with the Sleek Ankle Boots. Crafted for both comfort and fashion, these boots are a must-have for any wardrobe.',
+        brand: 'Fashion Forward',
+        price: 99.99,
+        imageUrl: 'https://i.pinimg.com/474x/e1/08/75/e10875d0adc85c5dca356356491c608f.jpg',
+        category: 'Boots',
+        button: {
+            cart: "Add to cart",
+            link: "#",
+        }
+    },
+    {
+        id: 2,
+        productName: 'Quilted Sandals',
+        description: 'Stay stylish and comfortable in the Quilted Sandals. Designed for both fashion and ease, these sandals are a versatile addition to your collection.',
+        brand: 'WarmStyle',
+        price: 49.95,
+        imageUrl: 'https://i.pinimg.com/474x/e9/54/6b/e9546bfb205e224fa0d52c341c2f3997.jpg',
+        category: 'Sandals',
+        button: {
+            cart: "Add to cart",
+            link: "#",
+        }
+    },
+    {
+        id: 3,
+        productName: 'Casual Sneakers',
+        description: 'Complete your casual look with the Casual Sneakers. Timeless in style, these sneakers are a versatile addition to your wardrobe.',
+        brand: 'DenimStyle',
+        price: 29.99,
+        imageUrl: 'https://i.pinimg.com/474x/4d/02/b7/4d02b76fbae476f67a65bcbd819ae62f.jpg',
+        category: 'Sneakers',
+        button: {
+            cart: "Add to cart",
+            link: "#",
+        }
+    },
+    {
+        id: 4,
+        productName: 'Elegant Flats',
+        description: 'Step out in style with the Elegant Flats featuring a chic design. Stay fashionable and comfortable with this essential footwear.',
+        brand: 'WinterChic',
+        price: 39.99,
+        imageUrl: 'https://i.pinimg.com/474x/16/84/cd/1684cd4c414b2f20297f5818f3a41eaa.jpg',
+        category: 'Flats',
+        button: {
+            cart: "Add to cart",
+            link: "#",
+        }
+    },
+    {
+        id: 5,
+        productName: 'Stylish Booties',
+        description: 'Embrace a bold look with the Stylish Booties. These edgy shoes add a touch of rebellion to your style, perfect for a confident statement.',
+        brand: 'RebelStyle',
+        price: 59.95,
+        imageUrl: 'https://i.pinimg.com/474x/72/fe/87/72fe87413f182182fb6f1fc567500046.jpg',
+        category: 'Booties',
+        button: {
+            cart: "Add to cart",
+            link: "#",
+        }
+    },
+    {
+        id: 6,
+        productName: 'Black Velvet Heels',
+        description: 'Stay in style with the Black Velvet Heels. Crafted with the highest quality fabric, these heels are a must-have for any wardrobe.',
+        brand: 'RebelStyle',
+        price: 59.95,
+        imageUrl: 'https://img.freepik.com/free-photo/high-heels-black-velvet_53876-102771.jpg?w=1060&t=st=1703876989~exp=1703877589~hmac=615efc9f5faca35c6c34fa6b4699bdaa2a97c67c1c56668c65ba2798ae99edc0',
+        category: 'Heels',
+        button: {
+            cart: "Add to cart",
+            link: "#",
+        }
+    }
+];
 
 const HeelsComponent = () => {
 
+    const dispatch = useDispatch();
+    const router = useRouter();
+
+    const handleAddToCart = (e: any, product: any) => {
+        dispatch(addItem(product));
+        e.preventDefault();
+        router.push("/cart");
+    };
+
     const [searchQuery, setSearchQuery] = useState<string>('');
-    const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
+    const [filteredProducts, setFilteredProducts] = useState(products);
     const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -25,76 +108,15 @@ const HeelsComponent = () => {
         setFilteredProducts(filtered);
     };
 
-    const products: Product[] = [
-        {
-            id: 1,
-            name: 'Sleek Ankle Boots',
-            description: 'Make a statement with the Sleek Ankle Boots. Crafted for both comfort and fashion, these boots are a must-have for any wardrobe.',
-            brand: 'Fashion Forward',
-            price: 99.99,
-            imageSrc: 'https://i.pinimg.com/474x/e1/08/75/e10875d0adc85c5dca356356491c608f.jpg',
-            category: 'Boots',
-        },
-        {
-            id: 2,
-            name: 'Quilted Sandals',
-            description: 'Stay stylish and comfortable in the Quilted Sandals. Designed for both fashion and ease, these sandals are a versatile addition to your collection.',
-            brand: 'WarmStyle',
-            price: 49.95,
-            imageSrc: 'https://i.pinimg.com/474x/e9/54/6b/e9546bfb205e224fa0d52c341c2f3997.jpg',
-            category: 'Sandals',
-        },
-        {
-            id: 3,
-            name: 'Casual Sneakers',
-            description: 'Complete your casual look with the Casual Sneakers. Timeless in style, these sneakers are a versatile addition to your wardrobe.',
-            brand: 'DenimStyle',
-            price: 29.99,
-            imageSrc: 'https://i.pinimg.com/474x/4d/02/b7/4d02b76fbae476f67a65bcbd819ae62f.jpg',
-            category: 'Sneakers',
-        },
-        {
-            id: 4,
-            name: 'Elegant Flats',
-            description: 'Step out in style with the Elegant Flats featuring a chic design. Stay fashionable and comfortable with this essential footwear.',
-            brand: 'WinterChic',
-            price: 39.99,
-            imageSrc: 'https://i.pinimg.com/474x/16/84/cd/1684cd4c414b2f20297f5818f3a41eaa.jpg',
-            category: 'Flats',
-        },
-        {
-            id: 5,
-            name: 'Stylish Booties',
-            description: 'Embrace a bold look with the Stylish Booties. These edgy shoes add a touch of rebellion to your style, perfect for a confident statement.',
-            brand: 'RebelStyle',
-            price: 59.95,
-            imageSrc: 'https://i.pinimg.com/474x/72/fe/87/72fe87413f182182fb6f1fc567500046.jpg',
-            category: 'Booties',
-        },
-        // Black velvet heels
-        {
-            id: 6,
-            name: 'Black Velvet Heels',
-            description: 'Stay in style with the Black Velvet Heels. Crafted with the highest quality fabric, these heels are a must-have for any wardrobe.',
-            brand: 'RebelStyle',
-            price: 59.95,
-            imageSrc: 'https://img.freepik.com/free-photo/high-heels-black-velvet_53876-102771.jpg?w=1060&t=st=1703876989~exp=1703877589~hmac=615efc9f5faca35c6c34fa6b4699bdaa2a97c67c1c56668c65ba2798ae99edc0',
-            category: 'Heels',
-        }
-    ];
-
-
-
     const handleSearch = () => {
         const lowerCaseQuery = searchQuery.toLowerCase();
         const filtered = products.filter((product) =>
-            product.name.toLowerCase().includes(lowerCaseQuery)
+            product.productName.toLowerCase().includes(lowerCaseQuery)
         );
         setFilteredProducts(filtered);
     };
 
-    const imagesMatchingNames = products.map(product => product.imageSrc);
-
+    const imagesMatchingNames = products.map(product => product.imageUrl);
     console.log(imagesMatchingNames);
 
     return (
@@ -150,29 +172,32 @@ const HeelsComponent = () => {
             <hr className='mb-4' />
 
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-4 gap-8'>
-                {(searchQuery ? filteredProducts : products).map((product) => (
-                    <div key={product.id} className={`mb-8 ${selectedCategory && product.category !== selectedCategory ? 'hidden' : ''} `}>
+                {(searchQuery ? filteredProducts : products).map((product, index) => (
+                    <div key={index} className={`mb-8 ${selectedCategory && product.category !== selectedCategory ? 'hidden' : ''} `}>
                         <Image
-                            src={product.imageSrc}
-                            alt={product.name}
+                            src={product.imageUrl}
+                            alt={`Product ${index + 1}`}
                             className='w-full h-[500px] object-cover rounded-md mb-4 2xl:h-[900px]'
                             loading='lazy'
                             width={500}
                             height={500}
+                            quality={100}
+                            unoptimized
                         />
 
                         <div className='flex flex-col justify-between h-[200px]'>
-                            <h3 className='text-[20px] text-black font-thin'>{product.name}</h3>
+                            <h3 className='text-[20px] text-black font-thin'>{product.productName}</h3>
                             <p className='text-black font-bold mb-4'>{product.description}</p>
                             <div className='flex items-center'>
                                 <p className='text-[18px] font-semibold text-black'>€{product.price}</p>
                                 <div className='ml-4'>
-                                    <button
-                                        className='text-black hover:underline transition duration-300 mr-4'
-                                        onClick={() => addToCart(product)}
+                                    <a
+                                        href={"/cart"}
+                                        onClick={(e) => handleAddToCart(e, product)}
+                                        className="text-black hover:underline transition duration-300 mr-4"
                                     >
-                                        Add to Cart
-                                    </button>
+                                        {product.button.cart}
+                                    </a>
                                     <button className='bg-black text-white px-8 py-2 rounded-md hover:bg-gray-800 transition duration-300'>
                                         Wishlist
                                     </button>
