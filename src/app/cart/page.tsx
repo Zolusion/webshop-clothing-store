@@ -1,6 +1,14 @@
 import * as React from "react";
 import CartComponent from "@/components/CartComponent";
 import ReduxProvider from "@/components/ReduxProvider";
+import type { Metadata } from "next";
+import RecommandedProducts from "@/components/RecommandedProducts";
+
+const title = "Shopping Cart";
+
+export const metadata: Metadata = {
+  title: `${title} | Solmaz Fashion`,
+};
 
 interface ProductCart {
   image: string;
@@ -38,6 +46,7 @@ const Cart = ({
   return (
     <ReduxProvider>
       <CartComponent customer={customer} />
+      <RecommandedProducts />
     </ReduxProvider>
   );
 };

@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 const PrivacyPolicy = () => {
@@ -37,7 +38,14 @@ const PrivacyPolicy = () => {
         </p>
       </div>
       <div className='w-1/2'>
-        <img src='https://images.unsplash.com/photo-1682685797795-5640f369a70a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8' alt='Privacy Policy' className='w-full h-auto object-cover 2xl:w-[1300px] 2xl:h-[800px]' />
+        <Image
+          src='https://images.unsplash.com/photo-1682685797795-5640f369a70a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8' alt='Privacy Policy'
+          className='w-full h-auto object-cover 2xl:w-[1300px] 2xl:h-[800px]'
+          width={500}
+          height={500}
+          quality={100}
+          unoptimized
+        />
       </div>
     </div>
   );

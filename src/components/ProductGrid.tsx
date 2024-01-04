@@ -67,19 +67,15 @@ const ProductGrid = () => {
                                         quality={100}
                                         unoptimized
                                     />
-                                    <div className="absolute bottom-0 left-0 right-0 bg-black text-white text-center py-2 opacity-0 transition-opacity group-hover:opacity-100">
-                                        <h2 className="font-bold text-lg">Popular Product</h2>
-                                    </div>
-                                    <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col items-center justify-center opacity-0 transition-opacity group-hover:opacity-100">
-                                        <p className="text-white text-lg font-bold mb-2">
+                                    <div className="absolute inset-0 flex flex-col items-start justify-end opacity-0 transition-opacity group-hover:opacity-100 bg-black bg-opacity-50">
+                                        <p className="text-white text-lg font-bold mb-2 px-4">
                                             {product.productName}
                                         </p>
-                                        <p className="text-white">{product.price}</p>
-
+                                        <p className="text-white text-right mb-4 px-4">€{product.price}</p>
                                         <a
                                             href={"/cart"}
                                             onClick={(e) => handleAddToCart(e, product)}
-                                            className="text-white bg-blue-500 px-4 py-2 mt-2"
+                                            className="text-white bg-black px-4 py-2 w-full"
                                         >
                                             {product.button.cart}
                                         </a>
@@ -91,6 +87,7 @@ const ProductGrid = () => {
                 })}
             </div>
         </section>
+
     );
 };
 

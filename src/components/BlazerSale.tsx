@@ -1,167 +1,263 @@
-import Image from "next/image";
-import React from "react";
-
+"use client";
+import Image from 'next/image';
+import React, { useState } from 'react';
+import { useRouter } from "next/navigation";
+import { addItem } from "@/store/cart/cartSlice";
+import { useDispatch } from 'react-redux';
 
 const specialOffers = [
   {
-    imageUrl: "https://media.istockphoto.com/id/1359562499/nl/foto/outdoor-fashion-portrait-of-elegant-woman-wearing-lilac-suit-yellow-sunglasses-holding-trendy.jpg?s=612x612&w=0&k=20&c=iiMjxlBUOg808woC-WieBkoWn6-JISRz3ctznrJHLXs=",
-    name: "Product Name",
-    oldPrice: "€49.99",
-    newPrice: "€39.99",
+    id: 1,
+    imageUrl: "/blazer/blazer5.png",
+    productName: "Royal Plum",
+    price: 39.99,
+    button: {
+      cart: "Add to cart",
+      link: "#",
+    },
   },
   {
-    imageUrl: "https://images.unsplash.com/photo-1623197436184-afa57dfa9bf4?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fGJsYXplciUyMHdvbWFufGVufDB8fDB8fHww",
-    name: "Product Name",
-    oldPrice: "€69.95",
-    newPrice: "€47.99",
+    id: 2,
+    imageUrl: "/blazer/blazer11.png",
+    productName: "Ivory Hues",
+    price: 47.99,
+    button: {
+      cart: "Add to cart",
+      link: "#",
+    },
   },
   {
-    imageUrl: "https://plus.unsplash.com/premium_photo-1671826911765-6386652c2e27?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTg1fHxibGF6ZXIlMjB3b21hbnxlbnwwfHwwfHx8MA%3D%3D",
-    name: "Product Name",
-    oldPrice: "€29.95",
-    newPrice: "€18.99",
+    id: 3,
+    imageUrl: "/blazer/blazer18.png",
+    productName: "Pumpkin Spice",
+    price: 18.99,
+    button: {
+      cart: "Add to cart",
+      link: "#",
+    },
   },
   {
+    id: 4,
     imageUrl: "https://images.unsplash.com/photo-1700560970703-82fd3150d5ac?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjE0fHxibGF6ZXIlMjB3b21hbnxlbnwwfHwwfHx8MA%3D%3D",
-    name: "Product Name",
-    oldPrice: "€39.95",
-    newPrice: "€29.99",
+    productName: "Obsidian",
+    price: 29.99,
+    button: {
+      cart: "Add to cart",
+      link: "#",
+    },
   },
   {
-    imageUrl: "https://images.unsplash.com/photo-1697095098675-1d02496ef86a?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjQyfHxibGF6ZXIlMjB3b21hbnxlbnwwfHwwfHx8MA%3D%3D",
-    name: "Product Name",
-    oldPrice: "€17.95",
-    newPrice: "€12.99",
+    id: 5,
+    imageUrl: "/blazer/blazer6.png",
+    productName: "Mint Chocolate",
+    price: 12.99,
+    button: {
+      cart: "Add to cart",
+      link: "#",
+    },
   },
   {
-    imageUrl: "https://images.unsplash.com/photo-1684262855347-56505dfb3037?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjU4fHxibGF6ZXIlMjB3b21hbnxlbnwwfHwwfHx8MA%3D%3D",
-    name: "Product Name",
-    oldPrice: "€59.95",
-    newPrice: "€35.99",
+    id: 6,
+    imageUrl: "/blazer/blazer16.png",
+    productName: "Taupe Tranquility",
+    price: 35.99,
+    button: {
+      cart: "Add to cart",
+      link: "#",
+    },
   },
   {
-    imageUrl: "https://img.freepik.com/free-photo/vertical-portrait-beautiful-young-girl-smiling-white-background-high-quality-photo_144627-75411.jpg?size=626&ext=jpg&uid=R58238079&ga=GA1.1.608720427.1702289590&semt=ais",
-    name: "Product Name",
-    oldPrice: "€39.95",
-    newPrice: "€29.99",
+    id: 7,
+    imageUrl: "/blazer/blazer7.png",
+    productName: "Onyx Obsidian",
+    price: 29.99,
+    button: {
+      cart: "Add to cart",
+      link: "#",
+    },
   },
   {
-    imageUrl: "https://img.freepik.com/free-photo/high-fashion-portrait-young-beautiful-brunette-woman-wearing-nice-trendy-white-suit-sexy-fashion-model-posing-studio-fashionable-female-isolated-blue_158538-25886.jpg?size=626&ext=jpg&uid=R58238079&ga=GA1.1.608720427.1702289590&semt=ais",
-    name: "Product Name",
-    oldPrice: "€119.95",
-    newPrice: "€99.99",
+    id: 8,
+    imageUrl: "/blazer/blazer15.png",
+    productName: "Arctic Frost",
+    price: 99.99,
+    button: {
+      cart: "Add to cart",
+      link: "#",
+    },
   },
   {
-    imageUrl: "https://img.freepik.com/free-photo/front-view-beautiful-woman-pink-suit_197531-16812.jpg?size=626&ext=jpg&uid=R58238079&ga=GA1.1.608720427.1702289590&semt=ais",
-    name: "Product Name",
-    oldPrice: "€27.95",
-    newPrice: "€17.99",
+    id: 9,
+    imageUrl: "/blazer/blazer10.png",
+    productName: "Violet Velvet",
+    price: 17.99,
+    button: {
+      cart: "Add to cart",
+      link: "#",
+    },
   },
   {
-    imageUrl: "https://img.freepik.com/free-photo/beautiful-woman-business-suit-sitting-chair_1303-17685.jpg?size=626&ext=jpg&uid=R58238079&ga=GA1.1.608720427.1702289590&semt=ais",
-    name: "Product Name",
-    oldPrice: "€89.95",
-    newPrice: "€69.99",
+    id: 10,
+    imageUrl: "/blazer/blazer17.png",
+    productName: "Steel Gray Blazer",
+    price: 69.99,
+    button: {
+      cart: "Add to cart",
+      link: "#",
+    },
   },
   {
-    imageUrl: "https://img.freepik.com/free-photo/portrait-fashion-blonde-business-woman-posing-sitting-chair-looking-camera-medium-shot-adorable-luxury-stylish-girl-trendy-suit-relaxing-public-place-cafe-restaurant_132075-9561.jpg?size=626&ext=jpg&uid=R58238079&ga=GA1.1.608720427.1702289590&semt=ais",
-    name: "Product Name",
-    oldPrice: "€47.95",
-    newPrice: "€39.99",
+    id: 11,
+    imageUrl: "/blazer/blazer1.png",
+    productName: "Ice Crystal",
+    price: 39.99,
+    button: {
+      cart: "Add to cart",
+      link: "#",
+    },
   },
   {
-    imageUrl: "https://img.freepik.com/free-photo/cute-portrait-attractive-stylish-smiling-woman-walking-city-street-pink-coat_285396-1281.jpg?size=626&ext=jpg&uid=R58238079&ga=GA1.1.608720427.1702289590&semt=ais",
-    name: "Product Name",
-    oldPrice: "€27.95",
-    newPrice: "€14.99",
+    id: 12,
+    imageUrl: "/blazer/blazer4.png",
+    productName: "Majestic Grape ",
+    price: 14.99,
+    button: {
+      cart: "Add to cart",
+      link: "#",
+    },
   },
   {
-    imageUrl: "https://img.freepik.com/free-photo/high-fashion-portrait-young-beautiful-brunette-woman-wearing-nice-trendy-blue-suit-sexy-fashion-model-posing-studio-fashionable-female-isolated-light-pink_158538-22172.jpg?size=626&ext=jpg&uid=R58238079&ga=GA1.1.608720427.1702289590&semt=ais",
-    name: "Product Name",
-    oldPrice: "€19.95",
-    newPrice: "€9.99",
+    id: 13,
+    imageUrl: "/blazer/blazer2.png",
+    productName: "Blue Velvet",
+    price: 9.99,
+    button: {
+      cart: "Add to cart",
+      link: "#",
+    },
   },
   {
-    imageUrl: "https://img.freepik.com/free-photo/portrait-young-japanese-woman_23-2148870711.jpg?size=626&ext=jpg&uid=R58238079&ga=GA1.1.608720427.1702289590&semt=ais",
-    name: "Product Name",
-    oldPrice: "€25.95",
-    newPrice: "€19.99",
+    id: 14,
+    imageUrl: "/blazer/blazer8.png",
+    productName: "Charcoal Charm",
+    price: 19.99,
+    button: {
+      cart: "Add to cart",
+      link: "#",
+    },
   },
   {
-    imageUrl: "https://img.freepik.com/free-photo/young-woman-model-wearing-long-gray-coat_1303-21155.jpg?size=626&ext=jpg&uid=R58238079&ga=GA1.1.608720427.1702289590&semt=ais",
-    name: "Product Name",
-    oldPrice: "€31.99",
-    newPrice: "€24.95",
+    id: 15,
+    imageUrl: "/blazer/blazer9.png",
+    productName: "Smoky Leather",
+    price: 24.95,
+    button: {
+      cart: "Add to cart",
+      link: "#",
+    },
   },
   {
-    imageUrl: "https://img.freepik.com/free-photo/fashion-portrait-young-elegant-woman_1328-2685.jpg?size=626&ext=jpg&uid=R58238079&ga=GA1.1.608720427.1702289590&semt=ais",
-    name: "Product Name",
-    oldPrice: "€27.95",
-    newPrice: "€19.99",
+    id: 16,
+    imageUrl: "/blazer/blazer3.png",
+    productName: "Desert Dawn",
+    price: 19.99,
+    button: {
+      cart: "Add to cart",
+      link: "#",
+    },
   },
   {
-    imageUrl: "https://img.freepik.com/free-photo/portrait-fashion-model-walking-city-she-is-looking-camera_197531-1124.jpg?size=626&ext=jpg&uid=R58238079&ga=GA1.1.608720427.1702289590&semt=ais",
-    name: "Product Name",
-    oldPrice: "€49.95",
-    newPrice: "€35.99",
+    id: 17,
+    imageUrl: "/blazer/blazer14.png",
+    productName: "Pearl Essence",
+    price: 35.99,
+    button: {
+      cart: "Add to cart",
+      link: "#",
+    },
   },
   {
-    imageUrl: "https://img.freepik.com/free-photo/pretty-attractive-stylish-smiling-rich-woman-walking-city-street-pink-coat_285396-1383.jpg?size=626&ext=jpg&uid=R58238079&ga=GA1.1.608720427.1702289590&semt=ais",
-    name: "Product Name",
-    oldPrice: "€38.95",
-    newPrice: "€29.99",
+    id: 18,
+    imageUrl: "/blazer/blazer12.png",
+    productName: "Pink Champagne",
+    price: 29.99,
+    button: {
+      cart: "Add to cart",
+      link: "#",
+    },
   },
   {
-    imageUrl: "https://images.unsplash.com/photo-1676379885127-9689d630355b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzYzfHxibGF6ZXIlMjB3b21hbnxlbnwwfHwwfHx8MA%3D%3D",
-    name: "Product Name",
-    oldPrice: "€47.95",
-    newPrice: "€39.99",
+    id: 19,
+    imageUrl: "/blazer/blazer19.png",
+    productName: "Grapevine Glamour",
+    price: 39.99,
+    button: {
+      cart: "Add to cart",
+      link: "#",
+    },
   },
   {
-    imageUrl: "https://img.freepik.com/free-photo/girl-jacket_1303-4472.jpg?size=626&ext=jpg&uid=R58238079&ga=GA1.1.608720427.1702289590&semt=ais",
-    name: "Product Name",
-    oldPrice: "€39.95",
-    newPrice: "€29.99",
+    id: 20,
+    imageUrl: "/blazer/blazer13.png",
+    productName: "Heavenly Blue",
+    price: 29.99,
+    button: {
+      cart: "Add to cart",
+      link: "#",
+    },
   }
 ]
 
 const BlazerSale = () => {
+
+  const dispatch = useDispatch();
+  const router = useRouter();
+
+  const handleAddToCart = (e: any, product: any) => {
+    dispatch(addItem(product));
+    e.preventDefault();
+    router.push("/cart");
+  };
+
   return (
     <section className="bg-black">
       <div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-            {specialOffers.map((offer, index) => (
-              <div key={index} className="relative group">
-                <div className="overflow-hidden group-hover:opacity-75">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+          {specialOffers.map((offer, index) => (
+            <div 
+              key={index} 
+              className="relative group"
+            >
+              <div className="group">
+                <button className="block aspect-w-4 aspect-h-5 overflow-hidden">
                   <Image
                     src={offer.imageUrl}
-                    alt="Product Image"
-                    className="w-full h-[550px] object-cover 2xl:h-[900px]"
+                    className="object-cover w-[500px] h-[700px] 2xl:h-[900px] 2xl:w-[1200px] object-center opacity-100 transition-opacity group-hover:opacity-75"
+                    alt={`Product ${index + 1}`}
                     width={500}
-                    height={500}
+                    height={700}
                     loading="lazy"
+                    quality={100}
+                    unoptimized
                   />
-                </div>
-                <div className="absolute bottom-0 left-0 right-0 text-center text-white opacity-0 transition-opacity group-hover:opacity-100">
-                  <h3 className="text-lg font-semibold mb-2">{offer.name}</h3>
-                  <div className="flex flex-col items-center justify-center ml-2 mb-2">
-                    <div className="line-through text-red-500 font-bold text-2xl">
-                      {offer.oldPrice}
-                    </div>
-                    <div className="text-white font-semibold text-2xl">
-                      {offer.newPrice}
-                    </div>
+                  <div className="absolute inset-0 flex flex-col items-start justify-end opacity-0 transition-opacity group-hover:opacity-100 bg-black bg-opacity-50">
+                    <p className="text-white text-lg font-bold mb-2 px-4">
+                      {offer.productName}
+                    </p>
+                    <p className="text-white text-right mb-4 px-4">€{offer.price}</p>
+                    <a
+                      href={"/cart"}
+                      onClick={(e) => handleAddToCart(e, offer)}
+                      className="text-white bg-black px-4 py-2 w-full"
+                    >
+                      {offer.button.cart}
+                    </a>
                   </div>
-                  <button
-                    name="add-to-cart"
-                    className="text-white bg-black px-4 py-2 w-full"
-                  >
-                    Add To Cart
-                  </button>
-                </div>
+                </button>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   )

@@ -9,7 +9,7 @@ const products = [
   {
     id: "1",
     imageUrl: "/solmaznur-images/solmaznur6.jpg",
-    productName: "Product 1",
+    productName: "Papaya Paradise",
     price: 39.99,
     button: {
       cart: "Add to cart",
@@ -19,7 +19,7 @@ const products = [
   {
     id: "2",
     imageUrl: "/solmaznur-images/solmaznur7.jpg",
-    productName: "Product 2",
+    productName: "Obsidian Edge",
     price: 47.99,
     button: {
       cart: "Add to cart",
@@ -29,7 +29,7 @@ const products = [
   {
     id: "3",
     imageUrl: "/solmaznur-images/solmaznur22.jpg",
-    productName: "Product 3",
+    productName: "Midnight Sky",
     price: 18.99,
     button: {
       cart: "Add to cart",
@@ -39,7 +39,7 @@ const products = [
   {
     id: "4",
     imageUrl: "/solmaznur-images/solmaznur8.jpg",
-    productName: "Product 4",
+    productName: "Cocoa Cozy",
     price: 29.99,
     button: {
       cart: "Add to cart",
@@ -49,7 +49,7 @@ const products = [
   {
     id: "5",
     imageUrl: "/solmaznur-images/solmaznur9.jpg",
-    productName: "Product 5",
+    productName: "Mossy Cloud",
     price: 12.99,
     button: {
       cart: "Add to cart",
@@ -59,7 +59,7 @@ const products = [
   {
     id: "6",
     imageUrl: "/solmaznur-images/solmaznur10.jpg",
-    productName: "Product 6",
+    productName: "Snowfall",
     price: 35.99,
     button: {
       cart: "Add to cart",
@@ -69,7 +69,7 @@ const products = [
   {
     id: "7",
     imageUrl: "/solmaznur-images/solmaznur11.jpg",
-    productName: "Product 7",
+    productName: "Olive Oasis",
     price: 29.99,
     button: {
       cart: "Add to cart",
@@ -79,7 +79,7 @@ const products = [
   {
     id: "8",
     imageUrl: "/solmaznur-images/solmaznur12.jpg",
-    productName: "Product 8",
+    productName: "Dark Forest",
     price: 99.99,
     button: {
       cart: "Add to cart",
@@ -205,7 +205,7 @@ const DiscountSection = () => {
           return (
             <div
               key={index}
-              className="col-span-12 md:col-span-6 lg:col-span-3 xl:col-span-3 2xl:col-span-2 relative"
+              className="grid-cols-12 col-span-12 sm:col-span-6 md:col-span-4 relative"
             >
               <div className="group">
                 <button className="block aspect-w-4 aspect-h-5 overflow-hidden">
@@ -220,10 +220,10 @@ const DiscountSection = () => {
                     unoptimized
                   />
                   <div className="absolute inset-0 flex flex-col items-start justify-end opacity-0 transition-opacity group-hover:opacity-100 bg-black bg-opacity-50">
-                    <p className="text-white text-lg font-bold mb-2 px-4">
+                    <p className="text-white text-lg font-bold mb-2 px-4 2xl:text-2xl">
                       {product.productName}
                     </p>
-                    <p className="text-white text-right mb-4 px-4">€{product.price}</p>
+                    <p className="text-white text-right mb-4 px-4 2xl:text-2xl">€{product.price}</p>
                     <a
                       href={"/cart"}
                       onClick={(e) => handleAddToCart(e, product)}

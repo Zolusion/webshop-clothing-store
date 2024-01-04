@@ -6,7 +6,7 @@ const ShippingInfo = () => {
       <div className='flex flex-col justify-center text-black'>
         <h1 className='text-2xl font-bold mb-6'>Shipping Information</h1>
         <p className='mb-4'>
-          At Solmaz Fashion, we strive to provide a seamless and efficient shipping experience for our customers. Here's some important information about our shipping policies:
+          At Solmaz Fashion, we strive to provide a seamless and efficient shipping experience for our customers. Here&#39;s some important information about our shipping policies:
         </p>
         <ul className='list-disc pl-6 mb-4'>
           <li className='mb-2'>We offer free shipping on all orders over $50.</li>
@@ -30,7 +30,7 @@ const ShippingInfo = () => {
           <li className='mb-2'>To initiate a refund, please contact our customer support team at support@solmazfashion.com.</li>
         </ul>
         <p>
-          If you have any further questions or need assistance with returns or refunds, please don't hesitate to reach out to us.
+          If you have any further questions or need assistance with returns or refunds, please don&#39;t hesitate to reach out to us.
         </p>
       </div>
       <div>
@@ -54,7 +54,7 @@ const ShippingInfo = () => {
           If you prefer not to have cookies stored on your device, you can disable them in your browser settings.
         </p>
         <p className='mb-4'>
-          If you have any further questions or need assistance with cookies, please don't hesitate to reach out to us.
+          If you have any further questions or need assistance with cookies, please don&#39;t hesitate to reach out to us.
         </p>
       </div>
     </div>

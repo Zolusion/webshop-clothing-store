@@ -62,6 +62,34 @@ const CartComponent: React.FC<{ customer?: Customer }> = ({ customer }) => {
   const [customerZipCode, setCustomerZipCode] = useState("");
   const [shippingMethod, setShippingMethod] = useState("");
   const [paymentMethod, setPaymentMethod] = useState("");
+
+  const [formData, setFormData] = useState<Customer>({
+    name: customer?.name || "Demo",
+    surname: customer?.surname || "",
+    email: customer?.email || "",
+    phone: customer?.phone || "",
+    address: customer?.address || "",
+    city: customer?.city || "",
+    state: customer?.state || "",
+    zip: customer?.zip || "",
+    country: customer?.country || "",
+    paymentmethod: "IDEAL",
+    orderstatus: customer?.orderstatus || "",
+    products: customer?.products || [],
+  });
+
+  const [formErrors, setFormErrors] = useState<Record<string, string>>({
+    name: "",
+    surname: "",
+    email: "",
+    phone: "",
+    address: "",
+    city: "",
+    state: "",
+    zip: "",
+    country: "",
+  });
+
   if (!customer) {
     return (
       <div className="p-8">
@@ -83,7 +111,7 @@ const CartComponent: React.FC<{ customer?: Customer }> = ({ customer }) => {
                       <Image
                         src={item.image || item.imageUrl}
                         alt={item.productName}
-                        className="w-20 h-20 object-cover rounded mr-4 2xl:w-[300px] 2xl:h-[300px]"
+                        className="w-30 h-30 object-cover rounded mr-4 2xl:w-[300px] 2xl:h-[300px]"
                         width={80}
                         height={80}
                         quality={100}
@@ -226,8 +254,11 @@ const CartComponent: React.FC<{ customer?: Customer }> = ({ customer }) => {
                                 className="text-gray-600 border border-gray-300 rounded px-2 py-1 w-full"
                               >
                                 <option value="">Select a shipping method</option>
-                                <option value="standard">Standard</option>
-                                <option value="express">Express</option>
+                                <option value="standard">DHL Express</option>
+                                <option value="express">PostNL</option>
+                                <option value="overnight">FedEx</option>
+                                <option value="other">UPS</option>
+                                <option value="other">GLS</option>
                               </select>
                             </td>
                           </tr>
@@ -269,115 +300,13 @@ const CartComponent: React.FC<{ customer?: Customer }> = ({ customer }) => {
                     Proceed to Checkout
                   </button>
                 </div>
-
-
               </div>
             )}
-          </div>
-        </div>
-        <div className="bg-white mt-4 p-5 rounded-md">
-          <h2 className="text-2xl font-semibold mb-4 text-black">
-            Recommanded Products
-          </h2>
-          <div className="rounded-md mx-auto">
-            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-              <div>
-                <div className="relative h-64 2xl:h-[600px]">
-                  <Image
-                    className="w-full h-full object-cover"
-                    src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-                    alt="Product Image"
-                    fill
-                  />
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-black">
-                    Product Name
-                  </h3>
-                  <p className="text-gray-500">Description</p>
-                </div>
-              </div>
-              <div>
-                <div className="relative h-64 2xl:h-[600px]">
-                  <Image
-                    className="w-full h-full object-cover"
-                    src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-                    alt="Product Image"
-                    fill
-                  />
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-black">
-                    Product Name
-                  </h3>
-                  <p className="text-gray-500">Description</p>
-                </div>
-              </div>
-              <div>
-                <div className="relative h-64 2xl:h-[600px]">
-                  <Image
-                    className="w-full h-full object-cover"
-                    src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-                    alt="Product Image"
-                    fill
-                  />
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-black">
-                    Product Name
-                  </h3>
-                  <p className="text-gray-500">Description</p>
-                </div>
-              </div>
-              <div>
-                <div className="relative h-64 2xl:h-[600px]">
-                  <Image
-                    className="w-full h-full object-cover"
-                    src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-                    alt="Product Image"
-                    fill
-                  />
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-black">
-                    Product Name
-                  </h3>
-                  <p className="text-gray-500">Description</p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
     );
   }
-
-  const [formData, setFormData] = useState<Customer>({
-    name: customer?.name || "Demo",
-    surname: customer?.surname || "",
-    email: customer?.email || "",
-    phone: customer?.phone || "",
-    address: customer?.address || "",
-    city: customer?.city || "",
-    state: customer?.state || "",
-    zip: customer?.zip || "",
-    country: customer?.country || "",
-    paymentmethod: "IDEAL",
-    orderstatus: customer?.orderstatus || "",
-    products: customer?.products || [],
-  });
-
-  const [formErrors, setFormErrors] = useState<Record<string, string>>({
-    name: "",
-    surname: "",
-    email: "",
-    phone: "",
-    address: "",
-    city: "",
-    state: "",
-    zip: "",
-    country: "",
-  });
 
   const paymentMethods = [
     "IDEAL",
