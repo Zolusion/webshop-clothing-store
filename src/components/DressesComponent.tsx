@@ -13,7 +13,7 @@ const products = [
         brand: 'Fashionista',
         price: 149.99,
         imageUrl: '/eveningdresses/dress1.png',
-        category: 'Evening Dresses',
+        category: 'Ball Gowns',
         button: {
             cart: "Add to cart",
             link: "#",
@@ -39,7 +39,7 @@ const products = [
         brand: 'Glamour Couture',
         price: 179.99,
         imageUrl: '/midi-dresses/mididress7.png',
-        category: 'Evening Dresses',
+        category: 'Ball Gowns',
         button: {
             cart: "Add to cart",
             link: "#",
@@ -209,7 +209,7 @@ const products = [
         description: 'Achieve a stylish look with this chic wrap dress. The flattering wrap design and modern prints make it a versatile addition to your wardrobe.',
         brand: 'Wrap It Up',
         price: 59.99,
-        imageUrl: '/wrap-dresses/wrapdress1.png',
+        imageUrl: '/wrap-dresses/wrap1.png',
         category: 'Wrap Dresses',
         button: {
             cart: "Add to cart",
@@ -222,7 +222,7 @@ const products = [
         description: 'Wrap yourself in floral elegance with this fantasy wrap dress. Perfect for both casual outings and semi-formal gatherings.',
         brand: 'Floral Bliss',
         price: 69.95,
-        imageUrl: '/wrap-dresses/wrapdress2.png',
+        imageUrl: '/wrap-dresses/wrap2.png',
         category: 'Wrap Dresses',
         button: {
             cart: "Add to cart",
@@ -235,7 +235,7 @@ const products = [
         description: 'Embrace the sunshine with this sunny day summer dress. The light fabric and vibrant colors make it a must-have for your summer wardrobe.',
         brand: 'Sunshine Styles',
         price: 39.99,
-        imageUrl: '/summer-dresses/summerdress1.png',
+        imageUrl: '/summer-dresses/sunnyday-delight.png',
         category: 'Summer Dresses',
         button: {
             cart: "Add to cart",
@@ -248,7 +248,7 @@ const products = [
         description: 'Feel the tropical breeze in this summer dress. The tropical prints and breezy design create a laid-back yet stylish vibe.',
         brand: 'Tropical Trends',
         price: 49.95,
-        imageUrl: '/summer-dresses/summerdress2.png',
+        imageUrl: '/summer-dresses/tropical-breeze.png',
         category: 'Summer Dresses',
         button: {
             cart: "Add to cart",
@@ -261,8 +261,8 @@ const products = [
         description: 'Elevate your wardrobe with this timeless black dress. Classic and versatile, it is a staple piece for any elegant occasion.',
         brand: 'Elegance Defined',
         price: 79.99,
-        imageUrl: '/classic-dresses/classicdress1.png',
-        category: 'Classic',
+        imageUrl: '/summer-dresses/timeless-black-elegance.png',
+        category: 'Summer Dresses',
         button: {
             cart: "Add to cart",
             link: "#",
@@ -274,14 +274,39 @@ const products = [
         description: 'Radiate sophistication in this ivory classic dress. The simple yet elegant design is perfect for a variety of occasions.',
         brand: 'Ivory Elegance',
         price: 69.95,
-        imageUrl: '/classic-dresses/classicdress2.png',
-        category: 'Classic',
+        imageUrl: '/summer-dresses/ivory-sophistication.png',
+        category: 'Summer Dresses',
         button: {
             cart: "Add to cart",
             link: "#",
         },
     },
-
+    {
+        id: 22,
+        productName: 'Sunshine Serenity',
+        description: 'Immerse yourself in the beauty of this sunny day summer dress. The light fabric and vibrant colors make it a must-have for your summer wardrobe.',
+        brand: 'Classic Style',
+        price: 59.99,
+        imageUrl: '/summer-dresses/sunshine-serenity.png',
+        category: 'Summer Dresses',
+        button: {
+            cart: "Add to cart",
+            link: "#",
+        }
+    },
+    {
+        id: 23,
+        productName: 'Vintage Charm',
+        description: 'Elevate your wardrobe with this classic black dress. Classic and versatile, it is a staple piece for any elegant occasion.',
+        brand: 'Classic Style',
+        price: 79.99,
+        imageUrl: '/classic-dresses/vintage-charm.png',
+        category: 'Classic',
+        button: {
+            cart: "Add to cart",
+            link: "#",
+        }
+    }
 ];
 
 const DressesComponent = () => {
@@ -318,9 +343,9 @@ const DressesComponent = () => {
     console.log(imagesMatchingNames);
 
     return (
-        <div className='px-6 p-4 bg-gray-100 shadow-md'>
-            <div className='flex flex-col md:flex-row w-full mb-4 justify-between'>
-                <div className='mb-4 md:mb-0'>
+        <div className='bg-white'>
+            <div className='flex flex-col md:flex-row w-full justify-between px-6'>
+            <div className='mb-4 md:mb-0 p-4'>
                     <input
                         type='text'
                         placeholder='Search products'
@@ -337,7 +362,7 @@ const DressesComponent = () => {
                     </button>
                 </div>
 
-                <div className='flex flex-col md:flex-row font-bold md:justify-center md:items-center'>
+                <div className='flex flex-col md:flex-row font-bold md:justify-center md:items-center justify-center items-center'>
                     <div className='md:hidden mb-2'>
                         <button
                             className='text-black hover:underline text-[14px] focus:outline-none'
@@ -373,37 +398,35 @@ const DressesComponent = () => {
                     </div>
                 </div>
             </div>
-
-            <hr className='mb-4' />
-
-            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-4 gap-8'>
+            <div className='grid grid-cols-1 sm:grid-cols-3 2xl:grid-cols-4'>
                 {(searchQuery ? filteredProducts : products).map((product, index) => (
-                    <div key={index} className={`mb-8 ${selectedCategory && product.category !== selectedCategory ? 'hidden' : ''} `}>
-                        <Image
-                            src={product.imageUrl}
-                            alt={`Product ${index + 1}`}
-                            className='w-full h-[500px] object-cover rounded-md mb-4 2xl:h-[900px]'
-                            loading='lazy'
-                            width={500}
-                            height={500}
-                            quality={100}
-                            unoptimized
-                        />
+                    <div key={index} className={` ${selectedCategory && product.category !== selectedCategory ? 'hidden grid-cols-12 col-span-12 sm:col-span-6 md:col-span-4 relative' : ''} `}>
+                        <div className='relative'>
+                            <Image
+                                src={product.imageUrl}
+                                alt={`Product ${index + 1}`}
+                                className='object-cover w-[500px] h-[700px] 2xl:h-[900px] 2xl:w-[1200px] object-center opacity-100 transition-opacity group-hover:opacity-75'
+                                loading='lazy'
+                                width={500}
+                                height={500}
+                            />
 
-                        <div className='flex flex-col justify-between h-[200px]'>
-                            <h3 className='text-[20px] text-black font-thin'>{product.productName}</h3>
-                            <p className='text-black font-bold mb-4'>{product.description}</p>
-                            <div className='flex items-center'>
-                                <p className='text-[18px] font-semibold text-black'>€{product.price}</p>
-                                <div className='ml-4'>
+                            <div className='absolute inset-0 flex flex-col justify-between opacity-0 hover:opacity-100 transition-opacity duration-300'>
+                                <div className='bg-black bg-opacity-75 p-4 text-white h-full'>
+                                    <h3 className='text-[20px] font-thin'>{product.productName}</h3>
+                                    <p className='font-bold mb-2'>{product.description}</p>
+                                    <p className='font-semibold'>€{product.price}</p>
+                                </div>
+
+                                <div className='bg-black bg-opacity-75 p-4 flex items-center justify-between'>
                                     <a
                                         href={"/cart"}
                                         onClick={(e) => handleAddToCart(e, product)}
-                                        className="text-black hover:underline transition duration-300 mr-4"
+                                        className="text-white hover:underline transition duration-300"
                                     >
                                         {product.button.cart}
                                     </a>
-                                    <button className='bg-black text-white px-8 py-2 rounded-md hover:bg-gray-800 transition duration-300'>
+                                    <button className='bg-white text-black px-4 py-2 rounded-md hover:bg-gray-200 transition duration-300'>
                                         Wishlist
                                     </button>
                                 </div>

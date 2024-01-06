@@ -239,7 +239,6 @@ const DiscountSection = () => {
         })}
       </div>
     </section>
-
   );
 };
 
