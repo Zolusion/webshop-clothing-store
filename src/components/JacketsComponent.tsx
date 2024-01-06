@@ -8,7 +8,6 @@ const products = [
     {
         id: 1,
         productName: 'Puffer Jacket with Hood',
-        description: 'Face the cold in style with the Puffer Jacket featuring a protective hood. Stay fashionable while staying warm with this essential winter piece.',
         brand: 'WinterChic',
         price: 69.99,
         imageUrl: '/puffer-jacket/angled-long-bob-white-puffer-jacket.png',
@@ -21,7 +20,6 @@ const products = [
     {
         id: 2,
         productName: 'CropPuffer Jacket',
-        description: 'This stylish crop puffer jacket is perfect for staying warm and fashionable during colder days.',
         brand: 'CasualComfort',
         price: 39.95,
         imageUrl: '/puffer-jacket/big-shoulder-grazing-curls-green-puffer-jacket.png',
@@ -34,7 +32,6 @@ const products = [
     {
         id: 3,
         productName: 'Cord Puffer Jacket',
-        description: 'Stay cozy and stylish with this cord puffer jacket. Made with high-quality materials to keep you warm in colder weather.',
         brand: 'CasualComfort',
         price: 34.95,
         imageUrl: '/puffer-jacket/shaggy-shoulder-cut-white-capuchon-black-puffer-jacket.png',
@@ -47,7 +44,6 @@ const products = [
     {
         id: 4,
         productName: 'Earthy Emerald Blazer',
-        description: 'Add a touch of elegance to your look with this earthy emerald blazer. This classic coat is perfect for any occasion. ',
         brand: 'CasualComfort',
         price: 24.95,
         imageUrl: '/jackets/earthy-emerald-blazer.png',
@@ -60,7 +56,6 @@ const products = [
     {
         id: 5,
         productName: 'Woodland Blazer',
-        description: 'Elevate your look with this woodland blazer. This classic coat is perfect for any occasion. ',
         brand: 'CasualComfort',
         price: 26.99,
         imageUrl: '/jackets/woodland-blazer.png',
@@ -73,7 +68,6 @@ const products = [
     {
         id: 6,
         productName: 'Mystic Mirage',
-        description: 'Step into the world of enchantment with the Mystic Mirage trench coat. This stylish and versatile coat is perfect for adding a touch of magic to your wardrobe.',
         brand: 'CasualComfort',
         price: 29.95,
         imageUrl: '/jackets/mystic-mirage-trench-coat.png',
@@ -86,7 +80,6 @@ const products = [
     {
         id: 7,
         productName: 'Apricot Aura',
-        description: 'Embrace elegance with the Apricot Aura trench coat. This stunning trench coat features a beautiful apricot color and a timeless design that will elevate any outfit.',
         brand: 'CasualComfort',
         price: 38.95,
         imageUrl: '/jackets/apricot-aura-trench-coat.png',
@@ -99,7 +92,6 @@ const products = [
     {
         id: 8,
         productName: 'Pistachio Princess',
-        description: 'Feel like royalty in the Pistachio Princess trench coat. This elegant and sophisticated coat features a beautiful pistachio color that will make you stand out.',
         brand: 'CasualComfort',
         price: 46.95,
         imageUrl: '/jackets/pistachio-princess-trench-coat.png',
@@ -112,7 +104,6 @@ const products = [
     {
         id: 9,
         productName: 'Mint Mirage',
-        description: 'Step into a world of enchantment with the Mint Mirage trench coat. This stunning coat features a mesmerizing mint color and a timeless design.',
         brand: 'CasualComfort',
         price: 29.95,
         imageUrl: '/jackets/mint-mirage-trench-coat.png',
@@ -125,7 +116,6 @@ const products = [
     {
         id: 10,
         productName: 'Verdant Vista',
-        description: 'Experience the beauty of nature with the Verdant Vista trench coat. This coat showcases a vibrant green color and a stylish design that will turn heads.',
         brand: 'CasualComfort',
         price: 28.95,
         imageUrl: '/jackets/verdant-vista-trench-coat.png',
@@ -138,7 +128,6 @@ const products = [
     {
         id: 11,
         productName: 'Pastel Oasis',
-        description: 'Create a dreamy look with the Pastel Oasis trench coat. This coat features a soft pastel color palette that will transport you to a serene oasis.',
         brand: 'CasualComfort',
         price: 22.95,
         imageUrl: '/jackets/pastel-oasis-trench-coat.png',
@@ -151,7 +140,6 @@ const products = [
     {
         id: 12,
         productName: 'Marine Majesty',
-        description: 'Channel your inner elegance with the Marine Majesty trench coat. This coat showcases a deep blue color reminiscent of the vast ocean.',
         brand: 'CasualComfort',
         price: 19.95,
         imageUrl: '/jackets/marine-majesty-trench-coat.png',
@@ -164,7 +152,6 @@ const products = [
     {
         id: 13,
         productName: 'Minty Dream',
-        description: 'Stay cozy and stylish with the Minty Dream puffer jacket. This jacket features a refreshing mint color and a comfortable fit for colder days.',
         brand: 'CasualComfort',
         price: 39.95,
         imageUrl: '/jackets/minty-dream-puffer-jacket.png',
@@ -177,7 +164,6 @@ const products = [
     {
         id: 14,
         productName: 'Denim Diva',
-        description: 'Make a fashionable statement with the Denim Diva denim jacket. This jacket features a trendy denim fabric and a stylish design that will elevate any outfit.',
         brand: 'CasualComfort',
         price: 28.95,
         imageUrl: '/jackets/denim-diva-denim-jacket.png',
@@ -190,7 +176,6 @@ const products = [
     {
         id: 15,
         productName: 'Cobalt Grace',
-        description: 'Add a pop of color to your wardrobe with the Cobalt Grace denim jacket. This jacket showcases a vibrant cobalt blue shade that will make you stand out.',
         brand: 'CasualComfort',
         price: 21.95,
         imageUrl: '/jackets/cobalt-grace-denim-jacket.png',
@@ -203,7 +188,6 @@ const products = [
     {
         id: 16,
         productName: 'Sapphire Sky',
-        description: 'Embrace the beauty of the sky with the Sapphire Sky denim jacket. This jacket showcases a subtle shade of blue that will make you stand out.',
         brand: 'CasualComfort',
         price: 29.95,
         imageUrl: '/jackets/sapphire-sky-denim-jacket.png',
@@ -216,7 +200,6 @@ const products = [
     {
         id: 17,
         productName: 'Indigo Grace',
-        description: 'Experience timeless style with the Indigo Grace denim jacket. Perfect for those who appreciate classic style and minimalistic design.',
         brand: 'CasualComfort',
         price: 19.95,
         imageUrl: '/jackets/indigo-grace-denim-jacket.png',
@@ -229,7 +212,6 @@ const products = [
     {
         id: 18,
         productName: 'Snowflake',
-        description: 'Stay warm and stylish with the Snowflake Puffer Jacket. This jacket features a warm and classic look that will keep you warm and stylish.',
         brand: 'WinterChic',
         price: 39.95,
         imageUrl: '/jackets/snowflake-puffer-jacket.png',
@@ -242,7 +224,6 @@ const products = [
     {
         id: 19,
         productName: 'Sparkling Gold',
-        description: 'Add a pop of color to your wardrobe with the Sparkling Gold Puffer Jacket. Never forget a classic look with the Sparkling Gold Puffer Jacket.',
         brand: 'WinterChic',
         price: 32.95,
         imageUrl: '/jackets/sparkling-gold-puffer-jacket.png',
@@ -255,7 +236,6 @@ const products = [
     {
         id: 20,
         productName: 'Frostbite',
-        description: 'Embrace the cold with the Frostbite Puffer Jacket. A classic look with the Frostbite Puffer Jacket.',
         brand: 'WinterChic',
         price: 29.95,
         imageUrl: '/jackets/frostbite-puffer-jacket.png',
@@ -268,7 +248,6 @@ const products = [
     {
         id: 21,
         productName: 'Navy Teddy',
-        description: 'Comfortable with the Navy Teddy Puffer Jacket. Be warm and stylish with the Navy Teddy Puffer Jacket.',
         brand: 'WinterChic',
         price: 26.95,
         imageUrl: '/jackets/navy-teddy-puffer-jacket.png',
@@ -281,7 +260,6 @@ const products = [
     {
         id: 22,
         productName: 'Blueberry Bliss',
-        description: 'Love is in the air with the Blueberry Bliss Puffer Jacket. A classic look with the Blueberry Bliss Puffer Jacket.',
         brand: 'WinterChic',
         price: 34.95,
         imageUrl: '/jackets/blueberry-bliss-puffer-jacket.png',
@@ -294,7 +272,6 @@ const products = [
     {
         id: 23,
         productName: 'Hazelnut',
-        description: 'Brown and white with a touch of hazelnut on the front. Nothing beats the classics of the classic look with the Hazelnut Office Jacket.',
         brand: 'WinterChic',
         price: 48.95,
         imageUrl: '/jackets/hazelnut-harmony-office-jacket.png',
@@ -307,7 +284,6 @@ const products = [
     {
         id: 24,
         productName: 'Sandstone Sophistication',
-        description: 'A classic look with the Sandstone Sophistication Denim Jacket. Nothing beats the classic look with the Sandstone Sophistication Denim Jacket.',
         brand: 'WinterChic',
         price: 39.95,
         imageUrl: '/jackets/sandstone-sophistication-office-jacket.png',
@@ -320,7 +296,6 @@ const products = [
     {
         id: 25,
         productName: 'Slate Sophistication',
-        description: 'A classic look with the Slate Sophistication Denim Jacket. Nothing beats the classic look with the Slate Sophistication Denim Jacket.',
         brand: 'WinterChic',
         price: 28.95,
         imageUrl: '/jackets/slate-sophistication-office-jacket.png',
@@ -333,7 +308,6 @@ const products = [
     {
         id: 26,
         productName: 'Champagne',
-        description: 'A classic look with the Champagne Office Jacket. Nothing beats the classic look with the Champagne Office Jacket.',
         brand: 'WinterChic',
         price: 24.95,
         imageUrl: '/jackets/champagne-office-jacket.png',
@@ -346,7 +320,6 @@ const products = [
     {
         id: 27,
         productName: 'Misty Modernity',
-        description: 'A classic look with the Misty Modernity Office Jacket. Nothing beats the classic look with the Misty Modernity Office Jacket.',
         brand: 'WinterChic',
         price: 26.95,
         imageUrl: '/jackets/misty-modernity-office-jacket.png',
@@ -359,7 +332,6 @@ const products = [
     {
         id: 28,
         productName: 'Coffee Mocka',
-        description: 'A classic look with the Coffee Mocka Leather Jacket. Nothing beats the classic look with the Coffee Mocka Leather Jacket.',
         brand: 'WinterChic',
         price: 29.95,
         imageUrl: '/jackets/coffee-mocka-leather-coat.png',
@@ -372,7 +344,6 @@ const products = [
     {
         id: 29,
         productName: 'Woolly Wonderland',
-        description: 'A classic look with the Woolly Wonderland Leather Jacket. Nothing beats the classic look with the Woolly Wonderland Leather Jacket.',
         brand: 'WinterChic',
         price: 34.95,
         imageUrl: '/jackets/woolly-wonderland-winter-jacket.png',
@@ -385,7 +356,6 @@ const products = [
     {
         id: 30,
         productName: 'Latte Luxury',
-        description: 'A classic look with the Latte Luxury Leather Jacket. Nothing beats the classic look with the Latte Luxury Leather Jacket.',
         brand: 'WinterChic',
         price: 38.95,
         imageUrl: '/jackets/latte-luxury-winter-jacket.png',
@@ -398,7 +368,6 @@ const products = [
     {
         id: 31,
         productName: 'Truffle Toast',
-        description: 'A classic look with the Truffle Toast Leather Jacket. Nothing beats the classic look with the Truffle Toast Leather Jacket.',
         brand: 'WinterChic',
         price: 39.95,
         imageUrl: '/jackets/truffle-toast-winter-jacket-2.png',
@@ -476,7 +445,6 @@ const JacketsComponent = () => {
                                 <a href='#' onClick={() => handleCategoryClick('Puffer Jacket')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Puffer Jacket' ? 'font-bold' : ''}`}>Puffer Jacket</a>
                                 <a href='#' onClick={() => handleCategoryClick('Blazers')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Blazers' ? 'font-bold' : ''}`}>Blazers</a>
                                 <a href='#' onClick={() => handleCategoryClick('Trench Coats')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Trench Coats' ? 'font-bold' : ''}`}>Trench Coats</a>
-                                <a href='#' onClick={() => handleCategoryClick('Puffer Jacket')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Puffer Jacket' ? 'font-bold' : ''}`}>Puffer Jacket</a>
                                 <a href='#' onClick={() => handleCategoryClick('Denim')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Denim' ? 'font-bold' : ''}`}>Denim</a>
                                 <a href='#' onClick={() => handleCategoryClick('Office Jackets')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Office Jackets' ? 'font-bold' : ''}`}>Office Jackets</a>
                                 <a href='#' onClick={() => handleCategoryClick('Leather Coats')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Leather Coats' ? 'font-bold' : ''}`}>Leather Coats</a>
@@ -488,7 +456,6 @@ const JacketsComponent = () => {
                         <a href='#' onClick={() => handleCategoryClick('Puffer Jacket')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Puffer Jacket' ? 'font-bold' : ''}`}>Puffer Jacket</a>
                         <a href='#' onClick={() => handleCategoryClick('Blazers')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Blazers' ? 'font-bold' : ''}`}>Blazers</a>
                         <a href='#' onClick={() => handleCategoryClick('Trench Coats')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Trench Coats' ? 'font-bold' : ''}`}>Trench Coats</a>
-                        <a href='#' onClick={() => handleCategoryClick('Puffer Jacket')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Puffer Jacket' ? 'font-bold' : ''}`}>Puffer Jacket</a>
                         <a href='#' onClick={() => handleCategoryClick('Denim')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Denim' ? 'font-bold' : ''}`}>Denim</a>
                         <a href='#' onClick={() => handleCategoryClick('Office Jackets')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Office Jackets' ? 'font-bold' : ''}`}>Office Jackets</a>
                         <a href='#' onClick={() => handleCategoryClick('Leather Coats')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Leather Coats' ? 'font-bold' : ''}`}>Leather Coats</a>
@@ -512,7 +479,6 @@ const JacketsComponent = () => {
                             <div className='absolute inset-0 flex flex-col justify-between opacity-0 hover:opacity-100 transition-opacity duration-300'>
                                 <div className='bg-black bg-opacity-75 p-4 text-white h-full'>
                                     <h3 className='text-[20px] font-thin'>{product.productName}</h3>
-                                    <p className='font-bold mb-2'>{product.description}</p>
                                     <p className='font-semibold'>€{product.price}</p>
                                 </div>
 

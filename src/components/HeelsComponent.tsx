@@ -8,12 +8,11 @@ import { useDispatch } from 'react-redux';
 const products = [
     {
         id: 1,
-        productName: 'Sleek Ankle Boots',
-        description: 'Make a statement with the Sleek Ankle Boots. Crafted for both comfort and fashion, these boots are a must-have for any wardrobe.',
+        productName: 'Aqua Mist',
         brand: 'Fashion Forward',
-        price: 99.99,
-        imageUrl: 'https://i.pinimg.com/474x/e1/08/75/e10875d0adc85c5dca356356491c608f.jpg',
-        category: 'Boots',
+        price: 39.99,
+        imageUrl: '/shoes/aqua-mist-heels.png',
+        category: 'Heels',
         button: {
             cart: "Add to cart",
             link: "#",
@@ -21,12 +20,11 @@ const products = [
     },
     {
         id: 2,
-        productName: 'Quilted Sandals',
-        description: 'Stay stylish and comfortable in the Quilted Sandals. Designed for both fashion and ease, these sandals are a versatile addition to your collection.',
+        productName: 'Brown Caramel',
         brand: 'WarmStyle',
-        price: 49.95,
-        imageUrl: 'https://i.pinimg.com/474x/e9/54/6b/e9546bfb205e224fa0d52c341c2f3997.jpg',
-        category: 'Sandals',
+        price: 24.95,
+        imageUrl: '/shoes/brown-caramel-booties.png',
+        category: 'booties',
         button: {
             cart: "Add to cart",
             link: "#",
@@ -34,11 +32,10 @@ const products = [
     },
     {
         id: 3,
-        productName: 'Casual Sneakers',
-        description: 'Complete your casual look with the Casual Sneakers. Timeless in style, these sneakers are a versatile addition to your wardrobe.',
+        productName: 'Cappuchino Dream',
         brand: 'DenimStyle',
         price: 29.99,
-        imageUrl: 'https://i.pinimg.com/474x/4d/02/b7/4d02b76fbae476f67a65bcbd819ae62f.jpg',
+        imageUrl: '/shoes/cappuchino-dream-heels.png',
         category: 'Sneakers',
         button: {
             cart: "Add to cart",
@@ -47,12 +44,11 @@ const products = [
     },
     {
         id: 4,
-        productName: 'Elegant Flats',
-        description: 'Step out in style with the Elegant Flats featuring a chic design. Stay fashionable and comfortable with this essential footwear.',
+        productName: 'Caramel Charm',
         brand: 'WinterChic',
         price: 39.99,
-        imageUrl: 'https://i.pinimg.com/474x/16/84/cd/1684cd4c414b2f20297f5818f3a41eaa.jpg',
-        category: 'Flats',
+        imageUrl: '/shoes/caramel-charm-ankle-boots.png',
+        category: 'Boots',
         button: {
             cart: "Add to cart",
             link: "#",
@@ -61,7 +57,6 @@ const products = [
     {
         id: 5,
         productName: 'Stylish Booties',
-        description: 'Embrace a bold look with the Stylish Booties. These edgy shoes add a touch of rebellion to your style, perfect for a confident statement.',
         brand: 'RebelStyle',
         price: 59.95,
         imageUrl: 'https://i.pinimg.com/474x/72/fe/87/72fe87413f182182fb6f1fc567500046.jpg',
@@ -73,11 +68,214 @@ const products = [
     },
     {
         id: 6,
-        productName: 'Black Velvet Heels',
-        description: 'Stay in style with the Black Velvet Heels. Crafted with the highest quality fabric, these heels are a must-have for any wardrobe.',
+        productName: 'Cotton Candy',
         brand: 'RebelStyle',
         price: 59.95,
-        imageUrl: 'https://img.freepik.com/free-photo/high-heels-black-velvet_53876-102771.jpg?w=1060&t=st=1703876989~exp=1703877589~hmac=615efc9f5faca35c6c34fa6b4699bdaa2a97c67c1c56668c65ba2798ae99edc0',
+        imageUrl: '/shoes/cotton-candy-heels.png',
+        category: 'Heels',
+        button: {
+            cart: "Add to cart",
+            link: "#",
+        }
+    },
+    {
+        id: 7,
+        productName: 'Dark Green Velvet',
+        brand: 'RebelStyle',
+        price: 39.95,
+        imageUrl: '/shoes/dark-green-velvet-booties.png',
+        category: 'Booties',
+        button: {
+            cart: "Add to cart",
+            link: "#",
+        }
+    },
+    {
+        id: 8,
+        productName: 'Disco Mirage',
+        brand: 'RebelStyle',
+        price: 24.95,
+        imageUrl: '/shoes/disco-mirage-booties.png',
+        category: 'Booties',
+        button: {
+            cart: "Add to cart",
+            link: "#",
+        }
+    },
+    {
+        id: 9,
+        productName: 'Echanting Cinderella',
+        brand: 'RebelStyle',
+        price: 54.99,
+        imageUrl: '/shoes/enchanting-cinderella-heels.png',
+        category: 'Heels',
+        button: {
+            cart: "Add to cart",
+            link: "#",
+        }
+    },
+    {
+        id: 10,
+        productName: 'Glimmering Gala Heels',
+        brand: 'RebelStyle',
+        price: 79.95,
+        imageUrl: '/shoes/glimmering-gala-heels.png',
+        category: 'Heels',
+        button: {
+            cart: "Add to cart",
+            link: "#",
+        }
+    },
+    {
+        id: 11,
+        productName: 'Golden Goddess',
+        brand: 'RebelStyle',
+        price: 69.95,
+        imageUrl: '/shoes/golden-goddess-heels.png',
+        category: 'Heels',
+        button: {
+            cart: "Add to cart",
+            link: "#",
+        }
+    },
+    {
+        id: 12,
+        productName: 'Jet Black Boots',
+        brand: 'RebelStyle',
+        price: 25.95,
+        imageUrl: '/shoes/jet-black-boots.png',
+        category: 'Boots',
+        button: {
+            cart: "Add to cart",
+            link: "#",
+        }
+    },
+    {
+        id: 13,
+        productName: 'Lunar Luster',
+        brand: 'RebelStyle',
+        price: 49.95,
+        imageUrl: '/shoes/lunar-luster-heels.png',
+        category: 'Heels',
+        button: {
+            cart: "Add to cart",
+            link: "#",
+        }
+    },
+    {
+        id: 14,
+        productName: 'Mat Mint Green Heels',
+        brand: 'RebelStyle',
+        price: 49.95,
+        imageUrl: '/shoes/mat-mint-green-heels.png',
+        category: 'Heels',
+        button: {
+            cart: "Add to cart",
+            link: "#",
+        }
+    },
+    {
+        id: 15,
+        productName: 'Midnight Chic',
+        brand: 'RebelStyle',
+        price: 49.95,
+        imageUrl: '/shoes/midnight-chic-ankle-boots.png',
+        category: 'Boots',
+        button: {
+            cart: "Add to cart",
+            link: "#",
+        }
+    },
+    {
+        id: 16,
+        productName: 'Midnight Mystery',
+        brand: 'RebelStyle',
+        price: 18.95,
+        imageUrl: '/shoes/midnight-mystery-boots.png',
+        category: 'Boots',
+        button: {
+            cart: "Add to cart",
+            link: "#",
+        }
+    },
+    {
+        id: 17,
+        productName: 'Noir Nightfall',
+        brand: 'RebelStyle',
+        price: 39.95,
+        imageUrl: '/shoes/noir-nightfall-heels.png',
+        category: 'Heels',
+        button: {
+            cart: "Add to cart",
+            link: "#",
+        }
+    },
+    {
+        id: 18,
+        productName: 'Nostalgic Sharm',
+        brand: 'RebelStyle',
+        price: 28.95,
+        imageUrl: '/shoes/nostalgic-sharm-heels.png',
+        category: 'Heels',
+        button: {
+            cart: "Add to cart",
+            link: "#",
+        }
+    },
+    {
+        id: 19,
+        productName: 'Ocean Blue',
+        brand: 'RebelStyle',
+        price: 25.95,
+        imageUrl: '/shoes/ocean-blue-heels.png',
+        category: 'Heels',
+        button: {
+            cart: "Add to cart",
+            link: "#",
+        }
+    },
+    {
+        id: 20,
+        productName: 'Ruby Red Glamour',
+        brand: 'RebelStyle',
+        price: 52.95,
+        imageUrl: '/shoes/ruby-red-glamour-heels.png',
+        category: 'Heels',
+        button: {
+            cart: "Add to cart",
+            link: "#",
+        }
+    },
+    {
+        id: 21,
+        productName: 'Sleek Ebony Zipper',
+        brand: 'RebelStyle',
+        price: 49.95,
+        imageUrl: '/shoes/sleek-ebony-zipper-boots.png',
+        category: 'Boots',
+        button: {
+            cart: "Add to cart",
+            link: "#",
+        }
+    },
+    {
+        id: 22,
+        productName: 'Snowdrop',
+        brand: 'RebelStyle',
+        price: 43.95,
+        imageUrl: '/shoes/snowdrop-heels.png',
+        category: 'Heels',
+        button: {
+            cart: "Add to cart",
+            link: "#",
+        }
+    },
+    {
+        id: 23,
+        productName: 'Wine Velvet',
+        brand: 'RebelStyle',
+        price: 47.95,
+        imageUrl: '/shoes/wine-velvet-heels.png',
         category: 'Heels',
         button: {
             cart: "Add to cart",
@@ -120,9 +318,9 @@ const HeelsComponent = () => {
     console.log(imagesMatchingNames);
 
     return (
-        <div className='px-6 p-4 bg-gray-100 shadow-md'>
-            <div className='flex flex-col md:flex-row w-full mb-4 justify-between'>
-                <div className='mb-4 md:mb-0'>
+        <div className='bg-white'>
+            <div className='flex flex-col md:flex-row w-full justify-between px-6'>
+                <div className='mb-4 md:mb-0 p-4'>
                     <input
                         type='text'
                         placeholder='Search products'
@@ -139,7 +337,7 @@ const HeelsComponent = () => {
                     </button>
                 </div>
 
-                <div className='flex flex-col md:flex-row font-bold md:justify-center md:items-center'>
+                <div className='flex flex-col md:flex-row font-bold md:justify-center md:items-center justify-center items-center'>
                     <div className='md:hidden mb-2'>
                         <button
                             className='text-black hover:underline text-[14px] focus:outline-none'
@@ -151,9 +349,7 @@ const HeelsComponent = () => {
                             <div className='flex flex-col mt-2'>
                                 <a href='#' onClick={() => handleCategoryClick('Heels')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Heels' ? 'font-bold' : ''}`}>Heels</a>
                                 <a href='#' onClick={() => handleCategoryClick('Boots')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Boots' ? 'font-bold' : ''}`}>Boots</a>
-                                <a href='#' onClick={() => handleCategoryClick('Sandals')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Sandals' ? 'font-bold' : ''}`}>Sandals</a>
                                 <a href='#' onClick={() => handleCategoryClick('Sneakers')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Sneakers' ? 'font-bold' : ''}`}>Sneakers</a>
-                                <a href='#' onClick={() => handleCategoryClick('Flats')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Flats' ? 'font-bold' : ''}`}>Flats</a>
                                 <a href='#' onClick={() => handleCategoryClick('Booties')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Booties' ? 'font-bold' : ''}`}>Booties</a>
                             </div>
                         )}
@@ -161,44 +357,39 @@ const HeelsComponent = () => {
                     <div className='hidden md:flex space-x-6'>
                         <a href='#' onClick={() => handleCategoryClick('Heels')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Heels' ? 'font-bold' : ''}`}>Heels</a>
                         <a href='#' onClick={() => handleCategoryClick('Boots')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Boots' ? 'font-bold' : ''}`}>Boots</a>
-                        <a href='#' onClick={() => handleCategoryClick('Sandals')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Sandals' ? 'font-bold' : ''}`}>Sandals</a>
                         <a href='#' onClick={() => handleCategoryClick('Sneakers')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Sneakers' ? 'font-bold' : ''}`}>Sneakers</a>
-                        <a href='#' onClick={() => handleCategoryClick('Flats')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Flats' ? 'font-bold' : ''}`}>Flats</a>
                         <a href='#' onClick={() => handleCategoryClick('Booties')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Booties' ? 'font-bold' : ''}`}>Booties</a>
                     </div>
                 </div>
             </div>
-
-            <hr className='mb-4' />
-
-            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-4 gap-8'>
+            <div className='grid grid-cols-1 sm:grid-cols-3 2xl:grid-cols-4'>
                 {(searchQuery ? filteredProducts : products).map((product, index) => (
-                    <div key={index} className={`mb-8 ${selectedCategory && product.category !== selectedCategory ? 'hidden' : ''} `}>
-                        <Image
-                            src={product.imageUrl}
-                            alt={`Product ${index + 1}`}
-                            className='w-full h-[500px] object-cover rounded-md mb-4 2xl:h-[900px]'
-                            loading='lazy'
-                            width={500}
-                            height={500}
-                            quality={100}
-                            unoptimized
-                        />
+                    <div key={index} className={` ${selectedCategory && product.category !== selectedCategory ? 'hidden grid-cols-12 col-span-12 sm:col-span-6 md:col-span-4 relative' : ''} `}>
+                        <div className='relative'>
+                            <Image
+                                src={product.imageUrl}
+                                alt={`Product ${index + 1}`}
+                                className='object-cover w-[500px] h-[700px] 2xl:h-[900px] 2xl:w-[1200px] object-center opacity-100 transition-opacity group-hover:opacity-75'
+                                loading='lazy'
+                                width={500}
+                                height={500}
+                            />
 
-                        <div className='flex flex-col justify-between h-[200px]'>
-                            <h3 className='text-[20px] text-black font-thin'>{product.productName}</h3>
-                            <p className='text-black font-bold mb-4'>{product.description}</p>
-                            <div className='flex items-center'>
-                                <p className='text-[18px] font-semibold text-black'>€{product.price}</p>
-                                <div className='ml-4'>
+                            <div className='absolute inset-0 flex flex-col justify-between opacity-0 hover:opacity-100 transition-opacity duration-300'>
+                                <div className='bg-black bg-opacity-75 p-4 text-white h-full'>
+                                    <h3 className='text-[20px] font-thin'>{product.productName}</h3>
+                                    <p className='font-semibold'>€{product.price}</p>
+                                </div>
+
+                                <div className='bg-black bg-opacity-75 p-4 flex items-center justify-between'>
                                     <a
                                         href={"/cart"}
                                         onClick={(e) => handleAddToCart(e, product)}
-                                        className="text-black hover:underline transition duration-300 mr-4"
+                                        className="text-white hover:underline transition duration-300"
                                     >
                                         {product.button.cart}
                                     </a>
-                                    <button className='bg-black text-white px-8 py-2 rounded-md hover:bg-gray-800 transition duration-300'>
+                                    <button className='bg-white text-black px-4 py-2 rounded-md hover:bg-gray-200 transition duration-300'>
                                         Wishlist
                                     </button>
                                 </div>

@@ -9,10 +9,9 @@ const products = [
     {
         id: 1,
         productName: 'Elegant Evening Gown',
-        description: 'Turn heads at any special occasion with this elegant evening gown. It boasts a timeless design and impeccable craftsmanship.',
         brand: 'Fashionista',
         price: 149.99,
-        imageUrl: '/eveningdresses/dress1.png',
+        imageUrl: '/dresses/dress1.png',
         category: 'Ball Gowns',
         button: {
             cart: "Add to cart",
@@ -22,10 +21,9 @@ const products = [
     {
         id: 2,
         productName: 'Frosty Horizon ',
-        description: 'Add a touch of luxury to your wardrobe with this frosty horizon. Crafted from high-quality fabrics, this dress is both stylish and elegant.',
         brand: 'TrendyStyles',
         price: 89.95,
-        imageUrl: '/midi-dresses/mididress5.png',
+        imageUrl: '/dresses/mididress5.png',
         category: 'Evening Dresses',
         button: {
             cart: "Add to cart",
@@ -35,10 +33,9 @@ const products = [
     {
         id: 3,
         productName: 'Royal Blue Elegance',
-        description: 'Dazzle the night away in this royal blue evening gown. Its intricate detailing and flattering silhouette make it a standout choice.',
         brand: 'Glamour Couture',
         price: 179.99,
-        imageUrl: '/midi-dresses/mididress7.png',
+        imageUrl: '/dresses/mididress7.png',
         category: 'Ball Gowns',
         button: {
             cart: "Add to cart",
@@ -48,10 +45,9 @@ const products = [
     {
         id: 4,
         productName: 'Sapphire Dreams',
-        description: 'Make a statement with this sapphire-colored evening dress. The flowing fabric and modern design create an unforgettable look.',
         brand: 'Chic Elegance',
         price: 129.95,
-        imageUrl: '/midi-dresses/mididress8.png',
+        imageUrl: '/dresses/mididress8.png',
         category: 'Evening Dresses',
         button: {
             cart: "Add to cart",
@@ -61,10 +57,9 @@ const products = [
     {
         id: 5,
         productName: 'Blush Bloom Midi',
-        description: 'Embrace the floral trend with this blush bloom midi dress. Perfect for daytime events and garden parties.',
         brand: 'Petite Chic',
         price: 69.99,
-        imageUrl: '/midi-dresses/mididress9.png',
+        imageUrl: '/dresses/mididress9.png',
         category: 'Midi',
         button: {
             cart: "Add to cart",
@@ -74,10 +69,9 @@ const products = [
     {
         id: 6,
         productName: 'Polka Dot Delight',
-        description: 'Step out in style with this polka dot midi dress. The classic pattern combined with a modern twist creates a playful yet sophisticated look.',
         brand: 'Fashion Fusion',
         price: 79.95,
-        imageUrl: '/midi-dresses/mididress10.png',
+        imageUrl: '/dresses/mididress10.png',
         category: 'Midi',
         button: {
             cart: "Add to cart",
@@ -87,10 +81,9 @@ const products = [
     {
         id: 7,
         productName: 'Sunset Serenity Maxi',
-        description: 'Capture the beauty of a sunset in this serenity maxi dress. The flowing design and warm colors make it a perfect choice for beach events.',
         brand: 'Sunset Styles',
         price: 109.99,
-        imageUrl: '/maxi-dresses/maxidress1.png',
+        imageUrl: '/dresses/maxidress1.png',
         category: 'Maxi',
         button: {
             cart: "Add to cart",
@@ -100,10 +93,9 @@ const products = [
     {
         id: 8,
         productName: 'Bohemian Rhapsody',
-        description: 'Channel bohemian vibes with this rhapsody maxi dress. Perfect for summer festivals or casual outdoor gatherings.',
         brand: 'Boho Bliss',
         price: 94.95,
-        imageUrl: '/maxi-dresses/maxidress2.png',
+        imageUrl: '/dresses/maxidress2.png',
         category: 'Maxi',
         button: {
             cart: "Add to cart",
@@ -113,10 +105,9 @@ const products = [
     {
         id: 9,
         productName: 'Weekend Comfort',
-        description: 'Stay comfortable and stylish with this weekend casual dress. Perfect for brunches or a relaxed day out with friends.',
         brand: 'Casual Comforts',
         price: 49.99,
-        imageUrl: '/casual-dresses/casual1.png',
+        imageUrl: '/dresses/casual1.png',
         category: 'Casual',
         button: {
             cart: "Add to cart",
@@ -126,10 +117,9 @@ const products = [
     {
         id: 10,
         productName: 'Denim Delight',
-        description: 'Elevate your casual look with this denim delight dress. Versatile and easy to style for a laid-back yet trendy appearance.',
         brand: 'Urban Chic',
         price: 59.95,
-        imageUrl: '/casual-dresses/casual2.png',
+        imageUrl: '/dresses/casual2.png',
         category: 'Casual',
         button: {
             cart: "Add to cart",
@@ -139,10 +129,9 @@ const products = [
     {
         id: 11,
         productName: 'Golden Horizon ',
-        description: 'Add a touch of luxury to your wardrobe with this golden horizon. Crafted from high-quality fabrics, this dress is both stylish and elegant.',
         brand: 'TrendyStyles',
         price: 89.95,
-        imageUrl: '/eveningdresses/dress2.png',
+        imageUrl: '/dresses/dress2.png',
         category: 'Evening Dresses',
         button: {
             cart: "Add to cart",
@@ -152,10 +141,9 @@ const products = [
     {
         id: 12,
         productName: 'Cinderellas Dream',
-        description: 'Feel like a princess in this enchanting ball gown. The magical design and exquisite details will make any event unforgettable.',
         brand: 'Fairytale Fashions',
         price: 249.99,
-        imageUrl: '/ball-gowns/gown1.png',
+        imageUrl: '/dresses/gown1.png',
         category: 'Ball Gowns',
         button: {
             cart: "Add to cart",
@@ -166,10 +154,9 @@ const products = [
     {
         id: 13,
         productName: 'Midnight Masquerade',
-        description: 'Turn heads at the ball with this midnight masquerade ball gown. The mysterious allure and intricate craftsmanship make it a showstopper.',
         brand: 'Mystique Couture',
         price: 199.95,
-        imageUrl: '/ball-gowns/gown2.png',
+        imageUrl: '/dresses/gown2.png',
         category: 'Ball Gowns',
         button: {
             cart: "Add to cart",
@@ -179,10 +166,9 @@ const products = [
     {
         id: 14,
         productName: 'Retro Glamour',
-        description: 'Step back in time with this retro glamour dress. Vintage-inspired and timeless, it is perfect for adding a touch of nostalgia to your wardrobe.',
         brand: 'Timeless Trends',
         price: 89.99,
-        imageUrl: '/vintage-dresses/vintage1.png',
+        imageUrl: '/dresses/vintage1.png',
         category: 'Vintage',
         button: {
             cart: "Add to cart",
@@ -193,10 +179,9 @@ const products = [
     {
         id: 15,
         productName: 'Classic Elegance',
-        description: 'Embrace classic elegance with this vintage-inspired dress. The refined silhouette and delicate details create a look that transcends time.',
         brand: 'Eternal Style',
         price: 79.95,
-        imageUrl: '/vintage-dresses/vintage2.png',
+        imageUrl: '/dresses/vintage2.png',
         category: 'Vintage',
         button: {
             cart: "Add to cart",
@@ -206,10 +191,9 @@ const products = [
     {
         id: 16,
         productName: 'Chic Wrap Fusion',
-        description: 'Achieve a stylish look with this chic wrap dress. The flattering wrap design and modern prints make it a versatile addition to your wardrobe.',
         brand: 'Wrap It Up',
         price: 59.99,
-        imageUrl: '/wrap-dresses/wrap1.png',
+        imageUrl: '/dresses/wrap1.png',
         category: 'Wrap Dresses',
         button: {
             cart: "Add to cart",
@@ -219,10 +203,9 @@ const products = [
     {
         id: 17,
         productName: 'Floral Wrap Fantasy',
-        description: 'Wrap yourself in floral elegance with this fantasy wrap dress. Perfect for both casual outings and semi-formal gatherings.',
         brand: 'Floral Bliss',
         price: 69.95,
-        imageUrl: '/wrap-dresses/wrap2.png',
+        imageUrl: '/dresses/wrap2.png',
         category: 'Wrap Dresses',
         button: {
             cart: "Add to cart",
@@ -232,10 +215,9 @@ const products = [
     {
         id: 18,
         productName: 'Sunny Day Delight',
-        description: 'Embrace the sunshine with this sunny day summer dress. The light fabric and vibrant colors make it a must-have for your summer wardrobe.',
         brand: 'Sunshine Styles',
         price: 39.99,
-        imageUrl: '/summer-dresses/sunnyday-delight.png',
+        imageUrl: '/dresses/sunnyday-delight.png',
         category: 'Summer Dresses',
         button: {
             cart: "Add to cart",
@@ -245,10 +227,9 @@ const products = [
     {
         id: 19,
         productName: 'Tropical Breeze',
-        description: 'Feel the tropical breeze in this summer dress. The tropical prints and breezy design create a laid-back yet stylish vibe.',
         brand: 'Tropical Trends',
         price: 49.95,
-        imageUrl: '/summer-dresses/tropical-breeze.png',
+        imageUrl: '/dresses/tropical-breeze.png',
         category: 'Summer Dresses',
         button: {
             cart: "Add to cart",
@@ -258,10 +239,9 @@ const products = [
     {
         id: 20,
         productName: 'Timeless Black Elegance',
-        description: 'Elevate your wardrobe with this timeless black dress. Classic and versatile, it is a staple piece for any elegant occasion.',
         brand: 'Elegance Defined',
         price: 79.99,
-        imageUrl: '/summer-dresses/timeless-black-elegance.png',
+        imageUrl: '/dresses/timeless-black-elegance.png',
         category: 'Summer Dresses',
         button: {
             cart: "Add to cart",
@@ -271,10 +251,9 @@ const products = [
     {
         id: 21,
         productName: 'Ivory Sophistication',
-        description: 'Radiate sophistication in this ivory classic dress. The simple yet elegant design is perfect for a variety of occasions.',
         brand: 'Ivory Elegance',
         price: 69.95,
-        imageUrl: '/summer-dresses/ivory-sophistication.png',
+        imageUrl: '/dresses/ivory-sophistication.png',
         category: 'Summer Dresses',
         button: {
             cart: "Add to cart",
@@ -284,10 +263,9 @@ const products = [
     {
         id: 22,
         productName: 'Sunshine Serenity',
-        description: 'Immerse yourself in the beauty of this sunny day summer dress. The light fabric and vibrant colors make it a must-have for your summer wardrobe.',
         brand: 'Classic Style',
         price: 59.99,
-        imageUrl: '/summer-dresses/sunshine-serenity.png',
+        imageUrl: '/dresses/sunshine-serenity.png',
         category: 'Summer Dresses',
         button: {
             cart: "Add to cart",
@@ -297,10 +275,9 @@ const products = [
     {
         id: 23,
         productName: 'Vintage Charm',
-        description: 'Elevate your wardrobe with this classic black dress. Classic and versatile, it is a staple piece for any elegant occasion.',
         brand: 'Classic Style',
         price: 79.99,
-        imageUrl: '/classic-dresses/vintage-charm.png',
+        imageUrl: '/dresses/vintage-charm.png',
         category: 'Classic',
         button: {
             cart: "Add to cart",
@@ -345,7 +322,7 @@ const DressesComponent = () => {
     return (
         <div className='bg-white'>
             <div className='flex flex-col md:flex-row w-full justify-between px-6'>
-            <div className='mb-4 md:mb-0 p-4'>
+                <div className='mb-4 md:mb-0 p-4'>
                     <input
                         type='text'
                         placeholder='Search products'
@@ -414,7 +391,6 @@ const DressesComponent = () => {
                             <div className='absolute inset-0 flex flex-col justify-between opacity-0 hover:opacity-100 transition-opacity duration-300'>
                                 <div className='bg-black bg-opacity-75 p-4 text-white h-full'>
                                     <h3 className='text-[20px] font-thin'>{product.productName}</h3>
-                                    <p className='font-bold mb-2'>{product.description}</p>
                                     <p className='font-semibold'>€{product.price}</p>
                                 </div>
 
