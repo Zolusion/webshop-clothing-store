@@ -4,6 +4,7 @@ import React from "react";
 import { useRouter } from "next/navigation";
 import { addItem } from "@/store/cart/cartSlice";
 import { useDispatch } from 'react-redux';
+
 const products = [
     {
         id: "1",

@@ -36,7 +36,6 @@ interface ImageData {
     hoverSrc: string;
 }
 
-
 const Influencers: React.FC = () => {
     const [hoveredImage, setHoveredImage] = useState<number | null>(null);
 

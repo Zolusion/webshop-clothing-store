@@ -6,9 +6,7 @@ import { useDispatch } from 'react-redux';
 
 const products = [
     {
-        id: 1,
         productName: 'Puffer Jacket with Hood',
-        brand: 'WinterChic',
         price: 69.99,
         imageUrl: '/puffer-jacket/angled-long-bob-white-puffer-jacket.png',
         category: 'Puffer Jacket',
@@ -18,9 +16,7 @@ const products = [
         }
     },
     {
-        id: 2,
         productName: 'CropPuffer Jacket',
-        brand: 'CasualComfort',
         price: 39.95,
         imageUrl: '/puffer-jacket/big-shoulder-grazing-curls-green-puffer-jacket.png',
         category: 'Puffer Jacket',
@@ -30,9 +26,7 @@ const products = [
         }
     },
     {
-        id: 3,
         productName: 'Cord Puffer Jacket',
-        brand: 'CasualComfort',
         price: 34.95,
         imageUrl: '/puffer-jacket/shaggy-shoulder-cut-white-capuchon-black-puffer-jacket.png',
         category: 'Puffer Jacket',
@@ -42,9 +36,7 @@ const products = [
         }
     },
     {
-        id: 4,
         productName: 'Earthy Emerald Blazer',
-        brand: 'CasualComfort',
         price: 24.95,
         imageUrl: '/jackets/earthy-emerald-blazer.png',
         category: 'Blazers',
@@ -54,9 +46,7 @@ const products = [
         }
     },
     {
-        id: 5,
         productName: 'Woodland Blazer',
-        brand: 'CasualComfort',
         price: 26.99,
         imageUrl: '/jackets/woodland-blazer.png',
         category: 'Blazers',
@@ -66,9 +56,7 @@ const products = [
         }
     },
     {
-        id: 6,
         productName: 'Mystic Mirage',
-        brand: 'CasualComfort',
         price: 29.95,
         imageUrl: '/jackets/mystic-mirage-trench-coat.png',
         category: 'Trench Coats',
@@ -78,9 +66,7 @@ const products = [
         }
     },
     {
-        id: 7,
         productName: 'Apricot Aura',
-        brand: 'CasualComfort',
         price: 38.95,
         imageUrl: '/jackets/apricot-aura-trench-coat.png',
         category: 'Trench Coats',
@@ -90,9 +76,7 @@ const products = [
         }
     },
     {
-        id: 8,
         productName: 'Pistachio Princess',
-        brand: 'CasualComfort',
         price: 46.95,
         imageUrl: '/jackets/pistachio-princess-trench-coat.png',
         category: 'Trench Coats',
@@ -102,9 +86,7 @@ const products = [
         }
     },
     {
-        id: 9,
         productName: 'Mint Mirage',
-        brand: 'CasualComfort',
         price: 29.95,
         imageUrl: '/jackets/mint-mirage-trench-coat.png',
         category: 'Trench Coats',
@@ -114,9 +96,7 @@ const products = [
         }
     },
     {
-        id: 10,
         productName: 'Verdant Vista',
-        brand: 'CasualComfort',
         price: 28.95,
         imageUrl: '/jackets/verdant-vista-trench-coat.png',
         category: 'Trench Coats',
@@ -126,9 +106,7 @@ const products = [
         }
     },
     {
-        id: 11,
         productName: 'Pastel Oasis',
-        brand: 'CasualComfort',
         price: 22.95,
         imageUrl: '/jackets/pastel-oasis-trench-coat.png',
         category: 'Trench Coats',
@@ -138,9 +116,7 @@ const products = [
         }
     },
     {
-        id: 12,
         productName: 'Marine Majesty',
-        brand: 'CasualComfort',
         price: 19.95,
         imageUrl: '/jackets/marine-majesty-trench-coat.png',
         category: 'Trench Coats',
@@ -150,9 +126,7 @@ const products = [
         }
     },
     {
-        id: 13,
         productName: 'Minty Dream',
-        brand: 'CasualComfort',
         price: 39.95,
         imageUrl: '/jackets/minty-dream-puffer-jacket.png',
         category: 'Puffer Jacket',
@@ -162,9 +136,7 @@ const products = [
         }
     },
     {
-        id: 14,
         productName: 'Denim Diva',
-        brand: 'CasualComfort',
         price: 28.95,
         imageUrl: '/jackets/denim-diva-denim-jacket.png',
         category: 'Denim',
@@ -174,9 +146,7 @@ const products = [
         }
     },
     {
-        id: 15,
         productName: 'Cobalt Grace',
-        brand: 'CasualComfort',
         price: 21.95,
         imageUrl: '/jackets/cobalt-grace-denim-jacket.png',
         category: 'Denim',
@@ -186,9 +156,7 @@ const products = [
         }
     },
     {
-        id: 16,
         productName: 'Sapphire Sky',
-        brand: 'CasualComfort',
         price: 29.95,
         imageUrl: '/jackets/sapphire-sky-denim-jacket.png',
         category: 'Denim',
@@ -198,9 +166,7 @@ const products = [
         }
     },
     {
-        id: 17,
         productName: 'Indigo Grace',
-        brand: 'CasualComfort',
         price: 19.95,
         imageUrl: '/jackets/indigo-grace-denim-jacket.png',
         category: 'Denim',
@@ -210,9 +176,7 @@ const products = [
         }
     },
     {
-        id: 18,
         productName: 'Snowflake',
-        brand: 'WinterChic',
         price: 39.95,
         imageUrl: '/jackets/snowflake-puffer-jacket.png',
         category: 'Puffer Jacket',
@@ -222,9 +186,7 @@ const products = [
         }
     },
     {
-        id: 19,
         productName: 'Sparkling Gold',
-        brand: 'WinterChic',
         price: 32.95,
         imageUrl: '/jackets/sparkling-gold-puffer-jacket.png',
         category: 'Puffer Jacket',
@@ -234,9 +196,7 @@ const products = [
         }
     },
     {
-        id: 20,
         productName: 'Frostbite',
-        brand: 'WinterChic',
         price: 29.95,
         imageUrl: '/jackets/frostbite-puffer-jacket.png',
         category: 'Puffer Jacket',
@@ -246,9 +206,7 @@ const products = [
         }
     },
     {
-        id: 21,
         productName: 'Navy Teddy',
-        brand: 'WinterChic',
         price: 26.95,
         imageUrl: '/jackets/navy-teddy-puffer-jacket.png',
         category: 'Puffer Jacket',
@@ -258,9 +216,7 @@ const products = [
         }
     },
     {
-        id: 22,
         productName: 'Blueberry Bliss',
-        brand: 'WinterChic',
         price: 34.95,
         imageUrl: '/jackets/blueberry-bliss-puffer-jacket.png',
         category: 'Puffer Jacket',
@@ -270,9 +226,7 @@ const products = [
         }
     },
     {
-        id: 23,
         productName: 'Hazelnut',
-        brand: 'WinterChic',
         price: 48.95,
         imageUrl: '/jackets/hazelnut-harmony-office-jacket.png',
         category: 'Office Jackets',
@@ -282,9 +236,7 @@ const products = [
         }
     },
     {
-        id: 24,
         productName: 'Sandstone Sophistication',
-        brand: 'WinterChic',
         price: 39.95,
         imageUrl: '/jackets/sandstone-sophistication-office-jacket.png',
         category: 'Office Jackets',
@@ -294,9 +246,7 @@ const products = [
         }
     },
     {
-        id: 25,
         productName: 'Slate Sophistication',
-        brand: 'WinterChic',
         price: 28.95,
         imageUrl: '/jackets/slate-sophistication-office-jacket.png',
         category: 'Office Jackets',
@@ -306,9 +256,7 @@ const products = [
         }
     },
     {
-        id: 26,
         productName: 'Champagne',
-        brand: 'WinterChic',
         price: 24.95,
         imageUrl: '/jackets/champagne-office-jacket.png',
         category: 'Office Jackets',
@@ -318,9 +266,7 @@ const products = [
         }
     },
     {
-        id: 27,
         productName: 'Misty Modernity',
-        brand: 'WinterChic',
         price: 26.95,
         imageUrl: '/jackets/misty-modernity-office-jacket.png',
         category: 'Office Jackets',
@@ -330,9 +276,7 @@ const products = [
         }
     },
     {
-        id: 28,
         productName: 'Coffee Mocka',
-        brand: 'WinterChic',
         price: 29.95,
         imageUrl: '/jackets/coffee-mocka-leather-coat.png',
         category: 'Leather Coats',
@@ -342,9 +286,7 @@ const products = [
         }
     },
     {
-        id: 29,
         productName: 'Woolly Wonderland',
-        brand: 'WinterChic',
         price: 34.95,
         imageUrl: '/jackets/woolly-wonderland-winter-jacket.png',
         category: 'Winter Jackets',
@@ -354,9 +296,7 @@ const products = [
         }
     },
     {
-        id: 30,
         productName: 'Latte Luxury',
-        brand: 'WinterChic',
         price: 38.95,
         imageUrl: '/jackets/latte-luxury-winter-jacket.png',
         category: 'Winter Jackets',
@@ -366,9 +306,7 @@ const products = [
         }
     },
     {
-        id: 31,
         productName: 'Truffle Toast',
-        brand: 'WinterChic',
         price: 39.95,
         imageUrl: '/jackets/truffle-toast-winter-jacket-2.png',
         category: 'Winter Jackets',
@@ -383,17 +321,18 @@ const JacketsComponent = () => {
 
     const dispatch = useDispatch();
     const router = useRouter();
+    const [searchQuery, setSearchQuery] = useState<string>('');
+    const [filteredProducts, setFilteredProducts] = useState(products);
+    const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+    const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const imagesMatchingNames = products.map(product => product.imageUrl);
+    console.log(imagesMatchingNames);
 
     const handleAddToCart = (e: any, product: any) => {
         dispatch(addItem(product));
         e.preventDefault();
         router.push("/cart");
     };
-
-    const [searchQuery, setSearchQuery] = useState<string>('');
-    const [filteredProducts, setFilteredProducts] = useState(products);
-    const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-    const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     const handleCategoryClick = (category: string) => {
         setSelectedCategory(category);
@@ -409,11 +348,8 @@ const JacketsComponent = () => {
         setFilteredProducts(filtered);
     };
 
-    const imagesMatchingNames = products.map(product => product.imageUrl);
-    console.log(imagesMatchingNames);
-
     return (
-        <div className='bg-white'>
+        <div className='bg-black'>
             <div className='flex flex-col md:flex-row w-full justify-between px-6'>
                 <div className='mb-4 md:mb-0 p-4'>
                     <input
@@ -442,24 +378,24 @@ const JacketsComponent = () => {
                         </button>
                         {isMobileMenuOpen && (
                             <div className='flex flex-col mt-2'>
-                                <a href='#' onClick={() => handleCategoryClick('Puffer Jacket')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Puffer Jacket' ? 'font-bold' : ''}`}>Puffer Jacket</a>
-                                <a href='#' onClick={() => handleCategoryClick('Blazers')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Blazers' ? 'font-bold' : ''}`}>Blazers</a>
-                                <a href='#' onClick={() => handleCategoryClick('Trench Coats')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Trench Coats' ? 'font-bold' : ''}`}>Trench Coats</a>
-                                <a href='#' onClick={() => handleCategoryClick('Denim')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Denim' ? 'font-bold' : ''}`}>Denim</a>
-                                <a href='#' onClick={() => handleCategoryClick('Office Jackets')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Office Jackets' ? 'font-bold' : ''}`}>Office Jackets</a>
-                                <a href='#' onClick={() => handleCategoryClick('Leather Coats')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Leather Coats' ? 'font-bold' : ''}`}>Leather Coats</a>
-                                <a href='#' onClick={() => handleCategoryClick('Winter Jackets')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Winter Jackets' ? 'font-bold' : ''}`}>Winter Jackets</a>
+                                <a href='#' onClick={() => handleCategoryClick('Puffer Jacket')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Puffer Jacket' ? 'font-bold' : ''}`}>Puffer Jacket</a>
+                                <a href='#' onClick={() => handleCategoryClick('Blazers')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Blazers' ? 'font-bold' : ''}`}>Blazers</a>
+                                <a href='#' onClick={() => handleCategoryClick('Trench Coats')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Trench Coats' ? 'font-bold' : ''}`}>Trench Coats</a>
+                                <a href='#' onClick={() => handleCategoryClick('Denim')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Denim' ? 'font-bold' : ''}`}>Denim</a>
+                                <a href='#' onClick={() => handleCategoryClick('Office Jackets')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Office Jackets' ? 'font-bold' : ''}`}>Office Jackets</a>
+                                <a href='#' onClick={() => handleCategoryClick('Leather Coats')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Leather Coats' ? 'font-bold' : ''}`}>Leather Coats</a>
+                                <a href='#' onClick={() => handleCategoryClick('Winter Jackets')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Winter Jackets' ? 'font-bold' : ''}`}>Winter Jackets</a>
                             </div>
                         )}
                     </div>
                     <div className='hidden md:flex space-x-6'>
-                        <a href='#' onClick={() => handleCategoryClick('Puffer Jacket')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Puffer Jacket' ? 'font-bold' : ''}`}>Puffer Jacket</a>
-                        <a href='#' onClick={() => handleCategoryClick('Blazers')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Blazers' ? 'font-bold' : ''}`}>Blazers</a>
-                        <a href='#' onClick={() => handleCategoryClick('Trench Coats')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Trench Coats' ? 'font-bold' : ''}`}>Trench Coats</a>
-                        <a href='#' onClick={() => handleCategoryClick('Denim')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Denim' ? 'font-bold' : ''}`}>Denim</a>
-                        <a href='#' onClick={() => handleCategoryClick('Office Jackets')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Office Jackets' ? 'font-bold' : ''}`}>Office Jackets</a>
-                        <a href='#' onClick={() => handleCategoryClick('Leather Coats')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Leather Coats' ? 'font-bold' : ''}`}>Leather Coats</a>
-                        <a href='#' onClick={() => handleCategoryClick('Winter Jackets')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Winter Jackets' ? 'font-bold' : ''}`}>Winter Jackets</a>
+                        <a href='#' onClick={() => handleCategoryClick('Puffer Jacket')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Puffer Jacket' ? 'font-bold' : ''}`}>Puffer Jacket</a>
+                        <a href='#' onClick={() => handleCategoryClick('Blazers')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Blazers' ? 'font-bold' : ''}`}>Blazers</a>
+                        <a href='#' onClick={() => handleCategoryClick('Trench Coats')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Trench Coats' ? 'font-bold' : ''}`}>Trench Coats</a>
+                        <a href='#' onClick={() => handleCategoryClick('Denim')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Denim' ? 'font-bold' : ''}`}>Denim</a>
+                        <a href='#' onClick={() => handleCategoryClick('Office Jackets')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Office Jackets' ? 'font-bold' : ''}`}>Office Jackets</a>
+                        <a href='#' onClick={() => handleCategoryClick('Leather Coats')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Leather Coats' ? 'font-bold' : ''}`}>Leather Coats</a>
+                        <a href='#' onClick={() => handleCategoryClick('Winter Jackets')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Winter Jackets' ? 'font-bold' : ''}`}>Winter Jackets</a>
                     </div>
                 </div>
             </div>

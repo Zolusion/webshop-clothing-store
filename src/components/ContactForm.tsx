@@ -56,8 +56,6 @@ export default function ClientComponent() {
     const [errorMsg, setErrorMsg] = useState('');
     const [successMsg, setSuccessMsg] = useState('');
 
-
-
     const handleChange = (e: { target: { name: any; value: any; }; }) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };

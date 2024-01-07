@@ -7,9 +7,7 @@ import { useDispatch } from 'react-redux';
 
 const products = [
     {
-        id: 1,
         productName: 'Elegant Evening Gown',
-        brand: 'Fashionista',
         price: 149.99,
         imageUrl: '/dresses/dress1.png',
         category: 'Ball Gowns',
@@ -19,9 +17,7 @@ const products = [
         },
     },
     {
-        id: 2,
         productName: 'Frosty Horizon ',
-        brand: 'TrendyStyles',
         price: 89.95,
         imageUrl: '/dresses/mididress5.png',
         category: 'Evening Dresses',
@@ -31,9 +27,7 @@ const products = [
         },
     },
     {
-        id: 3,
         productName: 'Royal Blue Elegance',
-        brand: 'Glamour Couture',
         price: 179.99,
         imageUrl: '/dresses/mididress7.png',
         category: 'Ball Gowns',
@@ -43,9 +37,7 @@ const products = [
         },
     },
     {
-        id: 4,
         productName: 'Sapphire Dreams',
-        brand: 'Chic Elegance',
         price: 129.95,
         imageUrl: '/dresses/mididress8.png',
         category: 'Evening Dresses',
@@ -55,9 +47,7 @@ const products = [
         },
     },
     {
-        id: 5,
         productName: 'Blush Bloom Midi',
-        brand: 'Petite Chic',
         price: 69.99,
         imageUrl: '/dresses/mididress9.png',
         category: 'Midi',
@@ -67,9 +57,7 @@ const products = [
         },
     },
     {
-        id: 6,
         productName: 'Polka Dot Delight',
-        brand: 'Fashion Fusion',
         price: 79.95,
         imageUrl: '/dresses/mididress10.png',
         category: 'Midi',
@@ -79,9 +67,7 @@ const products = [
         },
     },
     {
-        id: 7,
         productName: 'Sunset Serenity Maxi',
-        brand: 'Sunset Styles',
         price: 109.99,
         imageUrl: '/dresses/maxidress1.png',
         category: 'Maxi',
@@ -91,9 +77,7 @@ const products = [
         },
     },
     {
-        id: 8,
         productName: 'Bohemian Rhapsody',
-        brand: 'Boho Bliss',
         price: 94.95,
         imageUrl: '/dresses/maxidress2.png',
         category: 'Maxi',
@@ -103,9 +87,7 @@ const products = [
         },
     },
     {
-        id: 9,
         productName: 'Weekend Comfort',
-        brand: 'Casual Comforts',
         price: 49.99,
         imageUrl: '/dresses/casual1.png',
         category: 'Casual',
@@ -115,9 +97,7 @@ const products = [
         },
     },
     {
-        id: 10,
         productName: 'Denim Delight',
-        brand: 'Urban Chic',
         price: 59.95,
         imageUrl: '/dresses/casual2.png',
         category: 'Casual',
@@ -127,9 +107,7 @@ const products = [
         },
     },
     {
-        id: 11,
         productName: 'Golden Horizon ',
-        brand: 'TrendyStyles',
         price: 89.95,
         imageUrl: '/dresses/dress2.png',
         category: 'Evening Dresses',
@@ -139,9 +117,7 @@ const products = [
         },
     },
     {
-        id: 12,
         productName: 'Cinderellas Dream',
-        brand: 'Fairytale Fashions',
         price: 249.99,
         imageUrl: '/dresses/gown1.png',
         category: 'Ball Gowns',
@@ -152,9 +128,7 @@ const products = [
     },
 
     {
-        id: 13,
         productName: 'Midnight Masquerade',
-        brand: 'Mystique Couture',
         price: 199.95,
         imageUrl: '/dresses/gown2.png',
         category: 'Ball Gowns',
@@ -164,9 +138,7 @@ const products = [
         },
     },
     {
-        id: 14,
         productName: 'Retro Glamour',
-        brand: 'Timeless Trends',
         price: 89.99,
         imageUrl: '/dresses/vintage1.png',
         category: 'Vintage',
@@ -177,9 +149,7 @@ const products = [
     },
 
     {
-        id: 15,
         productName: 'Classic Elegance',
-        brand: 'Eternal Style',
         price: 79.95,
         imageUrl: '/dresses/vintage2.png',
         category: 'Vintage',
@@ -189,9 +159,7 @@ const products = [
         },
     },
     {
-        id: 16,
         productName: 'Chic Wrap Fusion',
-        brand: 'Wrap It Up',
         price: 59.99,
         imageUrl: '/dresses/wrap1.png',
         category: 'Wrap Dresses',
@@ -201,9 +169,7 @@ const products = [
         },
     },
     {
-        id: 17,
         productName: 'Floral Wrap Fantasy',
-        brand: 'Floral Bliss',
         price: 69.95,
         imageUrl: '/dresses/wrap2.png',
         category: 'Wrap Dresses',
@@ -213,9 +179,7 @@ const products = [
         },
     },
     {
-        id: 18,
         productName: 'Sunny Day Delight',
-        brand: 'Sunshine Styles',
         price: 39.99,
         imageUrl: '/dresses/sunnyday-delight.png',
         category: 'Summer Dresses',
@@ -225,9 +189,7 @@ const products = [
         },
     },
     {
-        id: 19,
         productName: 'Tropical Breeze',
-        brand: 'Tropical Trends',
         price: 49.95,
         imageUrl: '/dresses/tropical-breeze.png',
         category: 'Summer Dresses',
@@ -237,9 +199,7 @@ const products = [
         },
     },
     {
-        id: 20,
         productName: 'Timeless Black Elegance',
-        brand: 'Elegance Defined',
         price: 79.99,
         imageUrl: '/dresses/timeless-black-elegance.png',
         category: 'Summer Dresses',
@@ -249,9 +209,7 @@ const products = [
         },
     },
     {
-        id: 21,
         productName: 'Ivory Sophistication',
-        brand: 'Ivory Elegance',
         price: 69.95,
         imageUrl: '/dresses/ivory-sophistication.png',
         category: 'Summer Dresses',
@@ -261,9 +219,7 @@ const products = [
         },
     },
     {
-        id: 22,
         productName: 'Sunshine Serenity',
-        brand: 'Classic Style',
         price: 59.99,
         imageUrl: '/dresses/sunshine-serenity.png',
         category: 'Summer Dresses',
@@ -273,9 +229,7 @@ const products = [
         }
     },
     {
-        id: 23,
         productName: 'Vintage Charm',
-        brand: 'Classic Style',
         price: 79.99,
         imageUrl: '/dresses/vintage-charm.png',
         category: 'Classic',
@@ -290,17 +244,18 @@ const DressesComponent = () => {
 
     const dispatch = useDispatch();
     const router = useRouter();
+    const [searchQuery, setSearchQuery] = useState<string>('');
+    const [filteredProducts, setFilteredProducts] = useState(products);
+    const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+    const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const imagesMatchingNames = products.map(product => product.imageUrl);
+    console.log(imagesMatchingNames);
 
     const handleAddToCart = (e: any, product: any) => {
         dispatch(addItem(product));
         e.preventDefault();
         router.push("/cart");
     };
-
-    const [searchQuery, setSearchQuery] = useState<string>('');
-    const [filteredProducts, setFilteredProducts] = useState(products);
-    const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-    const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     const handleCategoryClick = (category: string) => {
         setSelectedCategory(category);
@@ -316,11 +271,8 @@ const DressesComponent = () => {
         setFilteredProducts(filtered);
     };
 
-    const imagesMatchingNames = products.map(product => product.imageUrl);
-    console.log(imagesMatchingNames);
-
     return (
-        <div className='bg-white'>
+        <div className='bg-black'>
             <div className='flex flex-col md:flex-row w-full justify-between px-6'>
                 <div className='mb-4 md:mb-0 p-4'>
                     <input
@@ -349,29 +301,29 @@ const DressesComponent = () => {
                         </button>
                         {isMobileMenuOpen && (
                             <div className='flex flex-col mt-2'>
-                                <a href='#' onClick={() => handleCategoryClick('Evening Dresses')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Evening Dresses' ? 'font-bold' : ''}`}>Evening Dresses</a>
-                                <a href='#' onClick={() => handleCategoryClick('Midi')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Midi' ? 'font-bold' : ''}`}>Midi</a>
-                                <a href='#' onClick={() => handleCategoryClick('Maxi')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Maxi' ? 'font-bold' : ''}`}>Maxi</a>
-                                <a href='#' onClick={() => handleCategoryClick('Casual')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Casual' ? 'font-bold' : ''}`}>Casual</a>
-                                <a href='#' onClick={() => handleCategoryClick('Ball Gowns')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Ball Gowns' ? 'font-bold' : ''}`}>Ball Gowns</a>
-                                <a href='#' onClick={() => handleCategoryClick('Vintage')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Vintage' ? 'font-bold' : ''}`}>Vintage</a>
-                                <a href='#' onClick={() => handleCategoryClick('Wrap Dresses')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Wrap Dresses' ? 'font-bold' : ''}`}>Wrap Dresses</a>
-                                <a href='#' onClick={() => handleCategoryClick('Summer Dresses')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Summer Dresses' ? 'font-bold' : ''}`}>Summer Dresses</a>
-                                <a href='#' onClick={() => handleCategoryClick('Classic')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Classic' ? 'font-bold' : ''}`}>Classic</a>
+                                <a href='#' onClick={() => handleCategoryClick('Evening Dresses')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Evening Dresses' ? 'font-bold' : ''}`}>Evening Dresses</a>
+                                <a href='#' onClick={() => handleCategoryClick('Midi')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Midi' ? 'font-bold' : ''}`}>Midi</a>
+                                <a href='#' onClick={() => handleCategoryClick('Maxi')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Maxi' ? 'font-bold' : ''}`}>Maxi</a>
+                                <a href='#' onClick={() => handleCategoryClick('Casual')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Casual' ? 'font-bold' : ''}`}>Casual</a>
+                                <a href='#' onClick={() => handleCategoryClick('Ball Gowns')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Ball Gowns' ? 'font-bold' : ''}`}>Ball Gowns</a>
+                                <a href='#' onClick={() => handleCategoryClick('Vintage')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Vintage' ? 'font-bold' : ''}`}>Vintage</a>
+                                <a href='#' onClick={() => handleCategoryClick('Wrap Dresses')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Wrap Dresses' ? 'font-bold' : ''}`}>Wrap Dresses</a>
+                                <a href='#' onClick={() => handleCategoryClick('Summer Dresses')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Summer Dresses' ? 'font-bold' : ''}`}>Summer Dresses</a>
+                                <a href='#' onClick={() => handleCategoryClick('Classic')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Classic' ? 'font-bold' : ''}`}>Classic</a>
 
                             </div>
                         )}
                     </div>
                     <div className='hidden md:flex space-x-6'>
-                        <a href='#' onClick={() => handleCategoryClick('Evening Dresses')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Evening Dresses' ? 'font-bold' : ''}`}>Evening Dresses</a>
-                        <a href='#' onClick={() => handleCategoryClick('Midi')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Midi' ? 'font-bold' : ''}`}>Midi</a>
-                        <a href='#' onClick={() => handleCategoryClick('Maxi')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Maxi' ? 'font-bold' : ''}`}>Maxi</a>
-                        <a href='#' onClick={() => handleCategoryClick('Casual')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Casual' ? 'font-bold' : ''}`}>Casual</a>
-                        <a href='#' onClick={() => handleCategoryClick('Ball Gowns')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Ball Gowns' ? 'font-bold' : ''}`}>Ball Gowns</a>
-                        <a href='#' onClick={() => handleCategoryClick('Vintage')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Vintage' ? 'font-bold' : ''}`}>Vintage</a>
-                        <a href='#' onClick={() => handleCategoryClick('Wrap Dresses')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Wrap Dresses' ? 'font-bold' : ''}`}>Wrap Dresses</a>
-                        <a href='#' onClick={() => handleCategoryClick('Summer Dresses')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Summer Dresses' ? 'font-bold' : ''}`}>Summer Dresses</a>
-                        <a href='#' onClick={() => handleCategoryClick('Classic')} className={`text-black hover:underline text-[14px] ${selectedCategory === 'Classic' ? 'font-bold' : ''}`}>Classic</a>
+                        <a href='#' onClick={() => handleCategoryClick('Evening Dresses')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Evening Dresses' ? 'font-bold' : ''}`}>Evening Dresses</a>
+                        <a href='#' onClick={() => handleCategoryClick('Midi')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Midi' ? 'font-bold' : ''}`}>Midi</a>
+                        <a href='#' onClick={() => handleCategoryClick('Maxi')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Maxi' ? 'font-bold' : ''}`}>Maxi</a>
+                        <a href='#' onClick={() => handleCategoryClick('Casual')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Casual' ? 'font-bold' : ''}`}>Casual</a>
+                        <a href='#' onClick={() => handleCategoryClick('Ball Gowns')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Ball Gowns' ? 'font-bold' : ''}`}>Ball Gowns</a>
+                        <a href='#' onClick={() => handleCategoryClick('Vintage')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Vintage' ? 'font-bold' : ''}`}>Vintage</a>
+                        <a href='#' onClick={() => handleCategoryClick('Wrap Dresses')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Wrap Dresses' ? 'font-bold' : ''}`}>Wrap Dresses</a>
+                        <a href='#' onClick={() => handleCategoryClick('Summer Dresses')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Summer Dresses' ? 'font-bold' : ''}`}>Summer Dresses</a>
+                        <a href='#' onClick={() => handleCategoryClick('Classic')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Classic' ? 'font-bold' : ''}`}>Classic</a>
                     </div>
                 </div>
             </div>

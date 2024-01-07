@@ -12,6 +12,7 @@ const perksAndBenefits = [
     'Opportunity to be featured on our official social media channels.',
     'Access to new product launches before the public.'
 ];
+
 const formFields = [
     { id: 'name', label: 'Full Name', type: 'text', placeholder: 'John Doe', required: true },
     { id: 'instagram', label: 'Instagram Handle', type: 'text', placeholder: '@example', required: true },

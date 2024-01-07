@@ -113,7 +113,7 @@ const HeroSection = () => {
               onMouseLeave={() => setIsSecondVideoPlaying(false)}
               onClick={() => handleInteraction(() => {}, setIsSecondVideoPlaying)} // Add click event for mobile devices
             ></video>
-            <a href="/products" className="hover-link">
+            <a href="/winter-collection" className="hover-link">
               <p className="hover-effect uppercase text-6xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center font-bold md:w-2/3">
                 Winter Collection
               </p>
