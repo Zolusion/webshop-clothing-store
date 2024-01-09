@@ -4,289 +4,17 @@ import React, { useState } from 'react';
 import { useRouter } from "next/navigation";
 import { addItem } from "@/store/cart/cartSlice";
 import { useDispatch } from 'react-redux';
-
-const products = [
-    {
-        productName: 'Aqua Mist',
-        price: 39.99,
-        imageUrl: '/shoes/aqua-mist-heels.png',
-        category: 'Heels',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        }
-    },
-    {
-        productName: 'Rosalynn',
-        price: 45.95,
-        imageUrl: '/shoes/rosalynn-shoes.png',
-        category: 'Sneakers',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        }
-    },
-    {
-        productName: 'Brown Caramel',
-        price: 24.95,
-        imageUrl: '/shoes/brown-caramel-booties.png',
-        category: 'booties',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        }
-    },
-    {
-        productName: 'Cappuchino Dream',
-        price: 29.99,
-        imageUrl: '/shoes/cappuchino-dream-heels.png',
-        category: 'Sneakers',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        }
-    },
-    {
-        productName: 'Caramel Charm',
-        price: 39.99,
-        imageUrl: '/shoes/caramel-charm-ankle-boots.png',
-        category: 'Boots',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        }
-    },
-    {
-        productName: 'Stylish Booties',
-        price: 59.95,
-        imageUrl: 'https://i.pinimg.com/474x/72/fe/87/72fe87413f182182fb6f1fc567500046.jpg',
-        category: 'Booties',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        }
-    },
-    {
-        productName: 'Seraphina',
-        price: 39.95,
-        imageUrl: '/shoes/seraphina-shoes.png',
-        category: 'Sneakers',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        }
-    },
-    {
-        productName: 'Cotton Candy',
-        price: 59.95,
-        imageUrl: '/shoes/cotton-candy-heels.png',
-        category: 'Heels',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        }
-    },
-    {
-        productName: 'Dark Green Velvet',
-        price: 39.95,
-        imageUrl: '/shoes/dark-green-velvet-booties.png',
-        category: 'Booties',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        }
-    },
-    {
-        productName: 'Disco Mirage',
-        price: 24.95,
-        imageUrl: '/shoes/disco-mirage-booties.png',
-        category: 'Booties',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        }
-    },
-    {
-        productName: 'Tiffany',
-        price: 69.95,
-        imageUrl: '/shoes/tiffany-shoes.png',
-        category: 'Sneakers',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        }
-    },
-    {
-        productName: 'Echanting Cinderella',
-        price: 54.99,
-        imageUrl: '/shoes/enchanting-cinderella-heels.png',
-        category: 'Heels',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        }
-    },
-    {
-        productName: 'Glimmering Gala Heels',
-        price: 79.95,
-        imageUrl: '/shoes/glimmering-gala-heels.png',
-        category: 'Heels',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        }
-    },
-    {
-        productName: 'Golden Goddess',
-        price: 69.95,
-        imageUrl: '/shoes/golden-goddess-heels.png',
-        category: 'Heels',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        }
-    },
-    {
-        productName: 'Jet Black Boots',
-        price: 25.95,
-        imageUrl: '/shoes/jet-black-boots.png',
-        category: 'Boots',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        }
-    },
-    {
-        productName: 'Lunar Luster',
-        price: 49.95,
-        imageUrl: '/shoes/lunar-luster-heels.png',
-        category: 'Booties',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        }
-    },
-    {
-        productName: 'Nickelson',
-        price: 37.95,
-        imageUrl: '/shoes/nickelson-shoes.png',
-        category: 'Sneakers',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        }
-    },
-    {
-        productName: 'Mat Mint Green Heels',
-        price: 41.95,
-        imageUrl: '/shoes/mat-mint-green-heels.png',
-        category: 'Heels',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        }
-    },
-    {
-        productName: 'Midnight Chic',
-        price: 49.95,
-        imageUrl: '/shoes/midnight-chic-ankle-boots.png',
-        category: 'Boots',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        }
-    },
-    {
-        productName: 'Midnight Mystery',
-        price: 18.95,
-        imageUrl: '/shoes/midnight-mystery-boots.png',
-        category: 'Boots',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        }
-    },
-    {
-        productName: 'Noir Nightfall',
-        price: 39.95,
-        imageUrl: '/shoes/noir-nightfall-heels.png',
-        category: 'Heels',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        }
-    },
-    {
-        productName: 'Nostalgic Sharm',
-        price: 28.95,
-        imageUrl: '/shoes/nostalgic-sharm-heels.png',
-        category: 'Booties',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        }
-    },
-    {
-        productName: 'Ocean Blue',
-        price: 25.95,
-        imageUrl: '/shoes/ocean-blue-heels.png',
-        category: 'Heels',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        }
-    },
-    {
-        productName: 'Ruby Red Glamour',
-        price: 52.95,
-        imageUrl: '/shoes/ruby-red-glamour-heels.png',
-        category: 'Heels',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        }
-    },
-    {
-        productName: 'Sleek Ebony Zipper',
-        price: 49.95,
-        imageUrl: '/shoes/sleek-ebony-zipper-boots.png',
-        category: 'Boots',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        }
-    },
-    {
-        productName: 'Snowdrop',
-        price: 43.95,
-        imageUrl: '/shoes/snowdrop-heels.png',
-        category: 'Booties',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        }
-    },
-    {
-        productName: 'Wine Velvet',
-        price: 47.95,
-        imageUrl: '/shoes/wine-velvet-heels.png',
-        category: 'Heels',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        }
-    }
-];
+import HeelsData from '@/content/HeelsData.json';
 
 const HeelsComponent = () => {
 
     const dispatch = useDispatch();
     const router = useRouter();
     const [searchQuery, setSearchQuery] = useState<string>('');
-    const [filteredProducts, setFilteredProducts] = useState(products);
+    const [filteredProducts, setFilteredProducts] = useState(HeelsData);
     const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
-    const imagesMatchingNames = products.map(product => product.imageUrl);
+    const imagesMatchingNames = HeelsData.map(product => product.imageUrl);
     console.log(imagesMatchingNames);
 
     const handleAddToCart = (e: any, product: any) => {
@@ -297,13 +25,13 @@ const HeelsComponent = () => {
 
     const handleCategoryClick = (category: string) => {
         setSelectedCategory(category);
-        const filtered = products.filter((product) => product.category === category);
+        const filtered = HeelsData.filter((product) => product.category === category);
         setFilteredProducts(filtered);
     };
 
     const handleSearch = () => {
         const lowerCaseQuery = searchQuery.toLowerCase();
-        const filtered = products.filter((product) =>
+        const filtered = HeelsData.filter((product) =>
             product.productName.toLowerCase().includes(lowerCaseQuery)
         );
         setFilteredProducts(filtered);
@@ -355,7 +83,7 @@ const HeelsComponent = () => {
                 </div>
             </div>
             <div className='grid grid-cols-1 sm:grid-cols-3 2xl:grid-cols-4'>
-                {(searchQuery ? filteredProducts : products).map((product, index) => (
+                {(searchQuery ? filteredProducts : HeelsData).map((product, index) => (
                     <div key={index} className={` ${selectedCategory && product.category !== selectedCategory ? 'hidden grid-cols-12 col-span-12 sm:col-span-6 md:col-span-4 relative' : ''} `}>
                         <div className='relative'>
                             <Image

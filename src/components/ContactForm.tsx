@@ -5,50 +5,11 @@ import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { Switch } from "@headlessui/react";
 import Error from "./Error";
 import Success from "./Success";
+import ContactFormData from '@/content/ContactFormData.json'
 
 function classNames(...classes: any[]) {
     return classes.filter(Boolean).join(" ");
 }
-
-const features = [
-    {
-        title: "Contact",
-        subTitle:
-            "Heeft u een vraag of wilt u een afspraak maken? Vul dan het onderstaande formulier in en wij nemen zo snel mogelijk contact met u op.",
-    },
-];
-
-const form = [
-    {
-        label: "Naam",
-        placeholder: "Naam",
-    },
-    {
-        label: "Achternaam",
-        placeholder: "Achternaam",
-    },
-    {
-        label: "E-mail",
-        placeholder: "E-mail",
-    },
-    {
-        label: "Telefoonnummer",
-        placeholder: "Telefoonnummer",
-    },
-    {
-        label: "Bericht",
-        placeholder: "Stel ons een vraag",
-    },
-    {
-        label: "Land",
-    },
-];
-
-const buttons = [
-    {
-        button: "Verstuur",
-    },
-];
 
 export default function ClientComponent() {
     const [formData, setFormData] = useState({ firstname: '', lastname: '', email: '', phone: '', message: '' });
@@ -114,10 +75,10 @@ export default function ClientComponent() {
         <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
             <div className="mx-auto max-w-2xl text-center">
                 <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                    {features[0].title}
+                    {ContactFormData[0].title}
                 </h2>
                 <p className="mt-2 text-lg leading-8 text-gray-600">
-                    {features[0].subTitle}
+                    {ContactFormData[0].subTitle}
                 </p>
 
             </div>
@@ -213,7 +174,7 @@ export default function ClientComponent() {
                             htmlFor="message"
                             className="block text-sm font-semibold leading-6 text-gray-900"
                         >
-                            {form[4].label}
+                            {ContactFormData[4].label}
                         </label>
                         <div className="mt-2.5">
                             <textarea

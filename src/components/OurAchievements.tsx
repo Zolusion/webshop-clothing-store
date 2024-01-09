@@ -1,34 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-
-const achievementsData = [
-    {
-        id: 1,
-        title: "60000+",
-        description: "Active Members",
-        imageSrc: "/achievements-image/active-member.jpeg"
-    },
-    {
-        id: 2,
-        title: "100+",
-        description: "Influencers",
-        imageSrc: "/achievements-image/influencer-model.jpeg"
-    },
-    {
-        id: 3,
-        title: "10+",
-        description: "Countries",
-        imageSrc: "/achievements-image/country.jpeg"
-    },
-]
-
-const achievementsList = [
-    "We are proud of the efforts and contributions of our team members.",
-    "We have consistently delivered exceptional results.",
-    "Always looking for new and innovative ideas.",
-    "We are always on the lookout for new and exciting projects.",
-    "Never underestimate yourself to set your own goals and achievements. Do not be afraid to take steps towards your goals. Your success is our success.",
-];
+import OurAchievementsData from '@/content/OurAchievementsData.json'
 
 const OurAchievements = () => {
     return (
@@ -38,7 +10,7 @@ const OurAchievements = () => {
                     Our Achievements
                 </h2>
                 <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-                    {achievementsData.map((item) => (
+                    {OurAchievementsData.achievementsData.map((item) => (
                         <div key={item.id} className="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
                             <div className="relative h-52 2xl:h-80">
                                 <Image
@@ -61,7 +33,7 @@ const OurAchievements = () => {
                             <h1 className="text-3xl font-bold mb-4 2xl:text-4xl text-gray-800">Results</h1>
                             <hr className="mb-4" />
                             <ul className="text-gray-800 mb-4 2xl:text-lg">
-                                {achievementsList.map((achievement, index) => (
+                                {OurAchievementsData.achievementsList.map((achievement, index) => (
                                     <React.Fragment key={index}>
                                         <li className="mb-4 text-gray-800">{achievement}</li>
                                         <hr className="mb-4" />

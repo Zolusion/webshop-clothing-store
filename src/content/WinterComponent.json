@@ -1,0 +1,165 @@
+[
+    {
+      "imageUrl": "/winter-image/brown-chocolate.png",
+      "productName": "Cocoa Frost",
+      "price": 69.99,
+      "button": {
+        "cart": "Add to cart",
+        "link": "#"
+      }
+    },
+    {
+      "imageUrl": "/winter-image/brown-chocolate-2.png",
+      "productName": "Sepia Snowstorm",
+      "price": 54.99,
+      "button": {
+        "cart": "Add to cart",
+        "link": "#"
+      }
+    },
+    {
+      "imageUrl": "/winter-image/fluffy-sheep.png",
+      "productName": "Frost & Cozy",
+      "price": 39.99,
+      "button": {
+        "cart": "Add to cart",
+        "link": "#"
+      }
+    },
+    {
+      "imageUrl": "/winter-image/snow-cloud.png",
+      "productName": "Snow Cloud",
+      "price": 32.99,
+      "button": {
+        "cart": "Add to cart",
+        "link": "#"
+      }
+    },
+    {
+      "imageUrl": "/winter-image/sepia.png",
+      "productName": "Arctic Vogue",
+      "price": 51.89,
+      "button": {
+        "cart": "Add to cart",
+        "link": "#"
+      }
+    },
+    {
+      "imageUrl": "/winter-image/iceridge.png",
+      "productName": "Iceridge",
+      "price": 49.99,
+      "button": {
+        "cart": "Add to cart",
+        "link": "#"
+      }
+    },
+    {
+      "imageUrl": "/winter-image/northwind.png",
+      "productName": "NorthWind",
+      "price": 69.99,
+      "button": {
+        "cart": "Add to cart",
+        "link": "#"
+      }
+    },
+    {
+      "imageUrl": "/winter-image/supreme.png",
+      "productName": "Supreme",
+      "price": 54.99,
+      "button": {
+        "cart": "Add to cart",
+        "link": "#"
+      }
+    },
+    {
+      "imageUrl": "/winter-image/polar-panache.png",
+      "productName": "Polar Panache",
+      "price": 39.99,
+      "button": {
+        "cart": "Add to cart",
+        "link": "#"
+      }
+    },
+    {
+      "imageUrl": "/winter-image/violet-vista.png",
+      "productName": "Violet Vista",
+      "price": 32.99,
+      "button": {
+        "cart": "Add to cart",
+        "link": "#"
+      }
+    },
+    {
+      "imageUrl": "/winter-image/icerose.png",
+      "productName": "Icerose",
+      "price": 51.89,
+      "button": {
+        "cart": "Add to cart",
+        "link": "#"
+      }
+    },
+    {
+      "imageUrl": "/winter-image/rosyglacier.png",
+      "productName": "Rosy Glacier",
+      "price": 69.99,
+      "button": {
+        "cart": "Add to cart",
+        "link": "#"
+      }
+    },
+    {
+      "imageUrl": "/winter-image/frostyfoliage.png",
+      "productName": "Frosty Foliage",
+      "price": 54.99,
+      "button": {
+        "cart": "Add to cart",
+        "link": "#"
+      }
+    },
+    {
+      "imageUrl": "/winter-image/shamrock.png",
+      "productName": "Shamrock",
+      "price": 39.99,
+      "button": {
+        "cart": "Add to cart",
+        "link": "#"
+      }
+    },
+    {
+      "imageUrl": "/winter-image/viridian.png",
+      "productName": "Viridian",
+      "price": 32.99,
+      "button": {
+        "cart": "Add to cart",
+        "link": "#"
+      }
+    },
+    {
+      "imageUrl": "/winter-image/marigold.png",
+      "productName": "Marigold",
+      "price": 51.89,
+      "button": {
+        "cart": "Add to cart",
+        "link": "#"
+      }
+    },
+    {
+      "imageUrl": "/winter-image/pumpkin-spice.png",
+      "productName": "Pumpkin Spice",
+      "price": 69.99,
+      "button": {
+        "cart": "Add to cart",
+        "link": "#"
+      }
+    },
+    {
+      "imageUrl": "/winter-image/bluehorizon.png",
+      "productName": "Blue Horizon",
+      "price": 54.99,
+      "button": {
+        "cart": "Add to cart",
+        "link": "#"
+      }
+    }
+  ]
+  

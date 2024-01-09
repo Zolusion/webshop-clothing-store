@@ -1,28 +1,5 @@
 import React from 'react';
-
-const jobDetails = [
-    'Create engaging content showcasing our products/services.',
-    'Regularly post on Instagram and use relevant hashtags.',
-    'Engage with your followers and respond to comments/questions.',
-    'Provide feedback and ideas to improve our brand presence.'
-];
-
-const perksAndBenefits = [
-    'Exclusive discounts on our products/services.',
-    'Opportunity to be featured on our official social media channels.',
-    'Access to new product launches before the public.'
-];
-
-const formFields = [
-    { id: 'name', label: 'Full Name', type: 'text', placeholder: 'John Doe', required: true },
-    { id: 'instagram', label: 'Instagram Handle', type: 'text', placeholder: '@example', required: true },
-    { id: 'email', label: 'Email Address', type: 'email', placeholder: 'w9Ezy@example.com', required: true },
-    { id: 'location', label: 'Location', type: 'text', placeholder: 'City, State', required: true },
-    { id: 'why-ambassador', label: 'Why do you want to be an ambassador?', type: 'textarea', rows: 4, placeholder: 'Why do you want to be an ambassador?', required: true },
-    { id: 'experience', label: 'Relevant Experience or Skills', type: 'textarea', rows: 4, placeholder: 'Relevant Experience or Skills', required: true },
-    { id: 'promotion-plan', label: 'How do you plan to promote our brand?', type: 'textarea', rows: 4, placeholder: 'How do you plan to promote our brand?', required: true },
-    { id: 'comments-questions', label: 'Any Additional Comments or Questions', type: 'textarea', rows: 4, placeholder: 'Do you have any Comments or Questions', required: true }
-];
+import TeamformData from '@/content/TeamformData.json';
 
 const JoinTeamForm = () => {
     return (
@@ -35,7 +12,7 @@ const JoinTeamForm = () => {
                         Join our team for becoming a part of our program to represent our brand and enjoy exclusive perks.
                     </p>
                     <ul className="list-disc ml-6 mt-2 2xl:text-lg">
-                        {jobDetails.map((detail, index) => (
+                        {TeamformData.jobDetails.map((detail, index) => (
                             <li key={index} className="text-black">
                                 {detail}
                             </li>
@@ -44,7 +21,7 @@ const JoinTeamForm = () => {
                     <p className="mt-4 text-black 2xl:text-lg">
                         Perks and Benefits:
                         <ul className="list-disc ml-6 mt-2">
-                            {perksAndBenefits.map((perk, index) => (
+                            {TeamformData.perksAndBenefits.map((perk, index) => (
                                 <li key={index}>{perk}</li>
                             ))}
                         </ul>
@@ -52,7 +29,7 @@ const JoinTeamForm = () => {
                 </div>
 
                 <form>
-                    {formFields.map((field) => (
+                    {TeamformData.formFields.map((field) => (
                         <div key={field.id} className="mb-4 2xl:text-[18px]">
                             <label htmlFor={field.id} className="block text-sm font-medium text-gray-600 2xl:text-[18px]">
                                 {field.label}

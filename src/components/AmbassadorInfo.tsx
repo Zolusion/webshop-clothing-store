@@ -1,32 +1,6 @@
 import Image from "next/image";
 import React from 'react';
-
-const ambassadorData = [
-    {
-        id: 1,
-        title: 'Join Our Team',
-        imageSrc: '/ambassadors-image/women-on-laptop.jpeg',
-        description: 'Are you passionate about our mission? Become an ambassador and make a difference in your community.',
-        buttonText: 'Apply Now',
-        href: '/applyform',
-    },
-    {
-        id: 2,
-        title: 'Our Achievements',
-        imageSrc: '/ambassadors-image/hijab-model.jpeg',
-        description: 'We have achieved so many milestones in our journey. Here are some of our most important ones.',
-        buttonText: 'More info',
-        href: '/achievements',
-    },
-    {
-        id: 3,
-        title: 'Our Goal: Worldwide Outreach',
-        imageSrc: '/ambassadors-image/hijab-model-purple.jpeg',
-        description: 'Connecting Globally, Impacting Locally. We are on a mission to make fashion accessible to all.',
-        buttonText: 'More info',
-        href: '/worldwide-outreach',
-    },
-];
+import Ambassador from "../content/ambassador.json";
 
 const AmbassadorInfo = () => {
     return (
@@ -37,7 +11,7 @@ const AmbassadorInfo = () => {
                         Become an Ambassador
                     </h2>
                     <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-                        {ambassadorData.map((item) => (
+                        {Ambassador.map((item) => (
                             <div key={item.id} className="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
                                 <div className="relative h-52 2xl:h-80">
                                     <Image

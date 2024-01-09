@@ -4,149 +4,17 @@ import React, { useState } from 'react';
 import { useRouter } from "next/navigation";
 import { addItem } from "@/store/cart/cartSlice";
 import { useDispatch } from 'react-redux';
-
-const products = [
-    {
-        productName: 'MAC Brush',
-        price: 22.99,
-        imageUrl: 'https://images.unsplash.com/photo-1637834700149-23d782334f8e?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        category: 'Makeup',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        },
-    },
-    {
-        productName: 'Springy peeling gel',
-        price: 14.95,
-        imageUrl: 'https://images.unsplash.com/photo-1613638082033-4cc49feef601?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fGNvc21ldGljfGVufDB8fDB8fHww',
-        category: 'Skincare',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        },
-    },
-    {
-        productName: 'Nora Eczema',
-        price: 8.99,
-        imageUrl: 'https://images.unsplash.com/photo-1614858818552-326117cd36b0?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        category: 'Skincare',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        },
-    },
-    {
-        productName: 'Revitalizing Face Mask',
-        price: 12.99,
-        imageUrl: '/beauty/avocado-facemask.png',
-        category: 'Skincare',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        },
-    },
-    {
-        productName: 'Rose Infused Toner',
-        price: 9.95,
-        imageUrl: '/beauty/rose-infused-toner-skincare.png',
-        category: 'Skincare',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        },
-    },
-    {
-        productName: 'Lavender Bath Bombs',
-        price: 7.99,
-        imageUrl: '/beauty/lavender-bath-bombs-skincare.png',
-        category: 'Skincare',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        },
-    },
-    {
-        productName: 'Gold Infused Eye Cream',
-        price: 18.99,
-        imageUrl: '/beauty/gold-infused-eye-cream-skincare.png',
-        category: 'Skincare',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        },
-    },
-    {
-        productName: 'Coconut Milk Shampoo',
-        price: 15.99,
-        imageUrl: '/beauty/coconut-milk-shampoo-haircare.png',
-        category: 'Haircare',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        },
-    },
-    {
-        productName: 'Cherry Blossom Perfume',
-        price: 24.99,
-        imageUrl: '/beauty/cherry-blossom-parfume-fragrances.png',
-        category: 'Fragrances',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        },
-    },
-    {
-        productName: 'Charcoal Detox Mask',
-        price: 16.99,
-        imageUrl: '/beauty/charcoal-detox-mask-skincare.png',
-        category: 'Skincare',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        },
-    },
-    {
-        productName: 'Argan Oil Hair Serum',
-        price: 13.99,
-        imageUrl: '/beauty/argan-oil-hair-serum-haircare.png',
-        category: 'Haircare',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        },
-    },
-    {
-        productName: 'Jasmine Scented Candle',
-        price: 10.59,
-        imageUrl: 'https://i.pinimg.com/474x/53/fb/b3/53fbb3c9ceaf6bd3856cfd4d6c9fe3db.jpg',
-        category: 'Home Care',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        },
-    },
-    {
-        productName: 'Cerave Hydrating Cleanser',
-        price: 10.59,
-        imageUrl: '/beauty/cerave-hydrating-cleanser-skincare.png',
-        category: 'Skincare',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        },
-    },
-];
+import Beauty from '../content/Beauty.json';
 
 const BeautyComponent = () => {
 
     const dispatch = useDispatch();
     const router = useRouter();
     const [searchQuery, setSearchQuery] = useState<string>('');
-    const [filteredProducts, setFilteredProducts] = useState(products);
+    const [filteredProducts, setFilteredProducts] = useState(Beauty);
     const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
-    const imagesMatchingNames = products.map(product => product.imageUrl);
+    const imagesMatchingNames = Beauty.map(product => product.imageUrl);
     console.log(imagesMatchingNames);
 
     const handleAddToCart = (e: any, product: any) => {
@@ -157,13 +25,13 @@ const BeautyComponent = () => {
 
     const handleCategoryClick = (category: string) => {
         setSelectedCategory(category);
-        const filtered = products.filter((product) => product.category === category);
+        const filtered = Beauty.filter((product) => product.category === category);
         setFilteredProducts(filtered);
     };
 
     const handleSearch = () => {
         const lowerCaseQuery = searchQuery.toLowerCase();
-        const filtered = products.filter((product) =>
+        const filtered = Beauty.filter((product) =>
             product.productName.toLowerCase().includes(lowerCaseQuery)
         );
         setFilteredProducts(filtered);
@@ -223,7 +91,7 @@ const BeautyComponent = () => {
                 </div>
             </div>
             <div className='grid grid-cols-1 sm:grid-cols-3 2xl:grid-cols-4'>
-                {(searchQuery ? filteredProducts : products).map((product, index) => (
+                {(searchQuery ? filteredProducts : Beauty).map((product, index) => (
                     <div key={index} className={` ${selectedCategory && product.category !== selectedCategory ? 'hidden grid-cols-12 col-span-12 sm:col-span-6 md:col-span-4 relative' : ''} `}>
                         <div className='relative'>
                             <Image

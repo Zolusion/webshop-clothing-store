@@ -1,31 +1,7 @@
 import Image from "next/image";
 import Link from 'next/link';
 import React from 'react';
-
-const footerSections = [
-  {
-    title: 'Company',
-    links: [
-      { href: "/", text: "Home" },
-      { href: "/about", text: "About" },
-      { href: "/contact", text: "Contact" },
-      { href: "/ambassadors", text: "Ambassadors" },
-    ],
-  },
-  {
-    title: 'Help center',
-    links: [
-      { href: "/faq", text: "FAQ" },
-      { href: "/privacy", text: "Privacy Policy" },
-    ],
-  },
-  {
-    title: 'Service',
-    links: [
-      { href: "/shipping", text: "Shipping info" },
-    ],
-  },
-];
+import FooterData from '@/content/FooterData.json';
 
 const Footer = () => {
   return (
@@ -48,7 +24,7 @@ const Footer = () => {
           </a>
         </div>
 
-        {footerSections.map((section) => (
+        {FooterData.map((section) => (
           <div key={section.title}>
             <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white 2xl:text-md">{section.title}</h2>
             <ul className="text-gray-500 dark:text-gray-400 font-medium">

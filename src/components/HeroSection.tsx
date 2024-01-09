@@ -56,6 +56,7 @@ const HeroSection = () => {
             alt="hero"
             width={700}
             height={1000}
+            loading="lazy"
             className="object-cover w-full h-[800px] md:h-[1200px] opacity-80"
           />
           <span className="absolute inset-0 bg-black bg-opacity-60">
@@ -68,14 +69,9 @@ const HeroSection = () => {
               <br />
               <span className="text-black">For You</span>
             </p>
-            <a href="#">
+            <a href="/dresses">
               <button className="text-white uppercase mt-4 ml-8 border border-white px-4 py-2 hover:bg-white hover:text-black transition duration-300">
                 Shop Now
-              </button>
-            </a>
-            <a href="#">
-              <button className="text-white uppercase ml-4 border border-white px-4 py-2 hover:bg-white hover:text-black transition duration-300">
-                Learn More
               </button>
             </a>
           </span>
@@ -89,6 +85,7 @@ const HeroSection = () => {
               loop
               width={680}
               height={300}
+              preload="auto"
               className="object-cover w-full h-[600px] md:h-[600px] opacity-80"
               onMouseEnter={() => handleInteraction(() => {}, setIsVideoPlaying)}
               onMouseLeave={() => setIsVideoPlaying(false)}
@@ -108,6 +105,7 @@ const HeroSection = () => {
               loop
               width={680}
               height={300}
+              preload="auto"
               className="object-cover w-full h-[600px] md:h-[600px] opacity-80"
               onMouseEnter={() => handleInteraction(() => {}, setIsSecondVideoPlaying)}
               onMouseLeave={() => setIsSecondVideoPlaying(false)}

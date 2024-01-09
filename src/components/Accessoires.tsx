@@ -4,278 +4,32 @@ import React, { useState } from 'react';
 import { useRouter } from "next/navigation";
 import { addItem } from "@/store/cart/cartSlice";
 import { useDispatch } from 'react-redux';
-
-const products = [
-    {
-        productName: 'Wanderlust',
-        brand: 'Timeless Elegance',
-        price: 24.95,
-        imageUrl: '/accessoires/wanderlust-handbag.png',
-        category: 'Handbags',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        },
-    },
-    {
-        productName: 'Stratosphere',
-        brand: 'Timeless Elegance',
-        price: 16.95,
-        imageUrl: '/accessoires/stratosphere-watch.png',
-        category: 'Watches',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        },
-    },
-    {
-        productName: 'Celestial Crimson Harmony',
-        brand: 'Timeless Elegance',
-        price: 89.95,
-        imageUrl: '/accessoires/daimond-necklace.png',
-        category: 'Necklaces',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        },
-    },
-    {
-        productName: 'Mirage',
-        brand: 'Timeless Elegance',
-        price: 11.95,
-        imageUrl: '/accessoires/mirage-sunglasses.png',
-        category: 'Sunglasses',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        },
-    },
-    {
-        productName: 'Nebula',
-        brand: 'Timeless Elegance',
-        price: 24.95,
-        imageUrl: '/accessoires/nebula-watch.png',
-        category: 'Watches',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        },
-    },
-    {
-        productName: 'CryptoGuard',
-        brand: 'Timeless Elegance',
-        price: 7.95,
-        imageUrl: '/accessoires/cryptoguard-wallet.png',
-        category: 'Wallets',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        },
-    },
-    {
-        productName: 'Radiant Retro',
-        brand: 'Timeless Elegance',
-        price: 24.95,
-        imageUrl: '/accessoires/radiantretro-handbag.png',
-        category: 'Handbags',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        },
-    },
-    {
-        productName: 'Suede Sansation',
-        brand: 'Timeless Elegance',
-        price: 9.95,
-        imageUrl: '/accessoires/suede-sansation-handbag.png',
-        category: 'Handbags',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        },
-    },
-    {
-        productName: 'Luminous Gemstone',
-        brand: 'Timeless Elegance',
-        price: 78.99,
-        imageUrl: '/accessoires/ruby-golden-necklace.png',
-        category: 'Necklaces',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        },
-    },
-    {
-        productName: 'TitanKey',
-        brand: 'Timeless Elegance',
-        price: 9.95,
-        imageUrl: '/accessoires/titankey-wallet.png',
-        category: 'Wallets',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        },
-    },
-    {
-        productName: 'Boho Blossom',
-        brand: 'Timeless Elegance',
-        price: 24.95,
-        imageUrl: '/accessoires/bohoblossom-handbag.png',
-        category: 'Handbags',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        },
-    },
-    {
-        productName: 'Rain-kissed Gemstone',
-        brand: 'Timeless Elegance',
-        price: 69.95,
-        imageUrl: '/accessoires/rain-kissed-gemstone-necklace.png',
-        category: 'Necklaces',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        },
-    },
-    {
-        productName: 'Urban Sunset',
-        brand: 'Timeless Elegance',
-        price: 13.95,
-        imageUrl: '/accessoires/urban-sun-sunglasses.png',
-        category: 'Sunglasses',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        },
-    },
-    {
-        productName: 'Safe Chipher',
-        brand: 'Timeless Elegance',
-        price: 8.95,
-        imageUrl: '/accessoires/safechipher-wallet.png',
-        category: 'Wallets',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        },
-    },
-    {
-        productName: 'Eclipse',
-        brand: 'Timeless Elegance',
-        price: 17.95,
-        imageUrl: '/accessoires/eclipse-watch.png',
-        category: 'Watches',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        },
-    },
-    {
-        productName: 'Solarflow',
-        brand: 'Timeless Elegance',
-        price: 9.95,
-        imageUrl: '/accessoires/solarflow-sunglasses.png',
-        category: 'Sunglasses',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        },
-    },
-    {
-        productName: 'Azure Shades',
-        brand: 'Ivory Elegance',
-        price: 6.95,
-        imageUrl: '/accessoires/azure-shades-sunglasses.png',
-        category: 'Sunglasses',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        },
-    },
-    {
-        productName: 'Infinity',
-        brand: 'Ivory Elegance',
-        price: 28.95,
-        imageUrl: '/accessoires/infinity-watch.png',
-        category: 'Watches',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        },
-    },
-    {
-        productName: 'GlamRay',
-        brand: 'Ivory Elegance',
-        price: 6.95,
-        imageUrl: '/accessoires/glamray-sunglasses.png',
-        category: 'Sunglasses',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        },
-    },
-    {
-        productName: 'BioLock',
-        brand: 'Ivory Elegance',
-        price: 19.95,
-        imageUrl: '/accessoires/biolock-wallet.png',
-        category: 'Watches',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        },
-    },
-    {
-        productName: 'Zenith',
-        brand: 'Ivory Elegance',
-        price: 9.95,
-        imageUrl: '/accessoires/zenith-watch.png',
-        category: 'Sunglasses',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        },
-    },
-    {
-        productName: 'Prestige',
-        brand: 'Ivory Elegance',
-        price: 12.95,
-        imageUrl: '/accessoires/prestige-watch.png',
-        category: 'Watches',
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        },
-    }
-];
+import AccessoiresData from '@/content/accessoires.json';
 
 const Accessoires = () => {
 
     const dispatch = useDispatch();
     const router = useRouter();
     const [searchQuery, setSearchQuery] = useState<string>('');
-    const [filteredProducts, setFilteredProducts] = useState(products);
+    const [filteredProducts, setFilteredProducts] = useState(AccessoiresData.products);
     const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
-    const imagesMatchingNames = products.map(product => product.imageUrl);
-    console.log(imagesMatchingNames);
 
     const handleAddToCart = (e: any, product: any) => {
         dispatch(addItem(product));
         e.preventDefault();
-        router.push("/cart");
+        router.push('/cart');
     };
 
     const handleCategoryClick = (category: string) => {
         setSelectedCategory(category);
-        const filtered = products.filter((product) => product.category === category);
+        const filtered = AccessoiresData.products.filter((product) => product.category === category);
         setFilteredProducts(filtered);
     };
 
     const handleSearch = () => {
         const lowerCaseQuery = searchQuery.toLowerCase();
-        const filtered = products.filter((product) =>
+        const filtered = AccessoiresData.products.filter((product) =>
             product.productName.toLowerCase().includes(lowerCaseQuery)
         );
         setFilteredProducts(filtered);
@@ -329,7 +83,7 @@ const Accessoires = () => {
                 </div>
             </div>
             <div className='grid grid-cols-1 sm:grid-cols-3 2xl:grid-cols-4'>
-                {(searchQuery ? filteredProducts : products).map((product, index) => (
+                {(searchQuery ? filteredProducts : AccessoiresData.products).map((product, index) => (
                     <div key={index} className={` ${selectedCategory && product.category !== selectedCategory ? 'hidden grid-cols-12 col-span-12 sm:col-span-6 md:col-span-4 relative' : ''} `}>
                         <div className='relative'>
                             <Image

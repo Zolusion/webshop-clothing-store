@@ -4,39 +4,7 @@ import React from "react";
 import { useRouter } from "next/navigation";
 import { addItem } from "@/store/cart/cartSlice";
 import { useDispatch } from 'react-redux';
-
-const products = [
-    {
-        id: "1",
-        imageUrl: "/solmaznur-images/solmaznur1.jpg",
-        productName: "Product 1",
-        price: 69.99,
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        },
-    },
-    {
-        id: "2",
-        imageUrl: "/solmaznur-images/solmaznur2.jpg",
-        productName: "Product 2",
-        price: 99.99,
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        },
-    },
-    {
-        id: "3",
-        imageUrl: "/solmaznur-images/solmaznur3.jpg",
-        productName: "Product 3",
-        price: 49.99,
-        button: {
-            cart: "Add to cart",
-            link: "#",
-        },
-    },
-];
+import ProductGridData from '@/content/ProductGrid.json'
 
 const ProductGrid = () => {
     const dispatch = useDispatch();
@@ -50,38 +18,38 @@ const ProductGrid = () => {
     return (
         <section className="bg-white">
             <div className="grid grid-cols-12">
-                {products.map((product, index) => {
+                {ProductGridData.map((product, index) => {
                     return (
-                        <div
-                            key={index}
-                            className="col-span-12 sm:col-span-6 md:col-span-4 relative"
-                        >
-                            <div className="group">
-                                <button className="block aspect-w-4 aspect-h-5 overflow-hidden relative">
-                                    <Image
-                                        src={product.imageUrl}
-                                        className="object-cover w-full h-[700px] 2xl:h-[1200px] object-center opacity-100 transition-opacity group-hover:opacity-75"
-                                        alt={`Product ${index + 1}`}
-                                        width={500}
-                                        height={700}
-                                        loading="lazy"
-                                        quality={100}
-                                        unoptimized
-                                    />
-                                    <div className="absolute inset-0 flex flex-col items-start justify-end opacity-0 transition-opacity group-hover:opacity-100 bg-black bg-opacity-50">
-                                        <p className="text-white text-lg font-bold mb-2 px-4">
-                                            {product.productName}
-                                        </p>
-                                        <p className="text-white text-right mb-4 px-4">€{product.price}</p>
+                        <div key={index} className={` 'hidden grid-cols-12 col-span-12 sm:col-span-6 md:col-span-4 relative' : ''} `}>
+                            <div className='relative'>
+                                <Image
+                                    src={product.imageUrl}
+                                    alt={`Product ${index + 1}`}
+                                    className='object-cover w-[500px] h-[750px] 2xl:h-[1200px] 2xl:w-[1200px] object-center opacity-100 transition-opacity group-hover:opacity-75'
+                                    loading='lazy'
+                                    width={500}
+                                    height={700}
+                                />
+
+                                <div className='absolute inset-0 flex flex-col justify-between opacity-0 hover:opacity-100 transition-opacity duration-300'>
+                                    <div className='bg-black bg-opacity-75 p-4 text-white h-full'>
+                                        <h3 className='text-[20px] font-thin'>{product.productName}</h3>
+                                        <p className='font-semibold'>€{product.price}</p>
+                                    </div>
+
+                                    <div className='bg-black bg-opacity-75 p-4 flex items-center justify-between'>
                                         <a
                                             href={"/cart"}
                                             onClick={(e) => handleAddToCart(e, product)}
-                                            className="text-white bg-black px-4 py-2 w-full"
+                                            className="text-white hover:underline transition duration-300"
                                         >
                                             {product.button.cart}
                                         </a>
+                                        <button className='bg-white text-black px-4 py-2 rounded-md hover:bg-gray-200 transition duration-300'>
+                                            Wishlist
+                                        </button>
                                     </div>
-                                </button>
+                                </div>
                             </div>
                         </div>
                     );

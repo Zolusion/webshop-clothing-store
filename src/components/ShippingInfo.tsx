@@ -1,60 +1,62 @@
 import React from 'react';
+import ShippingInfoData from '@/content/ShippingInfoData.json';
 
 const ShippingInfo = () => {
+  console.log(ShippingInfoData);
   return (
     <div className='bg-white p-8 text-black grid grid-cols-1 sm:grid-cols-2 gap-8'>
       <div className='flex flex-col justify-center text-black'>
         <h1 className='text-2xl font-bold mb-6'>Shipping Information</h1>
         <p className='mb-4'>
-          At Solmaz Fashion, we strive to provide a seamless and efficient shipping experience for our customers. Here&#39;s some important information about our shipping policies:
+          {ShippingInfoData.ShippingInfo.content[0].text}
         </p>
         <ul className='list-disc pl-6 mb-4'>
-          <li className='mb-2'>We offer free shipping on all orders over $50.</li>
-          <li className='mb-2'>Orders are typically processed and shipped within 1-2 business days.</li>
-          <li className='mb-2'>We ship to most countries worldwide. However, please note that some restrictions may apply based on your location.</li>
-          <li className='mb-2'>For domestic orders, delivery usually takes 3-5 business days. International delivery times vary depending on the destination.</li>
-          <li className='mb-2'>You can track your order using the tracking number provided in the shipping confirmation email.</li>
-          <li className='mb-2'>If you have any questions or concerns regarding your shipment, please contact our customer support team at support@solmazfashion.com.</li>
+          <li className='mb-2'>{ShippingInfoData.ShippingInfo.content[1].items?.[0]}</li>
+          <li className='mb-2'>{ShippingInfoData.ShippingInfo.content[1].items?.[1]}</li>
+          <li className='mb-2'>{ShippingInfoData.ShippingInfo.content[1].items?.[2]}</li>
+          <li className='mb-2'>{ShippingInfoData.ShippingInfo.content[1].items?.[3]}</li>
+          <li className='mb-2'>{ShippingInfoData.ShippingInfo.content[1].items?.[4]}</li>
+          <li className='mb-2'>{ShippingInfoData.ShippingInfo.content[1].items?.[5]}</li>
         </ul>
       </div>
       <div>
-        <h2 className='text-2xl font-bold mb-4'>Refund Policy</h2>
+        <h2 className='text-2xl font-bold mb-4'>{ShippingInfoData.ShippingInfo.content[2].text}</h2>
         <p className='mb-4'>
-          We want you to be completely satisfied with your purchase. If for any reason you are not satisfied, we offer a hassle-free refund policy. Here are the key points to note:
+          {ShippingInfoData.ShippingInfo.content[3].text}
         </p>
         <ul className='list-disc pl-6 mb-4'>
-          <li className='mb-2'>You may request a refund within 30 days of receiving your order.</li>
-          <li className='mb-2'>Items must be returned in their original condition, unworn and with tags attached.</li>
-          <li className='mb-2'>Refunds will be processed within 5-7 business days after we receive the returned items.</li>
-          <li className='mb-2'>Please note that shipping charges are non-refundable.</li>
-          <li className='mb-2'>To initiate a refund, please contact our customer support team at support@solmazfashion.com.</li>
+          <li className='mb-2'>{ShippingInfoData.ShippingInfo.content[4].items?.[0]}</li>
+          <li className='mb-2'>{ShippingInfoData.ShippingInfo.content[4].items?.[1]}</li>
+          <li className='mb-2'>{ShippingInfoData.ShippingInfo.content[4].items?.[2]}</li>
+          <li className='mb-2'>{ShippingInfoData.ShippingInfo.content[4].items?.[3]}</li>
+          <li className='mb-2'>{ShippingInfoData.ShippingInfo.content[4].items?.[4]}</li>
         </ul>
         <p>
-          If you have any further questions or need assistance with returns or refunds, please don&#39;t hesitate to reach out to us.
+          {ShippingInfoData.ShippingInfo.content[5].text}
         </p>
       </div>
       <div>
-        <h2 className='text-2xl font-bold mb-4'>Track and Trace</h2>
+        <h2 className='text-2xl font-bold mb-4'>{ShippingInfoData.ShippingInfo.content[6].text}</h2>
         <p className='mb-4'>
-          To track the status of your order, please use the track and trace feature on our website. Simply enter your tracking number provided in the shipping confirmation email to get real-time updates on the whereabouts of your package.
+          {ShippingInfoData.ShippingInfo.content[7].text}
         </p>
         <p className='mb-4'>
-          If you encounter any issues or have any questions regarding the track and trace feature, please contact our customer support team for assistance.
+          {ShippingInfoData.ShippingInfo.content[8].text}
         </p>
         <p>
-          Remember, we want you to be completely satisfied with your purchase. If for any reason you are not satisfied, we offer a hassle-free refund policy.
+          {ShippingInfoData.ShippingInfo.content[9].text}
         </p>
       </div>
       <div>
-        <h2 className='text-2xl font-bold mb-4'>Cookies</h2>
+        <h2 className='text-2xl font-bold mb-4'>{ShippingInfoData.ShippingInfo.content[10].text}</h2>
         <p className='mb-4'>
-          Our website uses cookies to enhance your browsing experience and provide personalized recommendations. By using our website, you consent to the use of cookies in accordance with our <a href='/privacy-policy' className='text-blue underline'>Privacy Policy</a>
+          {ShippingInfoData.ShippingInfo.content[11].text}
         </p>
         <p className='mb-4'>
-          If you prefer not to have cookies stored on your device, you can disable them in your browser settings.
+          {ShippingInfoData.ShippingInfo.content[12].text}
         </p>
         <p className='mb-4'>
-          If you have any further questions or need assistance with cookies, please don&#39;t hesitate to reach out to us.
+          {ShippingInfoData.ShippingInfo.content[13].text}
         </p>
       </div>
     </div>

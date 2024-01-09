@@ -1,18 +1,10 @@
 import Image from 'next/image'
 import React from 'react'
-
-const achievementsList = [
-    "Establish a personal commitment to promoting sustainable and eco-friendly fashion practices",
-    "Actively contribute to the promotion of diversity and inclusivity within the fashion industry",
-    "Cultivate a unique and authentic personal style that reflects individuality and creativity",
-    "Continuously improve knowledge and skills related to fashion design and styling",
-    "Use fashion as a platform to connect with and contribute to the local community",
-];
+import AchievementsData from '@/content/AchievementsData.json'
 
 const Goals = () => {
     return (
         <div className='bg-white'>
-            {/* Our Goals Section */}
             <div className="max-w-7xl 2xl:max-w-[1800px] mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
                 <div className="max-w-3xl">
                     <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 2xl:text-4xl">
@@ -84,7 +76,7 @@ const Goals = () => {
                             <h1 className="text-3xl font-bold mb-4 2xl:text-4xl text-gray-800">Results</h1>
                             <hr className="mb-4" />
                             <ul className="text-gray-800 mb-4 2xl:text-[17px]">
-                                {achievementsList.map((achievement, index) => (
+                                {AchievementsData.map((achievement, index) => (
                                     <React.Fragment key={index}>
                                         <li className="mb-4 text-gray-800">{achievement}</li>
                                         <hr className="mb-4" />

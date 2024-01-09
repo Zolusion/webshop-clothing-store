@@ -1,14 +1,5 @@
 import React from 'react';
-
-const helpSections = [
-  { id: 'tab1', title: 'Track & Trace' },
-  { id: 'tab2', title: 'Refunds' },
-  { id: 'tab3', title: 'Shipping' },
-  { id: 'tab4', title: 'Payment' },
-  { id: 'tab5', title: 'Account Settings' },
-  { id: 'tab6', title: 'To register and password' },
-  { id: 'tab7', title: 'Privacy and security' },
-];
+import HelpCenterData from '@/content/HelpCenterData.json';
 
 const HelpCenter = () => {
   return (
@@ -23,7 +14,7 @@ const HelpCenter = () => {
       </div>
       <div className="container mx-auto mt-8 2xl:max-w-[2200px]">
         <div className="justify-center space-x-4 flex flex-col text-center bg-gray-200">
-          {helpSections.map((section) => (
+          {HelpCenterData.map((section) => (
             <div
               key={section.id}
               className="cursor-pointer border-b-2 border-transparent hover:border-blue-500"

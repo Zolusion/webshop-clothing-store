@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
+import PolicyData from '@/content/PolicyData.json';
 
 const PrivacyPolicy = () => {
   return (
@@ -7,34 +8,34 @@ const PrivacyPolicy = () => {
       <div className='w-1/2 pr-8 text-black justify-center flex flex-col'>
         <h1 className='text-2xl font-bold mb-6'>Privacy Policy</h1>
         <p className='mb-4'>
-          At Solmaz Fashion, we value your privacy and are committed to protecting your personal information. This privacy policy outlines how we collect, use, and safeguard the information you provide to us.
+          {PolicyData.PrivacyPolicy.content[0].text}
         </p>
         <hr className='mb-4' />
         <p className='mb-4'>
-          <strong>Personal Information:</strong> When you interact with our website or make a purchase, we may collect personal information such as your name, email address, phone number, address, and payment details. We use this information to process your orders, communicate with you, and provide a personalized shopping experience.
+          <strong>Personal Information:</strong> {PolicyData.PrivacyPolicy.content[1].text}.
         </p>
         <p className='mb-4'>
-          <strong>Data Security:</strong> We take appropriate measures to protect your personal information from unauthorized access, alteration, or disclosure. We use industry-standard security protocols to encrypt and safeguard your data.
+          <strong>Data Security:</strong> {PolicyData.PrivacyPolicy.content[2].text}.
         </p>
         <p className='mb-4'>
-          <strong>Third-Party Services:</strong> We may use third-party services to process payments, deliver products, or analyze website traffic. These third parties have their own privacy policies and may collect information about you. We recommend reviewing their privacy policies before using their services.
-        </p>
-        <hr className='mb-4' />
-        <p className='mb-4'>
-          <strong>Cookies:</strong> Our website uses cookies to enhance your browsing experience and provide personalized content. You can disable cookies in your browser settings if you prefer not to have them stored on your device.
-        </p>
-        <p className='mb-4'>
-          <strong>Marketing Communications:</strong> With your consent, we may send you promotional emails or newsletters. You can opt-out of these communications at any time by clicking the unsubscribe link in the email or contacting us directly.
-        </p>
-        <p className='mb-4'>
-          <strong>Changes to Privacy Policy:</strong> We may update our privacy policy from time to time. Any changes will be posted on this page, and we encourage you to review the policy periodically.
+          <strong>Third-Party Services:</strong> {PolicyData.PrivacyPolicy.content[3].text}.
         </p>
         <hr className='mb-4' />
         <p className='mb-4'>
-          By using our website or making a purchase, you agree to our terms of service and privacy policy. We do not sell or share your personal information with third parties.
+          <strong>Cookies:</strong> {PolicyData.PrivacyPolicy.content[4].text}.
         </p>
         <p className='mb-4'>
-          <strong>Contact Us:</strong> If you have any questions or concerns about our privacy policy or how we handle your personal information, please contact us at privacy@solmazfashion.com.
+          <strong>Marketing Communications:</strong> {PolicyData.PrivacyPolicy.content[5].text}.
+        </p>
+        <p className='mb-4'>
+          <strong>Changes to Privacy Policy:</strong> {PolicyData.PrivacyPolicy.content[6].text}.
+        </p>
+        <hr className='mb-4' />
+        <p className='mb-4'>
+          {PolicyData.PrivacyPolicy.content[7].text}
+        </p>
+        <p className='mb-4'>
+          <strong>Contact Us:</strong> {PolicyData.PrivacyPolicy.content[8].text}.
         </p>
       </div>
       <div className='w-1/2'>

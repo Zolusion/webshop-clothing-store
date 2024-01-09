@@ -3,33 +3,7 @@
 import Image from "next/image"
 import React from 'react'
 import { useState } from 'react';
-
-const imagesData = [
-    {
-        src: "https://images.unsplash.com/photo-1669703976236-49f621dad779?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTMyfHxoaWphYiUyMGZhc2hpb258ZW58MHx8MHx8fDA%3D",
-        hoverSrc: "https://images.unsplash.com/photo-1669703431397-200424e481b4?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTM4fHxoaWphYiUyMGZhc2hpb258ZW58MHx8MHx8fDA%3D",
-    },
-    {
-        src: "/ambassadors-image/model1.jpeg",
-        hoverSrc: "/ambassadors-image/model1_hover.avif",
-    },
-    {
-        src: "/ambassadors-image/model6.jpeg",
-        hoverSrc: "/ambassadors-image/model6_hover.avif",
-    },
-    {
-        src: "/ambassadors-image/model3.jpeg",
-        hoverSrc: "/ambassadors-image/model4_hover.jpeg",
-    },
-    {
-        src: "/ambassadors-image/model4.jpeg",
-        hoverSrc: "/ambassadors-image/model4_hover.avif",
-    },
-    {
-        src: "/ambassadors-image/model5.jpeg",
-        hoverSrc: "/ambassadors-image/model5_hover.jpeg",
-    }
-];
+import InfluencerData from '@/content/InfluencerData.json';
 
 interface ImageData {
     src: string;
@@ -52,7 +26,7 @@ const Influencers: React.FC = () => {
                 </div>
 
                 <div className="grid grid-cols-2 sm:grid-cols-3 col-span-6 gap-8">
-                    {imagesData.map((image, index) => (
+                    {InfluencerData.map((image, index) => (
                         <div
                             key={index}
                             className="col-span-2 sm:col-span-1"
