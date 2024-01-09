@@ -1,0 +1,35 @@
+{
+    "aboutInformation": [
+        {
+            "imageSrc": "https://images.unsplash.com/photo-1455849318743-b2233052fcff?q=80&w=2938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "title": "About Us",
+            "descriptionOne": "Welcome to SolmazFashion, where passion meets style. We are more than just a team of fashion enthusiasts; we are a community-driven brand dedicated to making high-quality fashion accessible to everyone.",
+            "descriptionTwo": "At SolmazFashion, we believe in the simplicity of online shopping. We strive to provide an easy, convenient, and enjoyable experience for our customers, ensuring that fashion is just a click away.",
+            "descriptionThree": "Our inspiration comes from the vibrant and diverse community that surrounds us. Every day, we are motivated by the stories and styles of our customers, shaping the identity of SolmazFashion."
+        }
+    ],
+    "content": [
+        {
+            "title": "Our Commitment",
+            "details": [
+                {
+                    "contentTitle": "Quality",
+                    "description": "We are committed to providing our customers with high-quality products and services."
+                },
+                {
+                    "contentTitle": "Customer Service",
+                    "description": "We strive to provide exceptional customer service to our customers."
+                },
+                {
+                    "contentTitle": "Community",
+                    "description": "We are a welcoming and inclusive community of fashion enthusiasts."
+                }
+            ]
+        }
+    ],
+    "clothingImages": {
+        "leather": "/about-images/leather.jpeg",
+        "cotton": "/about-images/cotton.jpeg",
+        "tencel": "/about-images/tencel.jpeg"
+    }
+}

@@ -1,0 +1,224 @@
+{
+  "products": [
+    {
+      "productName": "Wanderlust",
+      "price": 24.95,
+      "imageUrl": "/accessoires/wanderlust-handbag.png",
+      "category": "Handbags",
+      "button": {
+        "cart": "Add to cart",
+        "link": "#"
+      }
+    },
+    {
+      "productName": "Stratosphere",
+      "price": 16.95,
+      "imageUrl": "/accessoires/stratosphere-watch.png",
+      "category": "Watches",
+      "button": {
+        "cart": "Add to cart",
+        "link": "#"
+      }
+    },
+    {
+      "productName": "Celestial Crimson Harmony",
+      "price": 89.95,
+      "imageUrl": "/accessoires/celestial-crimson-harmony.png",
+      "category": "Necklaces",
+      "button": {
+        "cart": "Add to cart",
+        "link": "#"
+      }
+    },
+    {
+      "productName": "Mirage",
+      "price": 11.95,
+      "imageUrl": "/accessoires/mirage-sunglasses.png",
+      "category": "Sunglasses",
+      "button": {
+        "cart": "Add to cart",
+        "link": "#"
+      }
+    },
+    {
+      "productName": "Nebula",
+      "price": 24.95,
+      "imageUrl": "/accessoires/nebula-watch.png",
+      "category": "Watches",
+      "button": {
+        "cart": "Add to cart",
+        "link": "#"
+      }
+    },
+    {
+      "productName": "CryptoGuard",
+      "price": 7.95,
+      "imageUrl": "/accessoires/cryptoguard-wallet.png",
+      "category": "Wallets",
+      "button": {
+        "cart": "Add to cart",
+        "link": "#"
+      }
+    },
+    {
+      "productName": "Radiant Retro",
+      "price": 24.95,
+      "imageUrl": "/accessoires/radiantretro-handbag.png",
+      "category": "Handbags",
+      "button": {
+        "cart": "Add to cart",
+        "link": "#"
+      }
+    },
+    {
+      "productName": "Suede Sansation",
+      "price": 9.95,
+      "imageUrl": "/accessoires/suede-sansation-handbag.png",
+      "category": "Handbags",
+      "button": {
+        "cart": "Add to cart",
+        "link": "#"
+      }
+    },
+    {
+      "productName": "Luminous Gemstone",
+      "price": 78.99,
+      "imageUrl": "/accessoires/ruby-golden-necklace.png",
+      "category": "Necklaces",
+      "button": {
+        "cart": "Add to cart",
+        "link": "#"
+      }
+    },
+    {
+      "productName": "TitanKey",
+      "price": 9.95,
+      "imageUrl": "/accessoires/titankey-wallet.png",
+      "category": "Wallets",
+      "button": {
+        "cart": "Add to cart",
+        "link": "#"
+      }
+    },
+    {
+      "productName": "Boho Blossom",
+      "price": 24.95,
+      "imageUrl": "/accessoires/bohoblossom-handbag.png",
+      "category": "Handbags",
+      "button": {
+        "cart": "Add to cart",
+        "link": "#"
+      }
+    },
+    {
+      "productName": "Rain-kissed Gemstone",
+      "price": 69.95,
+      "imageUrl": "/accessoires/rain-kissed-gemstone-necklace.png",
+      "category": "Necklaces",
+      "button": {
+        "cart": "Add to cart",
+        "link": "#"
+      }
+    },
+    {
+      "productName": "Urban Sunset",
+      "price": 13.95,
+      "imageUrl": "/accessoires/urban-sun-sunglasses.png",
+      "category": "Sunglasses",
+      "button": {
+        "cart": "Add to cart",
+        "link": "#"
+      }
+    },
+    {
+      "productName": "Safe Chipher",
+      "price": 8.95,
+      "imageUrl": "/accessoires/safechipher-wallet.png",
+      "category": "Wallets",
+      "button": {
+        "cart": "Add to cart",
+        "link": "#"
+      }
+    },
+    {
+      "productName": "Eclipse",
+      "price": 17.95,
+      "imageUrl": "/accessoires/eclipse-watch.png",
+      "category": "Watches",
+      "button": {
+        "cart": "Add to cart",
+        "link": "#"
+      }
+    },
+    {
+      "productName": "Solarflow",
+      "price": 9.95,
+      "imageUrl": "/accessoires/solarflow-sunglasses.png",
+      "category": "Sunglasses",
+      "button": {
+        "cart": "Add to cart",
+        "link": "#"
+      }
+    },
+    {
+      "productName": "Azure Shades",
+      "price": 6.95,
+      "imageUrl": "/accessoires/azure-shades-sunglasses.png",
+      "category": "Sunglasses",
+      "button": {
+        "cart": "Add to cart",
+        "link": "#"
+      }
+    },
+    {
+      "productName": "Infinity",
+      "price": 28.95,
+      "imageUrl": "/accessoires/infinity-watch.png",
+      "category": "Watches",
+      "button": {
+        "cart": "Add to cart",
+        "link": "#"
+      }
+    },
+    {
+      "productName": "GlamRay",
+      "price": 6.95,
+      "imageUrl": "/accessoires/glamray-sunglasses.png",
+      "category": "Sunglasses",
+      "button": {
+        "cart": "Add to cart",
+        "link": "#"
+      }
+    },
+    {
+      "productName": "BioLock",
+      "price": 19.95,
+      "imageUrl": "/accessoires/biolock-wallet.png",
+      "category": "Watches",
+      "button": {
+        "cart": "Add to cart",
+        "link": "#"
+      }
+    },
+    {
+      "productName": "Zenith",
+      "price": 9.95,
+      "imageUrl": "/accessoires/zenith-watch.png",
+      "category": "Sunglasses",
+      "button": {
+        "cart": "Add to cart",
+        "link": "#"
+      }
+    },
+    {
+      "productName": "Prestige",
+      "price": 12.95,
+      "imageUrl": "/accessoires/prestige-watch.png",
+      "category": "Watches",
+      "button": {
+        "cart": "Add to cart",
+        "link": "#"
+      }
+    }
+  ]
+}

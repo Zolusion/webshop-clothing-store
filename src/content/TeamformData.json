@@ -1,0 +1,75 @@
+{
+    "jobDetails": [
+        "Create engaging content showcasing our products/services.",
+        "Regularly post on Instagram and use relevant hashtags.",
+        "Engage with your followers and respond to comments/questions.",
+        "Provide feedback and ideas to improve our brand presence."
+    ],
+    "perksAndBenefits": [
+        "Exclusive discounts on our products/services.",
+        "Opportunity to be featured on our official social media channels.",
+        "Access to new product launches before the public."
+    ],
+    "formFields": [
+        {
+            "id": "name",
+            "label": "Full Name",
+            "type": "text",
+            "placeholder": "John Doe",
+            "required": true
+        },
+        {
+            "id": "instagram",
+            "label": "Instagram Handle",
+            "type": "text",
+            "placeholder": "@example",
+            "required": true
+        },
+        {
+            "id": "email",
+            "label": "Email Address",
+            "type": "email",
+            "placeholder": "w9Ezy@example.com",
+            "required": true
+        },
+        {
+            "id": "location",
+            "label": "Location",
+            "type": "text",
+            "placeholder": "City, State",
+            "required": true
+        },
+        {
+            "id": "why-ambassador",
+            "label": "Why do you want to be an ambassador?",
+            "type": "textarea",
+            "rows": 4,
+            "placeholder": "Why do you want to be an ambassador?",
+            "required": true
+        },
+        {
+            "id": "experience",
+            "label": "Relevant Experience or Skills",
+            "type": "textarea",
+            "rows": 4,
+            "placeholder": "Relevant Experience or Skills",
+            "required": true
+        },
+        {
+            "id": "promotion-plan",
+            "label": "How do you plan to promote our brand?",
+            "type": "textarea",
+            "rows": 4,
+            "placeholder": "How do you plan to promote our brand?",
+            "required": true
+        },
+        {
+            "id": "comments-questions",
+            "label": "Any Additional Comments or Questions",
+            "type": "textarea",
+            "rows": 4,
+            "placeholder": "Do you have any Comments or Questions",
+            "required": true
+        }
+    ]
+}

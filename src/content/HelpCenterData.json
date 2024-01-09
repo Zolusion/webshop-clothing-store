@@ -1,0 +1,9 @@
+[
+  { "id": "tab1", "title": "Track & Trace" },
+  { "id": "tab2", "title": "Refunds" },
+  { "id": "tab3", "title": "Shipping" },
+  { "id": "tab4", "title": "Payment" },
+  { "id": "tab5", "title": "Account Settings" },
+  { "id": "tab6", "title": "To register and password" },
+  { "id": "tab7", "title": "Privacy and security" }
+]

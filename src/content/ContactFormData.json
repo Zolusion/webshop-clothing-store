@@ -1,0 +1,33 @@
+[
+    {
+      "title": "Contact",
+      "subTitle": "Heeft u een vraag of wilt u een afspraak maken? Vul dan het onderstaande formulier in en wij nemen zo snel mogelijk contact met u op."
+    },
+    {
+      "label": "Naam",
+      "placeholder": "Naam"
+    },
+    {
+      "label": "Achternaam",
+      "placeholder": "Achternaam"
+    },
+    {
+      "label": "E-mail",
+      "placeholder": "E-mail"
+    },
+    {
+      "label": "Telefoonnummer",
+      "placeholder": "Telefoonnummer"
+    },
+    {
+      "label": "Bericht",
+      "placeholder": "Stel ons een vraag"
+    },
+    {
+      "label": "Land"
+    },
+    {
+      "button": "Verstuur"
+    }
+  ]
+  

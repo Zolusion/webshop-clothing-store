@@ -1,0 +1,312 @@
+[
+  {
+    "productName": "Elisabetta Franchi",
+    "price": 79.99,
+    "imageUrl": "/dresses/elisabetta-franchi-trousers.png",
+    "category": "Trousers",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Elegant Evening Gown",
+    "price": 149.99,
+    "imageUrl": "/dresses/dress1.png",
+    "category": "Ball Gowns",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Frosty Horizon",
+    "price": 89.95,
+    "imageUrl": "/dresses/mididress5.png",
+    "category": "Dresses",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Royal Blue Elegance",
+    "price": 179.99,
+    "imageUrl": "/dresses/mididress7.png",
+    "category": "Ball Gowns",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Sapphire Dreams",
+    "price": 129.95,
+    "imageUrl": "/dresses/mididress8.png",
+    "category": "Dresses",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Blush Bloom Midi",
+    "price": 69.99,
+    "imageUrl": "/dresses/mididress9.png",
+    "category": "Dresses",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Polka Dot Delight",
+    "price": 79.95,
+    "imageUrl": "/dresses/mididress10.png",
+    "category": "Dresses",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Sunset Serenity Maxi",
+    "price": 109.99,
+    "imageUrl": "/dresses/maxidress1.png",
+    "category": "Dresses",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Bohemian Rhapsody",
+    "price": 94.95,
+    "imageUrl": "/dresses/maxidress2.png",
+    "category": "Dresses",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Alexandra Silk",
+    "price": 69.99,
+    "imageUrl": "/dresses/alexandra-silk-blouse.png",
+    "category": "Blouse",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Weekend Comfort",
+    "price": 49.99,
+    "imageUrl": "/dresses/casual1.png",
+    "category": "Casual",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Terracotta Formele Jumpsuit",
+    "price": 79.99,
+    "imageUrl": "/dresses/terracotta-formele-jumpsuit.png",
+    "category": "Jumpsuits",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "V-neck Blouse",
+    "price": 149.99,
+    "imageUrl": "/dresses/v-neck-blouse.png",
+    "category": "Ball Gowns",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Estelle Dress",
+    "price": 59.95,
+    "imageUrl": "/dresses/casual2.png",
+    "category": "Dresses",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Golden Horizon",
+    "price": 89.95,
+    "imageUrl": "/dresses/dress2.png",
+    "category": "Dresses",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Cinderellas Dream",
+    "price": 249.99,
+    "imageUrl": "/dresses/gown1.png",
+    "category": "Ball Gowns",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Midnight Masquerade",
+    "price": 199.95,
+    "imageUrl": "/dresses/gown2.png",
+    "category": "Ball Gowns",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Mela Blouse",
+    "price": 249.99,
+    "imageUrl": "/dresses/mela-blouse.png",
+    "category": "Blouse",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Retro Glamour",
+    "price": 89.99,
+    "imageUrl": "/dresses/vintage1.png",
+    "category": "Vintage",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Veronique de Kock",
+    "price": 79.95,
+    "imageUrl": "/dresses/veronique-de-kock-blouse.png",
+    "category": "Blouse",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Classic Elegance",
+    "price": 79.95,
+    "imageUrl": "/dresses/vintage2.png",
+    "category": "Vintage",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Chic Wrap Fusion",
+    "price": 59.99,
+    "imageUrl": "/dresses/wrap1.png",
+    "category": "Dresses",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Noir Blouse",
+    "price": 59.99,
+    "imageUrl": "/dresses/noir-blouse.png",
+    "category": "Blouse",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Floral Wrap Fantasy",
+    "price": 69.95,
+    "imageUrl": "/dresses/wrap2.png",
+    "category": "Dresses",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Sunny Day Delight",
+    "price": 39.99,
+    "imageUrl": "/dresses/sunnyday-delight.png",
+    "category": "Dresses",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Morgan Blouse",
+    "price": 69.99,
+    "imageUrl": "/dresses/morgan-blouse.png",
+    "category": "Blouse",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Tropical Breeze",
+    "price": 49.95,
+    "imageUrl": "/dresses/tropical-breeze.png",
+    "category": "Dresses",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Timeless Black Elegance",
+    "price": 79.99,
+    "imageUrl": "/dresses/timeless-black-elegance.png",
+    "category": "Dresses",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Ivory Sophistication",
+    "price": 69.95,
+    "imageUrl": "/dresses/ivory-sophistication.png",
+    "category": "Dresses",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Sunshine Serenity",
+    "price": 59.99,
+    "imageUrl": "/dresses/sunshine-serenity.png",
+    "category": "Dresses",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Vintage Charm",
+    "price": 79.99,
+    "imageUrl": "/dresses/vintage-charm.png",
+    "category": "Vintage",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  }
+]

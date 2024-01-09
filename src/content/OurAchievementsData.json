@@ -1,0 +1,29 @@
+{
+    "achievementsData": [
+        {
+            "id": 1,
+            "title": "60000+",
+            "description": "Active Members",
+            "imageSrc": "/achievements-image/active-member.jpeg"
+        },
+        {
+            "id": 2,
+            "title": "100+",
+            "description": "Influencers",
+            "imageSrc": "/achievements-image/influencer-model.jpeg"
+        },
+        {
+            "id": 3,
+            "title": "10+",
+            "description": "Countries",
+            "imageSrc": "/achievements-image/country.jpeg"
+        }
+    ],
+    "achievementsList": [
+        "We are proud of the efforts and contributions of our team members.",
+        "We have consistently delivered exceptional results.",
+        "Always looking for new and innovative ideas.",
+        "We are always on the lookout for new and exciting projects.",
+        "Never underestimate yourself to set your own goals and achievements. Do not be afraid to take steps towards your goals. Your success is our success."
+    ]
+}

@@ -1,0 +1,137 @@
+[
+    {
+        "imageUrl": "/modern-hijab-style-images/image2.png",
+        "productName": "Lydia Blouse",
+        "price": 79.95,
+        "button": {
+            "cart": "Add to cart",
+            "link": "#"
+        }
+    },
+    {
+        "imageUrl": "/modern-hijab-style-images/image3.png",
+        "productName": "Jumpsuit",
+        "price": 99.99,
+        "button": {
+            "cart": "Add to cart",
+            "link": "#"
+        }
+    },
+    {
+        "imageUrl": "/modern-hijab-style-images/image4.png",
+        "productName": "Marina Rinaldi",
+        "price": 119.99,
+        "button": {
+            "cart": "Add to cart",
+            "link": "#"
+        }
+    },
+    {
+        "imageUrl": "/modern-hijab-style-images/image7.png",
+        "productName": "Dorothee Schumacher",
+        "price": 109.99,
+        "button": {
+            "cart": "Add to cart",
+            "link": "#"
+        }
+    },
+    {
+        "imageUrl": "/modern-hijab-style-images/alison-blazer.png",
+        "productName": "Alison Blazer",
+        "price": 205.99,
+        "button": {
+            "cart": "Add to cart",
+            "link": "#"
+        }
+    },
+    {
+        "imageUrl": "/modern-hijab-style-images/image10.png",
+        "productName": "Nela Beige",
+        "price": 99.99,
+        "button": {
+            "cart": "Add to cart",
+            "link": "#"
+        }
+    },
+    {
+        "imageUrl": "/modern-hijab-style-images/image14.png",
+        "productName": "Diega Vanio Blazer",
+        "price": 199.99,
+        "button": {
+            "cart": "Add to cart",
+            "link": "#"
+        }
+    },
+    {
+        "imageUrl": "/modern-hijab-style-images/image15.png",
+        "productName": "Nihed Long Dress",
+        "price": 39.99,
+        "button": {
+            "cart": "Add to cart",
+            "link": "#"
+        }
+    },
+    {
+        "imageUrl": "/modern-hijab-style-images/image16.png",
+        "productName": "Peserico",
+        "price": 89.99,
+        "button": {
+            "cart": "Add to cart",
+            "link": "#"
+        }
+    },
+    {
+        "imageUrl": "/modern-hijab-style-images/alpaca-blend-vest.png",
+        "productName": "Alpaca Blend Vest",
+        "price": 249.99,
+        "button": {
+            "cart": "Add to cart",
+            "link": "#"
+        }
+    },
+    {
+        "imageUrl": "/modern-hijab-style-images/ami-paris.png",
+        "productName": "Ami Paris",
+        "price": 239.99,
+        "button": {
+            "cart": "Add to cart",
+            "link": "#"
+        }
+    },
+    {
+        "imageUrl": "/modern-hijab-style-images/garnitur-patrizia.png",
+        "productName": "Garnitur Patrizia",
+        "price": 199.99,
+        "button": {
+            "cart": "Add to cart",
+            "link": "#"
+        }
+    },
+    {
+        "imageUrl": "/modern-hijab-style-images/carhartt-wip-sweater.png",
+        "productName": "Carhartt Wip Sweater",
+        "price": 57.99,
+        "button": {
+            "cart": "Add to cart",
+            "link": "#"
+        }
+    },
+    {
+        "imageUrl": "/modern-hijab-style-images/goldberg.png",
+        "productName": "Goldberg",
+        "price": 79.99,
+        "button": {
+            "cart": "Add to cart",
+            "link": "#"
+        }
+    },
+    {
+        "imageUrl": "/modern-hijab-style-images/sade-faneyte.png",
+        "productName": "Sade Fanayte",
+        "price": 169.99,
+        "button": {
+            "cart": "Add to cart",
+            "link": "#"
+        }
+    }
+]

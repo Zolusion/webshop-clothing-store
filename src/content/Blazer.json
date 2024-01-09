@@ -1,0 +1,182 @@
+[
+  {
+    "imageUrl": "/blazer/blazer5.png",
+    "productName": "Royal Plum",
+    "price": 39.99,
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/blazer/blazer11.png",
+    "productName": "Ivory Hues",
+    "price": 47.99,
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/blazer/blazer18.png",
+    "productName": "Pumpkin Spice",
+    "price": 18.99,
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "https://images.unsplash.com/photo-1700560970703-82fd3150d5ac?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjE0fHxibGF6ZXIlMjB3b21hbnxlbnwwfHwwfHx8MA%3D%3D",
+    "productName": "Obsidian",
+    "price": 29.99,
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/blazer/blazer6.png",
+    "productName": "Mint Chocolate",
+    "price": 12.99,
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/blazer/blazer16.png",
+    "productName": "Taupe Tranquility",
+    "price": 35.99,
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/blazer/blazer7.png",
+    "productName": "Onyx Obsidian",
+    "price": 29.99,
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/blazer/blazer15.png",
+    "productName": "Arctic Frost",
+    "price": 99.99,
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/blazer/blazer10.png",
+    "productName": "Violet Velvet",
+    "price": 17.99,
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/blazer/blazer17.png",
+    "productName": "Steel Gray Blazer",
+    "price": 69.99,
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/blazer/blazer1.png",
+    "productName": "Ice Crystal",
+    "price": 39.99,
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/blazer/blazer4.png",
+    "productName": "Majestic Grape",
+    "price": 14.99,
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/blazer/blazer2.png",
+    "productName": "Blue Velvet",
+    "price": 9.99,
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/blazer/blazer8.png",
+    "productName": "Charcoal Charm",
+    "price": 19.99,
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/blazer/blazer9.png",
+    "productName": "Smoky Leather",
+    "price": 24.95,
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/blazer/blazer3.png",
+    "productName": "Desert Dawn",
+    "price": 19.99,
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/blazer/blazer14.png",
+    "productName": "Pearl Essence",
+    "price": 35.99,
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/blazer/blazer12.png",
+    "productName": "Pink Champagne",
+    "price": 29.99,
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/blazer/blazer19.png",
+    "productName": "Grapevine Glamour",
+    "price": 39.99,
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/blazer/blazer13.png",
+    "productName": "Heavenly Blue",
+    "price": 29.99,
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  }
+]
