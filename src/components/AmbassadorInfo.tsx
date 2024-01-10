@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from 'react';
-import Ambassador from "../content/ambassador.json";
+import Ambassador from "@/content/ambassador.json";
 
 const AmbassadorInfo = () => {
     return (
@@ -12,7 +12,7 @@ const AmbassadorInfo = () => {
                     </h2>
                     <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
                         {Ambassador.map((item) => (
-                            <div key={item.id} className="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                            <div key={item.imageSrc} className="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
                                 <div className="relative h-52 2xl:h-80">
                                     <Image
                                         className="w-full h-48 object-cover rounded-t-md"

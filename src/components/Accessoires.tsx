@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { useRouter } from "next/navigation";
 import { addItem } from "@/store/cart/cartSlice";
 import { useDispatch } from 'react-redux';
-import AccessoiresData from '@/content/accessoires.json';
+import AccessoiresData from '@/content/Accessoires.json';
 
 const Accessoires = () => {
 
@@ -93,6 +93,8 @@ const Accessoires = () => {
                                 loading='lazy'
                                 width={500}
                                 height={500}
+                                quality={100}
+                                unoptimized
                             />
 
                             <div className='absolute inset-0 flex flex-col justify-between opacity-0 hover:opacity-100 transition-opacity duration-300'>

@@ -1,32 +1,39 @@
-import * as React from "react";
+"use client";
 import CartComponent from "@/components/CartComponent";
-import ReduxProvider from "@/components/ReduxProvider";
-import RecommandedProducts from "@/components/RecommandedProducts";
-import Customer from "@/@types/customer";
-import type { Metadata } from "next";
+import * as React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-const title = "Shopping Cart";
-
-export const metadata: Metadata = {
-  title: `${title} | Solmaz Fashion`,
-};
-
-interface PageProps {
-  params: { slug: string };
-  searchParams: { [key: string]: string | string[] | undefined };
+interface ProductCart {
+  image: string;
+  productname: string;
+  price: number;
+  quantity: number;
+  totalprice: number;
 }
 
-const Cart = ({
-  params,
-  searchParams,
-  customer,
-}: PageProps & { customer: Customer }) => {
-  return (
-    <ReduxProvider>
-      <CartComponent customer={customer} />
-      <RecommandedProducts />
-    </ReduxProvider>
-  );
+interface Customer {
+  name: string;
+  surname: string;
+  email: string;
+  phone: string;
+  address: string;
+  city: string;
+  state: string;
+  zip: string;
+  country: string;
+  paymentmethod: string;
+  orderstatus: string;
+  products: ProductCart[];
+}
+
+interface PageProps {
+  params: {slug: string};
+  searchParams: { [key: string]: string | string[] | undefined };
+  // customer any
+}
+
+const Cart = ({ params, searchParams }: PageProps) => {
+  return <CartComponent />;
 };
 
 export default Cart;

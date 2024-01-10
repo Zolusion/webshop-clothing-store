@@ -20,15 +20,17 @@ const ProductGrid = () => {
             <div className="grid grid-cols-12">
                 {ProductGridData.map((product, index) => {
                     return (
-                        <div key={index} className={` 'hidden grid-cols-12 col-span-12 sm:col-span-6 md:col-span-4 relative' : ''} `}>
+                        <div key={index} className={` 'hidden grid-cols-12 col-span-12 sm:col-span-6 md:col-span-4 2xl:col-span-3 relative' : ''} `}>
                             <div className='relative'>
                                 <Image
                                     src={product.imageUrl}
                                     alt={`Product ${index + 1}`}
-                                    className='object-cover w-[500px] h-[750px] 2xl:h-[1200px] 2xl:w-[1200px] object-center opacity-100 transition-opacity group-hover:opacity-75'
+                                    className='object-cover w-[500px] h-[700px] 2xl:h-[1200px] 2xl:w-[1200px] object-center opacity-100 transition-opacity group-hover:opacity-75'
                                     loading='lazy'
-                                    width={500}
+                                    width={800}
                                     height={700}
+                                    quality={100}
+                                    unoptimized
                                 />
 
                                 <div className='absolute inset-0 flex flex-col justify-between opacity-0 hover:opacity-100 transition-opacity duration-300'>

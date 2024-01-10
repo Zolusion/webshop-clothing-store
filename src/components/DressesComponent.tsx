@@ -67,22 +67,32 @@ const DressesComponent = () => {
                         </button>
                         {isMobileMenuOpen && (
                             <div className='flex flex-col mt-2'>
+                                <a href='#' onClick={() => handleCategoryClick('Jeans')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Jeans' ? 'font-bold' : ''}`}>Jeans</a>
                                 <a href='#' onClick={() => handleCategoryClick('Casual')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Casual' ? 'font-bold' : ''}`}>Casual</a>
                                 <a href='#' onClick={() => handleCategoryClick('Ball Gowns')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Ball Gowns' ? 'font-bold' : ''}`}>Ball Gowns</a>
                                 <a href='#' onClick={() => handleCategoryClick('Vintage')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Vintage' ? 'font-bold' : ''}`}>Vintage</a>
                                 <a href='#' onClick={() => handleCategoryClick('Dresses')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Dresses' ? 'font-bold' : ''}`}>Dresses</a>
                                 <a href='#' onClick={() => handleCategoryClick('Blouse')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Blouse' ? 'font-bold' : ''}`}>Blouse</a>
                                 <a href='#' onClick={() => handleCategoryClick('Trousers')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Trousers' ? 'font-bold' : ''}`}>Trousers</a>
+                                <a href='#' onClick={() => handleCategoryClick('Jackets')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Jackets' ? 'font-bold' : ''}`}>Jackets</a>
+                                <a href='#' onClick={() => handleCategoryClick('Blazers')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Blazers' ? 'font-bold' : ''}`}>Blazers</a>
+                                <a href='#' onClick={() => handleCategoryClick('Shoes')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Shoes' ? 'font-bold' : ''}`}>Shoes</a>
+                                <a href='#' onClick={() => handleCategoryClick('Coats')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Coats' ? 'font-bold' : ''}`}>Coats</a>
                             </div>
                         )}
                     </div>
                     <div className='hidden md:flex space-x-6'>
+                        <a href='#' onClick={() => handleCategoryClick('Jeans')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Jeans' ? 'font-bold' : ''}`}>Jeans</a>
                         <a href='#' onClick={() => handleCategoryClick('Casual')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Casual' ? 'font-bold' : ''}`}>Casual</a>
                         <a href='#' onClick={() => handleCategoryClick('Ball Gowns')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Ball Gowns' ? 'font-bold' : ''}`}>Ball Gowns</a>
                         <a href='#' onClick={() => handleCategoryClick('Vintage')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Vintage' ? 'font-bold' : ''}`}>Vintage</a>
                         <a href='#' onClick={() => handleCategoryClick('Dresses')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Dresses' ? 'font-bold' : ''}`}>Dresses</a>
                         <a href='#' onClick={() => handleCategoryClick('Blouse')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Blouse' ? 'font-bold' : ''}`}>Blouse</a>
                         <a href='#' onClick={() => handleCategoryClick('Trousers')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Trousers' ? 'font-bold' : ''}`}>Trousers</a>
+                        <a href='#' onClick={() => handleCategoryClick('Jackets')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Jackets' ? 'font-bold' : ''}`}>Jackets</a>
+                        <a href='#' onClick={() => handleCategoryClick('Blazers')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Blazers' ? 'font-bold' : ''}`}>Blazers</a>
+                        <a href='#' onClick={() => handleCategoryClick('Shoes')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Shoes' ? 'font-bold' : ''}`}>Shoes</a>
+                        <a href='#' onClick={() => handleCategoryClick('Coats')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Coats' ? 'font-bold' : ''}`}>Coats</a>
                     </div>
                 </div>
             </div>
@@ -93,10 +103,12 @@ const DressesComponent = () => {
                             <Image
                                 src={product.imageUrl}
                                 alt={`Product ${index + 1}`}
-                                className='object-cover w-[500px] h-[700px] 2xl:h-[900px] 2xl:w-[1200px] object-center opacity-100 transition-opacity group-hover:opacity-75'
+                                className='object-cover w-[500px] h-[800px] 2xl:h-[1200px] 2xl:w-[1200px] object-center opacity-100 transition-opacity group-hover:opacity-75'
                                 loading='lazy'
-                                width={500}
-                                height={500}
+                                width={800}
+                                height={800}
+                                quality={100}
+                                unoptimized
                             />
 
                             <div className='absolute inset-0 flex flex-col justify-between opacity-0 hover:opacity-100 transition-opacity duration-300'>

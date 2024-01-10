@@ -1,14 +1,7 @@
 import Image from "next/image";
 import Link from 'next/link';
 import React from 'react';
-
-interface Post {
-    id: number;
-    imageUrl: string;
-    title: string;
-    href: string;
-    description: string;
-}
+import Post from '@/@types/posts'
 
 export default function Posts({ posts }: { posts: Post[] }) {
     return (
