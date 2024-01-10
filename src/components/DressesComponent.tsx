@@ -10,10 +10,14 @@ const DressesComponent = () => {
 
     const dispatch = useDispatch();
     const router = useRouter();
+
     const [searchQuery, setSearchQuery] = useState<string>('');
     const [filteredProducts, setFilteredProducts] = useState(Dresses);
     const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const [currentPage, setCurrentPage] = useState(1);
+    const productsPerPage = 18;
+
     const imagesMatchingNames = Dresses.map((product: any) => product.imageUrl);
     console.log(imagesMatchingNames);
 
@@ -27,6 +31,7 @@ const DressesComponent = () => {
         setSelectedCategory(category);
         const filtered = Dresses.filter((product: any) => product.category === category);
         setFilteredProducts(filtered);
+        setCurrentPage(1); // Reset to the first page when a category is selected
     };
 
     const handleSearch = () => {
@@ -35,7 +40,14 @@ const DressesComponent = () => {
             product.productName.toLowerCase().includes(lowerCaseQuery)
         );
         setFilteredProducts(filtered);
+        setCurrentPage(1); // Reset to the first page when a search is performed
     };
+
+    const totalPages = Math.ceil(filteredProducts.length / productsPerPage);
+    const indexOfLastProduct = currentPage * productsPerPage;
+    const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
+    const currentProducts = filteredProducts.slice(indexOfFirstProduct, indexOfLastProduct);
+
 
     return (
         <div className='bg-black'>
@@ -73,11 +85,9 @@ const DressesComponent = () => {
                                 <a href='#' onClick={() => handleCategoryClick('Vintage')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Vintage' ? 'font-bold' : ''}`}>Vintage</a>
                                 <a href='#' onClick={() => handleCategoryClick('Dresses')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Dresses' ? 'font-bold' : ''}`}>Dresses</a>
                                 <a href='#' onClick={() => handleCategoryClick('Blouse')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Blouse' ? 'font-bold' : ''}`}>Blouse</a>
-                                <a href='#' onClick={() => handleCategoryClick('Trousers')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Trousers' ? 'font-bold' : ''}`}>Trousers</a>
                                 <a href='#' onClick={() => handleCategoryClick('Jackets')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Jackets' ? 'font-bold' : ''}`}>Jackets</a>
                                 <a href='#' onClick={() => handleCategoryClick('Blazers')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Blazers' ? 'font-bold' : ''}`}>Blazers</a>
                                 <a href='#' onClick={() => handleCategoryClick('Shoes')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Shoes' ? 'font-bold' : ''}`}>Shoes</a>
-                                <a href='#' onClick={() => handleCategoryClick('Coats')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Coats' ? 'font-bold' : ''}`}>Coats</a>
                             </div>
                         )}
                     </div>
@@ -88,16 +98,14 @@ const DressesComponent = () => {
                         <a href='#' onClick={() => handleCategoryClick('Vintage')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Vintage' ? 'font-bold' : ''}`}>Vintage</a>
                         <a href='#' onClick={() => handleCategoryClick('Dresses')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Dresses' ? 'font-bold' : ''}`}>Dresses</a>
                         <a href='#' onClick={() => handleCategoryClick('Blouse')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Blouse' ? 'font-bold' : ''}`}>Blouse</a>
-                        <a href='#' onClick={() => handleCategoryClick('Trousers')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Trousers' ? 'font-bold' : ''}`}>Trousers</a>
                         <a href='#' onClick={() => handleCategoryClick('Jackets')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Jackets' ? 'font-bold' : ''}`}>Jackets</a>
                         <a href='#' onClick={() => handleCategoryClick('Blazers')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Blazers' ? 'font-bold' : ''}`}>Blazers</a>
                         <a href='#' onClick={() => handleCategoryClick('Shoes')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Shoes' ? 'font-bold' : ''}`}>Shoes</a>
-                        <a href='#' onClick={() => handleCategoryClick('Coats')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Coats' ? 'font-bold' : ''}`}>Coats</a>
                     </div>
                 </div>
             </div>
             <div className='grid grid-cols-1 sm:grid-cols-3 2xl:grid-cols-4'>
-                {(searchQuery ? filteredProducts : Dresses).map((product: any, index: any) => (
+                {currentProducts.map((product: any, index: any) => (
                     <div key={index} className={` ${selectedCategory && product.category !== selectedCategory ? 'hidden grid-cols-12 col-span-12 sm:col-span-6 md:col-span-4 relative' : ''} `}>
                         <div className='relative'>
                             <Image
@@ -132,6 +140,17 @@ const DressesComponent = () => {
                             </div>
                         </div>
                     </div>
+                ))}
+            </div>
+            <div className='flex justify-center mt-4'>
+                {Array.from({ length: totalPages }, (_, i) => (
+                    <button
+                        key={i}
+                        onClick={() => setCurrentPage(i + 1)}
+                        className={`mx-2 px-4 py-2 rounded-md focus:outline-none ${currentPage === i + 1 ? 'bg-blue-500 text-white' : 'bg-gray-300 text-black hover:bg-gray-400'}`}
+                    >
+                        {i + 1}
+                    </button>
                 ))}
             </div>
         </div>

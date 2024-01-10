@@ -13,7 +13,7 @@
     "productName": "Ralph Lauren",
     "price": 155,
     "imageUrl": "/jackets/pastel-oasis-trench-coat.png",
-    "category": "Coats",
+    "category": "Jackets",
     "button": {
       "cart": "Add to Cart",
       "link": "#"
@@ -83,7 +83,7 @@
     "productName": "Blue Belford",
     "price": 50,
     "imageUrl": "/jackets/coffee-mocka-leather-coat.png",
-    "category": "Coats",
+    "category": "Jackets",
     "button": {
       "cart": "Add to Cart",
       "link": "#"
@@ -96,6 +96,16 @@
     "category": "Jackets",
     "button": {
       "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Davis12",
+    "price": 55,
+    "imageUrl": "/casual/davis12.png",
+    "category": "Casual",
+    "button": {
+      "cart": "Add to Cart",
       "link": "#"
     }
   },
@@ -146,6 +156,16 @@
     "category": "Blazers",
     "button": {
       "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Stehmann",
+    "price": 55,
+    "imageUrl": "/casual/stehmann.png",
+    "category": "Casual",
+    "button": {
+      "cart": "Add to Cart",
       "link": "#"
     }
   },
@@ -623,7 +643,7 @@
     "productName": "Vila Vipoko",
     "price": 40,
     "imageUrl": "/jackets/verdant-vista-trench-coat.png",
-    "category": "Coats",
+    "category": "Jackets",
     "button": {
       "cart": "Add to Cart",
       "link": "#"
@@ -700,7 +720,7 @@
     }
   },
   {
-    "productName": "Cotton Candy",
+    "productName": "Badgley Mischka",
     "price": 60,
     "imageUrl": "/shoes/cotton-candy-heels.png",
     "category": "Shoes",
@@ -710,19 +730,9 @@
     }
   },
   {
-    "productName": "Dark Green Velvet",
-    "price": 40,
-    "imageUrl": "/shoes/dark-green-velvet-booties.png",
-    "category": "Shoes",
-    "button": {
-      "cart": "Add to cart",
-      "link": "#"
-    }
-  },
-  {
     "imageUrl": "/blazer/blazer6.png",
-    "productName": "Mint Chocolate",
-    "price": 13,
+    "productName": "VICTORIA BECKHAM",
+    "price": 75,
     "category": "Blazers",
     "button": {
       "cart": "Add to cart",
@@ -740,8 +750,8 @@
     }
   },
   {
-    "productName": "Disco Mirage",
-    "price": 25,
+    "productName": "Fiarucci",
+    "price": 120,
     "imageUrl": "/shoes/disco-mirage-booties.png",
     "category": "Shoes",
     "button": {
@@ -751,8 +761,8 @@
   },
   {
     "imageUrl": "/blazer/blazer16.png",
-    "productName": "Taupe Tranquility",
-    "price": 36,
+    "productName": "Marciano Guess",
+    "price": 170,
     "category": "Blazers",
     "button": {
       "cart": "Add to cart",
@@ -770,7 +780,7 @@
     }
   },
   {
-    "productName": "Echanting Cinderella",
+    "productName": "Giselle",
     "price": 55,
     "imageUrl": "/shoes/enchanting-cinderella-heels.png",
     "category": "Shoes",
@@ -780,7 +790,7 @@
     }
   },
   {
-    "productName": "Golden Goddess",
+    "productName": "Pena Burano",
     "price": 70,
     "imageUrl": "/shoes/golden-goddess-heels.png",
     "category": "Shoes",
@@ -790,8 +800,8 @@
     }
   },
   {
-    "productName": "Jet Black Boots",
-    "price": 25,
+    "productName": "Gianvitto Rossi",
+    "price": 125,
     "imageUrl": "/shoes/jet-black-boots.png",
     "category": "Shoes",
     "button": {
@@ -810,8 +820,8 @@
     }
   },
   {
-    "productName": "Mat Mint Green Heels",
-    "price": 42,
+    "productName": "Dolce & Gabbana",
+    "price": 190,
     "imageUrl": "/shoes/mat-mint-green-heels.png",
     "category": "Shoes",
     "button": {
@@ -1040,7 +1050,7 @@
     }
   },
   {
-    "productName": "Blush Bloom Midi",
+    "productName": "Laona",
     "price": 70,
     "imageUrl": "/dresses/mididress9.png",
     "category": "Dresses",
@@ -1113,7 +1123,7 @@
     "productName": "Abrigo de Paño",
     "price": 45,
     "imageUrl": "/jackets/mystic-mirage-trench-coat.png",
-    "category": "Coats",
+    "category": "Jackets",
     "button": {
       "cart": "Add to Cart",
       "link": "#"
@@ -1123,7 +1133,7 @@
     "productName": "Apricot Aura",
     "price": 58,
     "imageUrl": "/jackets/apricot-aura-trench-coat.png",
-    "category": "Coats",
+    "category": "Jackets",
     "button": {
       "cart": "Add to Cart",
       "link": "#"
@@ -1263,7 +1273,7 @@
     "productName": "Creenstone",
     "price": 130,
     "imageUrl": "/jackets/marine-majesty-trench-coat.png",
-    "category": "Coats",
+    "category": "Jackets",
     "button": {
       "cart": "Add to Cart",
       "link": "#"
@@ -1280,7 +1290,7 @@
     }
   },
   {
-    "productName": "Floral Wrap Fantasy",
+    "productName": "Jenny Packham",
     "price": 70,
     "imageUrl": "/dresses/wrap2.png",
     "category": "Dresses",
@@ -1300,7 +1310,7 @@
     }
   },
   {
-    "productName": "Sunny Day Delight",
+    "productName": "Laudae Abronia",
     "price": 40,
     "imageUrl": "/dresses/sunnyday-delight.png",
     "category": "Dresses",
@@ -1320,7 +1330,7 @@
     }
   },
   {
-    "productName": "Tropical Breeze",
+    "productName": "Adriana Alier",
     "price": 50,
     "imageUrl": "/dresses/tropical-breeze.png",
     "category": "Dresses",
@@ -1350,7 +1360,7 @@
     }
   },
   {
-    "productName": "Timeless Black Elegance",
+    "productName": "Vila Vinysitta",
     "price": 80,
     "imageUrl": "/dresses/timeless-black-elegance.png",
     "category": "Dresses",
@@ -1360,7 +1370,7 @@
     }
   },
   {
-    "productName": "Ivory Sophistication",
+    "productName": "Vestido de Noiva",
     "price": 62,
     "imageUrl": "/dresses/ivory-sophistication.png",
     "category": "Dresses",
@@ -1373,7 +1383,7 @@
     "productName": "Rhino & Pelle",
     "price": 70,
     "imageUrl": "/jackets/pistachio-princess-trench-coat.png",
-    "category": "Coats",
+    "category": "Jackets",
     "button": {
       "cart": "Add to Cart",
       "link": "#"
@@ -1393,14 +1403,14 @@
     "productName": "Max Mara",
     "price": 110,
     "imageUrl": "/jackets/mint-mirage-trench-coat.png",
-    "category": "Coats",
+    "category": "Jackets",
     "button": {
       "cart": "Add to Cart",
       "link": "#"
     }
   },
   {
-    "productName": "Sunshine Serenity",
+    "productName": "Yanmucy",
     "price": 64,
     "imageUrl": "/dresses/sunshine-serenity.png",
     "category": "Dresses",
