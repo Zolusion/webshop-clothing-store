@@ -53,6 +53,7 @@ const CartComponent: React.FC<{ customer?: Customer }> = ({ customer }) => {
   const handleDelete = (itemId: string) => {
     dispatch(removeItem(itemId));
   };
+  
   const [customerName, setCustomerName] = useState("");
   const [customerEmail, setCustomerEmail] = useState("");
   const [customerPhone, setCustomerPhone] = useState("");

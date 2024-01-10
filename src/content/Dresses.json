@@ -30,7 +30,7 @@
     }
   },
   {
-    "imageUrl": "/blazer/blazer5.png",
+    "imageUrl": "/blazer/royal-plum.png",
     "productName": "Royal Plum",
     "price": 39,
     "category": "Blazers",
@@ -60,7 +60,7 @@
     }
   },
   {
-    "imageUrl": "/blazer/blazer11.png",
+    "imageUrl": "/blazer/coccinelle.png",
     "productName": "Coccinelle",
     "price": 47,
     "category": "Blazers",
@@ -140,9 +140,9 @@
     }
   },
   {
-    "imageUrl": "/blazer/blazer18.png",
+    "imageUrl": "/blazer/federica-tosi.png",
     "productName": "Federica Tosi",
-    "price": 18,
+    "price": 50,
     "category": "Blazers",
     "button": {
       "cart": "Add to cart",
@@ -180,7 +180,7 @@
     }
   },
   {
-    "imageUrl": "/blazer/blazer7.png",
+    "imageUrl": "/blazer/zizo-tosca.png",
     "productName": "Zizo Tosca",
     "price": 29,
     "category": "Blazers",
@@ -190,7 +190,7 @@
     }
   },
   {
-    "imageUrl": "/blazer/blazer15.png",
+    "imageUrl": "/blazer/penelope.png",
     "productName": "Penelope",
     "price": 100,
     "category": "Blazers",
@@ -200,7 +200,7 @@
     }
   },
   {
-    "imageUrl": "/blazer/blazer10.png",
+    "imageUrl": "/blazer/cloud5ive.png",
     "productName": "Cloud5ive",
     "price": 20,
     "category": "Blazers",
@@ -210,7 +210,7 @@
     }
   },
   {
-    "imageUrl": "/blazer/blazer17.png",
+    "imageUrl": "/blazer/ralph-lauren.png",
     "productName": "Ralph Lauren",
     "price": 120,
     "category": "Blazers",
@@ -230,7 +230,7 @@
     }
   },
   {
-    "imageUrl": "/blazer/blazer4.png",
+    "imageUrl": "/blazer/alexander-mcqueen.png",
     "productName": "Alexander McQueen",
     "price": 90,
     "category": "Blazers",
@@ -240,7 +240,7 @@
     }
   },
   {
-    "imageUrl": "/blazer/blazer2.png",
+    "imageUrl": "/blazer/versace.png",
     "productName": "Versace",
     "price": 140,
     "category": "Blazers",
@@ -250,7 +250,7 @@
     }
   },
   {
-    "imageUrl": "/blazer/blazer8.png",
+    "imageUrl": "/blazer/brunello-cucinelli.png",
     "productName": "Brunello Cucinelli",
     "price": 80,
     "category": "Blazers",
@@ -260,7 +260,7 @@
     }
   },
   {
-    "imageUrl": "/blazer/blazer14.png",
+    "imageUrl": "/blazer/luisa-cerano.png",
     "productName": "Luisa Cerano",
     "price": 65,
     "category": "Blazers",
@@ -270,7 +270,7 @@
     }
   },
   {
-    "imageUrl": "/blazer/blazer12.png",
+    "imageUrl": "/blazer/giuseppe-di-morabito.png",
     "productName": "Giuseppe Di Morabito",
     "price": 80,
     "category": "Blazers",
@@ -490,7 +490,7 @@
     }
   },
   {
-    "imageUrl": "/blazer/blazer19.png",
+    "imageUrl": "/blazer/grapevine-glamour.png",
     "productName": "Grapevine Glamour",
     "price": 40,
     "category": "Blazers",
@@ -500,7 +500,7 @@
     }
   },
   {
-    "imageUrl": "/blazer/blazer13.png",
+    "imageUrl": "/blazer/gai-mattiolo.png",
     "productName": "Gai Mattiolo",
     "price": 30,
     "category": "Blazers",
@@ -610,7 +610,7 @@
     }
   },
   {
-    "imageUrl": "/blazer/blazer3.png",
+    "imageUrl": "/blazer/elisabetta-franchi.png",
     "productName": "Elisabetta Franchi (Beige)",
     "price": 90,
     "category": "Blazers",
@@ -690,7 +690,7 @@
     }
   },
   {
-    "imageUrl": "/blazer/blazer9.png",
+    "imageUrl": "/blazer/tom-ford.png",
     "productName": "Tom Ford",
     "price": 70,
     "category": "Blazers",
@@ -730,7 +730,7 @@
     }
   },
   {
-    "imageUrl": "/blazer/blazer6.png",
+    "imageUrl": "/blazer/victoria-beckham.png",
     "productName": "VICTORIA BECKHAM",
     "price": 75,
     "category": "Blazers",
@@ -760,7 +760,7 @@
     }
   },
   {
-    "imageUrl": "/blazer/blazer16.png",
+    "imageUrl": "/blazer/marciano-guess.png",
     "productName": "Marciano Guess",
     "price": 170,
     "category": "Blazers",
@@ -850,9 +850,9 @@
     }
   },
   {
-    "productName": "Bohemian Rhapsody",
+    "productName": "Alma Novia",
     "price": 95,
-    "imageUrl": "/dresses/maxidress2.png",
+    "imageUrl": "/dresses/alma-novia.png",
     "category": "Dresses",
     "button": {
       "cart": "Add to cart",
@@ -910,9 +910,9 @@
     }
   },
   {
-    "productName": "Sunset Serenity Maxi",
+    "productName": "Celmia Spring",
     "price": 110,
-    "imageUrl": "/dresses/maxidress1.png",
+    "imageUrl": "/dresses/celmia-spring.png",
     "category": "Dresses",
     "button": {
       "cart": "Add to cart",
@@ -980,9 +980,9 @@
     }
   },
   {
-    "productName": "Frosty Horizon",
+    "productName": "Carrislabelle",
     "price": 90,
-    "imageUrl": "/dresses/mididress5.png",
+    "imageUrl": "/dresses/carrislabelle.png",
     "category": "Dresses",
     "button": {
       "cart": "Add to cart",
@@ -1042,7 +1042,7 @@
   {
     "productName": "Sapphire Dreams",
     "price": 125,
-    "imageUrl": "/dresses/mididress8.png",
+    "imageUrl": "/dresses/sapphire-dreams.png",
     "category": "Dresses",
     "button": {
       "cart": "Add to cart",
@@ -1052,7 +1052,7 @@
   {
     "productName": "Laona",
     "price": 70,
-    "imageUrl": "/dresses/mididress9.png",
+    "imageUrl": "/dresses/laona.png",
     "category": "Dresses",
     "button": {
       "cart": "Add to cart",
@@ -1062,7 +1062,7 @@
   {
     "productName": "Polka Dot Delight",
     "price": 80,
-    "imageUrl": "/dresses/mididress10.png",
+    "imageUrl": "/dresses/polka-dot-delight.png",
     "category": "Dresses",
     "button": {
       "cart": "Add to cart",
@@ -1192,7 +1192,7 @@
   {
     "productName": "Golden Horizon",
     "price": 90,
-    "imageUrl": "/dresses/dress2.png",
+    "imageUrl": "/dresses/golden-horizon.png",
     "category": "Dresses",
     "button": {
       "cart": "Add to cart",
@@ -1252,7 +1252,7 @@
   {
     "productName": "Chic Wrap Fusion",
     "price": 60,
-    "imageUrl": "/dresses/wrap1.png",
+    "imageUrl": "/dresses/chic-wrap-fusion.png",
     "category": "Dresses",
     "button": {
       "cart": "Add to cart",
@@ -1292,7 +1292,7 @@
   {
     "productName": "Jenny Packham",
     "price": 70,
-    "imageUrl": "/dresses/wrap2.png",
+    "imageUrl": "/dresses/jenny-packham.png",
     "category": "Dresses",
     "button": {
       "cart": "Add to cart",
