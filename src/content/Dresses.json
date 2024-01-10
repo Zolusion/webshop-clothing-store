@@ -1,18 +1,648 @@
 [
   {
-    "productName": "Elisabetta Franchi",
-    "price": 79.99,
-    "imageUrl": "/dresses/elisabetta-franchi-trousers.png",
-    "category": "Trousers",
+    "productName": "Rachelle 408",
+    "price": 65,
+    "imageUrl": "/jackets/rachele-408.png",
+    "category": "Blazers",
+    "button": {
+      "cart": "Add to Cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Ralph Lauren",
+    "price": 155,
+    "imageUrl": "/jackets/pastel-oasis-trench-coat.png",
+    "category": "Coats",
+    "button": {
+      "cart": "Add to Cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Tall Boyfriend",
+    "price": 75,
+    "imageUrl": "/jeans/tall-boyfriend-jeans.png",
+    "category": "Jeans",
     "button": {
       "cart": "Add to cart",
       "link": "#"
     }
   },
   {
-    "productName": "Elegant Evening Gown",
-    "price": 149.99,
-    "imageUrl": "/dresses/dress1.png",
+    "imageUrl": "/blazer/blazer5.png",
+    "productName": "Royal Plum",
+    "price": 39,
+    "category": "Blazers",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Woolrich Alsea",
+    "price": 80,
+    "imageUrl": "/jackets/snowflake-puffer-jacket.png",
+    "category": "Jacket",
+    "button": {
+      "cart": "Add to Cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Fabrice Perry",
+    "price": 79,
+    "imageUrl": "/shoes/glimmering-gala-heels.png",
+    "category": "Shoes",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/blazer/blazer11.png",
+    "productName": "Coccinelle",
+    "price": 47,
+    "category": "Blazers",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Trussardi",
+    "price": 85,
+    "imageUrl": "/jackets/misty-modernity-office-jacket.png",
+    "category": "Jackets",
+    "button": {
+      "cart": "Add to Cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Blue Belford",
+    "price": 50,
+    "imageUrl": "/jackets/coffee-mocka-leather-coat.png",
+    "category": "Coats",
+    "button": {
+      "cart": "Add to Cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/winter-image/brown-chocolate-2.png",
+    "productName": "Tom Tailor",
+    "price": 54,
+    "category": "Jackets",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Fiorella Rubino",
+    "price": 30,
+    "imageUrl": "/jackets/sparkling-gold-puffer-jacket.png",
+    "category": "Jacket",
+    "button": {
+      "cart": "Add to Cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Valentino Garavani",
+    "price": 25,
+    "imageUrl": "/shoes/ocean-blue-heels.png",
+    "category": "Shoes",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Mulvari",
+    "price": 59,
+    "imageUrl": "/jeans/mulvari.png",
+    "category": "Jeans",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/blazer/blazer18.png",
+    "productName": "Federica Tosi",
+    "price": 18,
+    "category": "Blazers",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "https://images.unsplash.com/photo-1700560970703-82fd3150d5ac?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjE0fHxibGF6ZXIlMjB3b21hbnxlbnwwfHwwfHx8MA%3D%3D",
+    "productName": "Calli Belinda",
+    "price": 29,
+    "category": "Blazers",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Lina Locchi",
+    "price": 52,
+    "imageUrl": "/shoes/ruby-red-glamour-heels.png",
+    "category": "Shoes",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/blazer/blazer7.png",
+    "productName": "Zizo Tosca",
+    "price": 29,
+    "category": "Blazers",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/blazer/blazer15.png",
+    "productName": "Penelope",
+    "price": 100,
+    "category": "Blazers",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/blazer/blazer10.png",
+    "productName": "Cloud5ive",
+    "price": 20,
+    "category": "Blazers",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/blazer/blazer17.png",
+    "productName": "Ralph Lauren",
+    "price": 120,
+    "category": "Blazers",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/blazer/blazer1.png",
+    "productName": "Giacca Donna",
+    "price": 75,
+    "category": "Blazers",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/blazer/blazer4.png",
+    "productName": "Alexander McQueen",
+    "price": 90,
+    "category": "Blazers",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/blazer/blazer2.png",
+    "productName": "Versace",
+    "price": 140,
+    "category": "Blazers",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/blazer/blazer8.png",
+    "productName": "Brunello Cucinelli",
+    "price": 80,
+    "category": "Blazers",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/blazer/blazer14.png",
+    "productName": "Luisa Cerano",
+    "price": 65,
+    "category": "Blazers",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/blazer/blazer12.png",
+    "productName": "Giuseppe Di Morabito",
+    "price": 80,
+    "category": "Blazers",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/winter-image/brown-chocolate.png",
+    "productName": "Robin Gomez",
+    "price": 70,
+    "category": "Jackets",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/winter-image/fluffy-sheep.png",
+    "productName": "Brave Soul",
+    "price": 40,
+    "category": "Jackets",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/winter-image/snow-cloud.png",
+    "productName": "Loavies",
+    "price": 33,
+    "category": "Jackets",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/winter-image/sepia.png",
+    "productName": "Harper 2023",
+    "price": 52,
+    "category": "Jackets",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/winter-image/iceridge.png",
+    "productName": "Camel",
+    "price": 50,
+    "category": "Jackets",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "New Balance",
+    "price": 38,
+    "imageUrl": "/shoes/nickelson-shoes.png",
+    "category": "Shoes",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/winter-image/northwind.png",
+    "productName": "Marciano",
+    "price": 70,
+    "category": "Jackets",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/winter-image/supreme.png",
+    "productName": "Brunotti",
+    "price": 55,
+    "category": "Jackets",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Paris Miriote",
+    "price": 50,
+    "imageUrl": "/shoes/lunar-luster-heels.png",
+    "category": "Shoes",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/winter-image/polar-panache.png",
+    "productName": "Polar Panache",
+    "price": 40,
+    "category": "Jackets",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/winter-image/violet-vista.png",
+    "productName": "Vmkylie",
+    "price": 33,
+    "category": "Jackets",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/winter-image/icerose.png",
+    "productName": "Max Mara Cambosa",
+    "price": 52,
+    "category": "Jackets",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/winter-image/rosyglacier.png",
+    "productName": "Rosy Glacier",
+    "price": 70,
+    "category": "Jackets",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/winter-image/frostyfoliage.png",
+    "productName": "Frosty Foliage",
+    "price": 55,
+    "category": "Jackets",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/winter-image/shamrock.png",
+    "productName": "Shamrock",
+    "price": 40,
+    "category": "Jackets",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/winter-image/viridian.png",
+    "productName": "Viridian",
+    "price": 33,
+    "category": "Jackets",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/winter-image/marigold.png",
+    "productName": "Marigold",
+    "price": 52,
+    "category": "Jackets",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/winter-image/pumpkin-spice.png",
+    "productName": "Vince Camuto",
+    "price": 70,
+    "category": "Jackets",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/winter-image/bluehorizon.png",
+    "productName": "Regatta Pamelina",
+    "price": 55,
+    "category": "Jackets",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/winter-image/les-coyotes.png",
+    "productName": "Les Coyotes",
+    "price": 40,
+    "category": "Jackets",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/winter-image/sarah-pacini.png",
+    "productName": "Sarah Pacini",
+    "price": 33,
+    "category": "Jackets",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/blazer/blazer19.png",
+    "productName": "Grapevine Glamour",
+    "price": 40,
+    "category": "Blazers",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/blazer/blazer13.png",
+    "productName": "Gai Mattiolo",
+    "price": 30,
+    "category": "Blazers",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Harveys",
+    "price": 120,
+    "imageUrl": "/jackets/blueberry-bliss-puffer-jacket.png",
+    "category": "Jacket",
+    "button": {
+      "cart": "Add to Cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Voyar La Reu",
+    "price": 80,
+    "imageUrl": "/jackets/hazelnut-harmony-office-jacket.png",
+    "category": "Jackets",
+    "button": {
+      "cart": "Add to Cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Margeaux",
+    "price": 75,
+    "imageUrl": "/jackets/sandstone-sophistication-office-jacket.png",
+    "category": "Jackets",
+    "button": {
+      "cart": "Add to Cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Graumann",
+    "price": 60,
+    "imageUrl": "/jackets/slate-sophistication-office-jacket.png",
+    "category": "Jackets",
+    "button": {
+      "cart": "Add to Cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Luisa Spagnoli",
+    "price": 90,
+    "imageUrl": "/jackets/champagne-office-jacket.png",
+    "category": "Jackets",
+    "button": {
+      "cart": "Add to Cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Mamalicious",
+    "price": 57,
+    "imageUrl": "/jackets/latte-luxury-winter-jacket.png",
+    "category": "Jackets",
+    "button": {
+      "cart": "Add to Cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Faina Collina",
+    "price": 95,
+    "imageUrl": "/jackets/truffle-toast-winter-jacket-2.png",
+    "category": "Jackets",
+    "button": {
+      "cart": "Add to Cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Louis Allegro",
+    "price": 40,
+    "imageUrl": "/jackets/sapphire-sky-denim-jacket.png",
+    "category": "Denim",
+    "button": {
+      "cart": "Add to Cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Giorgia Pacini",
+    "price": 40,
+    "imageUrl": "/shoes/aqua-mist-heels.png",
+    "category": "Shoes",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Rosalynn",
+    "price": 45,
+    "imageUrl": "/shoes/rosalynn-shoes.png",
+    "category": "Shoes",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/blazer/blazer3.png",
+    "productName": "Elisabetta Franchi (Beige)",
+    "price": 90,
+    "category": "Blazers",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Marlis",
+    "price": 75,
+    "imageUrl": "/jackets/woolly-wonderland-winter-jacket.png",
+    "category": "Jackets",
+    "button": {
+      "cart": "Add to Cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Tamaris",
+    "price": 25,
+    "imageUrl": "/shoes/brown-caramel-booties.png",
+    "category": "Shoes",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Vila Vipoko",
+    "price": 40,
+    "imageUrl": "/jackets/verdant-vista-trench-coat.png",
+    "category": "Coats",
+    "button": {
+      "cart": "Add to Cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Cork cognac",
+    "price": 30,
+    "imageUrl": "/shoes/cappuchino-dream-heels.png",
+    "category": "Shoes",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Robe Anaïs",
+    "price": 150,
+    "imageUrl": "/ball-gowns/robe-anais.png",
     "category": "Ball Gowns",
     "button": {
       "cart": "Add to cart",
@@ -20,8 +650,328 @@
     }
   },
   {
+    "productName": "Honey Punch",
+    "price": 45,
+    "imageUrl": "/jackets/navy-teddy-puffer-jacket.png",
+    "category": "Jacket",
+    "button": {
+      "cart": "Add to Cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Nero Giardini",
+    "price": 40,
+    "imageUrl": "/shoes/caramel-charm-ankle-boots.png",
+    "category": "Shoes",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/blazer/blazer9.png",
+    "productName": "Tom Ford",
+    "price": 70,
+    "category": "Blazers",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Zecchino d'oro",
+    "price": 60,
+    "imageUrl": "https://i.pinimg.com/474x/72/fe/87/72fe87413f182182fb6f1fc567500046.jpg",
+    "category": "Shoes",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Seraphina",
+    "price": 40,
+    "imageUrl": "/shoes/seraphina-shoes.png",
+    "category": "Shoes",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Cotton Candy",
+    "price": 60,
+    "imageUrl": "/shoes/cotton-candy-heels.png",
+    "category": "Shoes",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Dark Green Velvet",
+    "price": 40,
+    "imageUrl": "/shoes/dark-green-velvet-booties.png",
+    "category": "Shoes",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/blazer/blazer6.png",
+    "productName": "Mint Chocolate",
+    "price": 13,
+    "category": "Blazers",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Versace",
+    "price": 140,
+    "imageUrl": "/jackets/indigo-grace-denim-jacket.png",
+    "category": "Denim",
+    "button": {
+      "cart": "Add to Cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Disco Mirage",
+    "price": 25,
+    "imageUrl": "/shoes/disco-mirage-booties.png",
+    "category": "Shoes",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "imageUrl": "/blazer/blazer16.png",
+    "productName": "Taupe Tranquility",
+    "price": 36,
+    "category": "Blazers",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Tiffany",
+    "price": 70,
+    "imageUrl": "/shoes/tiffany-shoes.png",
+    "category": "Shoes",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Echanting Cinderella",
+    "price": 55,
+    "imageUrl": "/shoes/enchanting-cinderella-heels.png",
+    "category": "Shoes",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Golden Goddess",
+    "price": 70,
+    "imageUrl": "/shoes/golden-goddess-heels.png",
+    "category": "Shoes",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Jet Black Boots",
+    "price": 25,
+    "imageUrl": "/shoes/jet-black-boots.png",
+    "category": "Shoes",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Elisabetta Franchi",
+    "price": 80,
+    "imageUrl": "/jackets/elisabetta-franchi.png",
+    "category": "Blazers",
+    "button": {
+      "cart": "Add to Cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Mat Mint Green Heels",
+    "price": 42,
+    "imageUrl": "/shoes/mat-mint-green-heels.png",
+    "category": "Shoes",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Raphaela",
+    "price": 35,
+    "imageUrl": "/jeans/raphaela.png",
+    "category": "Jeans",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Midnight Chic",
+    "price": 50,
+    "imageUrl": "/shoes/midnight-chic-ankle-boots.png",
+    "category": "Shoes",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Bohemian Rhapsody",
+    "price": 95,
+    "imageUrl": "/dresses/maxidress2.png",
+    "category": "Dresses",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Midnight Mystery",
+    "price": 20,
+    "imageUrl": "/shoes/midnight-mystery-boots.png",
+    "category": "Shoes",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Noir Nightfall",
+    "price": 40,
+    "imageUrl": "/shoes/noir-nightfall-heels.png",
+    "category": "Shoes",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Nostalgic Sharm",
+    "price": 30,
+    "imageUrl": "/shoes/nostalgic-sharm-heels.png",
+    "category": "Shoes",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Sleek Ebony Zipper",
+    "price": 50,
+    "imageUrl": "/shoes/sleek-ebony-zipper-boots.png",
+    "category": "Shoes",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Snowdrop",
+    "price": 44,
+    "imageUrl": "/shoes/snowdrop-heels.png",
+    "category": "Shoes",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Sunset Serenity Maxi",
+    "price": 110,
+    "imageUrl": "/dresses/maxidress1.png",
+    "category": "Dresses",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Wine Velvet",
+    "price": 48,
+    "imageUrl": "/shoes/wine-velvet-heels.png",
+    "category": "Shoes",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Yamari",
+    "price": 87,
+    "imageUrl": "/jackets/yamari.png",
+    "category": "Blazers",
+    "button": {
+      "cart": "Add to Cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Guido Maria",
+    "price": 55,
+    "imageUrl": "/jackets/guido-maria.png",
+    "category": "Blazers",
+    "button": {
+      "cart": "Add to Cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Columbia",
+    "price": 55,
+    "imageUrl": "/jackets/frostbite-puffer-jacket.png",
+    "category": "Jacket",
+    "button": {
+      "cart": "Add to Cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Noisy May",
+    "price": 67,
+    "imageUrl": "/jeans/noisy-may.png",
+    "category": "Jeans",
+    "button": {
+      "cart": "Add to Cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Woolrich",
+    "price": 120,
+    "imageUrl": "/jackets/angled-long-bob-white-puffer-jacket.png",
+    "category": "Jacket",
+    "button": {
+      "cart": "Add to Cart",
+      "link": "#"
+    }
+  },
+  {
     "productName": "Frosty Horizon",
-    "price": 89.95,
+    "price": 90,
     "imageUrl": "/dresses/mididress5.png",
     "category": "Dresses",
     "button": {
@@ -31,8 +981,8 @@
   },
   {
     "productName": "Royal Blue Elegance",
-    "price": 179.99,
-    "imageUrl": "/dresses/mididress7.png",
+    "price": 180,
+    "imageUrl": "/ball-gowns/royal-blue-elegance.png",
     "category": "Ball Gowns",
     "button": {
       "cart": "Add to cart",
@@ -40,8 +990,48 @@
     }
   },
   {
+    "productName": "Marc O'Polo",
+    "price": 70,
+    "imageUrl": "/jackets/big-shoulder-grazing-curls-green-puffer-jacket.png",
+    "category": "Jacket",
+    "button": {
+      "cart": "Add to Cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Morgani",
+    "price": 45,
+    "imageUrl": "/jeans/morgani.png",
+    "category": "Jeans",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Moncler",
+    "price": 175,
+    "imageUrl": "/jackets/shaggy-shoulder-cut-white-capuchon-black-puffer-jacket.png",
+    "category": "Jacket",
+    "button": {
+      "cart": "Add to Cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Project CECE",
+    "price": 55,
+    "imageUrl": "/jackets/earthy-emerald-blazer.png",
+    "category": "Blazers",
+    "button": {
+      "cart": "Add to Cart",
+      "link": "#"
+    }
+  },
+  {
     "productName": "Sapphire Dreams",
-    "price": 129.95,
+    "price": 125,
     "imageUrl": "/dresses/mididress8.png",
     "category": "Dresses",
     "button": {
@@ -51,7 +1041,7 @@
   },
   {
     "productName": "Blush Bloom Midi",
-    "price": 69.99,
+    "price": 70,
     "imageUrl": "/dresses/mididress9.png",
     "category": "Dresses",
     "button": {
@@ -61,7 +1051,7 @@
   },
   {
     "productName": "Polka Dot Delight",
-    "price": 79.95,
+    "price": 80,
     "imageUrl": "/dresses/mididress10.png",
     "category": "Dresses",
     "button": {
@@ -70,29 +1060,9 @@
     }
   },
   {
-    "productName": "Sunset Serenity Maxi",
-    "price": 109.99,
-    "imageUrl": "/dresses/maxidress1.png",
-    "category": "Dresses",
-    "button": {
-      "cart": "Add to cart",
-      "link": "#"
-    }
-  },
-  {
-    "productName": "Bohemian Rhapsody",
-    "price": 94.95,
-    "imageUrl": "/dresses/maxidress2.png",
-    "category": "Dresses",
-    "button": {
-      "cart": "Add to cart",
-      "link": "#"
-    }
-  },
-  {
     "productName": "Alexandra Silk",
-    "price": 69.99,
-    "imageUrl": "/dresses/alexandra-silk-blouse.png",
+    "price": 70,
+    "imageUrl": "/blouse/alexandra-silk-blouse.png",
     "category": "Blouse",
     "button": {
       "cart": "Add to cart",
@@ -100,9 +1070,69 @@
     }
   },
   {
-    "productName": "Weekend Comfort",
-    "price": 49.99,
-    "imageUrl": "/dresses/casual1.png",
+    "productName": "Gerard Darel",
+    "price": 50,
+    "imageUrl": "/jackets/woodland-blazer.png",
+    "category": "Blazers",
+    "button": {
+      "cart": "Add to Cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Weronika Bogusz",
+    "price": 45,
+    "imageUrl": "/jeans/weronika-bogusz.png",
+    "category": "Jeans",
+    "button": {
+      "cart": "Add to Cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Ivy Copenhagen",
+    "price": 65,
+    "imageUrl": "/jeans/ivy-copenhagen.png",
+    "category": "Jeans",
+    "button": {
+      "cart": "Add to Cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Stella Mccartney",
+    "price": 70,
+    "imageUrl": "/jackets/stella-mccartney.png",
+    "category": "Blazers",
+    "button": {
+      "cart": "Add to Cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Abrigo de Paño",
+    "price": 45,
+    "imageUrl": "/jackets/mystic-mirage-trench-coat.png",
+    "category": "Coats",
+    "button": {
+      "cart": "Add to Cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Apricot Aura",
+    "price": 58,
+    "imageUrl": "/jackets/apricot-aura-trench-coat.png",
+    "category": "Coats",
+    "button": {
+      "cart": "Add to Cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "American Eagle",
+    "price": 50,
+    "imageUrl": "/casual/american-eagle.png",
     "category": "Casual",
     "button": {
       "cart": "Add to cart",
@@ -111,7 +1141,7 @@
   },
   {
     "productName": "Terracotta Formele Jumpsuit",
-    "price": 79.99,
+    "price": 80,
     "imageUrl": "/dresses/terracotta-formele-jumpsuit.png",
     "category": "Jumpsuits",
     "button": {
@@ -121,27 +1151,37 @@
   },
   {
     "productName": "V-neck Blouse",
-    "price": 149.99,
-    "imageUrl": "/dresses/v-neck-blouse.png",
-    "category": "Ball Gowns",
+    "price": 150,
+    "imageUrl": "/blouse/v-neck-blouse.png",
+    "category": "Blouse",
     "button": {
       "cart": "Add to cart",
       "link": "#"
     }
   },
   {
-    "productName": "Estelle Dress",
-    "price": 59.95,
-    "imageUrl": "/dresses/casual2.png",
-    "category": "Dresses",
+    "productName": "Smith & Soul",
+    "price": 60,
+    "imageUrl": "/casual/smith-and-soul.png",
+    "category": "Casual",
     "button": {
       "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Armed Angles",
+    "price": 90,
+    "imageUrl": "/jeans/armed-angles.png",
+    "category": "Jeans",
+    "button": {
+      "cart": "Add to Cart",
       "link": "#"
     }
   },
   {
     "productName": "Golden Horizon",
-    "price": 89.95,
+    "price": 90,
     "imageUrl": "/dresses/dress2.png",
     "category": "Dresses",
     "button": {
@@ -151,8 +1191,8 @@
   },
   {
     "productName": "Cinderellas Dream",
-    "price": 249.99,
-    "imageUrl": "/dresses/gown1.png",
+    "price": 250,
+    "imageUrl": "/ball-gowns/cinderellas-dream.png",
     "category": "Ball Gowns",
     "button": {
       "cart": "Add to cart",
@@ -161,8 +1201,8 @@
   },
   {
     "productName": "Midnight Masquerade",
-    "price": 199.95,
-    "imageUrl": "/dresses/gown2.png",
+    "price": 200,
+    "imageUrl": "/ball-gowns/midnight-masquerade.png",
     "category": "Ball Gowns",
     "button": {
       "cart": "Add to cart",
@@ -171,8 +1211,8 @@
   },
   {
     "productName": "Mela Blouse",
-    "price": 249.99,
-    "imageUrl": "/dresses/mela-blouse.png",
+    "price": 250,
+    "imageUrl": "/blouse/mela-blouse.png",
     "category": "Blouse",
     "button": {
       "cart": "Add to cart",
@@ -180,9 +1220,9 @@
     }
   },
   {
-    "productName": "Retro Glamour",
-    "price": 89.99,
-    "imageUrl": "/dresses/vintage1.png",
+    "productName": "Gianni Feraud",
+    "price": 90,
+    "imageUrl": "/vintage/gianni-ferraud.png",
     "category": "Vintage",
     "button": {
       "cart": "Add to cart",
@@ -191,8 +1231,8 @@
   },
   {
     "productName": "Veronique de Kock",
-    "price": 79.95,
-    "imageUrl": "/dresses/veronique-de-kock-blouse.png",
+    "price": 80,
+    "imageUrl": "/blouse/veronique-de-kock-blouse.png",
     "category": "Blouse",
     "button": {
       "cart": "Add to cart",
@@ -200,18 +1240,8 @@
     }
   },
   {
-    "productName": "Classic Elegance",
-    "price": 79.95,
-    "imageUrl": "/dresses/vintage2.png",
-    "category": "Vintage",
-    "button": {
-      "cart": "Add to cart",
-      "link": "#"
-    }
-  },
-  {
     "productName": "Chic Wrap Fusion",
-    "price": 59.99,
+    "price": 60,
     "imageUrl": "/dresses/wrap1.png",
     "category": "Dresses",
     "button": {
@@ -220,18 +1250,38 @@
     }
   },
   {
-    "productName": "Noir Blouse",
-    "price": 59.99,
-    "imageUrl": "/dresses/noir-blouse.png",
-    "category": "Blouse",
+    "productName": "Aquitaine Nobele",
+    "price": 80,
+    "imageUrl": "/vintage/aquitaine-nobele.png",
+    "category": "Vintage",
     "button": {
       "cart": "Add to cart",
       "link": "#"
     }
   },
   {
+    "productName": "Creenstone",
+    "price": 130,
+    "imageUrl": "/jackets/marine-majesty-trench-coat.png",
+    "category": "Coats",
+    "button": {
+      "cart": "Add to Cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Vinginio",
+    "price": 55,
+    "imageUrl": "/jackets/minty-dream-puffer-jacket.png",
+    "category": "Jacket",
+    "button": {
+      "cart": "Add to Cart",
+      "link": "#"
+    }
+  },
+  {
     "productName": "Floral Wrap Fantasy",
-    "price": 69.95,
+    "price": 70,
     "imageUrl": "/dresses/wrap2.png",
     "category": "Dresses",
     "button": {
@@ -240,8 +1290,18 @@
     }
   },
   {
+    "productName": "Noir Blouse",
+    "price": 60,
+    "imageUrl": "/blouse/noir-blouse.png",
+    "category": "Blouse",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
     "productName": "Sunny Day Delight",
-    "price": 39.99,
+    "price": 40,
     "imageUrl": "/dresses/sunnyday-delight.png",
     "category": "Dresses",
     "button": {
@@ -250,18 +1310,18 @@
     }
   },
   {
-    "productName": "Morgan Blouse",
-    "price": 69.99,
-    "imageUrl": "/dresses/morgan-blouse.png",
-    "category": "Blouse",
+    "productName": "GianFranco",
+    "price": 60,
+    "imageUrl": "/jackets/cobalt-grace-denim-jacket.png",
+    "category": "Denim",
     "button": {
-      "cart": "Add to cart",
+      "cart": "Add to Cart",
       "link": "#"
     }
   },
   {
     "productName": "Tropical Breeze",
-    "price": 49.95,
+    "price": 50,
     "imageUrl": "/dresses/tropical-breeze.png",
     "category": "Dresses",
     "button": {
@@ -270,8 +1330,28 @@
     }
   },
   {
+    "productName": "Giancarlo Rossi",
+    "price": 55,
+    "imageUrl": "/jackets/denim-diva-denim-jacket.png",
+    "category": "Denim",
+    "button": {
+      "cart": "Add to Cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Morgan Blouse",
+    "price": 70,
+    "imageUrl": "/blouse/morgan-blouse.png",
+    "category": "Blouse",
+    "button": {
+      "cart": "Add to cart",
+      "link": "#"
+    }
+  },
+  {
     "productName": "Timeless Black Elegance",
-    "price": 79.99,
+    "price": 80,
     "imageUrl": "/dresses/timeless-black-elegance.png",
     "category": "Dresses",
     "button": {
@@ -281,7 +1361,7 @@
   },
   {
     "productName": "Ivory Sophistication",
-    "price": 69.95,
+    "price": 62,
     "imageUrl": "/dresses/ivory-sophistication.png",
     "category": "Dresses",
     "button": {
@@ -290,20 +1370,40 @@
     }
   },
   {
-    "productName": "Sunshine Serenity",
-    "price": 59.99,
-    "imageUrl": "/dresses/sunshine-serenity.png",
-    "category": "Dresses",
+    "productName": "Rhino & Pelle",
+    "price": 70,
+    "imageUrl": "/jackets/pistachio-princess-trench-coat.png",
+    "category": "Coats",
+    "button": {
+      "cart": "Add to Cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Vestido De Novia",
+    "price": 80,
+    "imageUrl": "/vintage/vestido-de-novia.png",
+    "category": "Vintage",
     "button": {
       "cart": "Add to cart",
       "link": "#"
     }
   },
   {
-    "productName": "Vintage Charm",
-    "price": 79.99,
-    "imageUrl": "/dresses/vintage-charm.png",
-    "category": "Vintage",
+    "productName": "Max Mara",
+    "price": 110,
+    "imageUrl": "/jackets/mint-mirage-trench-coat.png",
+    "category": "Coats",
+    "button": {
+      "cart": "Add to Cart",
+      "link": "#"
+    }
+  },
+  {
+    "productName": "Sunshine Serenity",
+    "price": 64,
+    "imageUrl": "/dresses/sunshine-serenity.png",
+    "category": "Dresses",
     "button": {
       "cart": "Add to cart",
       "link": "#"

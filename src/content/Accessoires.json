@@ -1,8 +1,8 @@
 {
   "products": [
     {
-      "productName": "Wanderlust",
-      "price": 24.95,
+      "productName": "Hynes Eagle",
+      "price": 150,
       "imageUrl": "/accessoires/wanderlust-handbag.png",
       "category": "Handbags",
       "button": {
@@ -11,8 +11,8 @@
       }
     },
     {
-      "productName": "Stratosphere",
-      "price": 16.95,
+      "productName": "Pagani",
+      "price": 250,
       "imageUrl": "/accessoires/stratosphere-watch.png",
       "category": "Watches",
       "button": {
@@ -21,8 +21,8 @@
       }
     },
     {
-      "productName": "Celestial Crimson Harmony",
-      "price": 89.95,
+      "productName": "Ferozi Blue",
+      "price": 395,
       "imageUrl": "/accessoires/celestial-crimson-harmony.png",
       "category": "Necklaces",
       "button": {
@@ -31,8 +31,8 @@
       }
     },
     {
-      "productName": "Mirage",
-      "price": 11.95,
+      "productName": "Serengeti Susan",
+      "price": 290,
       "imageUrl": "/accessoires/mirage-sunglasses.png",
       "category": "Sunglasses",
       "button": {
@@ -42,7 +42,7 @@
     },
     {
       "productName": "Nebula",
-      "price": 24.95,
+      "price": 450,
       "imageUrl": "/accessoires/nebula-watch.png",
       "category": "Watches",
       "button": {
@@ -61,8 +61,8 @@
       }
     },
     {
-      "productName": "Radiant Retro",
-      "price": 24.95,
+      "productName": "Miraggio",
+      "price": 400,
       "imageUrl": "/accessoires/radiantretro-handbag.png",
       "category": "Handbags",
       "button": {
@@ -71,8 +71,8 @@
       }
     },
     {
-      "productName": "Suede Sansation",
-      "price": 9.95,
+      "productName": "Cognac",
+      "price": 190,
       "imageUrl": "/accessoires/suede-sansation-handbag.png",
       "category": "Handbags",
       "button": {
@@ -81,8 +81,8 @@
       }
     },
     {
-      "productName": "Luminous Gemstone",
-      "price": 78.99,
+      "productName": "Victorian",
+      "price": 600,
       "imageUrl": "/accessoires/ruby-golden-necklace.png",
       "category": "Necklaces",
       "button": {
@@ -101,8 +101,8 @@
       }
     },
     {
-      "productName": "Boho Blossom",
-      "price": 24.95,
+      "productName": "Steve Madden",
+      "price": 60,
       "imageUrl": "/accessoires/bohoblossom-handbag.png",
       "category": "Handbags",
       "button": {
@@ -111,8 +111,8 @@
       }
     },
     {
-      "productName": "Rain-kissed Gemstone",
-      "price": 69.95,
+      "productName": "Murle Bennett",
+      "price": 350,
       "imageUrl": "/accessoires/rain-kissed-gemstone-necklace.png",
       "category": "Necklaces",
       "button": {
@@ -121,8 +121,8 @@
       }
     },
     {
-      "productName": "Urban Sunset",
-      "price": 13.95,
+      "productName": "Oakley Prizm",
+      "price": 230,
       "imageUrl": "/accessoires/urban-sun-sunglasses.png",
       "category": "Sunglasses",
       "button": {
@@ -131,8 +131,8 @@
       }
     },
     {
-      "productName": "Safe Chipher",
-      "price": 8.95,
+      "productName": "Piquadro",
+      "price": 120,
       "imageUrl": "/accessoires/safechipher-wallet.png",
       "category": "Wallets",
       "button": {
@@ -142,7 +142,7 @@
     },
     {
       "productName": "Eclipse",
-      "price": 17.95,
+      "price": 125,
       "imageUrl": "/accessoires/eclipse-watch.png",
       "category": "Watches",
       "button": {
@@ -151,8 +151,8 @@
       }
     },
     {
-      "productName": "Solarflow",
-      "price": 9.95,
+      "productName": "RAY BAN",
+      "price": 100,
       "imageUrl": "/accessoires/solarflow-sunglasses.png",
       "category": "Sunglasses",
       "button": {
@@ -161,8 +161,8 @@
       }
     },
     {
-      "productName": "Azure Shades",
-      "price": 6.95,
+      "productName": "Pohnpei",
+      "price": 60,
       "imageUrl": "/accessoires/azure-shades-sunglasses.png",
       "category": "Sunglasses",
       "button": {
@@ -172,7 +172,7 @@
     },
     {
       "productName": "Infinity",
-      "price": 28.95,
+      "price": 120,
       "imageUrl": "/accessoires/infinity-watch.png",
       "category": "Watches",
       "button": {
@@ -181,8 +181,8 @@
       }
     },
     {
-      "productName": "GlamRay",
-      "price": 6.95,
+      "productName": "Tom Ford",
+      "price": 60,
       "imageUrl": "/accessoires/glamray-sunglasses.png",
       "category": "Sunglasses",
       "button": {
@@ -191,8 +191,8 @@
       }
     },
     {
-      "productName": "BioLock",
-      "price": 19.95,
+      "productName": "Hill Bury",
+      "price": 50,
       "imageUrl": "/accessoires/biolock-wallet.png",
       "category": "Watches",
       "button": {
@@ -202,7 +202,7 @@
     },
     {
       "productName": "Zenith",
-      "price": 9.95,
+      "price": 250,
       "imageUrl": "/accessoires/zenith-watch.png",
       "category": "Sunglasses",
       "button": {
@@ -211,8 +211,8 @@
       }
     },
     {
-      "productName": "Prestige",
-      "price": 12.95,
+      "productName": "SECTOR 670",
+      "price": 180,
       "imageUrl": "/accessoires/prestige-watch.png",
       "category": "Watches",
       "button": {
