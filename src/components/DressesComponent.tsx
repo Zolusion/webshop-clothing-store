@@ -16,7 +16,7 @@ const DressesComponent = () => {
     const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [currentPage, setCurrentPage] = useState(1);
-    const productsPerPage = 18;
+    const productsPerPage = 20;
 
     const imagesMatchingNames = Dresses.map((product: any) => product.imageUrl);
     console.log(imagesMatchingNames);
@@ -27,11 +27,17 @@ const DressesComponent = () => {
         router.push("/cart");
     };
 
+    const handleAddToWishlist = (e: any, product: any) => {
+        dispatch(addItem(product));
+        e.preventDefault();
+        router.push("/wishlist");
+    }
+
     const handleCategoryClick = (category: string) => {
         setSelectedCategory(category);
         const filtered = Dresses.filter((product: any) => product.category === category);
         setFilteredProducts(filtered);
-        setCurrentPage(1); // Reset to the first page when a category is selected
+        setCurrentPage(1);
     };
 
     const handleSearch = () => {
@@ -40,7 +46,7 @@ const DressesComponent = () => {
             product.productName.toLowerCase().includes(lowerCaseQuery)
         );
         setFilteredProducts(filtered);
-        setCurrentPage(1); // Reset to the first page when a search is performed
+        setCurrentPage(1);
     };
 
     const totalPages = Math.ceil(filteredProducts.length / productsPerPage);
@@ -81,6 +87,7 @@ const DressesComponent = () => {
                             <div className='flex flex-col mt-2'>
                                 <a href='#' onClick={() => handleCategoryClick('Jeans')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Jeans' ? 'font-bold' : ''}`}>Jeans</a>
                                 <a href='#' onClick={() => handleCategoryClick('Casual')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Casual' ? 'font-bold' : ''}`}>Casual</a>
+                                <a href='#' onClick={() => handleCategoryClick('Denim')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Denim' ? 'font-bold' : ''}`}>Denim</a>
                                 <a href='#' onClick={() => handleCategoryClick('Ball Gowns')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Ball Gowns' ? 'font-bold' : ''}`}>Ball Gowns</a>
                                 <a href='#' onClick={() => handleCategoryClick('Vintage')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Vintage' ? 'font-bold' : ''}`}>Vintage</a>
                                 <a href='#' onClick={() => handleCategoryClick('Dresses')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Dresses' ? 'font-bold' : ''}`}>Dresses</a>
@@ -94,6 +101,7 @@ const DressesComponent = () => {
                     <div className='hidden md:flex space-x-6'>
                         <a href='#' onClick={() => handleCategoryClick('Jeans')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Jeans' ? 'font-bold' : ''}`}>Jeans</a>
                         <a href='#' onClick={() => handleCategoryClick('Casual')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Casual' ? 'font-bold' : ''}`}>Casual</a>
+                        <a href='#' onClick={() => handleCategoryClick('Denim')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Denim' ? 'font-bold' : ''}`}>Denim</a>
                         <a href='#' onClick={() => handleCategoryClick('Ball Gowns')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Ball Gowns' ? 'font-bold' : ''}`}>Ball Gowns</a>
                         <a href='#' onClick={() => handleCategoryClick('Vintage')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Vintage' ? 'font-bold' : ''}`}>Vintage</a>
                         <a href='#' onClick={() => handleCategoryClick('Dresses')} className={`text-white hover:underline text-[14px] ${selectedCategory === 'Dresses' ? 'font-bold' : ''}`}>Dresses</a>
@@ -105,7 +113,7 @@ const DressesComponent = () => {
                 </div>
             </div>
             <div className='grid grid-cols-1 sm:grid-cols-3 2xl:grid-cols-4'>
-                {currentProducts.map((product: any, index: any) => (
+                {currentProducts.map((product: any, index: any, wishlist: any) => (
                     <div key={index} className={` ${selectedCategory && product.category !== selectedCategory ? 'hidden grid-cols-12 col-span-12 sm:col-span-6 md:col-span-4 relative' : ''} `}>
                         <div className='relative'>
                             <Image
@@ -133,7 +141,10 @@ const DressesComponent = () => {
                                     >
                                         {product.button.cart}
                                     </a>
-                                    <button className='bg-white text-black px-4 py-2 rounded-md hover:bg-gray-200 transition duration-300'>
+                                    <button
+                                        onClick={(e) => handleAddToWishlist(e, product)}
+                                        className='bg-white text-black px-4 py-2 rounded-md hover:bg-gray-200 transition duration-300 '
+                                    >
                                         Wishlist
                                     </button>
                                 </div>

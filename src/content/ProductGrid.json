@@ -1,6 +1,6 @@
 [
     {
-        "imageUrl": "/modern-hijab-style-images/image2.png",
+        "imageUrl": "/modern-hijab-style-images/lydia-blouse.png",
         "productName": "Lydia Blouse",
         "price": 79.95,
         "button": {
@@ -9,7 +9,7 @@
         }
     },
     {
-        "imageUrl": "/modern-hijab-style-images/image3.png",
+        "imageUrl": "/modern-hijab-style-images/jumpsuit.png",
         "productName": "Jumpsuit",
         "price": 99.99,
         "button": {
@@ -18,7 +18,7 @@
         }
     },
     {
-        "imageUrl": "/modern-hijab-style-images/image4.png",
+        "imageUrl": "/modern-hijab-style-images/marina-rinaldi.png",
         "productName": "Marina Rinaldi",
         "price": 119.99,
         "button": {
@@ -27,7 +27,7 @@
         }
     },
     {
-        "imageUrl": "/modern-hijab-style-images/image7.png",
+        "imageUrl": "/modern-hijab-style-images/dorothee-schumacher.png",
         "productName": "Dorothee Schumacher",
         "price": 109.99,
         "button": {
@@ -45,7 +45,7 @@
         }
     },
     {
-        "imageUrl": "/modern-hijab-style-images/image10.png",
+        "imageUrl": "/modern-hijab-style-images/nela-beige.png",
         "productName": "Nela Beige",
         "price": 99.99,
         "button": {
@@ -54,7 +54,7 @@
         }
     },
     {
-        "imageUrl": "/modern-hijab-style-images/image14.png",
+        "imageUrl": "/modern-hijab-style-images/diega-vanio-blazer.png",
         "productName": "Diega Vanio Blazer",
         "price": 199.99,
         "button": {
@@ -63,7 +63,7 @@
         }
     },
     {
-        "imageUrl": "/modern-hijab-style-images/image15.png",
+        "imageUrl": "/modern-hijab-style-images/nihed-long-dress.png",
         "productName": "Nihed Long Dress",
         "price": 39.99,
         "button": {
@@ -72,7 +72,7 @@
         }
     },
     {
-        "imageUrl": "/modern-hijab-style-images/image16.png",
+        "imageUrl": "/modern-hijab-style-images/peserico.png",
         "productName": "Peserico",
         "price": 89.99,
         "button": {
