@@ -20,7 +20,7 @@ const ProductGrid = () => {
             <div className="grid grid-cols-12">
                 {ProductGridData.map((product, index) => {
                     return (
-                        <div key={index} className={` 'hidden grid-cols-12 col-span-12 sm:col-span-6 md:col-span-4 2xl:col-span-3 relative' : ''} `}>
+                        <div key={index} className={` 'hidden grid-cols-12 col-span-12 sm:col-span-6 md:col-span-3 2xl:col-span-3 relative' : ''} `}>
                             <div className='relative'>
                                 <Image
                                     src={product.imageUrl}

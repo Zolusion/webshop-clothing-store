@@ -58,3 +58,29 @@ img:hover {
 .hover-link {
   text-decoration: none;
 }
+
+.sliderImage {
+  width: 100%;
+  height: auto;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.slick-prev,
+.slick-next {
+  font-size: 24px;
+  color: white;
+}
+
+.slick-dots {
+  bottom: 10px;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: white;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #3498db;
+}

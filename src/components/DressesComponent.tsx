@@ -2,9 +2,9 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
 import { useRouter } from "next/navigation";
-import { addItem } from "@/store/cart/cartSlice";
 import { useDispatch } from 'react-redux';
 import Dresses from '@/content/Dresses.json';
+import { addItem as addToCart, addToWishlist } from "@/store/cart/cartSlice";
 
 const DressesComponent = () => {
 
@@ -16,22 +16,22 @@ const DressesComponent = () => {
     const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [currentPage, setCurrentPage] = useState(1);
-    const productsPerPage = 20;
+    const productsPerPage = 12;
 
     const imagesMatchingNames = Dresses.map((product: any) => product.imageUrl);
     console.log(imagesMatchingNames);
 
     const handleAddToCart = (e: any, product: any) => {
-        dispatch(addItem(product));
+        dispatch(addToCart(product));
         e.preventDefault();
         router.push("/cart");
-    };
-
-    const handleAddToWishlist = (e: any, product: any) => {
-        dispatch(addItem(product));
+      };
+    
+      const handleAddToWishlist = (e: any, product: any) => {
+        dispatch(addToWishlist(product));
         e.preventDefault();
         router.push("/wishlist");
-    }
+      }
 
     const handleCategoryClick = (category: string) => {
         setSelectedCategory(category);
@@ -53,7 +53,6 @@ const DressesComponent = () => {
     const indexOfLastProduct = currentPage * productsPerPage;
     const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
     const currentProducts = filteredProducts.slice(indexOfFirstProduct, indexOfLastProduct);
-
 
     return (
         <div className='bg-black'>
@@ -113,7 +112,7 @@ const DressesComponent = () => {
                 </div>
             </div>
             <div className='grid grid-cols-1 sm:grid-cols-3 2xl:grid-cols-4'>
-                {currentProducts.map((product: any, index: any, wishlist: any) => (
+                {currentProducts.map((product: any, index: any) => (
                     <div key={index} className={` ${selectedCategory && product.category !== selectedCategory ? 'hidden grid-cols-12 col-span-12 sm:col-span-6 md:col-span-4 relative' : ''} `}>
                         <div className='relative'>
                             <Image
@@ -141,12 +140,13 @@ const DressesComponent = () => {
                                     >
                                         {product.button.cart}
                                     </a>
-                                    <button
+                                    <a  
+                                        href={"/wishlist"}
                                         onClick={(e) => handleAddToWishlist(e, product)}
                                         className='bg-white text-black px-4 py-2 rounded-md hover:bg-gray-200 transition duration-300 '
                                     >
-                                        Wishlist
-                                    </button>
+                                        {product.button.wishlist}
+                                    </a>
                                 </div>
                             </div>
                         </div>
