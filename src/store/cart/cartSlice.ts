@@ -47,39 +47,6 @@ const cartSlice = createSlice({
       state.items = [];
       localStorage.removeItem("cartItems");
     },
-
-    addToWishlist: (state, action: PayloadAction<Product>) => {
-      const { id } = action.payload;
-      const existingItem = state.wishlist.find((item: any) => item.id === id);
-
-      if (!existingItem) {
-        const wishlistNewItem = { ...action.payload, quantity: 1 };
-        if (action.payload.price) {
-          state.wishlist.push({
-            id: wishlistNewItem.id,
-            productName: wishlistNewItem.productName,
-            description: wishlistNewItem.description,
-            imageUrl: wishlistNewItem.imageUrl,
-            quantity: 1,
-            price: wishlistNewItem.price,
-          });
-        } else {
-          state.wishlist.push(wishlistNewItem);
-        }
-
-        localStorage.setItem("wishlistItems", JSON.stringify(state.wishlist));
-      }
-    },
-    removeFromWishlist: (state, action: PayloadAction<string>) => {
-      state.wishlist = state.wishlist.filter(
-        (item: any) => item.id !== action.payload
-      );
-      localStorage.setItem("wishlistItems", JSON.stringify(state.wishlist));
-    },
-    clearWishlist: (state) => {
-      state.wishlist = [];
-      localStorage.removeItem("wishlistItems");
-    },
   },
 });
 
@@ -87,8 +54,5 @@ export const {
   addItem,
   removeItem,
   clearCart,
-  addToWishlist,
-  removeFromWishlist,
-  clearWishlist,
 } = cartSlice.actions;
 export default cartSlice.reducer;

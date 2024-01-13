@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { useRouter } from "next/navigation";
 import { useDispatch } from 'react-redux';
 import Dresses from '@/content/Dresses.json';
-import { addItem as addToCart, addToWishlist } from "@/store/cart/cartSlice";
+import { addItem as addToCart } from "@/store/cart/cartSlice";
 
 const DressesComponent = () => {
 
@@ -26,12 +26,6 @@ const DressesComponent = () => {
         e.preventDefault();
         router.push("/cart");
       };
-    
-      const handleAddToWishlist = (e: any, product: any) => {
-        dispatch(addToWishlist(product));
-        e.preventDefault();
-        router.push("/wishlist");
-      }
 
     const handleCategoryClick = (category: string) => {
         setSelectedCategory(category);
@@ -140,13 +134,11 @@ const DressesComponent = () => {
                                     >
                                         {product.button.cart}
                                     </a>
-                                    <a  
-                                        href={"/wishlist"}
-                                        onClick={(e) => handleAddToWishlist(e, product)}
+                                    <button  
                                         className='bg-white text-black px-4 py-2 rounded-md hover:bg-gray-200 transition duration-300 '
                                     >
                                         {product.button.wishlist}
-                                    </a>
+                                    </button>
                                 </div>
                             </div>
                         </div>

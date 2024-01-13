@@ -95,9 +95,6 @@ const HeroSection = () => {
               <p className="hover-effect uppercase text-6xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center font-bold">
                 Blazers
               </p>
-              <p className="text-[20px] absolute top-2/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center font-bold">
-                New collection coming soon
-              </p>
             </a>
           </div>
           <div className="relative">
@@ -117,9 +114,6 @@ const HeroSection = () => {
             <a href="/winter-collection" className="hover-link">
               <p className="hover-effect uppercase text-6xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center font-bold md:w-2/3">
                 Winter Collection
-              </p>
-              <p className="text-[20px] absolute top-2/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center font-bold">
-                New collection coming soon
               </p>
             </a>
           </div>
