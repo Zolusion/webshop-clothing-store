@@ -1,15 +1,5 @@
 [
   {
-    "productName": "Rachelle 408",
-    "price": 65,
-    "imageUrl": "/jackets/rachele-408.png",
-    "category": "Blazers",
-    "button": {
-      "cart": "Add to Cart",
-      "wishlist": "Add to Wishlist"
-    }
-  },
-  {
     "productName": "Ralph Lauren",
     "price": 155,
     "imageUrl": "/jackets/ralph-lauren.png",
@@ -110,40 +100,10 @@
     }
   },
   {
-    "productName": "Grace Karin",
-    "price": 50,
-    "imageUrl": "/dresses/grace-karin.png",
-    "category": "Dresses",
-    "button": {
-      "cart": "Add to cart",
-      "wishlist": "Add to Wishlist"
-    }
-  },
-  {
-    "productName": "Davis12",
-    "price": 55,
-    "imageUrl": "/casual/davis12.png",
-    "category": "Casual",
-    "button": {
-      "cart": "Add to Cart",
-      "wishlist": "Add to Wishlist"
-    }
-  },
-  {
     "productName": "Valentino Garavani",
     "price": 25,
     "imageUrl": "/shoes/valentino-garavani.png",
     "category": "Shoes",
-    "button": {
-      "cart": "Add to cart",
-      "wishlist": "Add to Wishlist"
-    }
-  },
-  {
-    "productName": "Mulvari",
-    "price": 59,
-    "imageUrl": "/jeans/mulvari.png",
-    "category": "Jeans",
     "button": {
       "cart": "Add to cart",
       "wishlist": "Add to Wishlist"
@@ -170,30 +130,10 @@
     }
   },
   {
-    "productName": "Stehmann",
-    "price": 55,
-    "imageUrl": "/casual/stehmann.png",
-    "category": "Casual",
-    "button": {
-      "cart": "Add to Cart",
-      "wishlist": "Add to Wishlist"
-    }
-  },
-  {
     "productName": "Lina Locchi",
     "price": 52,
     "imageUrl": "/shoes/lina-locchi.png",
     "category": "Shoes",
-    "button": {
-      "cart": "Add to cart",
-      "wishlist": "Add to Wishlist"
-    }
-  },
-  {
-    "imageUrl": "/blazer/zizo-tosca.png",
-    "productName": "Zizo Tosca",
-    "price": 29,
-    "category": "Blazers",
     "button": {
       "cart": "Add to cart",
       "wishlist": "Add to Wishlist"
@@ -430,16 +370,6 @@
     }
   },
   {
-    "imageUrl": "/dresses/amelia.png",
-    "productName": "Amelia",
-    "price": 73,
-    "category": "Dresses",
-    "button": {
-      "cart": "Add to cart",
-      "wishlist": "Add to Wishlist"
-    }
-  },
-  {
     "imageUrl": "/winter-image/viridian.png",
     "productName": "Viridian",
     "price": 33,
@@ -540,16 +470,6 @@
     }
   },
   {
-    "imageUrl": "/jeans/diesel.png",
-    "productName": "Diesel",
-    "price": 50,
-    "category": "Jeans",
-    "button": {
-      "cart": "Add to cart",
-      "wishlist": "Add to Wishlist"
-    }
-  },
-  {
     "imageUrl": "/blazer/gai-mattiolo.png",
     "productName": "Gai Mattiolo",
     "price": 30,
@@ -564,26 +484,6 @@
     "price": 120,
     "imageUrl": "/jackets/harveys.png",
     "category": "Jackets",
-    "button": {
-      "cart": "Add to Cart",
-      "wishlist": "Add to Wishlist"
-    }
-  },
-  {
-    "productName": "Voyar La Reu",
-    "price": 80,
-    "imageUrl": "/blazer/voyar-la-reu.png",
-    "category": "Blazers",
-    "button": {
-      "cart": "Add to Cart",
-      "wishlist": "Add to Wishlist"
-    }
-  },
-  {
-    "productName": "Margeaux",
-    "price": 75,
-    "imageUrl": "/blazer/margeaux.png",
-    "category": "Blazers",
     "button": {
       "cart": "Add to Cart",
       "wishlist": "Add to Wishlist"
@@ -940,16 +840,6 @@
     }
   },
   {
-    "productName": "Guido Maria",
-    "price": 55,
-    "imageUrl": "/jackets/guido-maria.png",
-    "category": "Blazers",
-    "button": {
-      "cart": "Add to Cart",
-      "wishlist": "Add to Wishlist"
-    }
-  },
-  {
     "productName": "Noisy May",
     "price": 67,
     "imageUrl": "/jeans/noisy-may.png",
@@ -1124,16 +1014,6 @@
     "price": 50,
     "imageUrl": "/casual/american-eagle.png",
     "category": "Casual",
-    "button": {
-      "cart": "Add to cart",
-      "wishlist": "Add to Wishlist"
-    }
-  },
-  {
-    "productName": "Terracotta Formele Jumpsuit",
-    "price": 80,
-    "imageUrl": "/dresses/terracotta-formele-jumpsuit.png",
-    "category": "Jumpsuits",
     "button": {
       "cart": "Add to cart",
       "wishlist": "Add to Wishlist"
@@ -1320,9 +1200,9 @@
     }
   },
   {
-    "productName": "Vila Vinysitta",
+    "productName": "Vienna Ravenna",
     "price": 80,
-    "imageUrl": "/dresses/vila-vinysitta.png",
+    "imageUrl": "/dresses/vienna-ravenna.png",
     "category": "Dresses",
     "button": {
       "cart": "Add to cart",
