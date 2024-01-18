@@ -4,21 +4,15 @@ import React, { useState, useEffect } from 'react';
 const SaleContainer: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = [
-    '/about-images/salebackground.png',
     '/ambassadors-image/hijab-model.jpeg',
-    '/about-images/salebackground-3.png',
   ];
 
   const slideTexts = [
     'sale',
-    'Ambassadors',
-    'Our Team',
   ];
 
   const slideLinks = [
     '/sale',
-    '/ambassadors',
-    '/our-team',
   ];
 
   useEffect(() => {

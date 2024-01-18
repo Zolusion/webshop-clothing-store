@@ -30,16 +30,6 @@
     }
   },
   {
-    "productName": "Woolrich Alsea",
-    "price": 80,
-    "imageUrl": "/jackets/woolrich-alsea.png",
-    "category": "Jackets",
-    "button": {
-      "cart": "Add to Cart",
-      "wishlist": "Add to Wishlist"
-    }
-  },
-  {
     "productName": "Fabrice Perry",
     "price": 79,
     "imageUrl": "/shoes/fabrice-perry.png",
@@ -140,16 +130,6 @@
     }
   },
   {
-    "imageUrl": "/blazer/penelope.png",
-    "productName": "Penelope",
-    "price": 100,
-    "category": "Blazers",
-    "button": {
-      "cart": "Add to cart",
-      "wishlist": "Add to Wishlist"
-    }
-  },
-  {
     "imageUrl": "/jeans/vivienne-westwood.png",
     "productName": "Vivienne Westwood",
     "price": 120,
@@ -180,18 +160,8 @@
     }
   },
   {
-    "imageUrl": "/blazer/alexander-mcqueen.png",
-    "productName": "Alexander McQueen",
-    "price": 90,
-    "category": "Blazers",
-    "button": {
-      "cart": "Add to cart",
-      "wishlist": "Add to Wishlist"
-    }
-  },
-  {
-    "imageUrl": "/blazer/versace.png",
-    "productName": "Versace",
+    "imageUrl": "/blazer/helena-hart.png",
+    "productName": "Helena Hart",
     "price": 140,
     "category": "Blazers",
     "button": {
@@ -200,8 +170,8 @@
     }
   },
   {
-    "imageUrl": "/blazer/luisa-cerano.png",
-    "productName": "Luisa Cerano",
+    "imageUrl": "/blazer/detoiles-casiope.png",
+    "productName": "Detoiles Casiope",
     "price": 65,
     "category": "Blazers",
     "button": {
@@ -290,7 +260,27 @@
     }
   },
   {
-    "imageUrl": "/winter-image/supreme.png",
+    "imageUrl": "/blouse/adivine.png",
+    "productName": "Adivine",
+    "price": 55,
+    "category": "Blouse",
+    "button": {
+      "cart": "Add to cart",
+      "wishlist": "Add to Wishlist"
+    }
+  },
+  {
+    "imageUrl": "/ball-gowns/vestido-sereia.png",
+    "productName": "Vestido Sereia",
+    "price": 55,
+    "category": "Ball Gowns",
+    "button": {
+      "cart": "Add to cart",
+      "wishlist": "Add to Wishlist"
+    }
+  },
+  {
+    "imageUrl": "/winter-image/brunotti.png",
     "productName": "Brunotti",
     "price": 55,
     "category": "Jackets",
@@ -420,6 +410,16 @@
     }
   },
   {
+    "imageUrl": "/ball-gowns/bariano.png",
+    "productName": "Bariano",
+    "price": 55,
+    "category": "Ball Gowns",
+    "button": {
+      "cart": "Add to cart",
+      "wishlist": "Add to Wishlist"
+    }
+  },
+  {
     "imageUrl": "/winter-image/les-coyotes.png",
     "productName": "Les Coyotes",
     "price": 40,
@@ -434,6 +434,16 @@
     "productName": "Modström Corinna",
     "price": 50,
     "category": "Casual",
+    "button": {
+      "cart": "Add to cart",
+      "wishlist": "Add to Wishlist"
+    }
+  },
+  {
+    "imageUrl": "/ball-gowns/verso-bodycon.png",
+    "productName": "Verso Bodycon",
+    "price": 87,
+    "category": "Ball Gowns",
     "button": {
       "cart": "Add to cart",
       "wishlist": "Add to Wishlist"
@@ -460,6 +470,16 @@
     }
   },
   {
+    "imageUrl": "/ball-gowns/le-papillon.png",
+    "productName": "Le Papillon",
+    "price": 55,
+    "category": "Ball Gowns",
+    "button": {
+      "cart": "Add to cart",
+      "wishlist": "Add to Wishlist"
+    }
+  },
+  {
     "imageUrl": "/casual/magnolia.png",
     "productName": "Magnolia",
     "price": 32,
@@ -480,20 +500,20 @@
     }
   },
   {
-    "productName": "Harveys",
-    "price": 120,
-    "imageUrl": "/jackets/harveys.png",
-    "category": "Jackets",
+    "productName": "Graumann",
+    "price": 60,
+    "imageUrl": "/blazer/graumann.png",
+    "category": "Blazers",
     "button": {
       "cart": "Add to Cart",
       "wishlist": "Add to Wishlist"
     }
   },
   {
-    "productName": "Graumann",
-    "price": 60,
-    "imageUrl": "/blazer/graumann.png",
-    "category": "Blazers",
+    "productName": "Mac Duggal",
+    "price": 75,
+    "imageUrl": "/ball-gowns/mac-duggal.png",
+    "category": "Ball Gowns",
     "button": {
       "cart": "Add to Cart",
       "wishlist": "Add to Wishlist"
@@ -520,6 +540,16 @@
     }
   },
   {
+    "productName": "Gifnisetti",
+    "price": 120,
+    "imageUrl": "/ball-gowns/gifnisetti.png",
+    "category": "Ball Gowns",
+    "button": {
+      "cart": "Add to Cart",
+      "wishlist": "Add to Wishlist"
+    }
+  },
+  {
     "productName": "Faina Collina",
     "price": 95,
     "imageUrl": "/jackets/faina-collina.png",
@@ -532,7 +562,7 @@
   {
     "productName": "Louis Allegro",
     "price": 40,
-    "imageUrl": "/jackets/louis-allegro.png",
+    "imageUrl": "/denim/louis-allegro.png",
     "category": "Denim",
     "button": {
       "cart": "Add to Cart",
@@ -550,8 +580,8 @@
     }
   },
   {
-    "imageUrl": "/blazer/elisabetta-franchi.png",
-    "productName": "Elisabetta Franchi (Beige)",
+    "imageUrl": "/blazer/cavallaro-napoli.png",
+    "productName": "Cavallaro Napoli",
     "price": 90,
     "category": "Blazers",
     "button": {
@@ -566,6 +596,16 @@
     "category": "Jackets",
     "button": {
       "cart": "Add to Cart",
+      "wishlist": "Add to Wishlist"
+    }
+  },
+  {
+    "imageUrl": "/ball-gowns/noax-anabel.png",
+    "productName": "Noax Anabel",
+    "price": 55,
+    "category": "Ball Gowns",
+    "button": {
+      "cart": "Add to cart",
       "wishlist": "Add to Wishlist"
     }
   },
@@ -630,6 +670,16 @@
     }
   },
   {
+    "imageUrl": "/ball-gowns/one-honey.png",
+    "productName": "One Honey",
+    "price": 78,
+    "category": "Ball Gowns",
+    "button": {
+      "cart": "Add to cart",
+      "wishlist": "Add to Wishlist"
+    }
+  },
+  {
     "imageUrl": "/blazer/tom-ford.png",
     "productName": "Tom Ford",
     "price": 70,
@@ -662,7 +712,7 @@
   {
     "productName": "Versace",
     "price": 140,
-    "imageUrl": "/jackets/versace.png",
+    "imageUrl": "/denim/versace.png",
     "category": "Denim",
     "button": {
       "cart": "Add to Cart",
@@ -820,6 +870,16 @@
     }
   },
   {
+    "productName": "Grace Kelly",
+    "price": 48,
+    "imageUrl": "/dresses/grace-kelly.png",
+    "category": "Dresses",
+    "button": {
+      "cart": "Add to cart",
+      "wishlist": "Add to Wishlist"
+    }
+  },
+  {
     "productName": "Wine Velvet",
     "price": 48,
     "imageUrl": "/shoes/wine-velvet-heels.png",
@@ -846,6 +906,16 @@
     "category": "Jeans",
     "button": {
       "cart": "Add to Cart",
+      "wishlist": "Add to Wishlist"
+    }
+  },
+  {
+    "productName": "La Violetta",
+    "price": 48,
+    "imageUrl": "/dresses/la-violetta.png",
+    "category": "Dresses",
+    "button": {
+      "cart": "Add to cart",
       "wishlist": "Add to Wishlist"
     }
   },
@@ -966,6 +1036,26 @@
     "category": "Jeans",
     "button": {
       "cart": "Add to Cart",
+      "wishlist": "Add to Wishlist"
+    }
+  },
+  {
+    "productName": "The Fall",
+    "price": 48,
+    "imageUrl": "/denim/the-fall.png",
+    "category": "Denim",
+    "button": {
+      "cart": "Add to cart",
+      "wishlist": "Add to Wishlist"
+    }
+  },
+  {
+    "productName": "Rachel Gill",
+    "price": 48,
+    "imageUrl": "/dresses/rachel-gill.png",
+    "category": "Dresses",
+    "button": {
+      "cart": "Add to cart",
       "wishlist": "Add to Wishlist"
     }
   },
@@ -1130,6 +1220,16 @@
     }
   },
   {
+    "productName": "Angel Shine",
+    "price": 45,
+    "imageUrl": "/blouse/angel-shine.png",
+    "category": "Blouse",
+    "button": {
+      "cart": "Add to cart",
+      "wishlist": "Add to Wishlist"
+    }
+  },
+  {
     "productName": "Jenny Packham",
     "price": 70,
     "imageUrl": "/dresses/jenny-packham.png",
@@ -1150,9 +1250,9 @@
     }
   },
   {
-    "productName": "Laudae Abronia",
+    "productName": "Halston",
     "price": 40,
-    "imageUrl": "/dresses/laudea-abronia.png",
+    "imageUrl": "/dresses/halston.png",
     "category": "Dresses",
     "button": {
       "cart": "Add to cart",
@@ -1162,7 +1262,7 @@
   {
     "productName": "GianFranco",
     "price": 60,
-    "imageUrl": "/jackets/gianfranco.png",
+    "imageUrl": "/denim/gianfranco.png",
     "category": "Denim",
     "button": {
       "cart": "Add to Cart",
@@ -1182,7 +1282,7 @@
   {
     "productName": "Giancarlo Rossi",
     "price": 55,
-    "imageUrl": "/jackets/giancarlo-rossi.png",
+    "imageUrl": "/denim/giancarlo-rossi.png",
     "category": "Denim",
     "button": {
       "cart": "Add to Cart",
@@ -1200,9 +1300,9 @@
     }
   },
   {
-    "productName": "Vienna Ravenna",
+    "productName": "Tramontana",
     "price": 80,
-    "imageUrl": "/dresses/vienna-ravenna.png",
+    "imageUrl": "/dresses/tramontana.png",
     "category": "Dresses",
     "button": {
       "cart": "Add to cart",
