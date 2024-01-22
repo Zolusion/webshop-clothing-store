@@ -1,7 +1,7 @@
 import React from 'react'
 import type { Metadata } from "next";
 import Navbar from '@/components/Navbar';
-import BeautyComponent from '@/components/Beauty';
+import BeautyComponent from '@/components/BeautyComponent';
 import Footer from '@/components/Footer';
 
 const title = "Beauty";
